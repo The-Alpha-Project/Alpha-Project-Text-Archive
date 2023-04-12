@@ -1,0 +1,2004 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The New Rest System</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "e15fce6234d65b9ec9b0146c4903bfb0";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="e15fce6234d65b9ec9b0146c4903bfb0" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-137.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-136.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-135.html" class="pagination_page">135</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-136.html" class="pagination_page">136</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-137.html" class="pagination_current">137</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-138.html" class="pagination_page">138</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-139.html" class="pagination_page">139</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-138.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8894.html">The New Rest System</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8894-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8894-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>The New Rest System</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid43080" id="pid43080"></a>
+<div class="post " style="" id="post_43080">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43080.html#pid43080" title="The New Rest System">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 03:38 PM <span class="post_edit" id="edited_by_43080"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43080">
+		With this new push, Blizzard has introduced the Rest system into World of Warcraft.  I have found this fascinating and I can&#39;t wait to see it in action.  I&#39;ll quote Blizzard&#39;s patch "readme":<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>To broaden and balance some of the gameplay elements, we&#39;ve incorporated a few new features. One of them is the Rest State modifier, which gives players a time-limited bonus to combat (PvE) experience. This frees up time for exploring other aspects of the game without penalty, such as tradeskilling and social activities, and helps players avoid level-grinding. We&#39;ve also added Inns, which serve as a good place to hang up your sword or staff for the night because they confer special bonuses. Inns also act as home locations, which our third new feature, Hearthstones, take advantage of. Hearthstones provide a speedy way to travel back to an Inn when you need to take care of business in town or when you&#39;re ready to check in and call it a night. The basics of these new features are covered below. <br />
+<br />
+The Rest state modifier only affects experience earned from killing monsters. It does not affect experience earned from quest rewards or other experience rewards in the game (such as future PvP experience rewards). <br />
+<br />
+As players kill monsters and gain experience points, they become increasingly tired. Their rest level reflects this tiredness in five tiers: well rested, rested, normal, fatigued and exhausted. <br />
+<br />
+Well-rested players receive bonus experience points for killing monsters. Rested players receive a smaller bonus. At the normal rest level, players receive no bonus experience points for killing monsters. Fatigued players receive half of the normal experience points from their kills, and when exhausted they will receive a quarter of normal experience from a kill. <br />
+<br />
+To become well rested and start earning bonus experience from killing monsters again, players must either log out or rest online at an Inn (see below) for several hours. <br />
+<br />
+Thanks to the comforts of a warm bed and a hearty meal, players who rest or log out at an Inn can regain energy up to the maximum level: well rested (it takes 8 hours to go from exhausted back to well rested). Players who log out anywhere else in the world will only regain energy up to the normal level. <br />
+<br />
+Note that while your character is resting at an Inn, you can play other characters on your account. The rest state is per character only.<br />
+<br />
+...<br />
+<br />
+Players use Hearthstones (an inventory item) to cast a spell that teleports them back to their "home locations." Casting the spell will take a reasonable amount of time, to prevent it from being used as an escape mechanism from combat. <br />
+<br />
+"Checking in" with an Innkeeper will make that Inn the player&#39;s current home location, and the player&#39;s Hearthstone will then take the player back to that Inn (as opposed to any previous home locations). If the player doesn&#39;t have a Hearthstone, the Innkeeper will provide one at no cost. <br />
+<br />
+Because Hearthstones let players quickly return to town, players can easily log off from within an Inn when they&#39;re done playing for the night (or day). If they so choose, players can also use Hearthstones just to return to town to sell items, trade, or train. However, Hearthstones can only be used once per hour.</blockquote>
+This is kinda nifty.  When I read it yesterday, my first thought was "oh boy, people aren&#39;t going to like this," and there is quite a bit of screaming going on.  Many players who haven&#39;t tried this new Rest system out are already saying it stinks.  Clearly this is geared toward the casual player (someone who plays maybe 5 hours a week) and semi-casual player (someone who plays perhaps 2-3 hours a night).  It&#39;s designed to put a stop to shared-character power-leveling 24/7 that is done by gaming "sweatshops" to build up uber characters for sale quickly.<br />
+<br />
+The experience differential and exhaustion level is based on your experience gained while killing monsters.  All other forms of experience are not factored in (quests, etc).  This is clearly designed to promote questing, as well.  When performing quests, not all of them involve killing mobs.  On an average session performing quests, you won&#39;t see a drop in the experience gain until you&#39;ve been at it for a few (3-4) hours (from early posts on the Blizzard forums).  What this Rest system discourages is hanging out in an area, killing mobs over and over for exp.  They want us out there questing, running around, getting a good chunk of our exp from quests and not monsters.  I gathered that this was their goal from my phase 1 play, but now they&#39;re really enforcing it big time.<br />
+<br />
+If you have multiple characters, this likely won&#39;t be an issue at all.  Just switch characters if you&#39;ve been playing for 6+ hours on one and the exp drop is starting to get annoying.  However, if you&#39;re still questing, you&#39;re still getting significant exp from the quests and "normal" exp from the monsters at that 6 hour point (haven&#39;t tried this - just basing this info on some posts in the Blizzard forums already).<br />
+<br />
+Anyway, Blizzard&#39;s intentions are clear: powerleveling, exp-grinding play is not supported.  You can still do it, but advancement will be slow.  Go questing.  Also, while you will still fall behind the 24-hours-a-day players, the difference won&#39;t be nearly as drastic as in other MMORPGs.  This is a win for the casual gamers and a massive hindrance to the power teams.  Since the power players tend to be the most vocal, expect a LOT of opposition to this plan.<br />
+<br />
+Hearthstones: hey, kids&#33;  Town portals&#33;  You can use them only once per hour, but that should be plenty in my opinion.  No longer to Mages solely own the ability to zip out of a tough spot (when not in combat) in order to avoid a long, tough battle back to town.  It also reduces travel times after a trip out killing mobs and gathering loot.  I&#39;ll bet that they leave the Mages&#39; teleport ability in, to allow them to travel to any Inn from anywhere (thus allowing you to travel across the world in seconds - something I enjoyed greatly in phase 1).<br />
+<br />
+If you&#39;ve played other MMORPGs, what do you think of this Rest system that Blizzard implemented?  Is there any precedent to it out there?<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43080">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43080" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43085" id="pid43085"></a>
+<div class="post " style="" id="post_43085">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43085.html#pid43085" title="The New Rest System">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 04:29 PM <span class="post_edit" id="edited_by_43085"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43085">
+		Call me a skeptic.  I think this rest system sounds like a misfeature aimed at getting addicted gamers to play less while paying the same price.  You can&#39;t quest and rest in the inn at the same time, can you?  Even fedex quests usually mean killing monsters on the way.  It&#39;s not really a benefit for casual gamers, because A) they will still never keep up with the powergamers, and B) they shouldn&#39;t care whether they can or not.  As long as it done per character rather than per account, it shouldn&#39;t be much of a hassle though.<br />
+<br />
+Hearthstones, on the other hand, are a great idea.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43085">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43085" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43086" id="pid43086"></a>
+<div class="post " style="" id="post_43086">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-642.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-642.html">Charis</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 24<br />
+	Threads: 2<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43086.html#pid43086" title="The New Rest System">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 04:47 PM <span class="post_edit" id="edited_by_43086"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43086">
+		I&#39;m delighted to see the "town portal." The *killer* in this game, meaning the killer of people-who-would-play, is going to be travel tedium. ANYTHING you can do to eliminate this heinous burden is going to be very helpful. People&#39;s "real life" time is at stake here - for busy people with only a few hours to play, having to spend 10 mins to walk somewhere is unimagineably painful. I doubt they would do this, but I wonder if they&#39;re considering having those &#39;sentry guards&#39; that give directions have the option to just teleport them right there on the spot. Sure, the first time playing you&#39;ll want to take in the view and go by foot, but after that. How many of us liked the walk to Akara. What if it were a 180 second walk -- would Diablo have had the same longevity it did, or would we have given up far earlier because the benefit and fun no longer outweighed the tedium of 0-XP non-interesting filler time? In town, in particularly, if I could buy an item that could take me anywhere I wanted on the viewed mini-map instantly, it would be a huge boon.<br />
+<br />
+My initial response to the rest system was similar to Bolty&#39;s, and the fact that I would use multiple<br />
+characters would avoid the problem for me. After reading his thoughts on it, I&#39;m<br />
+a little more in favor of it. Just a few other points to make:<br />
+<br />
+- &#39;Power teams&#39; should still be able to do well but they&#39;ll take 300 hours to get 3 characters to the<br />
+  same level that they would have taken 100 hrs to get one that high, another 100 hrs for the next,<br />
+  and 100 more for the last. So I don&#39;t think they&#39;re out of business or that Blizz can stop powergaming.<br />
+<br />
+- People who play less hours won&#39;t necessisarily care what others are doing, but if you play a decent<br />
+  amount of time but can&#39;t "put in the time" to excel, they&#39;re gonna advance kind of slow and be<br />
+  frustrating. Giving them a moderate boost should be big from a sales point of few - numerically you<br />
+  will have many more casual players than ebaypowergamers, and if you can make the game more<br />
+  pleasureable for them and throw them a bone, the better.<br />
+<br />
+- We&#39;ll all have a better chance of keeping up with Bolty who spends too much time playing&#33; :hammer:<br />
+<br />
+Charis
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43086">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=642" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43086" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43087" id="pid43087"></a>
+<div class="post " style="" id="post_43087">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1263.html"><img src="http://www.theamazonbasin.com/wow/forums/uploads/photo-66.gif" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1263.html">Drak&#39;Tzul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 20<br />
+	Threads: 0<br />
+	Joined: Feb 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43087.html#pid43087" title="The New Rest System">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 04:48 PM <span class="post_edit" id="edited_by_43087"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43087">
+		I think this system puts the emphasis on a more "healthy" playing behavior.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 3pt;" class="mycode_size"><span style="font-family: Impact;" class="mycode_font"><span style="color: maroon;" class="mycode_color">Proud Member of the Amazon Basin</span></span></span><br />
+<span style="font-style: italic;" class="mycode_i">Greetings to all of you Lurker Lounge Members&#33;</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43087">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1263" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43087" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43089" id="pid43089"></a>
+<div class="post " style="" id="post_43089">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-235.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-235.html">Walkiry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 638<br />
+	Threads: 9<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43089.html#pid43089" title="The New Rest System">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 05:11 PM <span class="post_edit" id="edited_by_43089"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43089">
+		<blockquote class="mycode_quote"><cite>Drak&#39;Tzul,Apr 15 2004, 05:3 Wrote:</cite>I think this system puts the emphasis on a more "healthy" playing behavior.</blockquote>Maybe, but I can&#39;t say I like when the developers put such barriers to make sure you play The Way It&#39;s Meant To Be Playedâ¢.<br />
+<br />
+ I don&#39;t like the idea, specially in what is supposed to be an open, persistent world you&#39;ll be paying to play in monthly. I do think the limitations put to make sure you don&#39;t step on other players&#39; toes (PKs for instance) are good, but the limitations put to stop people from playing <span style="font-style: italic;" class="mycode_i">their</span> game because someone else can&#39;t stand the fact you are two times their level in half the time are not so good.<br />
+<br />
+ That said, I&#39;m not a powerplayer. Not by a long shot. If I were playing, chances are this wouldn&#39;t affect me.<br />
+<br />
+ Anyway, we&#39;ll have to wait and see how this plays out. I&#39;m fairly sure that it&#39;ll be tweaked before release.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43089">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://walkiry.no-ip.org" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=235" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43089" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43094" id="pid43094"></a>
+<div class="post " style="" id="post_43094">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1343.html"><img src="https://www.lurkerlounge.com/forums/D2_Skill_Strafe.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1343.html">Brainiac4</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 21<br />
+	Threads: 2<br />
+	Joined: Mar 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43094.html#pid43094" title="The New Rest System">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 05:37 PM <span class="post_edit" id="edited_by_43094"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43094">
+		I work in software development (actually in e-commerce operations, but the systems I manage are ones I helped develop), so I find it interesting to see a feature like this implemented. <br />
+<br />
+The thing I find myself asking is... what is the reason for adding the feature? Bolty suggests that it&#39;s intended to slow down powerleveling, and that may be the case. And Walkiry suggests that it&#39;s designed to get people to play "the right way." Either of these may be the case, or close to the actual reason, or it may be something else. <br />
+<br />
+I believe that Blizzard is trying to create not just a game but an environment, and is trying to set up the game such that it creates an environment that they believe people will want to be in. There are other examples of this -- in the text MUD DragonRealms, one of the key skills that all classes need to build up to advance is the Teaching skill. The only way to improve it is by teaching another player a skill you know better than him/her. This promotes teaming and cooperation. <br />
+<br />
+This change (resting required) will encourage shorter spans of play (&lt;6 hours) separated by fairly lengthy periods of resting at a safe location... for a single character. If you as a player want to hammer on playtime, you can -- you&#39;ll just need 3 characters to play 24/7. <br />
+<br />
+The net result of this will be that we&#39;ll get to higher levels a little slower as a group in terms of number of days. I believe that this net result is what Blizzard is trying to achieve. I don&#39;t know why -- it could be either of the reasons presented above.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Of course, your mileage may vary.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43094">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1343" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43094" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43096" id="pid43096"></a>
+<div class="post " style="" id="post_43096">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43096.html#pid43096" title="The New Rest System">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 06:02 PM <span class="post_edit" id="edited_by_43096"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43096">
+		Hi,<br />
+<br />
+As always, the devil is in the details.<br />
+<br />
+If the system is such that one can play two to three hours without incurring a penalty, then it will have no effect on me, so I guess I wouldn&#39;t care.  If it means that I have to cut short the sessions those times that I can play, then it might be a deal killer.  At any rate, I know I&#39;ll never keep up with power gamers anyway.  For one thing, a playing a game doesn&#39;t hold my interest for that long at a time after the first blush is over.  For another, I tend to check the nooks and crannies instead of focusing on where I can level fastest or get the best drops.<br />
+<br />
+However, I don&#39;t see how "<span style="font-style: italic;" class="mycode_i">It&#39;s designed to put a stop to shared-character power-leveling 24/7 that is done by gaming "sweatshops" to build up uber characters for sale quickly.</span>"  <br />
+<br />
+Lets look at one estimate: <br />
+Assume the rested bonus lasts for about 2 hours, and that it is a 25% bonus.  Then one needs 5 characters to play a constantly fresh character.  If it takes 500 hours to build a character without the rest bonus, then it will take 400 with it.  It takes longer to get that first character out (2000 hours as opposed to 500) but you get more characters out over time (5 characters in 2000 hours as opposed to 2500).<br />
+<br />
+OK, so those numbers are a SWAG.  But I&#39;m sure that the power gamers will figure out the best gain per hour, and I&#39;m almost sure that it will be more under this "rest" system than it was without it.<br />
+<br />
+The only other "rest" system I&#39;ve ever seen is the "fatigue" factor in D&amp;D type games.  And, frankly, it sucks.  Mostly it kicks in when your party completes a multi-day trip between mapped areas (as if the party wasn&#39;t going to sleep en route).  Since I don&#39;t play 24/7, my characters can damned well eat, sleep, and take care of other personal business when I&#39;m AFK ;)<br />
+<br />
+I like the hearthstones, but I would like them even better if one could collect one from each inn one visits and then use that particular hearthstone to get back to that particular inn.  That would save a lot of time running back and forth (which, if anything kills this type of game for me, it is the incessant covering and recovering the same ground to complete quests, to recover bodies, etc.).  Since they would be useful as a means to get back to a location quickly, the one hour limit might become important.  If the only time they are useful is when exiting the game, then they will be useless.<br />
+<br />
+--Pete<br />
+<br />
+2 hours 13 min 31 sec away from a "You cannot connect" message :)
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43096">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43096" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43098" id="pid43098"></a>
+<div class="post " style="" id="post_43098">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43098.html#pid43098" title="The New Rest System">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 06:34 PM <span class="post_edit" id="edited_by_43098"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43098">
+		Of course, what the biggest whiners will miss is the fact that there&#39;s no requirement that you absolutely have to have the +25% exp bonus.  I leveled just fine without it and you can get to normal rest without spending a full eight hours at an inn, at least according to the push description.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43098">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43098" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43099" id="pid43099"></a>
+<div class="post " style="" id="post_43099">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-236.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-236.html">jondifool</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 42<br />
+	Threads: 1<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43099.html#pid43099" title="The New Rest System">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 06:36 PM <span class="post_edit" id="edited_by_43099"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43099">
+		Lurker mode off:<br />
+<br />
+hi there , nice to read all the stuff about wow, its enjoyable to follow<br />
+<br />
+bolty writes <blockquote class="mycode_quote"><cite>Quote:</cite> If you&#39;ve played other MMORPGs, what do you think of this Rest system that Blizzard implemented? Is there any precedent to it out there?</blockquote>
+<br />
+I think there is something in that direktion, at least when it comes to force players to be social and use each others skills. I had a little view at Starwars galaxy sometimes ago&#33; <br />
+<br />
+Starwars Galaxy (SG) uses 2 kinds off damage, one wich can be regained , and one there actual requires a camp/hospital and the serius tending of wounds. Imagine that 1/10s of wounds on avarage is the serius kind meaning that after a few close battles current max health is not as good as you want it&#33;<br />
+This is then Combined with gaining battlefatique there cuts the speed health is regained , this force players to go back to towns after a while and be healed and entertained to loose the battlefatique.<br />
+This is the unique feature off starwars as far as I know that players are forced to sit down and watch or listen to other players having careers as entertainers and even tip them for the job.<br />
+The exp situation is different as the game is , but it certainly have another go at it. Basicly it force every one to be a powergamer, because as you want to improve a specific skill you have to use it. To gain a lvl in healing, heal and heal and heal&#33; If you are a master in ranged combat, you still have to fight in the newbie area as novice mellee character if you want to improve that. In the end there is 255 skillpoints to distribute the good thing is that you can reshape by giving up skilllevels and reern exp in the new fields you want. <br />
+But its not good to compare this to much to a wow settings as the games are to different.<br />
+<br />
+To the things that blizzard chose. <br />
+There is an  Exp nerf, trying to force players to "play the game" (still a coined phrase here in this forum ?). I am not sure that I think its the most elegant solution. But it might work very well&#33; As many blizzard solutions. <br />
+But not all MMOrps are using level based exp and they certainly are not getting the same problem with powergaming. Skillbased exp without character lvls does create a little different gaming enviorment at least imho. But it comes down to what developeres dare to do about powergaming.<br />
+Warhammer online is as exsample like starwars, is going to use a skillbased system, but in a world with a very special monster spawn system, there in theory should make the exp grinding mill different, as there is no respawns.( but we have to wait to e3 to see if they dared to put some of that stuff into it as they talked about- they at some point talked about all travel to be real time&#33; meaning taking a coach on a 3 day ride was to talk 3 real days- don&#39;t think they will dare that)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43099">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=236" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43099" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43100" id="pid43100"></a>
+<div class="post " style="" id="post_43100">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43100.html#pid43100" title="The New Rest System">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 06:42 PM <span class="post_edit" id="edited_by_43100"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43100">
+		<span style="font-style: italic;" class="mycode_i"> But I&#39;m sure that the power gamers will figure out the best gain per hour, and I&#39;m almost sure that it will be more under this "rest" system than it was without it.</span><br />
+<br />
+This is point worth considering.  The term "power gamer" is actually something that I don&#39;t relate directly to playing time.  I don&#39;t consider myself a power gamer, but I may sometimes play a game twice as much as someone who is.  The people I would consider power gamers will either quickly dismiss this system as not being significant enough to worry about, or quickly develop a system to maximize their own advantages in the system.  Depending on the details, it could result in them actually getting further ahead of everyone else.<br />
+<br />
+Consider 2 players who each play one character for 6 hours on a Saturday:<br />
+<br />
+- The casual player will spend the whole time wandering the area, doing whatever quests he happens to be working on, going to town when his bag is full, getting resources when he finds them, working on his trade skills when he has enough resources.  Whenever he is done for the day, he finds an inn and calls it a night.<br />
+<br />
+- The power gamer could XP grind one area of monsters for the first few hours while experience is at peak, party up for a tough quest next before the harsh penalties start, then either wheel and deal, farm resources, or macro trade skills.  When his business is done and he is ready for combat again, he puts that character in the inn.  If he still has time left to play, he grabs his secondary character and either XP grinds or farms resources, depending on the purpose of that character.<br />
+<br />
+Which player will benefit from the system the most?
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43100">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43100" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43106" id="pid43106"></a>
+<div class="post " style="" id="post_43106">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1343.html"><img src="https://www.lurkerlounge.com/forums/D2_Skill_Strafe.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1343.html">Brainiac4</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 21<br />
+	Threads: 2<br />
+	Joined: Mar 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43106.html#pid43106" title="The New Rest System">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 07:49 PM <span class="post_edit" id="edited_by_43106"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43106">
+		<blockquote class="mycode_quote"><cite>Nystul,Apr 15 2004, 06:33 PM Wrote:</cite>Consider 2 players who each play one character for 6 hours on a Saturday:<br />
+<br />
+(snip specifics)<br />
+<br />
+Which player will benefit from the system the most?</blockquote>In all instances, someone who is deliberately working the system will derive more benefit than someone who is not. That&#39;s kind of obvious, I suppose. The point that I focus on is not "who benefits more <span style="font-weight: bold;" class="mycode_b">within this system</span>" but "does this system, <span style="font-weight: bold;" class="mycode_b">compared to other systems</span>, affect the gap between power- and non-power-gamers."<br />
+<br />
+IMO, it does. There&#39;s a tremendous amount of wailing and gnashing of teeth about this "xp penalty" but it comes down to the fact that it is now less effective to continually grind mobs for xp. This means the "more efficient" player will not be as much more efficient as they were previously. <br />
+<br />
+This is, in my mind, a good thing. As I noted above, I think Blizzard is trying to create an environment in which to play, part of which is the social aspect. An in-game mechanism that encourages players to return to places where social activies can occur will help in this. <br />
+<br />
+I would not be surprised to see craft suppliers either in or right next to the inns to facilitate this. And if Blizzard intends to allow players to own property, then booth or storefront space in the inn would be a cool option.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Of course, your mileage may vary.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43106">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1343" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43106" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43107" id="pid43107"></a>
+<div class="post " style="" id="post_43107">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1352.html"><img src="http://www.nine-muses.net/img/fierce.gif" alt="" width="48" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1352.html">Roane</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 129<br />
+	Threads: 3<br />
+	Joined: Apr 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43107.html#pid43107" title="The New Rest System">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 08:16 PM <span class="post_edit" id="edited_by_43107"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43107">
+		<blockquote class="mycode_quote"><cite>Pete,Apr 15 2004, 01:53 PM Wrote:</cite>But I&#39;m sure that the power gamers will figure out the best gain per hour, and I&#39;m almost sure that it will be more under this "rest" system than it was without it.</blockquote>You know, after discussing this earlier, I started thinking about it a bit more, and this quoted statement pretty much nails it, I think.<br />
+<br />
+I used to work on a MUD that had something very similar.  What ended up happening is that players learned the best ways to fight to maximize their XP gain while minimizing downtime.  It worked there (that MUD is still going) but it seemed to make balancing the risk versus reward element of the gameplay difficult.  I&#39;m very curious to see how this is going to play out.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 1pt;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">One day, the Champions of the Fierce Bunny will ride again...</span>&lt;!--sizec--&gt;</span>&lt;!--/sizec--&gt;
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43107">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1352" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43107" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43113" id="pid43113"></a>
+<div class="post " style="" id="post_43113">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1222.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1222.html">Jeger</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 32<br />
+	Threads: 2<br />
+	Joined: Jan 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43113.html#pid43113" title="The New Rest System">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 08:44 PM <span class="post_edit" id="edited_by_43113"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43113">
+		To tell you the truth - it seems to me to be a very small issue, except to rant or rave about. Some people will feel happy because they feel they get a bonus (I will) others will feel unhappy, because they feel they get a penalty. I think that has to do more with the person&#39;s personality than reality. It might add to the atmosphere for those who like atmosphere.<br />
+<br />
+All-in-all I think everyone will figure out how to play to take best advantage of it for ourselves. Some will ignore it, others min/max it.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43113">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1222" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43113" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43155" id="pid43155"></a>
+<div class="post " style="" id="post_43155">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43155.html#pid43155" title="The New Rest System">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 03:13 AM <span class="post_edit" id="edited_by_43155"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43155">
+		Just a note on tonight&#39;s playing - I was at it for almost 5 hours, going from character creation to level 8, before I became "rested," dropping from a 200% exp bonus to a 150% exp bonus.  Note that the "bonus" term is misleading, since it takes about double the exp it used to to level.<br />
+<br />
+I killed a LOT of monsters tonight.  The mage is no longer an excercise in frustration.  More on that tomorrow.<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43155">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43155" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43175" id="pid43175"></a>
+<div class="post " style="" id="post_43175">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-205.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-205.html">lemekim</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				It's been how long?!<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 681<br />
+	Threads: 5<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-43175.html#pid43175" title="The New Rest System">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 05:44 AM <span class="post_edit" id="edited_by_43175"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43175">
+		I have to concur with Bolty on the time from well-rested to just rested - about 5 hours or so of gameplay. A lot of it was monster killing as well. <br />
+<br />
+My biggest gripe so far is probably with the fix that Blizzard implemented to prevent griefing with "tapping" of the monsters. Right now, if the monster is in any way damaged by another player, this monster will not give experience to anyone else, or will be available to loot. Not even if the other character died or ran away. I have run across numerous monsters who are just sitting out there with full health, and have the healthbar greyed out. I like the idea, I just wish this "tapping" would run out if the monster was not fighting for, say, 2 minutes, or if the player fled, or some other way.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43175">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=205" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=43175" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid44394" id="pid44394"></a>
+<div class="post " style="" id="post_44394">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-44394.html#pid44394" title="The New Rest System">#16</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-30-2004, 04:22 PM <span class="post_edit" id="edited_by_44394"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_44394">
+		Hi,<br />
+<br />
+First, there&#39;s the realism factor.  Experience points were a way to simplify bookkeeping in pnp games. They really don&#39;t represent anything in reality (or, rather, they represent too many things -- such as talent, training, technique, intelligence, education, blah, blah, blah).  To tie experience rather than strength or agility or almost anything (yeah, even intelligence -- we all get dumb when we get tired) to fatigue is putting one crappy implementation on top of a crappy concept.  It just doesn&#39;t feel right, and I think that that is at the basis of most of the gripes about this system.  People would take a "you&#39;re tired, so you aren&#39;t as strong" argument better, I think.<br />
+<br />
+But, second, there&#39;s the skill points.  The skill points are tied to the base experience from kills.  So, if a character gets most of their experience from quests and well rested kills, that character will be skill point poor, perhaps to the point of attributes suffering, but definitely to the point of not having good trade abilities.  Indeed, the best way to get a good character is to get as many experience points as possible when totally wasted by killing mobs.  That way, you effectively quadruple the skill points per level (another senseless abstraction from the pnp days).<br />
+<br />
+Blizzard is making a great game, but at this point it&#39;s your father&#39;s RP game with graphics.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_44394">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=44394" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid44397" id="pid44397"></a>
+<div class="post " style="" id="post_44397">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-44397.html#pid44397" title="The New Rest System">#17</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-30-2004, 05:11 PM <span class="post_edit" id="edited_by_44397"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_44397">
+		One question I have not seen definitively answered - while one character is resting for 8 hours, can you not play other characters on the same account, and have them well-rested?  If character A is sleeping, can I log on with B, play through his well-rested bonus, then rest him and switch to C?  Or does the rest system "penalize" an entire account and not just a single character?
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_44397">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=44397" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid44404" id="pid44404"></a>
+<div class="post " style="" id="post_44404">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-100.html"><img src="http://i.imgur.com/H03sWNHt.jpg?dateline=1428341867" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-100.html">Tal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Stormrage Cat Herder<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,920<br />
+	Threads: 296<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-44404.html#pid44404" title="The New Rest System">#18</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-30-2004, 07:08 PM <span class="post_edit" id="edited_by_44404"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_44404">
+		<blockquote class="mycode_quote"><cite>Cryptic,Apr 30 2004, 12:02 PM Wrote:</cite>One question I have not seen definitively answered - while one character is resting for 8 hours, can you not play other characters on the same account, and have them well-rested?&amp;nbsp; If character A is sleeping, can I log on with B, play through his well-rested bonus, then rest him and switch to C?&amp;nbsp; Or does the rest system "penalize" an entire account and not just a single character?</blockquote>Yes you can do exactly that. The rest system is per character not per account. :)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_44404">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=100" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=44404" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid44417" id="pid44417"></a>
+<div class="post " style="" id="post_44417">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-44417.html#pid44417" title="The New Rest System">#19</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">05-01-2004, 12:33 AM <span class="post_edit" id="edited_by_44417"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_44417">
+		I understand that some of the most annoying aspects of this feature (e.g. having to rest for a full 8 hours to get any benefit from resting) will be changed.  With that in mind, I still look at this as an unnecessary complication.  It doesn&#39;t add to the immersion of the game, and it does not appear to enhance gameplay in any useful way, and yet it is something to worry about and something to make balancing the game more complicated.<br />
+<br />
+It seems to me that the only "benefit" of the system is that it gives Blizzard more headroom with high end content against people who would share accounts and play 24/7.  However, no matter how the system ends up getting implemented, the account sharers will still be at least 3-5 times as far into the game into of equivalent hours compared to the oft-mentioned "casual gamers".  For how many months will it make a difference whether they are 5 times ahead or 10 times ahead?  Unless the end game is something that stays static for months and months, truly casual gamers will never get to it.  Let&#39;s not forget, most casual gamers will not even get the game until many months after it is released.  There is no way that they will ever catch up to the content the powergamers are accessing unless you simply stop providing new content to the powergamers for a long, long time.  With that in mind, Blizzard should focus on making the game fun and interesting at all stages and all available character levels (which so far they have done a pretty decent job on), rather than trying to socialize the level of all characters so everyone can get to the fun areas.  <br />
+<br />
+The latter effort will most likely be futile, but people won&#39;t mind it as long as it doesn&#39;t detract from enjoyment of the game in the meantime.  The current implementation has detracted from the game for many players, by forcing them to wait for the 8th hour to expire, or forcing them to backtrack to an inn costing valuable progress (would any casual gamer even think of logging onto WoW to play a 20 minute session in the current state?), or skewing the balance of quests and skill points so that people are doing them or getting them at very different rates with respect to level, or deciding not to group with friends of different levels because it will make you fatigue faster.  These issues are being addressed, but I&#39;m pretty skeptical about the whole deal.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_44417">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=44417" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid44420" id="pid44420"></a>
+<div class="post " style="" id="post_44420">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8894-post-44420.html#pid44420" title="The New Rest System">#20</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">05-01-2004, 01:52 AM <span class="post_edit" id="edited_by_44420"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_44420">
+		Hi,<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">would any casual gamer even think of logging onto WoW to play a 20 minute session in the current state?</span><br />
+<br />
+Actually, I do quite often.  I&#39;ve got a human warrior (Kamm) whom I&#39;m soloing.  He&#39;s building up skills by killing mobs and I try to keep him as unrested as I can.  So he is perfect for the 20 minute sessions.<br />
+<br />
+But, yes, the rest system is a poor solution to something that wasn&#39;t a problem in the first place.  I sometimes wonder what Blizzard employees smoke at staff meetings.  Or maybe it&#39;s the magic mushroom dip :)<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_44420">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8894&amp;replyto=44420" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8894" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8894-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8894-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8894-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8894-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8894">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-8894.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=0c0cfaed9b89245ed7dc8dc2c80fe564">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:57 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8894&amp;pid=43080#pid43080" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8894&amp;pid=43080#pid43080" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

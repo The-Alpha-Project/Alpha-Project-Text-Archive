@@ -1,0 +1,947 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>? In-game mail system :: World of Warcraft :: ZAM</title>
+  <link rel="icon" href="favicon.ico?3">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/font-awesome.min.css?a">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/global.css?bj">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/wow/c/site.css?bi" id="css">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/print.css?d" media="print">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WK3KTMS');</script>
+  <!-- End Google Tag Manager -->
+  <script>isIE=false</script><!--[if IE]><script>isIE=true</script><![endif]-->
+  <script src="https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery-1.10.2.min.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery.cookie.min.js"></script>
+  <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script src="https://cdn.zamimg.com/zaf/1.7.x/zaf.min.js"></script>
+  <script src="https://cdn.zamimg.com/zul/2.2.0/zul.min.js"></script>
+  <script src="https://zam.zamimg.com/j/global.js?v"></script>
+  <script src="https://zam.zamimg.com/wow/j/site.js?a"></script>
+  <script src="https://zam.zamimg.com/j/tooltips.js?c"></script>
+  <!-- Begin comScore Tag -->
+  <script>
+    var _comscore = _comscore || [];
+    var _cs_ucfr= localStorage.getItem('optIn') === 'true' ? '1' : '0';
+    _comscore.push({ c1: "2", c2: "6036197", cs_ucfr: _cs_ucfr  });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "https://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+  <img src="https://sb.scorecardresearch.com/p?c1=2&c2=6036197&cv=2.0&cj=1&cs_ucfr=0" />
+</noscript>
+<!-- End comScore Tag -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1459431-39', 'auto');
+  ga('create', 'UA-1459431-57', 'auto', {'name' : 'generic1'});
+  ga('create', 'UA-1459431-63', 'auto', {'name' : 'generic2'});
+  ga('send', 'pageview');
+  ga('generic1.send', 'pageview');
+  ga('generic2.send', 'pageview');
+
+</script>
+<!--Blockthrough Script-->
+<script src="https://btloader.com/tag?o=5714333134749696&upapi=true"></script>
+<!--Opt Out Script-->
+  <link rel="stylesheet" href="https://s3.amazonaws.com/sitemaps.services.zam.com/gdpr_optout.css"/>
+  <meta name="robots" content="noindex">
+<link rel="search" type="application/opensearchdescription+xml" href="https://zam.zamimg.com/shared/os11-wow.xml" title="WoW at ZAM">
+
+</head>
+<body class="non-premium">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK3KTMS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<div id="skin-bg">
+  <div id="AKZ_1x1"></div>
+</div>
+<div id="zaf-script-container">
+  <script async src="https://zaf.api.fanbyte.com/stable/js/akz-allakhazam.js"></script>
+</div>
+<div id="zul-bar-container">
+  <script>ZUL.init({ state: 'loggedOut' });</script>
+</div>
+<!--[if lte IE 8]><script>document.body.className+=' pre-ie9'</script><![endif]-->
+<div id="tmpItemFrm"></div>
+<div id="bg-wrapper">
+<div id="header"><div id="livesearch"></div>
+  <!--[if lt IE 8]><script>ZAM.warnIE()</script><![endif]-->
+  <div id="logo"><a href="https://wow.allakhazam.com/"></a></div>
+  <form action="https://wow.allakhazam.com/search.html" name="search"><input name="q" style="width:562px" type="text" minlength="3" maxlength="75" title="This search box needs a minimum of 3 characters and a maximum of 75 characters." onfocus="this.select()" value=""><a href="javascript:document.search.submit();"></a></form>
+  <div id="nav">
+    <ul id="menu_horiz"><li class="has-sub first-child  nc-home"><a href="https://wow.allakhazam.com/">Home</a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-news-archives"><a href="news_archives.html">News Archives</a></li><li class="ext nc-support"><a href="https://help.zam.com">Support</a></li><li class="nc-new-comments"><a href="newcomments.html">New Comments</a></li><li class="last-child  nc-zam-tools"><a href="enhancements.html"><span class="icon-tools">ZAM Tools</span></a></li></ul></div></li><li class="has-sub  ext nc-database"><a href="http://www.wowhead.com/"><span class="icon-wh">Database</span></a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-achievements"><a href="db/achievementlist.html?1">Achievements</a></li><li class="nc-factions"><a href="db/factionlist.html?1">Factions</a></li><li class="nc-item-sets"><a href="db/itemsetlist.html?1">Item Sets</a></li><li class="nc-items"><a href="db/itemlist.html?1">Items</a></li><li class="nc-npcs"><a href="db/moblist.html?1">NPCs</a></li><li class="nc-objects"><a href="db/objectlist.html?1">Objects</a></li><li class="nc-quests"><a href="db/questlist.html?1">Quests</a></li><li class="nc-spells"><a href="db/spelllist.html?1">Spells</a></li><li class="nc-zones"><a href="db/zonelist.html?1">Zones</a></li><li class="nc-enchantments"><a href="db/enchantlist.html">Enchantments</a></li><li class="last-child  nc-characters"><a href="characters.html">Characters</a></li></ul></div></li><li class="has-sub  nc-wiki"><a href="https://wow.allakhazam.com/wiki/">Wiki</a><div><em></em><var></var><strong></strong><ul><li class="has-sub first-child  nc-general-info"><a class="no-href">General Info</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Character_Creation_(WoW)">Character Creation</a></li><li><a href="wiki/Money_(WoW)">Money</a></li><li><a href="wiki/Reputation_(WoW)">Reputation</a></li><li><a href="wiki/Leveling_(WoW)">Leveling</a></li><li><a href="wiki/Category:Terms_(WoW)">Game Terminology</a></li><li><a href="wiki/Category:Guides_(WoW)">Player-written Guides</a></li><li class=" last-child"><a href="wiki/Category:Wow_Updates">Updates and Patch Notes</a></li></ul></div></li><li class="has-sub  nc-characters"><a class="no-href">Characters</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Races_(WoW)">Races</a></li><li><a href="wiki/Classes_(WoW)">Classes</a></li><li><a href="wiki/Ability_lists_(WoW)">Abilities</a></li><li><a href="wiki/Achievements_(WoW)">Achievements</a></li><li><a href="wiki/Talents_(WoW)">Talents</a></li><li><a href="wiki/Skills_(WoW)">Skills</a></li><li><a href="wiki/Category:WoW_Professions">Professions</a></li><li class=" last-child"><a href="wiki/factions_(wow)">Factions</a></li></ul></div></li><li class="has-sub  nc-interface"><a class="no-href">Interface</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Interface_(WoW)">Interface</a></li><li><a href="wiki/Inventory_(WoW)">Inventory</a></li><li><a href="wiki/Quests_(WoW)">Quests</a></li><li><a href="wiki/Combat_(WoW)">Combat</a></li><li><a href="wiki/Mods_(WoW)">Mods</a></li><li class=" last-child"><a href="wiki/Macro_(WoW)">Macro</a></li></ul></div></li><li class="has-sub  nc-community"><a class="no-href">Community</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Player_interaction_(WoW)">Player interaction</a></li><li><a href="wiki/Communication_(WoW)">Communication</a></li><li><a href="wiki/PvP_(WoW)">PvP</a></li><li><a href="wiki/Raiding_(WoW)">Raiding</a></li><li class=" last-child"><a href="wiki/Common_courtesy_(WoW)">Common courtesy</a></li></ul></div></li><li class="has-sub  nc-items-and-gear"><a class="no-href">Items and Gear</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Tradeskills_(WoW)">Tradeskills</a></li><li><a href="wiki/Weapons_(WoW)">Weapons</a></li><li><a href="wiki/Armor_items_(WoW)">Armor</a></li><li><a href="wiki/Mounts_(WoW)">Mounts</a></li><li><a href="wiki/Vanity_Pets">Vanity Pets</a></li><li class=" last-child"><a href="wiki/Emblem_Gear_(WoW)">Emblem Gear</a></li></ul></div></li><li class="has-sub  nc-game-mechanics"><a class="no-href">Game Mechanics</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Attribute_(WoW)">Attributes</a></li><li><a href="https://wow.allakhazam.com/wiki/Rage%2C_Energy%2C_and_Mana_(WoW)">Rage, Energy, and Mana</a></li><li><a href="wiki/Itemization_Formulas_(WoW)">Itemization Formulas</a></li><li><a href="wiki/The_Math_of_Combat_(WoW)">The Math of Combat</a></li><li><a href="wiki/Threat_(WoW)">Threat</a></li><li class=" last-child"><a href="wiki/Category:Mechanics_(WoW)">More Mechanics</a></li></ul></div></li><li class="has-sub  nc-people-and-places"><a class="no-href">People and Places</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Zones_and_Regions_(WoW)">Zones and Regions</a></li><li><a href="wiki/People_(WoW)">People</a></li><li><a href="wiki/Events_(WoW)">Events</a></li><li class=" last-child"><a href="wiki/Travel_(WoW)">Travel</a></li></ul></div></li><li class="has-sub  nc-beyond-the-mmo"><a class="no-href">Beyond the MMO</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Warcraft_Series">Warcraft Series</a></li><li><a href="wiki/WoW_Products">WoW Products</a></li><li class=" last-child"><a href="wiki/Category:Blizzcon_2008_(WoW)">Blizzcon 2008</a></li></ul></div></li><li class="has-sub last-child  nc-db-categories"><a class="no-href">DB Categories</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Category:WoW_Mobs">Mobs</a></li><li><a href="wiki/Category:WoW_Items">Items</a></li><li><a href="wiki/Category:WoW_Quests">Quests</a></li><li class=" last-child"><a href="wiki/Category:WoW_Rare_Mobs">Rare Mobs</a></li></ul></div></li></ul></div></li><li class="has-sub  cur nc-forums"><a href="forum.html">Forums</a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-wow-general"><a href="forum.html?forum=21">WoW General</a></li><li class="nc-pvp"><a href="forum.html?forum=214">PvP</a></li><li class="nc-tradeskills"><a href="forum.html?forum=69">Tradeskills</a></li><li class="nc-classes"><a href="forum.html?forum=243">Classes</a></li><li class="has-sub  nc-cross-site"><a href="forum.html?cat=9">Cross Site</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="forum.html?forum=3">Site Feedback</a></li><li><a href="forum.html?forum=82">Wikibase Feedback</a></li><li><a href="forum.html?forum=22">General Game Discussion</a></li><li><a href="forum.html?forum=5">TV, Movies, Anime &amp; Books</a></li><li><a href="forum.html?forum=25">Computer Hardware &amp; Troubleshooting</a></li><li><a href="forum.html?forum=28">Out of Topic</a></li><li class=" last-child"><a href="forum.html?forum=4">The Asylum</a></li></ul></div></li><li class="nc-live-forum-updates"><a href="live.html">Live Forum Updates</a></li><li class="nc-followed-threads"><a href="follow.html">Followed Threads</a></li><li class="last-child  nc-"><a class="no-href"></a></li></ul></div></li></ul>
+  </div>
+  <div id="header-misc"><span id="theme"><strong>&middot;</strong><span><b><i></i>Theme</b></span><ul><li class="empty"><em></em><var></var></li>
+          <li class="no-check"><a href="https://secure.fanbyte.com/login.html">Login for themes</a></li></ul></span><i></i></div><script>Nav.init()</script>
+</div>
+<div id="wrapper">
+  <div id="shadows"><div id="s-top"></div><div id="s-bot"></div><div id="s-left"></div><div id="s-right"></div></div>
+  <div id="body">
+    <div id="row-top"><div id="row-top-inner"><div id="row-top-inner-2">
+      <div id="video-au"></div>
+      
+    <div id="header-bg">
+    <!-- /76136274/AKZ_Horizontal_ATF -->
+        <div id='AKZ_Horizontal_ATF'>
+        </div>
+    </div>
+    
+    </div></div></div>
+    <div id="cols">
+      <div id="col-right"><div id="col-right-inner"><div id="col-right-inner-2">
+        
+    <div id="column-bg">
+    <!-- /76136274/AKZ_Vertical_ATF -->
+        <div id='AKZ_Vertical_ATF'>
+        </div>
+    </div>
+    
+      </div></div></div>
+      <div id="col-main"><div id="col-main-inner"><div id="col-main-inner-2"><div id="col-main-inner-3"><div id="buffer-top"></div>
+
+<script>
+  qcdata = {} || qcdata;
+       (function(){
+       var elem = document.createElement('script');
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://pixel") + ".quantserve.com/aquant.js?a=p-80xBzMhbKolFI";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem,scpt);
+     }());
+
+
+   var qcdata = {qacct: 'p-80xBzMhbKolFI',
+                        labels: ''
+                        };
+</script>
+  <noscript>
+    <img src="https://pixel.quantserve.com/pixel/p-80xBzMhbKolFI.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+  </noscript>
+<script>logView('Skinnable Interior Page', 'ZAM - wow')</script><div class="forums" id="thread">
+      <form class="f-search" action="https://wow.allakhazam.com/tsearch.html">
+        <input type="hidden" name="thread" value="1101162113962565205">
+        <input type="text" name="q" class="inactive" value="Search this thread..." onfocus="if(this.className == 'inactive') {this.className = ''; this.value = ''} else{this.select();}" onblur="if(this.className == '' &amp;&amp; this.value == '') {this.className = 'inactive'; this.value='Search this thread...'}">
+      </form>
+    <div id="f-settings-wrapper"><a href="javascript:;" id="f-settings-link" onclick="$('#f-settings').fadeIn('fast')">Forum Settings</a>
+
+  <div id="f-settings" class="bcont">
+    <form name="pref" action="https://wow.allakhazam.com/cgi-bin/prefs-new.pl">
+  
+    <input type="checkbox" name="msgMo" id="prefs-msgMo" value="1" onclick="createCookie('msgMo',this.checked,365);" checked="checked">
+    <label for="prefs-msgMo">Mouseover Previews</label> &nbsp;
+  
+    <input type="checkbox" name="hideAvatars" id="prefs-hideAvatars" value="1" onclick="this.form.submit();">
+    <label for="prefs-hideAvatars">Hide Images</label> &nbsp;
+  <input type="hidden" name="style" value=""><input type="hidden" name="msgord" value="desc"> &nbsp; <select name="howmany"  onchange="this.form.submit();">
+<option value="10">10 posts per page</option>
+<option selected="selected" value="25">25 posts per page</option>
+</select> &nbsp; <select name="score"  onchange="this.form.submit();">
+<option value="1">Never Filter</option>
+<option selected="selected" value="2">Default Filter </option>
+<option value="3">Decent and better</option>
+<option value="4">Good and better</option>
+<option value="5">Excellent Only</option>
+</select><a href="javascript:;" class="icon-unfollow" onclick="$('#f-settings').fadeOut('fast')"></a></form></div></div>
+
+
+<ul class="path">
+  <li class="root"><b><a href="forum.html">Forums</a></b></li>
+  <li class="has-sub"><a href="forum.html?cat=54">World of Warcraft</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class=" first-child"><a href="forum.html?cat=9">Cross Site</a></li>
+  <li class=""><a href="forum.html?cat=20">Dark Age of Camelot</a></li>
+  <li class=""><a href="forum.html?cat=18">EverQuest</a></li>
+  <li class=""><a href="forum.html?cat=50">EverQuest II</a></li>
+  <li class=""><a href="forum.html?cat=19">Final Fantasy XI</a></li>
+  <li class=""><a href="forum.html?cat=67">FFXI Servers</a></li>
+  <li class=""><a href="forum.html?cat=153">Final Fantasy XIV</a></li>
+  <li class=""><a href="forum.html?cat=281">FFXIV Disciples</a></li>
+  <li class=""><a href="forum.html?cat=354">Lord of the Rings Online</a></li>
+  <li class="cur last-child"><a href="forum.html?cat=54">World of Warcraft</a></li>
+</ul></div></div></li>
+  <li class="has-sub"><a href="forum.html?forum=21"> General Discussion</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class="cur first-child"><a href="forum.html?forum=21"> General Discussion</a></li>
+  <li class=""><a href="forum.html?forum=243">Class Discussion</a></li>
+  <li class=""><a href="forum.html?forum=214">PvP</a></li>
+  <li class=" last-child"><a href="forum.html?forum=69">Trade Skills</a></li>
+</ul></div></div></li>
+  <li>? In-game mail system</li>
+</ul>
+<div style="clear:left"></div>
+
+<div class="pagesel"></div><div class="post-buttons"><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162113962565205&amp;p=1" rel="nofollow nott"><span>Reply To Thread</span><b></b></a></div>
+    <div id="posts">
+      <h1><span>? In-game mail system</span><small><a id="follow_1101162113962565205" onclick="followToggle2(this)" href="javascript:" class="f-follow"><span>Follow</span><b></b></a></small></h1>
+    <div id="1" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101162113962565205">
+        <div class="info" id="m1101162113962565205">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162113962565205" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162113962565205&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#1" title="Link to this post">#1<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:22 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591820176960"><b>__DEL__1591820176960</b></a></div></div><div class="posts">18 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I thought I read somewhere that there is an ingame mail system that allows you to actually send objects.  Is this true? <br> <br>I also wonder about how many items you can send and how long it takes to get them to the other person.  Also, can you mail stuff to your alternate characters? <br> <br>Thanks in advance!</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="2" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101162189179782045">
+        <div class="info" id="m1101162189179782045">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162189179782045" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162189179782045&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#2" title="Link to this post">#2<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:23 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592761082155"><b>__DEL__1592761082155</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">4,520 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">There is mail, you can send messages, items, and money. Items take 1 hour to get to destination.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="3" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101162289975973795">
+        <div class="info" id="m1101162289975973795">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162289975973795" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162289975973795&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#3" title="Link to this post">#3<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:24 PM</span></span>
+          <span class="rating">Rating: <span>Good</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592761618708"><b>__DEL__1592761618708</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">66 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">not 100% true on the 1 hour I have won things in the auction which showed up immediately in the mail.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="4" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101162330976551276">
+        <div class="info" id="m1101162330976551276">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162330976551276" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162330976551276&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#4" title="Link to this post">#4<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:25 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592267916826"><b>__DEL__1592267916826</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">264 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">You can mail items, I think possibly 1 item and gold, not sure exactly, never sent mail. But there were 3 slots in received mail. <br> <br>It takes 1 hour to send mail. You probably can send mail to your alternate characters. <br> <br>Also, you 'sell' items in the mail. Send an item with C.O.D (cash on delivery) and they send you the amount of money you agreed upon when he takes the item out from the mail.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="5" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101162532786688389">
+        <div class="info" id="m1101162532786688389">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162532786688389" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162532786688389&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#5" title="Link to this post">#5<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:29 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592267916826"><b>__DEL__1592267916826</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">264 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">The reason you received mail from the auction house instantly, was because you were looking in the same mailbox for the same town of the auction house. <br> <br>I've had people buyout my auctions while I was far from the town, only to receive my money an hour later.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="6" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101162654797018105">
+        <div class="info" id="m1101162654797018105">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162654797018105" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162654797018105&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#6" title="Link to this post">#6<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:31 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592261491199"><b>__DEL__1592261491199</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">53 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">There is a mailbox in front of some buildings (Inn in Brill in Tirisfal (Undead country)). <br> <br>You can sent mail from those. I send a 6s bag I made with Tailoring to a Tauren m8 of mine. <br> <br>You can send one item per mail and it costs 50 copper per mail. I dunno about sending money, didn't try. <br> <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="7" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101162686975953738">
+        <div class="info" id="m1101162686975953738">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162686975953738" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162686975953738&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#7" title="Link to this post">#7<b></b></a>
+          <span class="posted" title="Last edited Nov 22 2004 at  5:32 PM"><span>Nov 22 2004</span> at <span> 5:31 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/gilroykilroy"><b>gilroykilroy</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">160 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">http://www.worldofwarcraft.com/info/basics/mail.html <br> <br>1) All mail costs you 30 copper to send. Free to receive. <br> <br>2) Normal mail (text only or money) is sent instantly. <br> <br>3) You may include one item (or stack if stackable) per letter. Packages take one hour for delivery. <br> <br>4) You may send mail COD. These also take one hour. <br> <br>5) Winnings from Auctions are delivered immediately. <br> <br> <br><i><span class="sm">Edited, Mon Nov 22 17:32:42 2004 by gilroykilroy</span></i></div>
+        <div class="sig"><div class="bar">____________________________</div>The Wandering Night Elf Druid <br></div>
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="8" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101162768942573932">
+        <div class="info" id="m1101162768942573932">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162768942573932" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162768942573932&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#8" title="Link to this post">#8<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:32 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591784627170"><b>__DEL__1591784627170</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">509 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I really wish they would have made the auction houses simpler to figure out. Like solid prices and not all that bidding junk. I like the mail system but depending on how much you can send at once loading a mule might be tedious.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="9" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101162807791444787">
+        <div class="info" id="m1101162807791444787">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162807791444787" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162807791444787&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#9" title="Link to this post">#9<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:33 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591820176960"><b>__DEL__1591820176960</b></a></div></div><div class="posts">18 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">That is really cool.  I've got some friends who want to start out as different races and it would be a great way of helping each other out as we get going.  I'd really like the mailing things to my alt.  Sometimes it's quite difficult to find someone to help with transfers, and if they're on different continents it could only be harder. <br> <br>Thanks for the responses! <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="10" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101162853976392164">
+        <div class="info" id="m1101162853976392164">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101162853976392164" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162853976392164&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1101162113962565205&amp;p=1#10" title="Link to this post">#10<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:34 PM</span></span>
+          <span class="rating">Rating: <span>Excellent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Guru"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1593361825251"><b>__DEL__1593361825251</b></a></div><div class="title">Guru</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">4,574 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I used the mail system a lot during open beta.  You can send messages and money almost instantly to other players or to your alts.  You can also send one item, or one stack of items, to other players or to your alts, but it will take an hour for the item to arrive.  Each letter costs 30 coppers to send.  However, you cannot send mail to characters on the opposite faction.  So if you are playing an alliance character you cannot send mail to a hoard character, even if that hoard character is one of your alts.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="11" class="post odd"><div class="post-inner">
+      <div class="head" id="msg110116318120081884">
+        <div class="info" id="m110116318120081884">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-110116318120081884" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=110116318120081884&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#11" title="Link to this post">#11<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:39 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591800571369"><b>__DEL__1591800571369</b></a></div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">141 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I think the Auction Hall is perfectly fine.  It's sort of like, oh what do people call them nowadays? Oh, real auctions. <br> <br>You know, bidding wars are fun, much more interesting than FFXI's crappy auction system.  At least the players actually set the value of an item instead of the person selling it.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="12" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101163235944245993">
+        <div class="info" id="m1101163235944245993">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101163235944245993" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101163235944245993&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#12" title="Link to this post">#12<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:40 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592267623877"><b>__DEL__1592267623877</b></a></div></div><div class="posts">6 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text"><div class="quote"><div class="source">Quote:</div><div class="orig"> <br>1) All mail costs you 30 copper to send. Free to receive.  <br>2) Normal mail (text only or money) is sent instantly.  <br>3) You may include one item (or stack if stackable) per letter. Packages take one hour for delivery.  <br>4) You may send mail COD. These also take one hour.  <br>5) Winnings from Auctions are delivered immediately.  <br></div></div> <br> <br>Correct.  To add to this: <br> <br>Mail (including money and items) may only be sent to characters of the same faction.  If you have an Alliance Dwarf and want to send an item and 10 gold to your Alliance Night Elf Twink, all is good; if you want to send it to your Horde Shaman Twink, you are out of luck. <br> <br>Also, if you are outbid at the Auction House, your refund is sent to your mailbox almost immediately (or as fast as the server can handle it).  When the itemn server was having fits last week, this sometimes took a lot longer, but I suspect that this has been fixed.  If an item of yours sells at the Auction House, the winning cash is also sent to your mailbox.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="13" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101163502188155210">
+        <div class="info" id="m1101163502188155210">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101163502188155210" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101163502188155210&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#13" title="Link to this post">#13<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:45 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591820176960"><b>__DEL__1591820176960</b></a></div></div><div class="posts">18 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Just when you thought a game couldn't get any cooler!</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="14" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101163540202419199">
+        <div class="info" id="m1101163540202419199">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101163540202419199" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101163540202419199&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#14" title="Link to this post">#14<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:45 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591784627170"><b>__DEL__1591784627170</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">509 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Is there anywhere on the net a comprehensive guide to using the auction house I only got to mess with it once in open beta because no one was really using it on my server.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="15" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101163753971793184">
+        <div class="info" id="m1101163753971793184">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101163753971793184" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101163753971793184&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#15" title="Link to this post">#15<b></b></a>
+          <span class="posted" title="Last edited Nov 22 2004 at  5:50 PM"><span>Nov 22 2004</span> at <span> 5:49 PM</span></span>
+          <span class="rating">Rating: <span>Good</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Guru"><div class="name"><a href="users/&amp;id=41108"><b>Azuarc</b></a><div class="actions-wrapper"><div class="bcont actions"><a href="https://wow.allakhazam.com/journal.html?user=41108" class="f-reply"><span>View User Forum</span></a></div></div></div><div class="title">Guru</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">6,678 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Do you need a comprehensive guide? It's pretty simple. <br> <br>I comment on it, and mail, in my <a href="HTTP://wow.allakhazam.com/db/guides.html?guide=306" rel="external nofollow" title="wow.allakhazam.com/db/guides.html?guide=306">guide</a>. <br> <br> <br>THE AUCTION HOUSE  <br> <br>The AH, that you've heard so much about, is a giant flea market where you can buy and sell items you need (or don't need.) Anything from equippable items to potions to tradeskill supplies to rare non-combat pets and a few select quest items can be found in the auction house.  <br> <br>Items are done on the basis of BIDS. When you wish to put an item up for sale, you talk to an auctioneer and pick a time length you want the auction to run for. You then set a minimum bid and optionally a buyout price. There is a small overhead charged to you based on the item's vendor value and the length of the auction. (Choices are 2, 8, or 24 hours.)  <br> <br>If you are on the market for something, or just want to browse, the auction house interface search feature is fairly straight forward. If you want to specify an item by name, type it in the name blank. If you are looking for a general kind of item, use the tabs below to pick specifically that you want, say, a piece of armor, type leather, for the arm slot. You can filter things down by adding a level range or by only seeing items your character could presently use. Make sure you don't put a level range when looking for tradeskill supplies or other things that have no level requirements. =p  <br> <br>As you peruse the items that meet your criteria, you can either refine your search or look at the bid and buyout prices of the items and consider putting money down on one. Bids will take money out of your gold supply, and will be held until the auction finishes or you are outbid. If you win the auction, the item will be in your mailbox. It you are outbid, the money from your bid will be instead. Buyout is the means to escape the wait of the auction altogether, and is preferable for almost anything that is not a worn piece of equipment. Buyout prices are always higher than bid prices, but in the act of putting your money down, the auction ends and you instantly have the item placed in your mailbox.  <br> <br>Auction houses for each faction are located in Ironforge and Orgrimmar, near the entrances of the two cities. There are also two auction houses in the goblin cities of Booty Bay and Gadgetzan which both factions can make use of - and this is the only way an item can reach the other faction - but they aren't widely used due to being less accessible and having a higher charge to list items.  <br> <br>A brief bit of strategy for the auction house, folks: when you are listing an item, you should nearly always use a semi-realistic buyout price. You don't actually need to put a buyout, but unless people are bidding on some high-ticket rare sword or whatever, they will often sooner spend 50 silver for their healing potion now so they can use it on their upcoming adventure, rather than put 5 silver down for a potion they will get in a &quot;long&quot; or &quot;very long&quot; time. OTOH, saying you should always have a buyout price doesn't mean you should put down stupid-high buyouts like 30 gold for one piece of linen cloth.  <br> <br> <br> <br>Trading items is done by either picking a player and selecting trade, or highlighting the item and &quot;dropping&quot; it on the player. A simple trade interface appears that lets you place several items in the trade window, as well as any sum of money you have, and consent to the trade. If both parties agree, without the trade changing in-between, the game swaps them.  <br> <br>You cannot drop items on the ground. You also cannot trade to opposite faction members. The only way to transfer items between factions is through the neutral auction house, but you can't play both factions on the same server anyway.  <br> <br>If you want to transfer an item to another character, mail it.  <br> <br> <br> <br>Mailboxes are outside the inn, or in some cases the bank, in every town through Azeroth. (There won't be one at your newbie village, but the main town in the starting zone will have one.) Mailboxes have a few different looks to them, but they should be easy to spot.  <br> <br>When you click on a mailbox, you are given two options - look at your mail, or send your own mail. If you choose to send a piece of mail, you must choose your recipient, give the letter a subject, and optionally you can either type a message or attach money or an item to the letter.  <br> <br>As you receive a piece of mail, it will appear in your in-box, and remain there for 30 days. Mail with items or money attached will show that in their icon. Basic messages will be letters. Click on a piece of mail and (if there is one) you can click on the item at the bottom to detach it and take it with you.  <br> <br>Items can be sent COD. If someone sends you an item this way, you will have money taken from you and sent to that person if you accept the delivery. Be careful of mail scams.  <br> <br>If you don't want a piece of mail any longer, or simply want to return it to sender, you can either select &quot;return&quot; or &quot;delete&quot;. Mail from the auction house will delete itself once you take the money/item attached.  <br> <br> <br><i><span class="sm">Edited, Mon Nov 22 17:50:40 2004 by Azuarc</span></i></div>
+        <div class="sig"><div class="bar">____________________________</div>Only the exceptions can be exceptional.</div>
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="16" class="post even"><div class="post-inner">
+      <div class="head" id="msg110116392479984150">
+        <div class="info" id="m110116392479984150">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-110116392479984150" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=110116392479984150&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#16" title="Link to this post">#16<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:52 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592761082155"><b>__DEL__1592761082155</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">4,520 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Who provoked him...jesus!</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="17" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1101164027794811798">
+        <div class="info" id="m1101164027794811798">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101164027794811798" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101164027794811798&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#17" title="Link to this post">#17<b></b></a>
+          <span class="posted" title="Last edited Nov 22 2004 at  5:54 PM"><span>Nov 22 2004</span> at <span> 5:53 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591800571369"><b>__DEL__1591800571369</b></a></div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">141 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">It's pretty self-explanatory, you can search for items through different categories and you can narrow your search by selecting only specific categories (such as Armor-&gt;Leather-&gt;Head). <br> <br>As for putting it up for sale, there is a fee involved, and you can dictate how long the item is up on the Auction Hall.  I forgot exactly how long it is, but there are Short, Long and Very Long options, with prices rising with the cost of the item and duration of auction.  You have the option to set the starting bid, and you can also put up a buyout price, which is the price at which the item is automatically sold. <br> <br>A good rule of thumb is to set a buyout price on something that people can usually use right away or are very common (i.e. linen cloth, copper ore), you know, it ensures quicker profits for you.  If the item is excessively rare (blue/epic(purple) drop that has very nice stats), either set up a very high buyout price that you wouldn't mind letting it go for, or don't put a buyout and let the prices skyrocket as the bidding war goes on! <br> <br>Haha, I love real Auction Halls. :D <br> <br>EDIT: Az beat me. :&lt; <br> <br><i><span class="sm">Edited, Mon Nov 22 17:55:29 2004 by Eej</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="18" class="post even"><div class="post-inner">
+      <div class="head" id="msg1101164189951351202">
+        <div class="info" id="m1101164189951351202">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1101164189951351202" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101164189951351202&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#18" title="Link to this post">#18<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 5:56 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591807907659"><b>__DEL__1591807907659</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">218 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">hmm, I didn't realize you couldn;t send mail between faction characters... <br> <br>Which made me wonder, can you trade with players from the opposite faction in person? <br> <br>Anyone know? <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="19" class="post odd"><div class="post-inner">
+      <div class="head" id="msg110116598297639264">
+        <div class="info" id="m110116598297639264">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-110116598297639264" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=110116598297639264&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#19" title="Link to this post">#19<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 6:26 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591814494694"><b>__DEL__1591814494694</b></a></div><div class="title">Scholar</div></div><div class="posts">27 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Nope, you can not trade or mail anything to opposing sides. But someone said it takes one hour to receive items in the mail system. I used to send items to my alts and it never took a hour to get my items which I had right away.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="20" class="post even"><div class="post-inner">
+      <div class="head" id="msg11011665627216719">
+        <div class="info" id="m11011665627216719">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-11011665627216719" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=11011665627216719&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#20" title="Link to this post">#20<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 6:35 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592267623877"><b>__DEL__1592267623877</b></a></div></div><div class="posts">6 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">No, players from opposite factions cannot trade directly with each other.  Nor can they, for the most part, even talk to each other.  Blizzard has purposely made it difficult to do anything more than make rude gestures at each other before you engage in a duel.  :-) <br> <br>Yes, there is a one-hour wait now.  Blizzard added this to discourage people from using their other characters as bank mules.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="21" class="post odd"><div class="post-inner">
+      <div class="head" id="msg110116688798607178">
+        <div class="info" id="m110116688798607178">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-110116688798607178" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=110116688798607178&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#21" title="Link to this post">#21<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 6:41 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/gilroykilroy"><b>gilroykilroy</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">160 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text"><div class="quote"><div class="source">Sofa wrote:</div><div class="orig">Just when you thought a game couldn't get any cooler!</div></div> <br> <br>What is really cool is that NPC's send you mail,  including packages <img border="0" src="https://zam.zamimg.com/i/smilies/cool.gif" alt="Smiley: cool"> <br></div>
+        <div class="sig"><div class="bar">____________________________</div>The Wandering Night Elf Druid <br></div>
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="22" class="post even"><div class="post-inner">
+      <div class="head" id="msg110116721945186038">
+        <div class="info" id="m110116721945186038">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-110116721945186038" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=110116721945186038&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;h=25&amp;p=1#22" title="Link to this post">#22<b></b></a>
+          <span class="posted"><span>Nov 22 2004</span> at <span> 6:46 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591797963352"><b>__DEL__1591797963352</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">279 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Okay I'm going to say this 'cuase I feel it needs to be said. <br> <br>The mail system in this game reminds me of the mail system in Animal Crossing.  About the only things different is you don't have to buy paper in WoW to send a letter and there was no CoD in Animal Crossing.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    </div>
+    <div class="pagesel"></div>
+    <div class="post-buttons"><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1101162113962565205&amp;post=1&amp;replyto=1101162113962565205&amp;p=1" rel="nofollow nott"><span>Reply To Thread</span><b></b></a></div>
+    <div id="quick-reply">
+    
+    <div id="post">
+      <form name="pm" action="https://wow.allakhazam.com/fcluster/Post.pl" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="parent_id" value="1101162113962565205">
+        <input type="hidden" name="action" value="pm">
+        <input type="hidden" name="page" value="1">
+        <input type="hidden" name="forum" value="21">
+        <input type="hidden" name="preview" value="0">
+        <input type="hidden" name="edit" value="0">
+        <input type="hidden" name="mid" value="1101162113962565205">
+        <input type="hidden" name="oc" value="I thought I read somewhere that there is an ingame mail system that allows you to actually send objects.  Is this true?
+
+I also wonder about how many items you can send and how long it takes to get them to the other person.  Also, can you mail stuff to your alternate characters?
+
+Thanks in advance!">
+        <input type="hidden" name="ocp" value="REDACTED">
+        <div class="bcont">
+          <input type="hidden" id="post-subject" name="subject" value="? In-game mail system">
+          <p id="markup">
+    <script>function setImageId(id) {doTag(document.pm.body, '[img=', ']', id);}</script>
+    <button type="button" onclick="doTag(document.pm.body, '[b]', '[/b]', 'Bold Text');"><b>B</b></button>
+    <button type="button" onclick="doTag(document.pm.body, '[i]', '[/i]', 'Italic Text');"><i>i</i></button>
+    <button type="button" onclick="doTag(document.pm.body, '[u]', '[/u]', 'Underlined Text');"><u>U</u></button>
+    <button type="button" onclick="doTag(document.pm.body, '[s]', '[/s]', 'Struck Text');"><s>S</s></button>
+    <button type="button" onclick="doTag(document.pm.body, '[sm]', '[/sm]', 'Small Text');">Small</button>
+    <button type="button" onclick="doTag(document.pm.body, '[lg]', '[/lg]', 'Large Text');">Large</button>
+    <button type="button" onclick="zamDialogue('<form action=\'\' onsubmit=\'forumTags(1);return false\'><input type=\'text\' id=\'url-input\' class=\'dialogue-width\' value=\'https://\'></form>', 'Enter the URL to go to:', 'forumTags(0)');ge('url-input').select()">Link</button>
+    <button type="button" onclick="window.open('/cgi-bin/userimages-popup.pl','imagespopup','width=600,height=400,scrollbars=1,resizable=1');">Image</button>
+    <button type="button" onclick="doTag(document.pm.body, '[ul]', '[/ul]', '\n[li]Item 1[/li]\n[li]Item 2[/li]\n[li]Item 3[/li]\n');">List</button>
+    <button type="button" onclick="doTag(document.pm.body, '[li]', '[/li]', 'List Item');">List Item</button>
+    <button type="button" onclick="doTag(document.pm.body, '[quote]', '[/quote]', 'Quoted Text');">Quote</button>
+    <button type="button" onclick="doTag(document.pm.body, '[pre]', '[/pre]', 'Preformated Text');">Code</button>
+    <button type="button" onclick="doTag(document.pm.body, '[spoiler]', '[/spoiler]', 'Spoiler Text');">Spoiler</button>
+    <button type="button" onclick="return doPoll()">Poll</button>
+    <button type="button" onclick="doTag(document.pm.body, '[[', ']]', 'Wiki Link');">Wiki Link</button>
+    <button type="button" onclick="zamDialogue('<form action=\'\' onsubmit=\'forumTags(1);return false\'><input type=\'text\' id=\'youtube-input\' class=\'dialogue-width\' value=\'\'></form>', 'Enter the Video ID to go to:', 'forumTags(0)');ge('youtube-input').focus()">YouTube</button>
+    <span class="nobr"><span id="colors" onmousedown="return false"><span>Colors</span><b class="bcont"><i><script><!--
+      var c=new Array('000','003','006','009','00c','00f','030','033','036','039','03c','03f','060','063','066','069','06c','06f','090','093','096','099','09c','09f','0c0','0c3','0c6','0c9','0cc','0cf','0f0','0f3','0f6','0f9','0fc','0ff','300','303','306','309','30c','30f','330','333','336','339','33c','33f','360','363','366','369','36c','36f','390','393','396','399','39c','39f','3c0','3c3','3c6','3c9','3cc','3cf','3f0','3f3','3f6','3f9','3fc','3ff','600','603','606','609','60c','60f','630','633','636','639','63c','63f','660','663','666','669','66c','66f','690','693','696','699','69c','69f','6c0','6c3','6c6','6c9','6cc','6cf','6f0','6f3','6f6','6f9','6fc','6ff','900','903','906','909','90c','90f','930','933','936','939','93c','93f','960','963','966','969','96c','96f','990','993','996','999','99c','99f','9c0','9c3','9c6','9c9','9cc','9cf','9f0','9f3','9f6','9f9','9fc','9ff','c00','c03','c06','c09','c0c','c0f','c30','c33','c36','c39','c3c','c3f','c60','c63','c66','c69','c6c','c6f','c90','c93','c96','c99','c9c','c9f','cc0','cc3','cc6','cc9','ccc','ccf','cf0','cf3','cf6','cf9','cfc','cff','f00','f03','f06','f09','f0c','f0f','f30','f33','f36','f39','f3c','f3f','f60','f63','f66','f69','f6c','f6f','f90','f93','f96','f99','f9c','f9f','fc0','fc3','fc6','fc9','fcc','fcf','ff0','ff3','ff6','ff9','ffc','fff');
+      for (var i in c) {
+        document.write('<u onclick="doTag(document.pm.body, \'[#'+c[i]+']\', \'[/#'+c[i]+']\', \'Text\')" style="background:#'+c[i]+'"></u>');
+        if (i == 35 || i == 71 || i == 107 || i == 143 || i == 179) document.write('</i><i>');
+      }
+      // --></script></i></b></span>
+   
+      <span id="smilies"><a rel="external" href="https://wow.allakhazam.com/wiki/Frequently_Asked_Questions_(Forum)#Smilies" target="_blank">Smileys</a><b class="bcont" onmousedown="return false"><script><!--
+        var s=new Array('grin','nod','cool','mad','smile','lol','frown','eek','wink','sly','laugh','bah','blush','clown','glare','tongue','rolleyes','oyvey','dubious','disappointed');
+        for (var i in s) {
+          document.write('<img onclick="dosmilie(this.src)" src="//zam.zamimg.com/i/smilies/'+s[i]+'.gif" alt="">');
+        }
+        // --></script>
+      </b></span> <a href="javascript:;" onclick="insertAtCaret(document.pm.body,'[quote='+document.pm.ocp.value+']'+document.pm.oc.value+'[/quote]');return false" class="quote">Quote Original</a><a href="javascript:;" onclick="ajaxMultiQuote();return false" class="quote" id="hidden-quote">Quote Checked</a><input type="hidden" id="hidden-quote-response" name="hidden-quote-response"> <a href="https://wow.allakhazam.com/wiki/Frequently_Asked_Questions_(Forum)" class="help" rel="external">Help</a></span></p>
+          <p><textarea name="body" rows="20" cols="80" onkeyup="storeSel(this);" onclick="storeSel(this);" onselect="storeSel(this);" tabindex="3" id="post-body"></textarea></p>
+          <p><input type="hidden" name="parse" value="1"><input type="checkbox" value="1" id="post-addsig" name="addsig" checked="checked"><label for="post-addsig"> Attach Signature</label></p>
+          <p><button type="submit" onclick="document.pm.preview.value =0" tabindex="4"><b>Post</b></button> &nbsp; <button type="submit" onclick="document.pm.preview.value =1" accesskey="B" tabindex="5">Preview</button></p>
+        </div>
+      </form>
+      <script>
+        function sizeBody () {
+          var b=ge('post-body');
+          if (b.parentNode.offsetWidth) b.style.width = b.parentNode.offsetWidth - 6 + 'px';
+          var h = b.offsetHeight > 100 ? b.offsetHeight : 150;
+          b.style.height = h + 'px';
+        }
+        addEvent(window,'load',sizeBody);
+      </script>
+    </div>
+  </div>
+    <div class="timezone">
+      
+    <b id="recent-link"><a onclick="$('#recent').slideToggle('fast');return false" href="javascript:;">Recent Visitors</a>: 62</b>
+    All times are in CST
+    <div id="recent" class="bcont"><span class="nobr">Anonymous Guests (62)</span></div>
+  
+    </div>
+    
+    <script>$('.spoiler').hover(function(){this.className=''},function(){this.className='spoiler'});multiQuote()</script>
+  <ul class="path bottom" style="margin-bottom:0">
+  <li class="root"><b><a href="forum.html">Forums</a></b></li>
+  <li class="has-sub"><a href="forum.html?cat=54">World of Warcraft</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class=" first-child"><a href="forum.html?cat=9">Cross Site</a></li>
+  <li class=""><a href="forum.html?cat=20">Dark Age of Camelot</a></li>
+  <li class=""><a href="forum.html?cat=18">EverQuest</a></li>
+  <li class=""><a href="forum.html?cat=50">EverQuest II</a></li>
+  <li class=""><a href="forum.html?cat=19">Final Fantasy XI</a></li>
+  <li class=""><a href="forum.html?cat=67">FFXI Servers</a></li>
+  <li class=""><a href="forum.html?cat=153">Final Fantasy XIV</a></li>
+  <li class=""><a href="forum.html?cat=281">FFXIV Disciples</a></li>
+  <li class=""><a href="forum.html?cat=354">Lord of the Rings Online</a></li>
+  <li class="cur last-child"><a href="forum.html?cat=54">World of Warcraft</a></li>
+</ul></div></div></li>
+  <li class="has-sub"><a href="forum.html?forum=21"> General Discussion</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class="cur first-child"><a href="forum.html?forum=21"> General Discussion</a></li>
+  <li class=""><a href="forum.html?forum=243">Class Discussion</a></li>
+  <li class=""><a href="forum.html?forum=214">PvP</a></li>
+  <li class=" last-child"><a href="forum.html?forum=69">Trade Skills</a></li>
+</ul></div></div></li>
+  <li>? In-game mail system</li>
+</ul></div>
+        <div class="clear"></div><div id="buffer-bottom"></div>
+      </div></div></div></div>
+    </div><script>heightCheck();</script>
+  </div>
+
+    <div id="horizontal-bg">
+    <!-- /76136274/AKZ_Horizontal_BTF -->
+        <div id='AKZ_Horizontal_BTF'>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<footer>
+    <div class="block-content pad10" style="line-height:24px">
+        <ul class="site-footer">
+            <li><a href="http://legacy.fanbyte.com/subscribe.html">Subscribe</a></li>
+            <li><a href="https://www.fanbyte.com/about/">About Fanbyte</a></li>
+            <li><a href="https://corp.fanbyte.com/legal/privacy?zaf_referer=https://wow.allakhazam.com">Privacy Policy</a></li>
+            <li><a href="https://corp.fanbyte.com/legal/terms">Terms of Service</a></li>
+            <li><a href="wiki/Forum_Rules">Forum Rules</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="div15"></div>
+
+    <div class="row">
+        <div class="footer-featured-sites col-lg-3 pad10 block-content">
+            <h2>Featured Game Sites</h2>
+            <table style="width:100%">
+                <tr>
+                  <td style="text-align:center"><a href="http://www.wowhead.com"><img style="width:100px;height:100px" src="i/wowhead-logo-complete.png" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center;width:100px;height:100px"><a href="https://www.hearthstonetopdecks.com/"><strong><span style="font-size:18px;color:black">HEARTHSTONE<br> Top Decks</span></strong></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-zam col-lg-9">
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Database Sites</h2>
+                    <ul>
+                        <li><a href="http://www.wowhead.com">Wowhead</a></li>
+                        <li><a href="http://everquest.allakhazam.com">EverQuest</a></li>
+                        <li><a href="http://eq2.fanbyte.com">EverQuest II</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Addon Sites</h2>
+                    <ul>
+                        <li><a href="http://www.mmoui.com">MMOUI</a></li>
+                        <li><a href="http://www.wowinterface.com">WowInterface</a></li>
+                        <li><a href="http://www.esoui.com/">ESOUI</a></li>
+                        <li><a href="http://www.riftui.com">RiftUI</a></li>
+                        <li><a href="http://www.swtorui.com">SWTORUI</a></li>
+                        <li><a href="http://www.eqinterface.com">EQInterface</a></li>
+                        <li><a href="http://www.eq2interface.com">EQ2Interface</a></li>
+                        <li><a href="http://www.lotrointerface.com">LOTROInterface</a></li>
+                        <li><a href="http://www.cwmods.com/">CWMods</a></li>
+                        <li><a href="http://www.secretui.com/">SecretUI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Community Sites</h2>
+                    <ul>
+                        <li><a href="http://www.wowhead.com/forums">Wowhead Forums</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social block-content">
+                <div class="pad10">
+                    <div class="footer-callout">
+                        <a href="https://www.fanbyte.com/"><img src="i/fanbyte_footer.png" border="0"></a>
+                        <h2>Join the world's largest<br>MMO gaming network.</h2>
+                        <a href="https://secure.fanbyte.com/login.html?action=new" class="btn btn-site">No account?<br>Sign up now!</a>
+                    </div>
+                    <div class="footer-social-links">
+                        <h2>Connect With Fanbyte</h2>
+                        <a href="https://www.facebook.com/Fanbyte/"><img style="width:25px;height:25px;background-color:#41c8f5" src="https://wow.zamimg.com/images/icons/facebook.gif"></a>
+                        <a href="https://twitter.com/FanbyteMedia"><img style="width:25px;height:25px;background-color:#41c8f5" src="https://wow.zamimg.com/images/icons/twitter.png"></a>
+                        <a href="https://www.youtube.com/user/ZAMOfficial"><img style="width:25px;height:25px;background-color:red" src="https://wow.zamimg.com/images/icons/youtube-light.png"></a>
+                        <a href="https://www.twitch.tv/fanbyte" class="twitch"></a>
+                        <a href="http://legacy.fanbyte.com/newsfeed.xml?view=preview&version=2" class="last"><img style="width:25px;height:25px" src="https://wow.zamimg.com/images/icons/rss.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">&copy; 2023 Fanbyte LLC</div>
+
+</div>
+
+<script>ZAM.whTooltips()</script>
+<script src="https://zam.zamimg.com/j/css.js"></script>
+<script src="https://zam.zamimg.com/j/standardista-table-sorting.js"></script>
+<!-- Opt Out Script -->
+<script src="https://s3.amazonaws.com/sitemaps.services.zam.com/gdpr_standalone.js" type="text/javascript"></script>
+
+    <div id="skin-bg">
+    <!-- /76136274/AKZ_1x1 -->
+        <div id='AKZ_1x1'>
+        </div>
+    </div>
+    <script></script>
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6036197" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "https://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="https://b.scorecardresearch.com/p?c1=2&c2=6036197&cv=2.0&cj=1" />
+</noscript>
+</body>
+</html>
+

@@ -1,0 +1,756 @@
+<!-- 
+System: VN Boards
+Page Title: How do you implement stealth so that....
+File: /message.asp
+Path: /message.asp
+IGN IP: 209.237.238.172
+Fwd IP: 
+IP: 209.237.238.172
+Style: 5020
+ -->
+
+<html><head><script type="text/javascript" src="../../../../../../../_static/js/bundle-playback.js?v=TPXmWR5s" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../../../_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://vnboards.ign.com:80/WoW_General_Board/b19789/75832659/?25","20041130232515","https://web.archive.org/","web","/_static/",
+	      "1101857115");
+</script>
+<link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="../../../../../../../_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<link rel="SHORTCUT ICON" href="https://web.archive.org/web/20041130232515im_/http://media.ign.com/ign/ign_siteicon1.ico">
+<title>
+VN Boards - How do you implement stealth so that....</title>
+
+
+<style type="text/css">
+<!--
+.MainTable {
+background-color: white;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: black;text-decoration: none;
+}
+.MainMenuRowAlt {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: maroon;text-decoration: none;
+}
+.MainMenuRow {
+background-color: #cccccc;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: black;text-decoration: none;
+}
+.MainMenuLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: black;text-decoration: underline;
+}
+.BoardColumn {
+background-color: #666666;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: white;text-decoration: none;
+}
+.BoardColumnLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: orange;text-decoration: none;
+}
+.BoardRowA {
+background-color: #b1b3bc;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: black;text-decoration: none;
+}
+.BoardRowALink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: blue;text-decoration: none;
+}
+.BoardRowB {
+background-color: #c1c2c9;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: black;text-decoration: none;
+}
+.BoardRowBLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: blue;text-decoration: none;
+}
+.SubjectLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: blue;text-decoration: none;
+}
+a.SubjectLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: blue;text-decoration: none;
+}
+a.SubjectLink:active {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: purple;text-decoration: underline;
+}
+a.SubjectLink:visited {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 10pt;color: purple;text-decoration: none;
+}
+.AuthorLink {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: blue;text-decoration: none;
+}
+.VersionText {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 8pt;color: #666666;text-decoration: none;
+}
+.InputSection {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 10pt;color: black;text-decoration: none;
+}
+.InputNotes {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 9pt;color: maroon;text-decoration: none;
+width: 65%;
+}
+.SignatureTitle {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: bold;font-size: 9pt;color: maroon;text-decoration: none;
+}
+.SignatureText {
+background-color: transparent;font-family: verdana,arial,sans-serif;font-weight: normal;font-size: 9pt;color: #333333;text-decoration: none;
+}
+-->
+</style>
+
+
+
+
+	
+	<script language="javascript" src="https://web.archive.org/web/20041130232515js_/http://vnboards.ign.com/scripts/global.js" id="scripts"></script>
+		
+	<!-- BEGIN SYSTEM HEADER -->
+
+<!-- USING HEADER -->
+<!-- boardsstyle: adinject vaultboard -->
+<!--ad-strategy:com.snowball.AdSpec2001.BoardsStrategy:ad-strategy-->
+<!--ad-tag:network=ign&site=vaultboard&pagetype=boards:ad-tag-->
+<!--ad-name:BillboardAd:ad-name--><!--ad-name:MiniRectAd:ad-name-->
+<style type="text/css">
+A:HOVER { TEXT-DECORATION: UNDERLINE; }
+</style>
+	
+<script language="JavaScript" src="https://web.archive.org/web/20041130232515js_/http://scripts.snowball.com/scripts/tb_nw_ign.js"></script>
+
+</head>
+<body bgcolor="white" vlink="purple" alink="red" link="blue" text="black" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">
+
+<script language="JavaScript">
+<!--
+snowToolBar(false);
+//-->
+</script>
+	<!-- end: header table -->		
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<!-- begin spacer TR between header and banner/skyscaper ad TR -->
+<tr><td colspan="2" bgcolor="#FFFFFF" height="5"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="5" height="5"></td></tr>
+<!-- end spacer TR between header and AD TR -->
+
+<!-- begin AD row -->
+<tr>
+<!-- begin banner unit TD -->
+<td bgcolor="#FFFFFF" align="CENTER" colspan="2">
+<!--ad-name:BannerAd:ad-name-->
+<!--ad-name:LeaderBoardAd:ad-name-->
+</td>
+<!-- end banner unit TD -->
+</tr>
+<!-- end banner AD row -->
+
+<!-- begin spacer TR between banner ad and content -->
+<tr><td bgcolor="#FFFFFF" height="5" colspan="2"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="5" height="5"></td></tr>
+<!-- end spacer TR between banner ad and content -->
+
+<!-- begin content and sponsor ad TR -->
+<tr>
+<!-- begin boards content TD --> 
+<td valign="top" width="100%">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+	<td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	<td valign="top" width="100%">
+
+	<!-- END HEADER -->	
+
+<!-- END SYSTEM HEADER -->
+
+
+		<!-- cover table start -->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+			<form id="frmMain" name="frmMain" action="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/message.asp" method="POST" onsubmit="return preventDoublePosts();">
+		
+		<tr><td class="MainTable">
+		
+
+<!-- INJECT ATAX PIXEL -->
+<img src="https://web.archive.org/web/20041130232515im_/http://atax.ign.com/network=ign&amp;size=1x1&amp;t=boardposts&amp;name=ATAtracker?1101828352" height="1" width="1" style="position: absolute; visibility: hidden;"/>
+<!-- END INJECT ATAX PIXEL -->
+
+
+	<!-- hiarchy table start -->
+
+	<table width="100%" border="0" cellspacing="1" cellpadding="4">
+	<tr>
+		<td class="MainMenuRow">
+			
+					[<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://wowvault.ign.com/">WoW Vault</a>] 
+				
+					&nbsp;<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/">VN Boards</a>  
+				
+						&raquo; <a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/World_of_Warcraft_Main_Boards/c14461/">World of Warcraft Main Boards</a>	
+					&raquo; 
+						<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/WoW_General_Board/b19789/">WoW General Board</a>
+					
+					 &raquo; 
+				 
+				  &nbsp;How do you implement stealth so that.... 
+				&nbsp;&nbsp;&nbsp; <a class="MainMenuLink" style="color:#FF8000;font-weight:bolder;" href="https://web.archive.org/web/20041130232515/http://my.ign.com/my/sb?uoaction=subredirect&amp;destination=http%253A%252F%252Fboards.ign.com%252F">Join Insider</a> 
+				
+		</td>
+		
+			
+	</tr>
+	<!-- hiarchy table end -->
+
+	<!-- global menu table start -->
+	<tr>
+		<td class="MainMenuRow">
+			<a class="MainMenuLink" href="index.html?25#"></a>  
+			
+					<a class="MainMenuLink" href=" http://my.ign.com/my/sb?regAction=reg&amp;network=1&amp;RegPath=0 ">Register</a> | 
+				
+					<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/login.asp?action=login">Login</a> | 
+				
+				<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/search_boards.asp">Search</a> |  
+			
+			
+			<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_options.asp">Options</a> |  
+			
+			<a class="MainMenuLink" target="_top" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/">Help</a>
+			
+			
+			 | <a class="MainMenuLink" target="_top" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/newboards.asp">New Boards</a> 
+			
+			
+			<!-- extra system menu items go here -->
+			
+			
+				| <a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboardsadmin.ign.com/rules/vnforumrules.htm">Board Rules</a>
+			
+				| <a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/message.asp?topic=56297957"><font color="#333333"><b>Contact Mods</b></font></a>
+			
+			
+		</td>
+	</tr>	
+
+	<!-- global menu table end --> 
+	
+
+	<!-- status table start -->
+	
+	
+	</table>
+	<!-- status table end -->
+
+	
+	<!-- flattened topic table start -->
+	<table width="100%" border="0" cellspacing="1" cellpadding="3">
+	<tr id="209.237.238.172">
+		<td class="MainMenuRow" colspan="2">
+		
+						
+			<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | 
+			<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75832659" class="MainMenuLink">Active Topic Notification</a> | 
+		
+			<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/message.asp?topic=75775227">Previous Active Topic</a> 
+		 |  
+				
+		
+			<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/message.asp?topic=75819859">Next Active Topic</a>
+				
+		</td>		
+	</tr>	
+	
+		
+	
+	<tr align="left" valign="top">
+		<td width="17%" nowrap class="BoardColumn">Author</td>
+		<td width="83%" colspan="2" class="BoardColumn">
+		<a name="75832659" width="85%">Topic:</a> 
+		How do you implement stealth so that....		
+	</tr>
+	
+	<tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Voqar?boards=vn " class="AuthorLink">Voqar</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="4,151 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Voqar"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Voqar"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 4,151<br><span style="font-weight: bold;">Registered:</span> Mar 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:26am&nbsp;<span style="font-weight: bold;">Subject:</span> How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">How do you implement stealth so that it doesn't equate to complete invisibility and doesn't unbalance games.
+ <br> 
+ <br> Problems with stealth that I see:
+ <br> - stealth is usually implemented as invisibility which is totally ridiculous and leads to...
+ <br> - stealth, when implemented as invis, requires ZERO skill - you just press a button and fear nothing.
+ <br> - stealth can easily lead to abuse of content (like in WoW (where rogues can farm high level minerals in instances with zero competition and zero risk)
+ <br> - freedom of movement due to being invis - a rogue can move freely at any time even if it's at a slower rate
+ <br> 
+ <br> Things to consider to make stealth reasonable:
+ <br> - the more a rogue is moving (distance, speed) the easier it should be to detect them
+ <br> - perhaps stealth should be implemented differently for PvE and PvP - although you still have lots of potential for abuse if stealth is more effective in PvE
+ <br> - give some critters the ability to see right thru stealth - and place them randomly in instances to prevent farming
+ <br> - usually stealthers have higher than normal when striking from stealth - but if stealth is made to require player skill and isn't implemented as brain dead invis then this type of damage should be even higher (ie, reward challenge)
+ <br> - in a game like WoW there are anti-stealth mechanisms - engineered items, potions etc - the thing is, not everyone will have those yet any stealther can still press the stealth button to be stealthed.
+ <br> - Critters don't seem to vary in their ability to detect stealth - it only seems to be level based.  Critters should not only vary in species with their ability to detect stealth but should vary as individuals - that'd keep stealthers on their toes!
+ <br> 
+ <br> As it is, I feel stealth is usually implemented in a such a way to make it too easy to use and too easy to abuse - so the result is you have a lot of idiots that use it as an easy way to do both PvE and PvP, and in particular to gain unfair advantages at both.  If stealth actually required some thought and skill there would be a lot less abuse and rogues would become known for their skill and prowess instead for pressing their 'I win' button.
+ <br> 
+ <br> As someone who played DAoC, I can't remember how many times I'd be running across a wide open field in broad daylight just to get whacked by a stealther.  Pretty friggin amazing when someone can hide behind a blade of grass and be setup to assissinate a moving target, eh?  As a side note - please - someone who played a stealther - explain to me how something like this is acceptable or desirable, even in a fantasy game.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Voqar <br> Gnome Mage <br> Hyjal Server - Alliance <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75832659" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=73152">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=73152">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/daHob?boards=vn " class="AuthorLink">daHob</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="389 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/daHob"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/daHob"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Title:</span> Hobgoblin of Joy <br><span style="font-weight: bold;">Posts:</span> 389<br><span style="font-weight: bold;">Registered:</span> Jan 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:39am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Part of your complaint is that stealth is implemented as full invisibility. In part you don't like it because you get jumped out of nowhere and you offer up 'unrealistic' as one of the reasons why.
+ <br> 
+ <br> The simple fact of the matter is in a PvP game, if part of the purpose of stealth is to give a suprise advantage to the stealther (which may not always be the case) then it purely invisible is the only way to make it work. If the character is there, but dithered out there are too many client side hacks (changing the character models, messing with the gamma/dithering map, using packet sniffing radar) available to defeat it. Put simply anything less than pure invisiblity is effectively no stealth at all.
+ <br> 
+ <br> As to the 'unrealistic' part, it's all in the name. In a world of undead nations and wizards, there are a thousand RP explanations for how rogues 'move unseen'. If you don't like invisible people, then you don't like invisible people and that is a valid opinion. But please stop throwing 'unrealistic' up as an argument.
+ <br> 
+ <br> Hob
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75833364" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=618130">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=618130">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/ShadowHawX?boards=vn " class="AuthorLink">ShadowHawX</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="468 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/ShadowHawX"><font size="1">collection (57)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/ShadowHawX"><font size="1">wishlist (7)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 468<br><span style="font-weight: bold;">Registered:</span> May 04<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:42am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 9:43am (1 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/ShadowHawX?boards=vn " class="AuthorLink">ShadowHawX</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">You do realize that stealth is based on a character skill...You CAN ocasionally see them while stealthed. Catch em like taht and you can rip em apart, what I did to quite a few <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/1.gif" border="0" alt="happy" hspace="0" vspace="0"> 
+ <br> 
+ <br> Edit: Monsters are also included in this. Just because you are stealthed doesn't mean you can run by that mob. Going to be entertaining to watch people try it <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/1.gif" border="0" alt="happy" hspace="0" vspace="0"> 
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">AC characters.-- .(future) WpW characters <br> ShadowHawX - 107 sword Kayrune - Tauren Shaman <br> Kariun the archer - 43 bow...Glyph - Undead warlock <br> Razain Kajin - 43 BM     Reydrano - Tauren Warrior <br> Horde for life!  Arande - undead rogue
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75833558" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=919947">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=919947">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/MrWoggles?boards=vn " class="AuthorLink">MrWoggles</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="1,096 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/MrWoggles"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/MrWoggles"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 1,096<br><span style="font-weight: bold;">Registered:</span> May 03<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:46am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Two words, range and speed. Allow me to elaborate so I don't end up looking stupid.
+ <br> 
+ <br> Range - Should not be a tiny range that almost means that you only get seen if you want to be seen (see DAoC).
+ <br> 
+ <br> Speed - Shouldn't be slow running speed, enemies should be able to see you from pretty far away but you should be skilled and be able to run pretty fast around the fight then to the back of the fight to take down mages.
+ <br> 
+ <br> ^mrWoggles^
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75833751" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=807217">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=807217">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/daHob?boards=vn " class="AuthorLink">daHob</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="389 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/daHob"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/daHob"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Title:</span> Hobgoblin of Joy <br><span style="font-weight: bold;">Posts:</span> 389<br><span style="font-weight: bold;">Registered:</span> Jan 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:48am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">As for a differnt implementation of stealth, you just have to figure out what you want it to be. Personally, my vision of stealth is to be a counter to ranged attackers. Ranged guys have a natural advantage over melee guys. Namely, they get to shoot them a lot before the melee guys can attack. 
+ <br> 
+ <br> Stealth exists to allow the melee stealther to close range without getting shot up. To that end, I see no problem with simply having the stealther be visibly stealthed (mildly dithered) but still visible but unable to be affected by ranged attacks. You'd still be able to target them in melee. Part of this package also implies that they would move at full speed even while stealthed, and probably even have some kind of sprint ability to allow them to close range.
+ <br> 
+ <br> Blizzard didn't do that, and it's not a suggestion for how to change WoW. However, that is an other possible way to implement it.
+ <br> 
+ <br> Hob
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75833873" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=618130">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=618130">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Avecrien?boards=vn " class="AuthorLink">Avecrien</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star5.gif" border="0" hspace="0" vspace="0" alt="6,373 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Avecrien"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Avecrien"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 6,373<br><span style="font-weight: bold;">Registered:</span> Mar 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:50am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Stealth classes should be built around preying on the weakened and inattentive. Rogues should rock the people who dont pay attention and get slapped down by anyone who catches them.
+ <br> Stealth should be detectable if the sneak gets very close to any character for more than a precious few seconds.
+ <br> Thats my PvP opinion at least.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">W. The new First letter in Fascism. <br> The greatest threat to christianity in our world. <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75833984" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=73384">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=73384">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/ShadowHawX?boards=vn " class="AuthorLink">ShadowHawX</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="468 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/ShadowHawX"><font size="1">collection (57)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/ShadowHawX"><font size="1">wishlist (7)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 468<br><span style="font-weight: bold;">Registered:</span> May 04<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:52am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">^
+ <br> 
+ <br> Like I said they do, you can catch stealthed people. it's just that too many people are not watching with the camera behind them :P
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">AC characters.-- .(future) WpW characters <br> ShadowHawX - 107 sword Kayrune - Tauren Shaman <br> Kariun the archer - 43 bow...Glyph - Undead warlock <br> Razain Kajin - 43 BM     Reydrano - Tauren Warrior <br> Horde for life!  Arande - undead rogue
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75834151" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=919947">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=919947">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Cairo_Ninefingers?boards=vn " class="AuthorLink">Cairo_Ninefingers</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="1,954 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Cairo_Ninefingers"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Cairo_Ninefingers"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 1,954<br><span style="font-weight: bold;">Registered:</span> Dec 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:53am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Really the best way to balance stealth is to completely remove it and any associated classes from the game. Stealth in an MMORPG is stupid, it creates a perpetual state of imbalance and if it's actually brought in line people will always complain that stealth was designed for them to be able to solo which they can not do with the stealth &quot;nerf&quot;. This circle will continue with each passing MMORPG that includes stealth, mark my words.
+ <br> 
+ <br> Just get rid of stealth altogether and never have to worry about something as daft as invisibility again. I say this as someone who played nothing but my infiltrator for 2 years of DAoC, so it's not like I don't like stealthers - I just don't think they're a good design decision.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">&quot;Do not be deceived; God is not mocked, for whatever a man sows, that he will also reap.&quot; <br> - Galatians 6:7 <br> <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://www.kolumbus.fi/olli.kaariainen">http://www.kolumbus.fi/olli.kaariainen</a> <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75834206" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=561284">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=561284">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Aridon?boards=vn " style="color: Yellow;font-weight: bold;font-style: normal;background-color: DarkViolet;text-decoration: none;border-top: 1px solid Black;border-bottom: 1px solid Black;border-right: 1px solid Black;border-left: 1px solid Black;">Aridon</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="3,844 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Aridon"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Aridon"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Title:</span> <b>Moderator<br>WoW Vault Asst Manager</b><br><span style="font-weight: bold;">Posts:</span> 3,844<br><span style="font-weight: bold;">Registered:</span> Feb 03<br></span><img border="0" hspace="8" vspace="8" src="https://web.archive.org/web/20041130232515im_/http://vaultmedia.ign.com/vnboards/admin/admin_aridon_766275-1.gif" width="80" height="80" alt="16913" name="16913" id="16913" class="IconImage"><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 9:56am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 9:59am (1 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/Aridon?boards=vn " style="color: Yellow;font-weight: bold;font-style: normal;background-color: DarkViolet;text-decoration: none;border-top: 1px solid Black;border-bottom: 1px solid Black;border-right: 1px solid Black;border-left: 1px solid Black;">Aridon</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Any game that lets stealth be total invisibility, especially in PvP is setting it self up for a repeat of the DAOC fiasco.  Rogues should be balanced around abilities other than stealth or it should only work in PVE.  They should not be able to stealth to the mine nodes or chests without killing a single mob either.  
+ <br> 
+ <br> Rogues do incredible damage, more than my mage and sap in  its old form was terribly overpowered.  Watching rogues chain sap noobies with 20 level 50 guards standing right there was ridiculous and players couldn't do anything about it because the enemy was invisible.  I've watched 4 55 wariors try and find a single rogue saping noobs in TM for 45 minutes and were never able to find him.  The cone of vision for rogues that had maxed subelty was much too small, especially at the high levels.  Early on rogues were easier to see but I don't think the ability scaled with level well.
+ <br> 
+ <br> Overall the changes are good, rogues needed to be brought down a peg or two it was getting ridiculous and if it didn't stop half the PvP population would be playing them at release.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Athlon FX-53, 1 Gig RAM, Geforce 6800GT
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75834412" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=766275">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=766275">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/ColdBludded?boards=vn " class="AuthorLink">ColdBludded</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star.gif" border="0" hspace="0" vspace="0" alt="197 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/ColdBludded"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/ColdBludded"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 197<br><span style="font-weight: bold;">Registered:</span> Sep 03<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:06am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">You base your conclusions on rogues beating mages 1v1. WoW has stated repeatedly that they expect pvp to be group v group. This eliminates your main complaint.
+ <br> 
+ <br> Either:
+ <br> 1) Have stealth as invisiblity, non-detectable by equal or lower level players.
+ <br> 2) Remove stealth and all associated skills used while stealthed, and rework the rogue with limited magic usage and chain armor.
+ <br> 
+ <br> Anything in between is a joke. You are either going to have the rogues whining that they were unfairly nerfed, as stealth is their main defining ability (and it is!), or you are going to have others whine that they were whacked by a rogue while they were out solo in a pvp environment, then complain that it takes &quot;no skill&quot;.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">&quot;When da pimp's in da crib, mon, drop it like it's hard.&quot; <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75835016" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=841132">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=841132">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/SaraBellum?boards=vn " class="AuthorLink">SaraBellum</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="879 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/SaraBellum"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/SaraBellum"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 879<br><span style="font-weight: bold;">Registered:</span> Sep 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:08am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 10:10am (2 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/SaraBellum?boards=vn " class="AuthorLink">SaraBellum</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Stealth via invisibility is a crutch used by poor PvP players.
+ <br> 
+ <br> Adding invisibility to a game is like adding flight.  If you do, you open up an entire new dimension of required testing.  It is just not practical to do the testing required to ensure that players with one off triats don't break the game.  Undead being able to stay underwater is going to be similarly problematic.  It is just too much work to make traits like these meaningful and at the same time not overpowered in PvE or PvP.
+ <br> 
+ <br> Personally I would drop the entire concept of rogue and replace them with swashbucker.  A lightly armored melee character focused on damage and avoidance rather than tanking and defense.  I like the name &quot;Blade Dancer&quot; from Lineage.
+ <br> 
+ <br> The idea that someone should be undetectable while carrying 5 packs of crap, a sack of coins, leather armor and two weapons seems a bit of a stretch anyways
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75835163" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=714387">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=714387">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Mogrin?boards=vn " class="AuthorLink">Mogrin</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="472 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Mogrin"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Mogrin"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 472<br><span style="font-weight: bold;">Registered:</span> Apr 04<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:21am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Idealy WoW would have no rogues.
+ <br> Aside from a windwalking blademaster there were no rogues in WC3.
+ <br> And while sorcs did have invisibility it lasted 2 min and sorcs didn't have death coil.
+ <br> 
+ <br> The rogues they have right now are tolerable. You can see them if you prepare for them. Get catseye goggles and potions and keep on your lookout.
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75835888" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=915076">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=915076">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="567 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/NSNightfall"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/NSNightfall"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 567<br><span style="font-weight: bold;">Registered:</span> Nov 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:26am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">I really think people need to stop
+ <br> 
+ <br> A) posting in this particular forum about stealthers as there is a rogue forum on IGN for that purpose. <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/World_of_Warcraft/c14461/">http://vnboards.ign.com/World_of_Warcraft/c14461/</a> <br> 
+ <br> B) whining about stealthers because you don't particularly care for not being able to see an enemy comming.
+ <br> 
+ <br> C) grossly exagerating the capabilities and exploits of stealth.
+ <br> 
+ <br> D) whining about stealth without actually having tried the class past level 10.
+ <br> 
+ <br> I really wanted to stay out of this particular topic, as it has been answered, though Voquar ignores everything that rogues have to say about it. I was content to let it just fall off of the front page ignored, but since it will be bumped and replied to, I must throw in my $2.50.
+ <br> 
+ <br> Quote
+ <br> ------------------
+ <br> How do you implement stealth so that it doesn't equate to complete invisibility and doesn't unbalance games.
+ <br> ------------------
+ <br> 
+ <br> World of warcraft did this already. If you are in front of a monster, or even to its side, IE Perhipheral vision, the monster would turn toward you and look for you, or if close enough completely uncover you and attack. The higher level they were above you, the easier it was for them to detect you. I entered Felwood forest stealthed, and a bear with level of ??? turned, ran straight toward me and attacked from past normal hunter range.
+ <br> 
+ <br> I would hardly call that complete invisibility. Furthermore even level monsters would attack you with full MOC if you stood directly in front of them. I have heard the exagerations of people saying that we can stand in front of even con mobs and just sit there, and they will never see us. It is totally absurd. It is even easier in PvP to reveal stealth, with catseye goggles, potions, and mages PBAoE spells, as well as the cone of visibility, where if you are looking in thier direction, you can see them depending on the level difference.
+ <br> 
+ <br> It is HARDLY invisibility. There are counters to it, and it already took skill to use it, especially in pvp, now it is harder, not that I mind that it is hard, just that the whining will never stop.
+ <br> 
+ <br> Quote
+ <br> ------------------
+ <br> - stealth can easily lead to abuse of content (like in WoW (where rogues can farm high level minerals in instances with zero competition and zero risk) 
+ <br> ------------------
+ <br> 
+ <br> I can spend 30 minutes stealthing past all the mobs in a high level dungeon, risking that they can see through my stealth, because it is decently easy for a mob to do so at adequite higher levels above you, using distract which has a long timer and is able to be resisted, to get to one ore spot, hoping it isn't guarded. Unstealth and harvest. - OR, I can get my group of friends, and farm an instanced dungeon for loot, and make cash a lot faster, and have a lot more fun. I would say that your example is a gross exageration of the &quot;Powers of Stealth&quot;, though it is possible, is a waste of time, and shouldn't be factored as an issue, because it is hardly 0 risk, and it is hardly time to profit efficient, and therefore hardly an abuse.
+ <br> 
+ <br> Quote
+ <br> -------------
+ <br> - freedom of movement due to being invis - a rogue can move freely at any time even if it's at a slower rate 
+ <br> -------------
+ <br> 
+ <br> So can druids. Mages can teleport. Warlocks can summon mounts. It is called variety. Being able to sneak from place to place is the trait of a sneaky person. It also adds to variety. If you think that my being able to sneak from town to town, wasting lots of time, in comparison to teleport or summoning of mounts or many other class features that are &quot;Cool&quot; is overpowered, then it seems you are extremely &quot;rascist&quot; against the rogue archetype, because it is not even a rational complaint.
+ <br> 
+ <br> Quote
+ <br> -------------------
+ <br> Things to consider to make stealth reasonable: 
+ <br> - the more a rogue is moving (distance, speed) the easier it should be to detect them 
+ <br> -------------------
+ <br> 
+ <br> Did this in Planetside, and people still complained to no end. Stealthers had 0 - get that 0 - armor, had small equipment spots, and could only use a pistol, meaning the lowest damage projectile, or a knife requiring melee range. In a FPS game you would think that would be a hard class to play because you have to move into melee range do do good damage, but while moving people can see you, or shoot with a pistol which reveals you during fire and has sucky damage. People still complained. 
+ <br> 
+ <br> There is just something about being &quot;Surprised&quot; that people hate, even though in that game, people had 2 methods of finding stealthers even if they were standing still.
+ <br> 
+ <br> Quote
+ <br> ------------------
+ <br> - perhaps stealth should be implemented differently for PvE and PvP - although you still have lots of potential for abuse if stealth is more effective in PvE 
+ <br> ------------------
+ <br> 
+ <br> This leads to gameplay immersion factors. Blizzard wants there to be a smooth transition from PvE to PvP, and making things different from one to the other breaks what they are trying to accomplish, and is hardly the answer.
+ <br> 
+ <br> Quote
+ <br> ------------------
+ <br> - give some critters the ability to see right thru stealth - and place them randomly in instances to prevent farming 
+ <br> ------------------
+ <br> 
+ <br> Doesn't bother me in the slightest, though since it is hardly economical to farm in the way you are suggesting, by mining in high level places with stealth, then this is a non factor, and when the player goes to that place with a group, to kill monsters legitimately, he looses a class trait cause the monsters can automatically see him. Doesn't sound like a fix to me, though none is really needed anyway.
+ <br> 
+ <br> Quote
+ <br> -----------------
+ <br> - usually stealthers have higher than normal [DAMAGE?} when striking from stealth - but if stealth is made to require player skill and isn't implemented as brain dead invis then this type of damage should be even higher (ie, reward challenge) 
+ <br> -----------------
+ <br> 
+ <br> I think that is the plan. It is already easy to get removed from stealth, and players or NPC's to see you if you are not careful, even moreso in the new patch. I think this is already Blizzards plan, but already, people are still whining about stealth.
+ <br> 
+ <br> I think the big problem is that the people whining are people that haven't tried it and found out that it is actually not foolproof nor at all near as easy as DAoC stealth was.
+ <br> 
+ <br> Which brings me to comparisons of DAoC Stealth. People here have made comments over and over that DAoC stealth was complete bull invisibility. Have you tried it? Trying to sneak past vastly higher level mobs was hard, there are now some mobs that ignore stealth, recently added items that allow you to see stealth, archer truesight, pbaoe spells, etc. I really think people have to try a class before they are entitled to call for the nerfs of others. Yes stealthers in DAoC were powerful, at some points too powerful, but that is partially due to the way DAoC designed their melee capabilities, and not due to only their stealth strength.
+ <br> 
+ <br> But this game is NOT DAoC, so it doesn't matter anyway. I hope to heaven, that it never turns out like DAoC.
+ <br> 
+ <br> Quote
+ <br> -------------------
+ <br> - in a game like WoW there are anti-stealth mechanisms - engineered items, potions etc - the thing is, not everyone will have those yet any stealther can still press the stealth button to be stealthed. 
+ <br> ------------------
+ <br> 
+ <br> Mages have PBAoE spells to reveal stealthers with if they fear one is near. With the cone of vision, finding an equal level stealther is easy, if you are actively looking for them. Hunters gain a way to reveal them (flare I think?). Stealth is hardly foolproof, and no class is defenseless, especially in a group.
+ <br> 
+ <br> Quote
+ <br> -------------------
+ <br> - Critters don't seem to vary in their ability to detect stealth - it only seems to be level based. Critters should not only vary in species with their ability to detect stealth but should vary as individuals - that'd keep stealthers on their toes! 
+ <br> ---------------------
+ <br> 
+ <br> I totally agree, and this would make PvE more fun. If dogs and cats could &quot;Smell&quot; us, would be awesome. 
+ <br> 
+ <br> Quote
+ <br> ---------------------
+ <br> As it is, I feel stealth is usually implemented in a such a way to make it too easy to use and too easy to abuse - so the result is you have a lot of idiots that use it as an easy way to do both PvE and PvP, and in particular to gain unfair advantages at both.
+ <br> ----------------------
+ <br> 
+ <br> I really think you should try to meet some rogues, and or play one for a decent amount of time before saying things like this. I could say mages are all powerhungry people that just want a ranged IWIN button with super nuke damage. I could say all warriors are barbaric louts who don't want to play with skill, they just want the best armor hp and melee in the game so they can squish everyone with minimal risk. But I don't cause that is not true of all of the players of those classes.
+ <br> 
+ <br> You also are making it sound like it is a foolproof way of ganking people or making money. Really, try it please.
+ <br> 
+ <br> Quote
+ <br> -------------------------
+ <br>  If stealth actually required some thought and skill there would be a lot less abuse and rogues would become known for their skill and prowess instead for pressing their 'I win' button. 
+ <br> --------------------------
+ <br> 
+ <br> I am all for rogues requiring skill, and I think thats the way it was, and now even more is. Having stealth is not necissarilly an IWIN button in other games either if people pay attention and take time to learn tactics to combat rogues with. Many people have and as one warrior in another thread said, it adds an element of surprise and fear to the game that wouldn't be there without it. It will hardly be an IWIN button in WoW.
+ <br> 
+ <br> Quote
+ <br> ---------------------
+ <br> As someone who played DAoC, I can't remember how many times I'd be running across a wide open field in broad daylight just to get whacked by a stealther. Pretty friggin amazing when someone can hide behind a blade of grass and be setup to assissinate a moving target, eh?
+ <br> ---------------------
+ <br> 
+ <br> Really, please don't bring realisim into the subject when we are playing in a fantasy world with warlocks, dragons, trolls, elves, and magic. If it is easy for you to live a fantasy in a world with undead, you should not have any trouble immagining a class of people who dedicate thier lives to a shady sort of magic that lets them move unseen to place to place using &quot;magic&quot;.
+ <br> 
+ <br> Quote
+ <br> ---------------------
+ <br>  As a side note - please - someone who played a stealther - explain to me how something like this is acceptable or desirable, even in a fantasy game. 
+ <br> ----------------------
+ <br> 
+ <br> Its all about a style. I dont like throwing fireballs around. I dont like bringing rain of fire and ice down on an entire area at once. I don't always like to rush into the fray with my sword and shield, charging down my enemies and crushing them before me. Sometimes I like sneaking around and destroying an ememy through trickery and surprise.
+ <br> 
+ <br> I don't want it to be easy to stealth around. I don't want it to be useless either. Some people are saying remove stealth altogether and give us hitpoints and armor to compensate. Can anyone say warrior?
+ <br> 
+ <br> Really, I challenge you to play a rogue for a while in WoW, and if your opinion is still the same as it seems to be here, then I will consider your words further. As it is now, being someone who plays archers rogues and warriors all the same, I think I can look at it objectively as it is, and am trying to show you that it is not as foolproof as you think it is, and the exploits of mining while stealthed in high level areas are just silly.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Skytale | WOW Stress Beta 1 |  30th Night Elf Rogue <br> Skytale | 50SB | DAoC &lt;Bedlam&gt; Midgard Iseult  - Canceled <br> 5xLV50 &amp; 2xLGM Crafter pwnt by the Mighty Mythic nerf bat. <br> Skytale | FFXI &lt;Emerald Dream&gt; Fairy - Canceled <br> WoW won't kill DAoC, Mythic will.
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75836197" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=501672">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=501672">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Mogrin?boards=vn " class="AuthorLink">Mogrin</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star2.gif" border="0" hspace="0" vspace="0" alt="472 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Mogrin"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Mogrin"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 472<br><span style="font-weight: bold;">Registered:</span> Apr 04<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:29am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">dude if you think anyone is gonna read that your fking nuts
+ <br> 
+ <br> next spring take: How to Summarize a Gifkingnormous Idea 101.
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75836400" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=915076">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=915076">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="567 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/NSNightfall"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/NSNightfall"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 567<br><span style="font-weight: bold;">Registered:</span> Nov 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:40am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">a good portion of it is quotes, and if you don't care to read, its your loss. I personally enjoy learning the insights of others, and reading for a hobby.
+ <br> 
+ <br> It seems some people think education is overrated.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Skytale | WOW Stress Beta 1 |  30th Night Elf Rogue <br> Skytale | 50SB | DAoC &lt;Bedlam&gt; Midgard Iseult  - Canceled <br> 5xLV50 &amp; 2xLGM Crafter pwnt by the Mighty Mythic nerf bat. <br> Skytale | FFXI &lt;Emerald Dream&gt; Fairy - Canceled <br> WoW won't kill DAoC, Mythic will.
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75837028" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=501672">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=501672">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/SaraBellum?boards=vn " class="AuthorLink">SaraBellum</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="879 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/SaraBellum"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/SaraBellum"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 879<br><span style="font-weight: bold;">Registered:</span> Sep 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:44am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">-----------------
+ <br> Quote: I really think people need to stop
+ <br> -----------------
+ <br> 
+ <br> Then stop.  Your diatribe is as long as all the other posts put together.  I don't mind debating with you about the merits of stealth, but don't have the audacity to tell everyone to shut it when you have as much to say as everyone combined.
+ <br> 
+ <br> 
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75837245" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=714387">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=714387">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Skalded?boards=vn " class="AuthorLink">Skalded</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star6.gif" border="0" hspace="0" vspace="0" alt="12,838 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Skalded"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Skalded"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Title:</span> Seasoned cynic <br><span style="font-weight: bold;">Posts:</span> 12,838<br><span style="font-weight: bold;">Registered:</span> Jun 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:45am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Bravo, NSNightfall! I agree 100%.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText"> <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/46.gif" border="0" alt="skull" hspace="0" vspace="0">   Acererak xx Undead Priest &lt;Les Immortals&gt; <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/46.gif" border="0" alt="skull" hspace="0" vspace="0">  <br> Game Experience May Change During Online Play <br>   <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/41.gif" border="0" alt="good_luck" hspace="0" vspace="0">  former Bard(50),Champ(50), Druid (50)  (Gawaine) <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/41.gif" border="0" alt="good_luck" hspace="0" vspace="0">  <br> skalded@gmail.com <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75837332" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=687191">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=687191">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Elven_Iceblade?boards=vn " class="AuthorLink">Elven_Iceblade</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="753 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Elven_Iceblade"><font size="1">collection (14)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Elven_Iceblade"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 753<br><span style="font-weight: bold;">Registered:</span> Apr 04<br></span><img border="0" hspace="8" vspace="8" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boards/images/icons2/anime_orochamaru.gif" width="80" height="80" alt="13040" name="13040" id="13040" class="IconImage"><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:46am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 10:52am (1 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/Elven_Iceblade?boards=vn " class="AuthorLink">Elven_Iceblade</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">IMO stealth will always be one of those unbalanced elements in a MMORPG.  You will always have the two school of thoughts: The pro-complete invisiblity(mostly rogues) and the anti-complete invisiblity(non-rogues mostly).  I believe stealth will always be on an endless loop of tweaking/adjusting in the years to come in MMORPG.  
+ <br> 
+ <br> I like how WoW has handle stealth so far(in st how it will be in retail is anyone's guess). It requires some *gasp* actually stealth.  Instead of just using stealth skill and running around completely invisible and going inbetween 30 people unnoticed to your target(ala DAoC), you have to maneuver around so players don't see you and be able to land that bs/ambush.  This will rule out the people with actual skill and the people that just like playing hero so pick a high dd class so they can &quot;pwn&quot; everyone(not saying rogues do, but it is the mentality of some people).
+ <br> 
+ <br> EDIT: I agree with Skalded.  Nicely put NSNightfall.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Anime <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/7.gif" border="0" alt="love" hspace="0" vspace="0">  <br> &quot;Hey Love Crusader I want to be your Space Invader&quot;-Zlad   <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/18.gif" border="0" alt="laugh" hspace="0" vspace="0">  <br> This post brought to you in part by the letters F U. <br> If God kills a kitten each time you masterbate, there wouldn't be any kittens <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75837389" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=918493">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=918493">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="567 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/NSNightfall"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/NSNightfall"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 567<br><span style="font-weight: bold;">Registered:</span> Nov 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:48am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 10:52am (2 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Then stop. Your diatribe is as long as all the other posts put together. I don't mind debating with you about the merits of stealth, but don't have the audacity to tell everyone to shut it when you have as much to say as everyone combined. 
+ <br> -----------------------------
+ <br> 
+ <br> I didn't tell people to shut it. In fact I said people should take it somewhere else, stop whining about stealthers because you don't particularly care for not being able to see an enemy comming, grossly exagerating the capabilities and exploits of stealth, and whining about stealth without actually having tried the class past level 10. However, I went on to say since it was started here, and the conversation is here, I would respond.
+ <br> 
+ <br> Pay attention before flame kthx.
+ <br> 
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Skytale | WOW Stress Beta 1 |  30th Night Elf Rogue <br> Skytale | 50SB | DAoC &lt;Bedlam&gt; Midgard Iseult  - Canceled <br> 5xLV50 &amp; 2xLGM Crafter pwnt by the Mighty Mythic nerf bat. <br> Skytale | FFXI &lt;Emerald Dream&gt; Fairy - Canceled <br> WoW won't kill DAoC, Mythic will.
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75837521" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=501672">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=501672">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/MrWoggles?boards=vn " class="AuthorLink">MrWoggles</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="1,096 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/MrWoggles"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/MrWoggles"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 1,096<br><span style="font-weight: bold;">Registered:</span> May 03<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 10:58am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Amen Nightfall, you said what was inside my head but what I couldn't put through to words.
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75838031" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=807217">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=807217">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/SaraBellum?boards=vn " class="AuthorLink">SaraBellum</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="879 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/SaraBellum"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/SaraBellum"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 879<br><span style="font-weight: bold;">Registered:</span> Sep 02<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:00am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Your post starts with your request that:
+ <br> 
+ <br> people stop posting here about steath issues
+ <br> people stop whining about steath issues
+ <br> people stop exagerating about steath issues
+ <br> people stop whining about steath issues - again
+ <br> 
+ <br> You then quote many posters who have something to contribute to the conversation.  The implication being that they stop.
+ <br> 
+ <br> I was paraphasing when I characterized your request but I feel that it is fair.  Saying that I am flaming you for pointing out that you seem to be engaging in the same behavior that you chastize seems unfair.
+ <br> 
+ <br> I am still happy to have a civil debate about the merits of stealth.
+ <br> 
+ <br> 
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75838131" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=714387">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=714387">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Tigres_Trist?boards=vn " class="AuthorLink">Tigres_Trist</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="4,057 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Tigres_Trist"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Tigres_Trist"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 4,057<br><span style="font-weight: bold;">Registered:</span> Mar 03<br></span><img border="0" hspace="8" vspace="8" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boards/images/icons/berserk.gif" width="80" height="80" alt="5587" name="5587" id="5587" class="IconImage"><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:07am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 11:21am (4 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/Tigres_Trist?boards=vn " class="AuthorLink">Tigres_Trist</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Stealth just recieved a pretty big downward adjustment (nerf, but beta-style), so lets see these 'reasonable' things to consider:
+ <br> 
+ <br> <span style="color: blue;"><i>- the more a rogue is moving (distance, speed) the easier it should be to detect them </i></span>
+ <br> 
+ <br> That would have been a great idea with the old stealth. Now, anyone who has the engineering prowess to wear catseye goggles or enough money to buy a catseye potion can see rogues when they're not even moving, even with talent points spent into boosting stealth.
+ <br> 
+ <br> /dripping with sarcasm on
+ <br> 
+ <br> Sounds fair to me.
+ <br> 
+ <br> /dripping with sarcasm off
+ <br> 
+ <br> <span style="color: blue;"><i>- perhaps stealth should be implemented differently for PvE and PvP - although you still have lots of potential for abuse if stealth is more effective in PvE</i></span>
+ <br> 
+ <br> Abuses such as? 
+ <br> 
+ <br> Sneaking past mobs? *gasp* ABOMINATION! ROGUES SHOULD NOT BE SNEAKY!
+ <br> 
+ <br> Walking carefully through fields of aggro mobs? This is useful, but being a rogue should have perks. Otherwise, why not just play a warrior?
+ <br> 
+ <br> Stealthing past instanced mobs and killing dungeon bosses/accessing hidden minerals others would have to fight to? Well, this can be fixed by:
+ <br> 
+ <br> -Making it so mobs surrounding instance bosses can see through stealth.
+ <br> -They could connect mob aggro to the vein. If it gets used, the mobs will attack the user. Or maybe placing mobs closer to the veins. Rogues can't loot without unstealthing. But you probably didn't know that.
+ <br> 
+ <br> It wasn't necessary to gut stealth to fix that <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/9.gif" border="0" alt="tongue" hspace="0" vspace="0"> 
+ <br> <span style="color: blue;"><i>- usually stealthers have higher than normal when striking from stealth - but if stealth is made to require player skill and isn't implemented as brain dead invis then this type of damage should be even higher (ie, reward challenge)</i></span>
+ <br> 
+ <br> Good idea in theory, but Difficult in implementation.
+ <br> 
+ <br> I'm sensing alot of bitterness from daoc towards it's stealthers leaking through. Some of you folks need to take a deep breath and realize that they aren't the same games, and they aren't the same classes.
+ <br> 
+ <br> <span style="color: blue;"><i>- in a game like WoW there are anti-stealth mechanisms - engineered items, potions etc - the thing is, not everyone will have those yet any stealther can still press the stealth button to be stealthed.</i></span>
+ <br> 
+ <br> Well there you go. Anyone that pre-orders gets catseye goggles <i>FREE</i> <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/4.gif" border="0" alt="grin" hspace="0" vspace="0"> . Problem solved.
+ <br> 
+ <br> Catseye goggles are bs. No other item can remove another class' capabilities like that in the game. I'm totally fine with someone popping a potion to gain the capbility for a minute or two, just like you can pop a potion to nullify holy or shadow magic for a bit. But they should be temporary only.
+ <br> 
+ <br> <span style="color: blue;"><i>As it is, I feel stealth is usually implemented in a such a way to make it too easy to use and too easy to abuse - so the result is you have a lot of idiots that use it as an easy way to do both PvE and PvP, and in particular to gain unfair advantages at both. If stealth actually required some thought and skill there would be a lot less abuse and rogues would become known for their skill and prowess instead for pressing their 'I win' button.</i></span>
+ <br> 
+ <br> Voqar, I would like to know if you've played a rogue in WoW, and if so, how long and to what level? I would like to know your experiences with this &quot;thoughtless stealth&quot;, and &quot;I win&quot; buttons.
+ <br> 
+ <br> Blizzard destroyed mage invis and destroyed stealth. I think what they're gonna do is just redo the stealth system, which would make sense I guess. Stealth is meant to be a boon, not a burden.
+ <br> 
+ <br> A description of rogues directly from the WoW official site:
+ <br> 
+ <br> <i><span style="color: red;"><span style="font-weight:bold;">At home in the shadows and skilled at disappearing from sight</span>, the Rogues of Azeroth are most comfortable when acting in the background. <span style="font-weight:bold;">Twisting events to their favor, striking only when advantage is greatest: this is where a Rogue excels.</span> With their cunning tricks, physical abilities, and <span style="font-weight:bold;">mastery of concealment and disguise</span>, Rogues have no trouble finding employment as thieves, cutthroats, spies, and assassins.
+ <br> 
+ <br> The Rogue is a very involved and fun class to play. Your effectiveness depends on how well you learn to use the Rogue. There is a lot to take in, but players can master the Rogue with knowledge and experience. Here are a few sample skills available to Rogues. </i></span>
+ <br> 
+ <br> Why can't a rogue be stealthy?
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Tigres - Retired Phoenix Knight Crush Mercenary - &lt;Dies Irae&gt; <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/7.gif" border="0" alt="love" hspace="0" vspace="0">  <br> O MONSTROUS FAET111!1! OMG WTF <br> I don't make stupid mistakes. Only very, very clever ones. <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75838567" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=777094">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=777094">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="567 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/NSNightfall"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/NSNightfall"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 567<br><span style="font-weight: bold;">Registered:</span> Nov 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:07am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 11:10am (3 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Sara - You are taking things out of context. As such, that kind of conversation can go on forever, and no one wins. If you wish to have a conversation about the stealth issue, as you said, I am all for it, though it &quot;should&quot; have been taken to a different forum in the first place, and people need to try to see things a bit more objectively than the blind hate that has been displayed thusfar.
+ <br> 
+ <br> I only hope your taking things out of context on purpose as such is not an effort at a fallacy of character argument to mask or attempt to invalidate the actual issues stated after I clarified that since the post would continue it makes sense to &quot;reply&quot;.
+ <br> 
+ <br> Please stop trying to hijack the issue by using fallacy.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Skytale | WOW Stress Beta 1 |  30th Night Elf Rogue <br> Skytale | 50SB | DAoC &lt;Bedlam&gt; Midgard Iseult  - Canceled <br> 5xLV50 &amp; 2xLGM Crafter pwnt by the Mighty Mythic nerf bat. <br> Skytale | FFXI &lt;Emerald Dream&gt; Fairy - Canceled <br> WoW won't kill DAoC, Mythic will.
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75838608" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=501672">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=501672">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/BritonGuy?boards=vn " class="AuthorLink">BritonGuy</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="1,746 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/BritonGuy"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/BritonGuy"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 1,746<br><span style="font-weight: bold;">Registered:</span> Mar 04<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:22am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 11:26am (2 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/BritonGuy?boards=vn " class="AuthorLink">BritonGuy</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">*cough* nightfall talking about taking things out of context. <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/18.gif" border="0" alt="laugh" hspace="0" vspace="0"> 
+ <br> 
+ <br> My views:
+ <br> 
+ <br> Stealth does not = immunity to close complete range on any ranged attackers.
+ <br> 
+ <br> Stealth does = a chance if you're carefull to sneak up invisi and deal a good blow
+ <br> 
+ <br> Rogue does not = Useless without being invisible. Sprint, high DPS..
+ <br> 
+ <br> 
+ <br> I don't want rogues like DAOC stealthers. This isn't DAOC so if you want to play a nightshade with full proof invisi go back to DAOC. Current rogue fanbois should not assume that since they have stealth it means they need to be immune to ranged attacks and always fight where they are the best fighters. Doesn't take any skill in PvP if you're 100% fullproof invisible anyways.
+ <br> 
+ <br> 
+ <br> That said, you can't impliment stealth without invisibility. You can only do it how they are doing it, have the stealther either be unseen.. or shaded. A light shade model could be hacked up too easy so that players would see them all the time. Invisi with high risks at certain times, certain distances, certain angles is the best way to do it.
+ <br> 
+ <br> They can be stealthy, but they cannot be gods. You can't make a class everything it was in the lore. They are stealthy now, and can be uncovered also, as they should be able to. Anyone looking for a stealther should have a good chance to uncover one.
+ <br> <p>&nbsp;</p></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75839442" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=901272">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=901272">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/NSNightfall?boards=vn " class="AuthorLink">NSNightfall</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star3.gif" border="0" hspace="0" vspace="0" alt="567 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/NSNightfall"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/NSNightfall"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 567<br><span style="font-weight: bold;">Registered:</span> Nov 01<br></span><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:34am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that....</td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">Britonguy, you were the one completely misunderstanding everything that was said in the other post and not even remembering what you, yourself said previously, which is why I quoted every line specifically. You were not taking the time to read what was said, and as such made up a bunch of things that I didn't ever say, and blamed me of doing it, but was quoting you word for word, thus not making stuff up.
+ <br> 
+ <br> But I agree with you here that
+ <br> 
+ <br> Stealth does not = immunity to close complete range on any ranged attackers. 
+ <br> 
+ <br> Stealth does = a chance if you're carefull to sneak up invisi and deal a good blow 
+ <br> 
+ <br> The problem is, everyone agrees with that to certain extents, but people are saying that as it is in WoW curently it is too easy. We are saying it is not. Since the nerf, I don't know how it is, but it doesn't seem like that big of a difference.
+ <br> 
+ <br> The rogues are not asking for perfect stealth. We are asking for the chance to not be the lowest hp and armored melee and not have anything to make up for it.
+ <br> 
+ <br> --------------------
+ <br> Rogue does not = Useless without being invisible. Sprint, high DPS.. 
+ <br> --------------------
+ <br> 
+ <br> If we are melee, and have low hitpoints, and are caught at range because of poor stealth, we are useless. We will get nuked to death or shot to death before we reach our targets, and assuming we live through closing the distance, we are starting the fight hurt, and our high DPS will not counter that considering we are 3/4ths dead and you are at full life. Don't start with the sprint issue, there are root spells and sleep spells and polymorph to stop this.
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Skytale | WOW Stress Beta 1 |  30th Night Elf Rogue <br> Skytale | 50SB | DAoC &lt;Bedlam&gt; Midgard Iseult  - Canceled <br> 5xLV50 &amp; 2xLGM Crafter pwnt by the Mighty Mythic nerf bat. <br> Skytale | FFXI &lt;Emerald Dream&gt; Fairy - Canceled <br> WoW won't kill DAoC, Mythic will.
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75840136" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=501672">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=501672">Post History</a></td></tr><tr align="left" valign="top" class="BoardRowA"><td class="BoardRowA" rowspan="3" width="17%"><a href=" http://users.ign.com/about/Tigres_Trist?boards=vn " class="AuthorLink">Tigres_Trist</a>&nbsp;<a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/help/default.asp?goto=faqs%2Easp%23stars"><img align="absmiddle" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardimages/star4.gif" border="0" hspace="0" vspace="0" alt="4,057 posts"></a><br><span style="font-size: 8pt;"><!-- WISH & COLL STUFF --><table cellpadding="0" cellspacing="0" border="0"><tr class="BoardRowA"><td nowrap="false" class="BoardRowA"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/collection/Tigres_Trist"><font size="1">collection (0)</font></a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://users.ign.com/wishlist/Tigres_Trist"><font size="1">wishlist (0)</font></a></td></tr></table><!-- /WISH & COLL STUFF	--><span style="font-weight: bold;">Posts:</span> 4,057<br><span style="font-weight: bold;">Registered:</span> Mar 03<br></span><img border="0" hspace="8" vspace="8" src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boards/images/icons/berserk.gif" width="80" height="80" alt="5587" name="5587" id="5587" class="IconImage"><br></td><td class="BoardRowA" colspan="2" width="83%"><span style="font-weight: bold;">Date Posted:</span>&nbsp;9/21 11:45am&nbsp;<span style="font-weight: bold;">Subject:</span> RE: How do you implement stealth so that.... - <span style="font-weight: bold;">Date Edited:</span>&nbsp;9/21 12:00pm (7 edits total) <span style="font-weight: bold;">Edited By:</span> <a href=" http://users.ign.com/about/Tigres_Trist?boards=vn " class="AuthorLink">Tigres_Trist</a></td></tr><tr valign="top"><td class="BoardRowB" colspan="2" width="83%">bleh nm
+ <br> <p></p><span class="SignatureTitle">-----signature-----</span><div class="SignatureText">Tigres - Retired Phoenix Knight Crush Mercenary - &lt;Dies Irae&gt; <img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/boardfaces/7.gif" border="0" alt="love" hspace="0" vspace="0">  <br> O MONSTROUS FAET111!1! OMG WTF <br> I don't make stupid mistakes. Only very, very clever ones. <br> 
+ <br> </div></td></tr><tr align="right" valign="bottom"><td colspan="2" class="BoardRowB"><a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/post.asp?brd=19789&amp;topic=75832659">Post Reply</a> | <a href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/active_topic_notify.asp?mes=75840801" class="BoardRowBLink">Active Topic Notification</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/pm_send.asp?usr=777094">Private Message</a> | <a class="BoardRowBLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/user_posts.asp?usr=777094">Post History</a></td></tr>
+	</table>
+	<!-- flattened topic table end -->
+	
+	<table width="100%" border="0" cellspacing="1" cellpadding="0">	
+	<tr><td class="BoardColumn"><img src="https://web.archive.org/web/20041130232515im_/http://vnboards.ign.com/images/pixel.gif" border="0" height="3" hspace="0" width="1" vspace="0"></td></tr>
+	</table>
+
+	
+	<table width="100%" border="0" cellspacing="1" cellpadding="4">
+	 
+					<tr align="left" valign="top">
+						<td class="MainMenuRow">
+							<a class="MainMenuLink" title="Games" href="https://web.archive.org/web/20041130232515/http://www.ign.com/">Games</a> - 
+							<a class="MainMenuLink" title="Free Games" href="https://web.archive.org/web/20041130232515/http://downloads.ign.com/">Free Games</a> - 
+							<a class="MainMenuLink" title="Online Games" href="https://web.archive.org/web/20041130232515/http://play.ign.com/">Online Games</a> - 
+							<a class="MainMenuLink" title="Cheats" href="https://web.archive.org/web/20041130232515/http://cheats.ign.com/">Cheats</a> - 
+							<a class="MainMenuLink" title="Music" href="https://web.archive.org/web/20041130232515/http://music.ign.com/">Music</a> - 
+							<a class="MainMenuLink" title="Movies" href="https://web.archive.org/web/20041130232515/http://filmforce.ign.com/">Movies</a> - 
+							<a class="MainMenuLink" title="Games" href="https://web.archive.org/web/20041130232515/http://games.ign.com/">Games</a>
+						</td>
+					</tr>
+				 
+	<tr align="left" valign="middle">
+		<td class="MainMenuRow">
+
+			 
+					[<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://wowvault.ign.com/">WoW Vault</a>] 
+				
+					&nbsp;<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/">VN Boards</a>  
+				
+						&raquo; <a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/World_of_Warcraft_Main_Boards/c14461/">World of Warcraft Main Boards</a>	
+					&raquo; 
+						<a class="MainMenuLink" href="https://web.archive.org/web/20041130232515/http://vnboards.ign.com/WoW_General_Board/b19789/">WoW General Board</a>
+							
+		</td>
+	</tr>
+	</table>
+	
+	
+
+	<table width="100%" border="0" cellspacing="1" cellpadding="1">
+	<tr align="right" valign="top">
+		<td class="MainMenuRow">
+			<span class="VersionText">
+			&copy; 2004 IGN Entertainment, Inc (2.4.2, ASPNET2) 0.984&nbsp;
+			</span>
+		</td>
+	</tr>
+	</table>
+	
+	</td></tr>
+	</form>
+	</table>
+
+
+
+<!-- BEGIN SYSTEM FOOTER -->
+
+	<!-- BEGIN FOOTER -->
+</td>
+	<td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	</tr>
+<tr><td colspan="3" bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	</tr>
+</table>
+
+</td>
+<!-- end boards content TD --> 
+
+<!-- begin SKYSCRAPER ad unit TD --> 
+<td align="CENTER" bgcolor="#FFFFFF" valign="TOP">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	<td valign="top">
+<!--ad-name:SkyscraperAd:ad-name--><br><!--ad-name:MiniSkyAd:ad-name-->
+	</td>
+	<td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+</tr>
+<tr><td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	<td bgcolor="#FFFFFF"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	<td bgcolor="#FFFFFF" width="10"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/images/hub/pixy.gif" width="10" height="10"></td>
+	</tr>
+</table>
+
+</td>
+<!-- end SKYSCRAPER ad unit TD --> 
+</tr>
+<!-- end content -->
+<!-- begin footer TR -->
+<tr><td width="100%" colspan="2">
+<br><center>
+<!--ad-name:Banner1Ad:ad-name-->
+<br><br>
+<!--ad-name:TextAd:ad-name-->
+</center>
+<!-- begin: snowball copyright -->
+<script language="JavaScript">
+<!--
+
+//-->
+</script>
+<!-- end: snowball copyright -->
+</td></tr>
+<!-- end extra bottom row TR -->
+</table>
+
+<!-- END SYSTEM FOOTER -->
+
+ 
+					<table align="center" bgcolor="white" cellspacing="0">
+					<tr>
+						<td bgcolor="white">
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/"><img src="https://web.archive.org/web/20041130232515im_/http://media.ign.com/ignent110x65_white.gif" width="110" height="65" border="0"></a>
+						</td>
+						<td bgcolor="white" style="font-family:arial;font-size:9pt;">
+						<b>Copyright 2004, <a href="https://web.archive.org/web/20041130232515/http://www.ign.com/" title="Games, Video Games, Online Games, Addicting Games, Internet Games" target="_blank">IGN Entertainment, Inc.</a></b><br/>
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/" title="IGN games about" target="_blank">Corporate Info</a> | 
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/ad.html" title="IGN games advertise" target="_blank">Advertise</a> | 
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/privacy.html" title="IGN games privacy" target="_blank">Privacy Policy</a> | 
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/user_agreement.html" title="IGN games user agreement" target="_blank">User Agreement</a> | 
+						<a href="https://web.archive.org/web/20041130232515/http://corp.ign.com/ignhelp.html" title="IGN games help and contact" target="_blank">Help</a> | 
+						</td>
+					</tr>
+					</table>
+				 
+<p></p>
+
+</body>
+</html><!--
+     FILE ARCHIVED ON 23:25:15 Nov 30, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:36:30 Apr 07, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 217.675
+  exclusion.robots: 0.141
+  exclusion.robots.policy: 0.132
+  cdx.remote: 0.075
+  esindex: 0.013
+  LoadShardBlock: 167.405 (3)
+  PetaboxLoader3.datanode: 210.565 (4)
+  load_resource: 82.106
+  PetaboxLoader3.resolve: 31.612
+-->
