@@ -1,0 +1,1111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Thought about the game and how to improve it</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "eb546225bc158de6f6ef426dab968cb7";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="eb546225bc158de6f6ef426dab968cb7" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-135.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-134.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-133.html" class="pagination_page">133</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-134.html" class="pagination_page">134</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-135.html" class="pagination_current">135</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-136.html" class="pagination_page">136</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-137.html" class="pagination_page">137</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-136.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8325.html">Thought about the game and how to improve it</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Thought about the game and how to improve it</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid49666" id="pid49666"></a>
+<div class="post " style="" id="post_49666">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-176.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-176.html">Jarulf</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 983<br />
+	Threads: 113<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49666.html#pid49666" title="Thought about the game and how to improve it">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-28-2004, 10:53 AM <span class="post_edit" id="edited_by_49666"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49666">
+		Hi,<br />
+<br />
+This was written up and sent for Blizzard but I thought I might as well post it here as well for imput.<br />
+<br />
+I have now been able to play WoW for a bit, both as alliance and as horde. Mainly as warrior (I am really a warrior type at heart), but have tried out other classes a bit. I have not reached level 30 or above though so comments and ideas are based on things one see before that level/areas.<br />
+<br />
+First, quest related issues. I love the quest system and how quests work and interact with the game. Of course, the more the better but still, there should be some variety and there can for sure be enhancements. Currently many quests are based on killing certain types of monsters. Either for kills or to collect a specific item dropped. It is more or less the same although slight variation. Nothing wrong with that although if all quests are like that it gets boring. <br />
+<br />
+Then we have other quests that means one have to go to some specific place to explore, pick up items (on ground like herbs, mushrooms, whatever) or to kill a specific monster. That is often different and more fun, to me. One drawback, although at times relief, is that if there is many players clearing an area, one can at time do the quest without having to actually fight to get there.<br />
+<br />
+Finally we have the fun and great quests, the different ones. Sometimes small and without much to do, sometimes more involved, still great. They are the ones that have you do different things. An example is the one in Dun Morogh were you âsneakâ by to swap beer. Or the one in The Barrens were you turn of a machine (although it is similar to go to an area and collect stuff). Another is the quest initiated by Murlocks in Westfall and have you travel around following instructions which lead to a chest on an island. All of those quests feel great when you do them and finish them. The one in Westfall really make you feel you are on your own doing a quest in the middle of everything else and others doing their own normal quests. At least when I did it. It is such quests that make you feel great and that you have fun.<br />
+<br />
+So, what is it that one should add more of quest wise? The quests you donât get in the âcitiesâ, that are initiated in surprising places and not always to be found, rare ones, that makes you feel alone on the quest. Often have I passed by some burnt down place (mostly in Barrens) and though, great, what if I suddenly in all the derbies could find an intractable remnant that gave a quest, one that was not always present and when it was, it randomly spawned all over Barrens so you never knew exactly were to get it. That was more of a âquest giftâ than something you go to a place to get and do. Have monsters occasionally and randomly drop some item that can initiate some quest, the glowing trees in Night Elf land is an example of such a fun quest (although it is not a random one but a âyou know were to get it and do itâ type. But it involve the fun element and story of going to someone to find out about it (they are short ones though).<br />
+<br />
+Another example could be quest chests or boxes spawning in far away places in the land, that you normally donât go to. I often explore and travel in more or less empty areas of a map (looking for mines and herbs or just to see if I find something) and it would be fun to occasionally find some quest related thing in for example a dead body or box or whatever. Have it have many multiple spawn points that basically is all over the map so that you never really know were to get it and it would not be worth camping it out. Have a very long respawn time as well. Similarly and empty hut or whatever (I seem to find many) could have something interesting inside, in a shelf or on a table or something. It makes it fun to explore again.<br />
+<br />
+Sure, one can claim such quests will not be for everyone and not as worthwhile as the main quests set up in town for everyone. But with more quests added so that areas have more quests than needed to keep the character going and levelling, those âoddâ and interesting quests will definitely add enjoyment and fun for those that doesnât go out and power level but rather explore and go to strange far off places were one wonât get much kills and/or experience. One such quest seem to be the Chenâs Keg (spelling?) in the Barrens. I once found a barrel but have not managed to find it this push. Initiated by a Keg found on the ground.<br />
+<br />
+From what I heard from higher level characters, it seems that the following might actually be in although at higher level quests, but quests that involve items necessary to have items that trade skills create so that you have to interact with others would be fun. There are some were you need items either mined or fished already that I have seen as examples.<br />
+<br />
+As an explorer and many times solo player, one type of quest. Although perhaps not as fun for many, are the delivery or travelling quests. The ones that means âget a message or item to someoneâ. Often in far away areas. I would like to see more, especially dangerous ones that take you into much higher level areas. There are already some, usually to get you going into new areas. In that aspect, the game and quests are set up well, ones you level it points you into new areas and such, but I would like more and dangerous ones. I like having to sneak through an area, along a road were monsters are many levels higher than me, to get to far away areas. It donât give me kill points but sure is fun.<br />
+<br />
+Quests that give recopies are fun. Although at times, it seems to exist, I have many times through about how many monsters that drop various scales and such, which canât be used for anything. I have then wondered, why canât I collect them and have some way to get them to someone to teach me how to turn them into armour or weapons. Why canât I very occasionally get a complete rare fang or tooth to drop from a monster which I can get to an NPC that will teach me a recipe to turn it into a dagger for example. People might complain that such quests are âimpossibleâ, takes forever and so on if given out ahead, so why not start them when the item drop instead. That way we avoid the, get me X tooth and people go out and kill monsters and complain that they killed 20 and it has still not dropped. The item created and the recipe doesnât have to be much better than other things, but different, perhaps with a different bonus. One can still have the item drop later occasionally to allow for more such items to be crafted. Make it so that many different types of monsters in different areas drop it. Perhaps one can make something similar as with the fishes in alliance land that weight different amount (which seems to have no special function right now though) but with tooth (or whatever, just using tooth as example here). Like 10 cm tooth dropped (for a dagger with a special damage (with recipe learnt), but later you get a 12 cm one from another monster and make a dagger with slightly more damage and so on.<br />
+<br />
+Similarly, all those murlock fins, scales from monsters and so on, make them craftable into armour and such. It gives more diversity and a feeling of more uniqueness and make trade skills more fun as well. As it is, one seem to find to few recopies except from NPCs to buy.<br />
+<br />
+Next for quests I would like to see are ones with decision making. That is, ones were you can take more than one route through it. For example, delivering the item to more than one NPC, one can make it evil/good based or race based and so on. Of course, the rewards will be different as will the follow up quests (there will be follow up ones of course). Sure, you will miss out on some quests but that is a price you have to pay for it&#33; In similar manner, I would not mind some quests being more RPGish, in that it involve more reading of texts, books in houses, libraries (in town and such for more questing there and to avoid killing monsters for all quests). Sure, for people not interested, they can always just read some web site for the solution and what to do, but for those who want, it adds an enjoyable element and give depth to the play. With multiple NPCs that complete a quest (might need change to quest engine?) one again get decision making into it based on what one find in books, tomes and such. Perhaps such tomes and books should spawn randomly so that the quest gets more random in that you find different info on the library at different times and for different people. I donâ<br />
+<br />
+Add exploration quests. I have in a few places found houses with cartographers and explorers or whatever. They have been âemptyâ in the inventory for selling and training (the NPCs), and seemed like skipped skills and such. Why not add quests that make you travel around to many far away and remote places to explore. It can involve visiting all the 5 main light houses on blah, blah, blah. Or to seek out the 3 big mountain tops (of course on different continents and land) and so on. Make you sneak around in high level monster areas (make sure to not pack them THAT tight so that one actually can sneak between them at low level when they move around. Perhaps it can involve library digging. You set out to find the lost ship of XXX that disappeared, in the Library you find books telling the story and about wrecks and you can figure out in which land was lost and were to travel to find it in the sea. The Libraries should be stuffed with books and text for this and other quests and just for plain information. One can add in history information from previous games in the serie and so on as well to not having to write ALL new texts for the libraries. Again, yes, some will just read a website or ask a friend to tell them it is the 7th book on the right side of the 3rd shelf in Stormwind but others, enjoying such quests will read gossip from library NPC and towns people and get info pointing to the correct books (perhaps even needed to activate the correct book to let the quest proceed. Make some general explorations quests that need you to travel to the main towns and smaller towns on the continent. The possibilities are endless. In push one, I had my warrior activate as many gryphon rides as possible (for its level) often meaning going to high level areas, dieing many times and even resurrecting with penalty at ones to get there. It was fun. Have it based on low level so that experience is only given if done at low level so that one have to sneak by and not simply fight through at high levels for the quests.<br />
+<br />
+As can be seen, many of the suggestions are for less combat oriented quests. Of course, one can even have some of them give skill points as rewards to compensate if one like (or even talent points).<br />
+<br />
+As for rewards, I would also like more different quests in that aspect. In the Barrens you kill various named monsters for a quest chain. After a while, it seems you continue it by killing named monsters that THEN start the quest (as opposed to first being told which one to kill). Currently it seems to mostly give extra exp but feeling all that âxâs spirit flows within you, why not having a stat point given as exp reward? Or after killing all 5 named monsters in an area (not involved in other quest but roaming the lands, perhaps even in different maps) and given them to an NPC, you get a special ability (talent?) or something as a bonus and reward. Can the game handle such thing as quests done in random order for a final quest or reward? Imagine killing a few big named monsters in various different maps and it gives a reward of something similar to the old talent that added extra damage to beasts (for example). If one couple this with decision making in some earlier quest to trigger it, like either go kill a monster or help out some other monster (that it prey on) and thus set you up for different chains and make not everyone have the same reward. I love such things.<br />
+<br />
+Obviously with more quests added, especially one that take you through many different maps and lands, one really need to increase the number of ongoing quests. As it is, one constantly find oneself having to ditch quests to get new ones so the log is not full. That is a shame and boring as I need to go back and refind them (and imagine if it is the rare random quests mentioned above). I want to be able to make a few quests in new lands as I pass through on a mission to deliver to someplace without having to ditch all quests in the map I came from, only to reget them when I get back later ditching unfinished ones on the new land and so on. With more involved quests, like exploration ones as mentioned above or killing many different monsters, it takes time and (and SHOULD be done as opportunity presents itself and not by âI go there and now what to kill), one really NEED to be able to have more ongoing quests at once, 20 is simply not enough&#33; I can understand someone claiming it makes decision making on what quest to do, but that actually forces you to do quests one after each other and not having many at a time. It also forces unnecessary travelling just to reclaim quests you already had but had to ditch as you find a quest passing through a an area and the quest log was full. That is not fun.<br />
+<br />
+Also, rewards for quests (experience mostly) should NOT get penalized as much as it currently is for being done when you reach higher levels. I think one should be able to quests in different orders and not forced at specific levels. Sure, they get easier as you level, but even with same exp reward, it is âlowerâ since you need more exp for next level. Also, it helps solo players to some extent that need to make quests at higher levels. Sure, you are âsupposedâ to group, but sometimes one feel like playing alone or canât find suitable players to group.<br />
+<br />
+Finally, not directly related to quests themselves but how they are given and an UI issue, have NPCs giving low level quests have a grey exclamation mark. Now you have to see if an NPC normally not talking with you having a bubble, indicating it has a quest. With guards giving directions and such and most NPC actually selling and such, everyone now has a bubble and you have to actually run around checking them. In towns that makes it hard to find missed quests. For example, the two that have you run around with wine and cloth in Stormwind seems to be level 1 so that when a normal character at level 5 or 6 reach town, he wonât see them at all&#33;&#33;&#33; If a NPC selling stuff has a quest, you wonât know either since it always give bubble (or book or whatever). Since the quests are still available ,why not indicate it slightly more visible.<br />
+<br />
+<br />
+<br />
+Lets move on to some other things. None will be as big as the above on quests though. Monsters, typically monsters are spread out and you take them on one by one (if you want). I would prefer monsters that instead are not alone but 2 or 3 put close together so that you must fight them at the same time. Sure, there exist some hunters with their animal with them and so on and some quest bosses has monsters around them that activate at the same time, but take the typical outside area, around a camp or whatever, either quest related or just random or even monsters wandering around. They are usually 1 by 1. Why not also have groups with monsters of a few levels lower that are close to each other so you have to fight many at a time (but at lower levels). That give diversity and change in game play. Usually now it is for quest bosses and typically you first fight level X monsters to get to the boss and then suddenly find the boss of level X+2 PLUS a few guards of level X or X+2 as well. So it is either dead easy to get to him and then he is a challenged, or it is hard to get to him and impossible to deal with him. Hardly fun or good. Grouping wonât change that either.<br />
+<br />
+I would like more ârandomâ wandering monsters to have larger areas they roam. Typically they just move back and forth in small areas. At times you see some moving around large areas. That is much more fun and interesting. Sure, it may mean you can easily sneak by an area at lower level with no fight, but so what? Remember, it helps setting up exploration quests and such as mentioned above for lower level chars as well not really destroying any other feature.<br />
+<br />
+<br />
+<br />
+Items could need some boost in interestingness. I really donât know how item generation and item data storage work, but it almost seem each item has to be written up with stats and such and that one canât have random features on them. That is slightly bad. I am not suggesting a system with affixes and such as in Diablo, but some random properties would make things interesting and add variation. Items giving stat boosts could give slight variation and so on. Perhaps it is already implemented.<br />
+<br />
+An example with fishing poles is that there seems to be the plain one, the strong one (adds +5) and a duskwood one that adds +15 and so on. I thought that the duskwood one (there seem to be very little places in duskwood to fish though, but I assume it is the tree) would come and drop only in duskwood, but that was not the case. It drop from a monster in a different area. Why not have different +15 ones then, basically just different names but findable in different places. Seems to not be that hard. They can all have the same look and such. Again, give more diversity and uniqueness to ones character without really much effort for the game or its design. Of course, one can have the Duskwood one (as opposed to the extra strong or Barren one and so on) be possible for an alchemist to transform into a +20 one with the right ingredients and so on. There are endless possibilities. By the way, I love the lucky fishers hat&#33;&#33;<br />
+<br />
+<br />
+<br />
+A few things about trade skills.<br />
+<br />
+Have gems and such found through mining (and sometimes dropped) possible to turn into actual âgemsâ or jewellery for selling. It could also be turned into actual jewellery for rings and earrings. That makes such items more common though and I am not sure what trade skill it would be. Could be a completely new crafting one that also take broken tusks, and other raw material and turn it into more virgin one used for other means or just to sell for higher price. Some of it could be turned back into raw material that spice up already existing crafting. Imagine a recipe for a glove, it could require some raw gem. However, one could also find the same recipe but with a processed gem it turns slightly better. Of course, it can also exist but with added processed tusks from some rare animal to added some extra effect (+stats?) and so on. <br />
+<br />
+That extra recopies, new item variants and even a whole new trade skill to process various raw materials one find in the game. In effect it creates variants of existing recopies and items. Such ones could be findable from drops only (the recopies) or from far away merchants not related to the area it exist in. One possible trade skill to add in some of these enhancements to would be Alchemy. Some could perhaps fit into engineering and yet others to mining and so on. Such cross usefulness of tradeskills help promote cooperation and if put at comparable high levels, one avoid people getting all trade skills at lower levels to help out their main trade skill. Still, the basic recopies would be enough to help people playing more solo and so on. A possibility is to make branches in existing trade skill as seems done with dragonleather working. I have not played that high level to now how trade skills work there though.<br />
+<br />
+Add some extra features to cooking for special recopies. Sure, one should avoid turning it into the same things potions and such gives, but perhaps some rare recopies, with rare ingredients could make you cook up some food that add to a stat point or something. If it can make people increase them to much, make them one time things (or once per 10 levels or something) or perhaps even involving a quest to take the food to a special place to eat during a ceremony or whatever (but have a cook having to prepare it).<br />
+<br />
+I also note that drinks canât be âmadeâ in the game through trade skills, I mean milk, juice and such. Similarly, fruit seems to be sold but not collectable. Perhaps herbalism could have some branch that allow collection of fruits that cooking can then turn into a bit better drinks (for mana recovery). That add extra interaction between different trade skills but also make mana drinks more easy to get. Now you have to buy them. Just a thought. Could be a branch in cooking that makes you a juicer that makes drinks. <br />
+<br />
+More to come...<br />
+<br />
+Comments?
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+There are three types of people in the world. Those who can count and those who can't.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49666">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=176" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49666" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49677" id="pid49677"></a>
+<div class="post " style="" id="post_49677">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-304.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_304.jpg" alt="" width="51" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-304.html">NuurAbSaal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				a.k.a. Tarabulus<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 785<br />
+	Threads: 50<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49677.html#pid49677" title="Thought about the game and how to improve it">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-28-2004, 02:14 PM <span class="post_edit" id="edited_by_49677"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49677">
+		I&#39;m not in the Beta and therefore don&#39;t have a very good understanding of how the game "feels" right now, but I have to say your thoughts, especially about new and different quests/quest types sound great, make that GREAT to me. Alas, as I&#39;m sure Pete will be happy to point out ;) , WoW is not going to be a RPG, or RPGish even (a shame, imho) and I don&#39;t know if Blizzard will feel that quests of a type that you describe will be enjoyed by the "typical WoW player" they have in mind. I know I would LOVE to have some decisions available in quests (KotOR&#33;&#33;), and to have a library full of Warcraft Lore, mmmmmmmm, me like&#33;&#33;  :) <br />
+<br />
+But I&#39;m a geek when it comes to story/background info and such.<br />
+<br />
+I really hope someone at Blizzard will read your suggestions and go: "Hey, this would be cool&#33;"  :) <br />
+<br />
+A great post, methinks<br />
+<br />
+<br />
+Greetings<br />
+<br />
+Nuur<br />
+<br />
+P.S.: Now if only I had already been accepted in the european beta...
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+"I'm a cynical optimistic realist. I have hopes. I suspect they are all in vain. I find a lot of humor in that." <span style="font-style: italic;" class="mycode_i">-Pete</span><br />
+<br />
+I'll remember you.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49677">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.sagon.org/beastro/forum/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=304" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49677" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49721" id="pid49721"></a>
+<div class="post " style="" id="post_49721">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-683.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-683.html">BEEFMOTRTON</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 44<br />
+	Threads: 2<br />
+	Joined: Jun 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49721.html#pid49721" title="Thought about the game and how to improve it">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-28-2004, 10:17 PM <span class="post_edit" id="edited_by_49721"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49721">
+		Most of what you ask for is actually in the game already, though I would not be adverse to them adding much much more of it. I&#39;d like to see it so if you go exploring in any given area, there will be treats for you in the form of quests, boss monsters to kill that begin a quest, items that begin quests, hidden quest givers, you get the idea.<br />
+<br />
+ If you haven&#39;t tried them already, I highly recommend the "Test of" chain of quests in Thousand Needles (They&#39;re around level 24-32 or so). You get these from a small alcove located on the northern wal of the zone, just east of the centaur camp. The first quest is "Test of Faith" and it teleports you to the top of a pillar, and instructs you to jump off. I won&#39;t tell you what happens :)<br />
+<br />
+Later in the chain ( I haven&#39;t attempted it yet personally), I believe there&#39;s a quest that has you read through some sort of manuscript, and answer a riddle. If you guess it incorrectly, you get a curse cast upon you.<br />
+<br />
+<br />
+Also, you have GOT to love the quest on fenris isle. The monsters there have a random chance of dropping a head. You &#39;use&#39; the head and you see it&#39;s lips are moving, and the owner tells you to take his head back to his body so he can rest.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49721">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=683" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49721" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49729" id="pid49729"></a>
+<div class="post " style="" id="post_49729">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49729.html#pid49729" title="Thought about the game and how to improve it">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-28-2004, 11:53 PM <span class="post_edit" id="edited_by_49729"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49729">
+		Jarulf, as has already been said, many things you mentioned are already in the game.<br />
+<br />
+1) quests with "choices" to make: in Darkshore, you have a decision to make on the Volkar quest, whether to try to fight your way out or use stealth to get out of a cave for which the entrance is heavily guarded.  In Desolace, you have a choice to make of which centaur tribe you wish to ally with (complete with reputation meter).  The tribe you ally with gives you different quests than the other one.  Admittedly, there aren&#39;t many quests like this, but I haven&#39;t played all the quests either.<br />
+<br />
+2) As you get higher in level, you&#39;ll get more "world hopping" quests like the one in Lakeshire that has you go around the human lands collecting different types of alcohol for the local bartender.  But in general, the higher level you get, the more you&#39;ll wind up running around.  For instance, one of those centaur tribes in Desolace asks you to go to the Swamp of Sorrows to get an item - that&#39;s on the OTHER side of the world&#33;<br />
+<br />
+3) You admitted that you still have not attempted the most interesting quests of all - instanced quests.  The thrill of firing a giant cannon to blow open the door to Van Cleef&#39;s secret hideaway and reading the yells of the men inside screaming that they&#39;re being invaded - and being rushed by 6 attackers at once - can&#39;t be found by your traditional quests.  I don&#39;t want to give higher-level spoilers, but have you seen some of the screenshots of the Uldaman (level 40+ instance) quests in the Blizzard general forums?  Wow.<br />
+<br />
+The problem with grouping up lower level monsters is that you get crap exp for them.  People won&#39;t bother.  Instead, Blizzard wants to encourage group play by sticking 4 monsters next to each other of your level so that you can&#39;t take them solo.  And yes, if you&#39;re not in the beta and reading this, Blizzard always also provides wandering solo monsters outside such camps to be picked off by solo players.<br />
+<br />
+Finally, the tradeskills at higher levels develop some major interdependencies.  People will wind up requiring components gathered or made by other tradeskillers in order to use all their recipes.  One cannot live by Tailoring alone, for example, because high end recipes will require things outside the realm of tailoring (gems, etc).<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49729">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49729" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49757" id="pid49757"></a>
+<div class="post " style="" id="post_49757">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-176.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-176.html">Jarulf</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 983<br />
+	Threads: 113<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49757.html#pid49757" title="Thought about the game and how to improve it">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-29-2004, 07:48 AM <span class="post_edit" id="edited_by_49757"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49757">
+		Ahh, had forgot the Volkar quest, it was indeed interesting. However, up until level 20-25 or so I have played most (if not all found) quests on both sides and it is the only one. My main point was not to add the ability for such things, but to actually add such quests. Comparing it to the kill X monsters or collect X items of monster Y, the balance is way off :)<br />
+<br />
+As for the quest in Thousand Needles, it sounds just great. Can&#39;t wait to do it. My level 25 warrior was there for the first time and made some killing but I thought I should gain a level or 2 more since I solo before doing more there.<br />
+<br />
+The beer quest is another I like a lot that you take with you and do as you pass areas. That is one reason I want more than 20 quest slots or I get forced to do ONLY that (well not only but you get the idea) and travell like mad without having the possibility to do other quests as I pass through areas.<br />
+<br />
+As for "crap exp", so what? Make it for a quest then some how. And if some doesn&#39;t want it, skip it. I enjoy doing low level quests as well with no monster exp. For a power leveler, that is something to be skiped then.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+There are three types of people in the world. Those who can count and those who can't.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49757">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=176" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49757" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49762" id="pid49762"></a>
+<div class="post " style="" id="post_49762">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49762.html#pid49762" title="Thought about the game and how to improve it">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-29-2004, 08:23 AM <span class="post_edit" id="edited_by_49762"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49762">
+		Hi Jarulf.  I don&#39;t want to waste a lot of time getting into details with your suggestions, but one thing I agree on is that we could use more variety in the quests.  I would like to see, as you mentioned, more quests where a choice has to be made (beyond the typical choice to finish the quest or abandon it), and where this choice leads to very different follow up possibilities.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49762">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49762" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49824" id="pid49824"></a>
+<div class="post " style="" id="post_49824">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-40.html"><img src="http://tribade.org/lavcat80.jpg?dateline=1613784227" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-40.html">LavCat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Trolling Tribade<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,776<br />
+	Threads: 180<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8325-post-49824.html#pid49824" title="Thought about the game and how to improve it">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-30-2004, 02:28 AM <span class="post_edit" id="edited_by_49824"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49824">
+		If you abandon a quest, can you get it again later?
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-style: italic;" class="mycode_i">"I may be old, but I&#39;m not dead."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49824">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=40" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49824" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49825" id="pid49825"></a>
+<div class="post " style="" id="post_49825">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="thread-8325-lastpost.html#pid49825" title="Thought about the game and how to improve it">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-30-2004, 02:30 AM <span class="post_edit" id="edited_by_49825"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49825">
+		--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49825">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8325&amp;replyto=49825" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8325" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8325-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8325-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8325">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-8325.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=9aaa9d67b337cfe115c8e5f7275ac0a7">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:55 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="https://www.lurkerlounge.com/forums/task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8325&amp;pid=49666#pid49666" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8325&amp;pid=49666#pid49666" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

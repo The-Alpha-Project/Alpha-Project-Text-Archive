@@ -1,0 +1,2052 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Let&#39;s get together on a Test server</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "9921dfdb539499fa245deea46a8218cb";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="9921dfdb539499fa245deea46a8218cb" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-129.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-128.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-127.html" class="pagination_page">127</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-128.html" class="pagination_page">128</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-129.html" class="pagination_current">129</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-130.html" class="pagination_page">130</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-131.html" class="pagination_page">131</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-130.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-7702.html">Let&#39;s get together on a Test server</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-7702-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-7702-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Let&#39;s get together on a Test server</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid58642" id="pid58642"></a>
+<div class="post " style="" id="post_58642">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-50.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-50.html">DeeBye</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,495<br />
+	Threads: 411<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58642.html#pid58642" title="Let&#39;s get together on a Test server">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 04:18 AM <span class="post_edit" id="edited_by_58642"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-03-2004, 04:20 AM by <a href="user-50.html">DeeBye</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58642">
+		I suppose I could&#39;ve posted this in the ongoing Stress Test thread, but I think it deserves its own thread.  For anyone new to WoW and wanting to get together for some Lurker action, we should all make sure we play on the same server and on the same faction.<br />
+<br />
+I saw that Roland created a character on the Test 1 server, Eastern, so I did the same.  I don&#39;t know what faction Roland is, but I went with Alliance.  The faction is important because members of opposite factions cannot group/chat/guild/play tiddlywinks together.<br />
+<br />
+My character&#39;s name is "DeeBye" (duh), and I&#39;m a Human Mage, currently level 5.  I&#39;ll create a Guild if/when we can get 9 others to sign a Guild Charter.<br />
+<br />
+Test 1 server<br />
+Eastern<br />
+Alliance<br />
+<br />
+edit:  when you jump into a game, type "/join Lurkers" (w/o quotes) to join the Lurkers chat channel.   I forget what the command is to list the people in a specific chat channel  :(
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_58642">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=50" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58642" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58644" id="pid58644"></a>
+<div class="post " style="" id="post_58644">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-301.html"><img src="http://www.arewehavingfunyet.com/wow/lochnar_mythos.png" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-301.html">LochnarITB</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Concentrated goodness<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,658<br />
+	Threads: 115<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58644.html#pid58644" title="Let&#39;s get together on a Test server">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 04:31 AM <span class="post_edit" id="edited_by_58644"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58644">
+		Sounds good to me.  That is, if it ever finishes downloading.  I&#39;m starting to get worried.  My download is still going.  Its approaching 2 gigs and said the file was supposed to be about 1.6.  I wonder at what point I should just assume it is a bad download and cancel?  There is probably someone sitting watching the server and feeding it more and more to see just how far I let it go.  I just know that whatever point I choose to cancel will be about 2 seconds short of completion.   :blink:
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="color: yellow;" class="mycode_color">Lochnar[ITB]</span><br />
+<span style="text-decoration: underline;" class="mycode_u"><a href="http://www.arewehavingfunyet.com/diablo/diablo.shtml" target="_blank" rel="noopener" class="mycode_url">Freshman Diablo</a></span><br />
+<br />
+<a href="http://us.battle.net/d3/en/profile/lochnar-1436//" target="_blank" rel="noopener" class="mycode_url"><img src="http://i61.tinypic.com/jsoho8.png" loading="lazy"  alt="[Image: jsoho8.png]" class="mycode_img" /></a><a href="http://www.best-signatures.com/" target="_blank" rel="noopener" class="mycode_url"><img src="http://i60.tinypic.com/10gmtrs.png" loading="lazy"  alt="[Image: 10gmtrs.png]" class="mycode_img" /></a><br />
+<br />
+<span style="color: #DAA520;" class="mycode_color">"I reject your reality and substitute my own."<br />
+"You don't know how strong you can be until strong is the only option."<br />
+"Think deeply, speak gently, love much, laugh loudly, give freely, be kind."<br />
+"Talk, Laugh, Love."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58644">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.arewehavingfunyet.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=301" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58644" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58645" id="pid58645"></a>
+<div class="post " style="" id="post_58645">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-133.html"><img src="https://www.lurkerlounge.com/forums/D2_Amazon02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-133.html">Caesar</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 29<br />
+	Threads: 1<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58645.html#pid58645" title="Let&#39;s get together on a Test server">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 04:37 AM <span class="post_edit" id="edited_by_58645"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58645">
+		<blockquote class="mycode_quote"><cite>LochnarITB,Nov 2 2004, 11:31 PM Wrote:</cite>Sounds good to me.&amp;nbsp; That is, if it ever finishes downloading.&amp;nbsp; I&#39;m starting to get worried.&amp;nbsp; My download is still going.&amp;nbsp; Its approaching 2 gigs and said the file was supposed to be about 1.6.&amp;nbsp; I wonder at what point I should just assume it is a bad download and cancel?&amp;nbsp; There is probably someone sitting watching the server and feeding it more and more to see just how far I let it go.&amp;nbsp; I just know that whatever point I choose to cancel will be about 2 seconds short of completion.&amp;nbsp;  :blink:<br />
+[right][snapback]59010[/snapback][/right]</blockquote><br />
+The download is 2.6 GB. I got mine from File Planet and it was fine. I assume you&#39;re using the downloader? I&#39;ve heard that people with that problem ended up with a corrupted file, but please don&#39;t quote me on it. Does anyone have any insight?<br />
+<br />
+I just finished registering my account. I can&#39;t wait to play. Too bad there&#39;s this election thing going on... See you all in the game tomorrow  :D
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Caes
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58645">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=133" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58645" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58646" id="pid58646"></a>
+<div class="post " style="" id="post_58646">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-139.html"><img src="http://www.diablosc.com/hosted_files/avatars/roland.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,194<br />
+	Threads: 45<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58646.html#pid58646" title="Let&#39;s get together on a Test server">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 04:38 AM <span class="post_edit" id="edited_by_58646"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-03-2004, 07:53 AM by <a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58646">
+		<blockquote class="mycode_quote"><cite>DeeBye,Nov 2 2004, 11:18 PM Wrote:</cite>I saw that Roland created a character on the Test 1 server, Eastern, so I did the same.&amp;nbsp; I don&#39;t know what faction Roland is, but I went with Alliance.&amp;nbsp; The faction is important because members of opposite factions cannot group/chat/guild/play tiddlywinks together.</blockquote><br />
+No. I created my account, and stated I would start a character on US East #1. As of my SECOND download attempt, the download is corrupt. So now I have to wait a THIRD day to attempt the download for the THIRD time, in hopes that THIS time it will not be corrupt.<br />
+<br />
+GOD I hate Fileplanet. How goddamn hard can it be to make something NOT get corrupted while downloading?&#33;?&#33;?&#33;?&#33; I&#39;ve down it thousands of times ELSEWHERE and never had a problem, so what is Fileplanet&#39;s issue?&#33; Jesus I&#39;m pissed off.<br />
+<br />
+I&#39;ll see you sometime in the next century.<br />
+<br />
+Edit:<br />
+Test Server #1 - U.S. East Coast<br />
+Alliance faction<br />
+Probably a Human or Night Elf, maybe a Dwarf. Probably a Paladin,  or Priest, maybe a Druid or Hunter. Undecided as of yet.<br />
+<br />
+Edit 2:<br />
+I&#39;m so dumb. I had to use Winzip 9.0, which Blizzard specifically stated, to open the file. WinRAR would not work at all.<br />
+<br />
+I feel like crying. I can&#39;t tell if it&#39;s with joy or sadness. But I feel like crying. I think I&#39;ll just play WoW instead.<br />
+<br />
+Installing as we speak. I&#39;ll be online in 15 minutes or less, as something with the name of Roland. Will post here with specific name.<br />
+<br />
+Edit 3:<br />
+Ok, leaning towards Human Paladin for starters, with a Night Elf Priest as secondary. I MAY do a Dwarf Paladin, but I&#39;m thinking of being Human. I prefer Humans generally, except for a Dwarf with a rifle. ;)<br />
+<br />
+Edit 4:<br />
+Test Server 1 - RolandDT - Human Paladin
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Roland *The Gunslinger*
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58646">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.diablosc.com/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=139" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58646" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58648" id="pid58648"></a>
+<div class="post " style="" id="post_58648">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-301.html"><img src="http://www.arewehavingfunyet.com/wow/lochnar_mythos.png" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-301.html">LochnarITB</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Concentrated goodness<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,658<br />
+	Threads: 115<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58648.html#pid58648" title="Let&#39;s get together on a Test server">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 05:35 AM <span class="post_edit" id="edited_by_58648"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58648">
+		<blockquote class="mycode_quote"><cite>Caesar,Nov 2 2004, 11:37 PM Wrote:</cite>The download is 2.6 GB.<br />
+[right][snapback]59011[/snapback][/right]</blockquote>Oooh&#33;  A bug in either Firefox or the Download Statusbar extension.  Looks like they have an int they are treating as an unsigned int.  There is a minus sign in front of the file size that I thought was part of the formatting.  When I looked at it just now, the amount that was completed went to a -2.....  It wrapped around to the negative half of the int.  Oops&#33;  Argh&#33;  That means that I still have 300 megs to go.  My progress is now a huge negative number counting back up toward zero.   :blink:
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="color: yellow;" class="mycode_color">Lochnar[ITB]</span><br />
+<span style="text-decoration: underline;" class="mycode_u"><a href="http://www.arewehavingfunyet.com/diablo/diablo.shtml" target="_blank" rel="noopener" class="mycode_url">Freshman Diablo</a></span><br />
+<br />
+<a href="http://us.battle.net/d3/en/profile/lochnar-1436//" target="_blank" rel="noopener" class="mycode_url"><img src="http://i61.tinypic.com/jsoho8.png" loading="lazy"  alt="[Image: jsoho8.png]" class="mycode_img" /></a><a href="http://www.best-signatures.com/" target="_blank" rel="noopener" class="mycode_url"><img src="http://i60.tinypic.com/10gmtrs.png" loading="lazy"  alt="[Image: 10gmtrs.png]" class="mycode_img" /></a><br />
+<br />
+<span style="color: #DAA520;" class="mycode_color">"I reject your reality and substitute my own."<br />
+"You don't know how strong you can be until strong is the only option."<br />
+"Think deeply, speak gently, love much, laugh loudly, give freely, be kind."<br />
+"Talk, Laugh, Love."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58648">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.arewehavingfunyet.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=301" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58648" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58649" id="pid58649"></a>
+<div class="post " style="" id="post_58649">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-139.html"><img src="http://www.diablosc.com/hosted_files/avatars/roland.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,194<br />
+	Threads: 45<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58649.html#pid58649" title="Let&#39;s get together on a Test server">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 05:38 AM <span class="post_edit" id="edited_by_58649"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-03-2004, 07:46 AM by <a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58649">
+		I officially hate Blizzard.<br />
+<br />
+I start up WoW - blank white screen. I terminate the program, and the Wow.exe process gets STUCK running in my system. I can&#39;t terminate it because it&#39;s "Access Denied". Blizzards tech support site is completely down STILL.<br />
+<br />
+All this time and waiting, for nothing. Where&#39;s that gun again? I feel another tension headache coming to join the first one.<br />
+<br />
+Edit:<br />
+I&#39;m pretty sure it&#39;s the new intro video. Attempts to play the video by itself are met with video codec errors. I need to know what codec the video requires. Can anyone help me with this?<br />
+<br />
+Edit 2:<br />
+Since Blizzard is royally trying to dick me over, I am unable to post on any of the Beta forums, DESPITE being able to login as a Beta Tester&#33; So, having said that, could anyone here (preferably a Closed Beta Tester) post for me my problem, and pass on the word?<br />
+<br />
+Edit 3:<br />
+OMFG&#33; I can only play Windowed mode. For whatever reason, FUllscreen mode DOES NOT WORK. URGH&#33;<br />
+<br />
+Nvidia 6xxx series &amp; 61.77 driver support MY REAR END&#33;<br />
+<br />
+GOD this pisses me off.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Roland *The Gunslinger*
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58649">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.diablosc.com/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=139" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58649" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58650" id="pid58650"></a>
+<div class="post " style="" id="post_58650">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-195.html"><img src="http://img42.exs.cx/img42/3012/chieftain.gif" alt="" width="57" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-195.html">Artega</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,626<br />
+	Threads: 66<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58650.html#pid58650" title="Let&#39;s get together on a Test server">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 06:10 AM <span class="post_edit" id="edited_by_58650"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58650">
+		Alliance scum.  I&#39;ll see you on the receiving end of my axe, then.<br />
+<br />
+Assuming this "Test Server 1" is a PvP server.<br />
+<br />
+And assuming I get an authentication key from FilePlanet.<br />
+<br />
+And assuming I successfully download and install the client.  And stuff.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ArrayPaladins were not meant to sit in the back of the raid staring at health bars all day, spamming heals and listening to eight different classes whine about buffs.[/quote]<br />
+The original Heavy Metal Cowâ¢.  USDA inspected, FDA approved.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58650">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=195" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58650" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58651" id="pid58651"></a>
+<div class="post " style="" id="post_58651">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-50.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-50.html">DeeBye</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,495<br />
+	Threads: 411<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58651.html#pid58651" title="Let&#39;s get together on a Test server">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 06:39 AM <span class="post_edit" id="edited_by_58651"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58651">
+		<blockquote class="mycode_quote"><cite>Roland,Nov 3 2004, 01:38 AM Wrote:</cite>Edit:<br />
+I&#39;m pretty sure it&#39;s the new intro video. Attempts to play the video by itself are met with video codec errors. I need to know what codec the video requires. Can anyone help me with this?<br />
+[right][snapback]59015[/snapback][/right]</blockquote><br />
+I don&#39;t know what codec the intro uses (or if it even uses one), but I can say that <a href="http://hellninjacommando.com/defilerpak/" target="_blank" rel="noopener" class="mycode_url">DefilerPak</a> is a great collection of pretty much every popular codec out there.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_58651">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=50" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58651" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58652" id="pid58652"></a>
+<div class="post " style="" id="post_58652">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-50.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-50.html">DeeBye</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,495<br />
+	Threads: 411<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58652.html#pid58652" title="Let&#39;s get together on a Test server">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 06:40 AM <span class="post_edit" id="edited_by_58652"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58652">
+		<blockquote class="mycode_quote"><cite>Artega,Nov 3 2004, 02:10 AM Wrote:</cite>Alliance scum.&amp;nbsp; I&#39;ll see you on the receiving end of my axe, then.<br />
+<br />
+Assuming this "Test Server 1" is a PvP server.<br />
+<br />
+And assuming I get an authentication key from FilePlanet.<br />
+<br />
+And assuming I successfully download and install the client.&amp;nbsp; And stuff.<br />
+[right][snapback]59016[/snapback][/right]</blockquote><br />
+Test 1 is a PvE server, though PvP is allowable in contested lands.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_58652">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=50" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58652" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58653" id="pid58653"></a>
+<div class="post " style="" id="post_58653">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-139.html"><img src="http://www.diablosc.com/hosted_files/avatars/roland.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,194<br />
+	Threads: 45<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58653.html#pid58653" title="Let&#39;s get together on a Test server">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 07:27 AM <span class="post_edit" id="edited_by_58653"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58653">
+		<blockquote class="mycode_quote"><cite>LochnarITB,Nov 3 2004, 12:35 AM Wrote:</cite>Oooh&#33;&amp;nbsp; A bug in either Firefox or the Download Statusbar extension.&amp;nbsp; Looks like they have an int they are treating as an unsigned int.&amp;nbsp; There is a minus sign in front of the file size that I thought was part of the formatting.&amp;nbsp; When I looked at it just now, the amount that was completed went to a -2.....&amp;nbsp; It wrapped around to the negative half of the int.&amp;nbsp; Oops&#33;&amp;nbsp; Argh&#33;&amp;nbsp; That means that I still have 300 megs to go.&amp;nbsp; My progress is now a huge negative number counting back up toward zero.&amp;nbsp;  :blink:<br />
+[right][snapback]59014[/snapback][/right]</blockquote><br />
+It&#39;s not Firefox. At least, I&#39;m pretty sure it&#39;s not. My Firefox download never calculated the full download value before I stopped it, so I could be wrong, but I&#39;d sooner look towards the extension.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Roland *The Gunslinger*
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58653">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.diablosc.com/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=139" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58653" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58656" id="pid58656"></a>
+<div class="post " style="" id="post_58656">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1389.html"><img src="https://www.lurkerlounge.com/forums/Diablo2/D2_Paladin04.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1389.html">Ajax</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 62<br />
+	Threads: 11<br />
+	Joined: Apr 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58656.html#pid58656" title="Let&#39;s get together on a Test server">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 09:19 AM <span class="post_edit" id="edited_by_58656"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58656">
+		Jeez Roland, you have my sympathies&#33;  I&#39;m downloading as we speak at a goodly speed thanks to my dorm&#39;s T1 line.  I hope you get your stuff sorted out&#33;  Hang in there, you&#39;ll get some playtime... :-)
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Out here,<br />
+--Ajax<br />
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58656">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1389" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58656" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58657" id="pid58657"></a>
+<div class="post " style="" id="post_58657">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-301.html"><img src="http://www.arewehavingfunyet.com/wow/lochnar_mythos.png" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-301.html">LochnarITB</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Concentrated goodness<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,658<br />
+	Threads: 115<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58657.html#pid58657" title="Let&#39;s get together on a Test server">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 10:02 AM <span class="post_edit" id="edited_by_58657"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58657">
+		<blockquote class="mycode_quote"><cite>Roland,Nov 3 2004, 02:27 AM Wrote:</cite>It&#39;s not Firefox. At least, I&#39;m pretty sure it&#39;s not. My Firefox download never calculated the full download value before I stopped it, so I could be wrong, but I&#39;d sooner look towards the extension.<br />
+[right][snapback]59019[/snapback][/right]</blockquote>The reason I think it might actually be buried within Firefox is that it showed the same progress number in both the extension&#39;s status bar display and in Firefox&#39;s download manager.  I would guess that the extension just takes the number from Firefox and redisplays it.  Of course, I have no way to prove it one way or another as I have never looked at any of the code.<br />
+<br />
+Now, back on topic -<br />
+<br />
+I&#39;m in.  I&#39;m using Lochnarco (should have been LochnarCO but the caps get downsized).  If you see a gnome mage with a big beard, handlebar mustache and a comb over (hence the CO) running around, take a look as it might be me.<br />
+<br />
+I&#39;m liking it ok for the few minutes I&#39;ve played.  I can&#39;t get the click to move feature to work though.  I prefer that to switching hands from mouse to keyboard for moving and changing the view.  I am also seeing quite a bit of flashing and tearing in the graphics.  It is probably just an outdated video driver but I am on a laptop and the history of getting an updated driver has not been good.  Reference drivers have given me fits and the manufacturer of the laptop has only updated once or twice that I know of.  The graphics so far seem a little more cartoonish than I would like but they are ok.  I suppose I should be posting in the other thread but I was here so just posted a couple of initial impressions.<br />
+<br />
+Off to WoW I go.  Have to get a couple quests under my belt and find someone to buy the junk I grabbed so far.  Oh yeah, is there any way to increase inventory space?  It seems awful small to me.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="color: yellow;" class="mycode_color">Lochnar[ITB]</span><br />
+<span style="text-decoration: underline;" class="mycode_u"><a href="http://www.arewehavingfunyet.com/diablo/diablo.shtml" target="_blank" rel="noopener" class="mycode_url">Freshman Diablo</a></span><br />
+<br />
+<a href="http://us.battle.net/d3/en/profile/lochnar-1436//" target="_blank" rel="noopener" class="mycode_url"><img src="http://i61.tinypic.com/jsoho8.png" loading="lazy"  alt="[Image: jsoho8.png]" class="mycode_img" /></a><a href="http://www.best-signatures.com/" target="_blank" rel="noopener" class="mycode_url"><img src="http://i60.tinypic.com/10gmtrs.png" loading="lazy"  alt="[Image: 10gmtrs.png]" class="mycode_img" /></a><br />
+<br />
+<span style="color: #DAA520;" class="mycode_color">"I reject your reality and substitute my own."<br />
+"You don't know how strong you can be until strong is the only option."<br />
+"Think deeply, speak gently, love much, laugh loudly, give freely, be kind."<br />
+"Talk, Laugh, Love."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58657">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.arewehavingfunyet.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=301" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58657" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58659" id="pid58659"></a>
+<div class="post " style="" id="post_58659">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-139.html"><img src="http://www.diablosc.com/hosted_files/avatars/roland.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,194<br />
+	Threads: 45<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58659.html#pid58659" title="Let&#39;s get together on a Test server">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 10:31 AM <span class="post_edit" id="edited_by_58659"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58659">
+		<blockquote class="mycode_quote"><cite>Ajax,Nov 3 2004, 04:19 AM Wrote:</cite>Jeez Roland, you have my sympathies&#33;&amp;nbsp; I&#39;m downloading as we speak at a goodly speed thanks to my dorm&#39;s T1 line.&amp;nbsp; I hope you get your stuff sorted out&#33;&amp;nbsp; Hang in there, you&#39;ll get some playtime... :-)<br />
+[right][snapback]59022[/snapback][/right]</blockquote><br />
+Well, I can play, even in fullscreen mode, but I have to always START the game in Windowed mode, so I&#39;m just going to stick to windowed. I don&#39;t see any performance differences. :)<br />
+<br />
+I&#39;m level 6 and progressing, albeit slowly. Would LOVE some company. Hint hint&#33; :D
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Roland *The Gunslinger*
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58659">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.diablosc.com/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=139" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58659" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58663" id="pid58663"></a>
+<div class="post " style="" id="post_58663">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58663.html#pid58663" title="Let&#39;s get together on a Test server">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 12:32 PM <span class="post_edit" id="edited_by_58663"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58663">
+		*shrug* I&#39;ll be on the servers all my closed beta chars are on.  The old PvP and PvE servers, whatever they&#39;re called now.<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58663">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58663" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58703" id="pid58703"></a>
+<div class="post " style="" id="post_58703">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-40.html"><img src="http://tribade.org/lavcat80.jpg?dateline=1613784227" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-40.html">LavCat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Trolling Tribade<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,776<br />
+	Threads: 180<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58703.html#pid58703" title="Let&#39;s get together on a Test server">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 06:45 PM <span class="post_edit" id="edited_by_58703"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58703">
+		<blockquote class="mycode_quote"><cite>LochnarITB,Nov 3 2004, 06:02 AM Wrote:</cite>The graphics so far seem a little more cartoonish than I would like but they are ok.&amp;nbsp; I suppose I should be posting in the other thread but I was here so just posted a couple of initial impressions.<br />
+<br />
+Off to WoW I go.&amp;nbsp; Have to get a couple quests under my belt and find someone to buy the junk I grabbed so far.&amp;nbsp; Oh yeah, is there any way to increase inventory space?&amp;nbsp; It seems awful small to me.<br />
+[right][snapback]59023[/snapback][/right]</blockquote><br />
+<br />
+I have finally gotten used to the cartoonish graphics.  In many areas they are quite beautiful.<br />
+<br />
+Find/buy bags.  You will *never* have enough inventory space.  Vist the bank in your nearest major city it you have not already done so for some long term storage.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-style: italic;" class="mycode_i">"I may be old, but I&#39;m not dead."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58703">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=40" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58703" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58704" id="pid58704"></a>
+<div class="post " style="" id="post_58704">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-40.html"><img src="http://tribade.org/lavcat80.jpg?dateline=1613784227" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-40.html">LavCat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Trolling Tribade<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,776<br />
+	Threads: 180<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58704.html#pid58704" title="Let&#39;s get together on a Test server">#16</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 06:54 PM <span class="post_edit" id="edited_by_58704"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58704">
+		I too am on the original beta and PvP servers.  (If they are Pacific Time, why do they have tornadoes?)  A friend with broadband downloaded the new client for me, and I was able to get on for several hours last night.  Everything is much as before, but with fewer people.  I was aware of only two other lurkers.<br />
+<br />
+I did see a level one human rogue in Ironforge, which made me wonder if that was a new stress test account.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-style: italic;" class="mycode_i">"I may be old, but I&#39;m not dead."</span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58704">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=40" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58704" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58712" id="pid58712"></a>
+<div class="post " style="" id="post_58712">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1208.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1208.html">Treesh</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Rubi-in-training<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,892<br />
+	Threads: 139<br />
+	Joined: Jan 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58712.html#pid58712" title="Let&#39;s get together on a Test server">#17</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 07:27 PM <span class="post_edit" id="edited_by_58712"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58712">
+		<blockquote class="mycode_quote"><cite>DeeBye,Nov 2 2004, 10:18 PM Wrote:</cite>I saw that Roland created a character on the Test 1 server, Eastern, so I did the same.&amp;nbsp; I don&#39;t know what faction Roland is, but I went with Alliance.&amp;nbsp; <br />
+<br />
+My character&#39;s name is "DeeBye" (duh), and I&#39;m a Human Mage, currently level 5.&amp;nbsp; I&#39;ll create a Guild if/when we can get 9 others to sign a Guild Charter.<br />
+<br />
+Test 1 server<br />
+Eastern<br />
+Alliance<br />
+<br />
+<br />
+[right][snapback]59008[/snapback][/right]</blockquote>I decided to go on the Test 1 server as well.  Right now, it&#39;s a gnome rogue named Zhasi, but there will probably be another made sometime. ;)  I&#39;m enjoying playing her (much better than the huntress Tal  :)  ), but I don&#39;t want to get too far ahead of the character that GG will make when he is done with work.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Intolerant monkey.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58712">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1208" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58712" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58752" id="pid58752"></a>
+<div class="post " style="" id="post_58752">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-139.html"><img src="http://www.diablosc.com/hosted_files/avatars/roland.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-139.html">Roland</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,194<br />
+	Threads: 45<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58752.html#pid58752" title="Let&#39;s get together on a Test server">#18</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-03-2004, 10:33 PM <span class="post_edit" id="edited_by_58752"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58752">
+		<blockquote class="mycode_quote"><cite>LavCat,Nov 3 2004, 01:45 PM Wrote:</cite>I have finally gotten used to the cartoonish graphics.&amp;nbsp; In many areas they are quite beautiful.<br />
+<br />
+Find/buy bags.&amp;nbsp; You will *never* have enough inventory space.&amp;nbsp; Vist the bank in your nearest major city it you have not already done so for some long term storage.<br />
+[right][snapback]59069[/snapback][/right]</blockquote><br />
+I don&#39;t know why everyone continues to complain about the graphics. I find them utterly unique and wholesome, refreshing beyond words, and any changes to them in favor of more "traditional" graphics would, IMO, make WoW just that much more like every other MMO.<br />
+<br />
+The graphics fit beautifully; perfectly. They couldn&#39;t have done any better.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Roland *The Gunslinger*
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58752">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.diablosc.com/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=139" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58752" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58783" id="pid58783"></a>
+<div class="post " style="" id="post_58783">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-72.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-72.html">Kevin</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				formerly Gnollguy<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 5,138<br />
+	Threads: 299<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58783.html#pid58783" title="Let&#39;s get together on a Test server">#19</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-04-2004, 02:29 AM <span class="post_edit" id="edited_by_58783"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-06-2004, 03:01 PM by <a href="https://www.lurkerlounge.com/forums/user-72.html">Kevin</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58783">
+		Char: Baldar<br />
+Class: Paladin<br />
+Race: Dwarf<br />
+Server: East - Test 1<br />
+<br />
+I&#39;m sure I&#39;ll end up playing something else as well and I&#39;ll put that here too.  Since we have people on East - Test 1 already I&#39;ll stick with that.<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Edit: </span> Got me another character now.<br />
+<br />
+Char: MarnTruehorn<br />
+Class: Hunter<br />
+Race: Tauren<br />
+Server: East - Test 1
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+---<br />
+It's all just zeroes and ones and duct tape in the end.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58783">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://thepumpkinking.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=72" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58783" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid58784" id="pid58784"></a>
+<div class="post " style="" id="post_58784">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7702-post-58784.html#pid58784" title="Let&#39;s get together on a Test server">#20</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-04-2004, 02:39 AM <span class="post_edit" id="edited_by_58784"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_58784">
+		Hi,<br />
+<br />
+<blockquote class="mycode_quote"><cite>Roland,Nov 3 2004, 03:33 PM Wrote:</cite>The graphics fit beautifully; perfectly. They couldn&#39;t have done any better.<br />
+[right][snapback]59118[/snapback][/right]</blockquote><br />
+You nailed that.  Wish I could say the same for gameplay, interface, etc., etc.<br />
+<br />
+WoW is not the game I&#39;ve been looking for (although it started out close, but they keep &#39;idiotizing&#39; it) but it may be the game I&#39;ll play till the one I want does get here.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_58784">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7702&amp;replyto=58784" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="7702" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-7702-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-7702-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-7702-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-7702-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=7702">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-7702.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=a298c84ec7a8a8d44e190f8c9bc94f7a">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:51 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=7702&amp;pid=58642#pid58642" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=7702&amp;pid=58642#pid58642" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

@@ -1,0 +1,168 @@
+/* Hello, and welcome to our CSS file. You probably got here by being interested on how we did something. 
+   Either way, look and learn but don't copy our code onto your site. */
+
+img {border: 0;}
+
+BODY { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 12px; color: #B19D78; margin:0px; padding:0px; background-color:#000;}
+
+TD { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 12px; color: #B19D78; line-height: 160%; }
+
+a:link, a:visited, a:active { text-decoration: none; color: #F5E7CF }
+
+a:hover { color: #DDC7A4; text-decoration: none }
+
+a:link.menu, a:visited.menu, a:active.menu { text-decoration: none; font-size: 11px; color: #F5DEB8 }
+
+a:hover.menu { color: #AE9A77; font-size: 11px; text-decoration: none }
+
+a:link.copy, a:visited.copy, a:active.copy { text-decoration: none; font-size: 11px; color: #F5DEB8 }
+
+a:hover.copy { color: #E5CEA8; font-size: 11px; text-decoration: underline }
+
+.menu {font-family: Verdana,Arial,Helvetica; font-size: 11px; line-height: 140%; color: #B19D78}
+
+.copy {font-family: Verdana,Arial,Helvetica; font-size: 11px; text-align: justify; line-height: 230%; color: #C4C0A7}
+
+.content {padding: 8px}
+
+.content_area {padding: 8px}
+
+.content_box {padding: 8px; border-left: 1px solid #CD8C08; border-right: 1px solid #CD8C08; background-color: #22090F;}
+
+.content_area_dl {padding: 10px 8px 8px 10px}
+
+.content_area_dl_side {padding: 10px 8px 0px 10px}
+
+.ad {padding: 9px 9px 0px 0px;}
+
+blockquote { padding: 10px 8px 10px 8px; background-color: #352217; border-top: 1px dotted #7E653D; border-bottom: 1px dotted #7E653D; margin: 15px 5px 15px 10px; font-style: italic; font-size: 11px; color: #DDCFB6; width:505px;}
+
+.td_lines TD {padding: 5px 0px 5px 0px; vertical-align : top; border-style : none none solid none; border-color : #000000 #000000 #64500C #000000;	border-width : 0px 0px 1px 0px; color: #AEA98B; font-size: 11px;}
+
+.out_border { border-left: 1px solid #777273; border-right: 1px solid #777273;}
+
+.nav_section  {padding: 0px 0px 0px 10px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 13px; font-weight: bold; line-height: 160%; color: #500516}
+
+.nav_section_right  {padding: 0px 0px 0px 12px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 13px; font-weight: bold; line-height: 160%; color: #500516}
+
+.nav_section_long  {padding: 0px 0px 0px 0px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 13px; font-weight: bold; line-height: 160%; color: #AD7335}
+
+.section {font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 15px; font-weight: bold; border-bottom: 1px solid #B19D78; line-height: 160%; color: #CFBD9C}
+
+.news_title {font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 15px; font-weight: bold; line-height: 160%; color: #CFBD9C}
+
+.latest {font-style: normal; font-weight: normal; font-size: 11px; line-height: 140%; color: #B19D78;}
+
+a:link.latest, a:visited.latest, a:active.latest { text-decoration: none; font-size: 11px; color: #F5DEB8 }
+
+a:hover.latest { color: #AE9A77; font-size: 11px; text-decoration: none }
+
+a:link.latest_small, a:visited.latest_small, a:active.latest_small { text-decoration: none; font-size: 11px; color: #AD7335 }
+
+a:hover.latest_small { color: #8C5821; font-size: 11px; text-decoration: none }
+
+#navPyra {margin:0; padding:2px 2px 2px 0; border-left:1px solid #814351;}
+
+#navPyra li {margin:0; padding:0; display:block; list-style-type:none;}
+
+#navPyra a:link, #navPyra a:visited {font-size:11px; font-weight:normal; padding:0px 0px 6px 12px; text-decoration:none; color:#814351;}
+
+#navPyra a:link.active, #navPyra a:visited.active, #navPyra a:hover {color: #25090F; background:url(https://web.archive.org/web/20040607120647im_/http://wc3.ogresnet.com/pics/layout/tab_pyra.gif) no-repeat left top;}
+
+.container { width: 147px; line-height: 130%; padding: 0px 0px 0px 16px;}
+
+.container_right { width: 145px; line-height: 130%; padding: 0px 0px 0px 18px;}
+
+.container_long { width: 180px; line-height: 130%; padding: 0px 0px 0px 16px;}
+
+.header	{color: #D3B681; font-style: normal; font-weight: bold; border-bottom: 1px solid #B19D78; line-height: 160%; font-size: 13px;line-height: 19px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica;}
+
+.small_font {font-family: Verdana,Arial,Helvetica; font-size: 11px; color: #C4C0A7}
+
+ font.small {font-family: Verdana,Arial,Helvetica; font-size: 11px; color: #C4C0A7}
+
+.small {font-family: Verdana,Arial,Helvetica; font-size: 11px; color: #C4C0A7}
+
+.small_dl {font-family: Verdana,Arial,Helvetica; font-size: 11px; color: #281B0B}
+
+.poll_text {font-family: Verdana,Arial,Helvetica; font-size: 11px; color: #281B0B}
+
+.rightbox_races { float: right; border-left: 1px solid #8E7315; margin: 0px 0px 0px 10px; padding: 4px; font-size: 10px; align: center; width: 220;}
+
+.leftbox, .rightbox {padding: 4px; font-size: 10px; align: center; width: 200px;}
+
+.leftbox {float: left; border-right: 1px solid #8E7315; margin: 0px 8px 0px 0px;}
+
+.rightbox {float: right; border-left: 1px solid #8E7315; margin: 0px 0px 0px 8px;}
+
+.forminput {width:100%; border:1px solid #B4A98C;background-color: #FBF7ED; font-family:Verdana, Arial; font-size:11px; color: #4B4941;}
+
+.forminput_normal {border:1px solid #B4A98C;background-color: #FBF7ED; font-family:Verdana, Arial; font-size:11px; color: #4B4941;}
+
+.go {border:1px solid #B4A98C;background-color: #C5C1B7; font-family:Verdana, Arial; font-size:11px; color: #494846;}
+
+.news_header {width:535px; background-color: #100205; padding: 3px 0px 3px 5px; border-style : solid solid solid solid; border-color : #CD8C08 #CD8C08 #64500C #CD8C08;	border-width : 0px 1px 1px 1px;}
+
+.news_writer {width:535px; background-color: #100205; padding: 3px 5px 3px 5px; border-style : solid solid solid solid; border-color : #64500C #CD8C08 #64500C #CD8C08;	border-width : 1px 1px 0px 1px;}
+
+
+/* DOWNLOADS and ARTICLES*/
+
+.category { font-weight:normal; color:#CFBD9C; font-size: 12px;}
+.category  a:link, .category  a:visited, .category  a:active  .category  a:hover { text-decoration: none; color: #CFBD9C}
+.category  a:hover { text-decoration: none; color: #D9CAAE }
+
+.related_links { float: right; padding: 10px 8px 10px 8px; background-color: #352217; border-top: 1px dotted #7E653D; border-bottom: 1px dotted #7E653D; margin: 15px 5px 15px 10px; font-style: italic; font-size: 11px; color: #DDCFB6; width:200px;}
+
+.cat_section {padding: 0px 0px 0px 12px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 12px; font-weight: bold; border-bottom: 1px solid #796B53; line-height: 160%; color: #D48D31}
+
+.maintitle {width:683px; background-color: #100205; padding: 3px 0px 3px 5px; font-family: trebuchet MS, trebuchet, Verdana,Arial,Helvetica; font-size: 15px; font-weight: bold; line-height: 160%; color: #CFBD9C}
+
+.go_field {width:683px; background-color: #100205; padding: 8px 5px 8px 0px; border-style : solid solid solid solid; border-color : #64500C #CD8C08 #64500C #CD8C08;	border-width : 1px 0px 0px 0px;}
+
+.page_field {width:683px; background-color: #100205; padding: 8px 5px 8px 5px; border-style : solid solid solid solid; border-color : #64500C #CD8C08 #64500C #CD8C08;	border-width : 1px 1px 0px 1px;}
+
+.titlemedium { font-weight:bold; color:#C98203; background-color:#362513; padding:4px; margin:0px; }
+
+.titlemedium  a:link, .titlemedium  a:visited, .titlemedium  a:active  { text-decoration: underline; color: #FFB019 }
+
+.up_sendleft  { background-color: #3E2D1B; padding:5px; margin-top:1px; border-top:0px solid #D0D9C2; border-right:1px solid #806714; }
+
+.up_sendleft_2  { background-color: #3E2D1B; padding:5px; margin-top:0px; border-top:0px solid #D0D9C2; border-right:0px solid #D0D9C2; }
+
+.up_formstrip {font-weight:bold; color:#C98203; background-color:#362513;padding:4px;margin-top:1px; border-top:1px solid #806714; border-bottom:1px solid #806714; }
+
+.tableborder { border:0px solid #D0D9C2;background-color:#726023; padding:0; margin:0 }
+
+#ucpcontent { background-color: #3E2D1B; border:1px solid #806714;line-height:150%; width:680 }
+#ucpcontent p  { padding:0px;margin:0px; }
+
+.row1 { background-color: #463523 }
+.row4 { background-color: #463523 }
+.row3 { background-color: #EEF2F7 }
+.row2 { background-color: #3E2D1B }
+.row5 { background-color: #2A1B0B }
+.row6 { background-color: #463523 }
+.row7 { background-color: #3E2D1B }
+
+#QUOTE { padding: 10px 8px 10px 8px; background-color: #3D2D1A;	border-top: 1px dotted #8E7315; border-bottom: 1px dotted #8E7315; margin: 10px 10px 10px 10px; font-style: italic;	font-weight: normal; font-size: 11px;} }
+/*
+     FILE ARCHIVED ON 12:06:47 Jun 07, 2004 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:58:32 Apr 05, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 69.305
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.059
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 30.96 (3)
+  PetaboxLoader3.datanode: 165.708 (4)
+  load_resource: 250.156
+  PetaboxLoader3.resolve: 110.599
+*/

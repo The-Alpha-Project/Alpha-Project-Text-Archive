@@ -1,0 +1,1963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PvP Server</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "6d8d989d0a6fad8d65435318ec2cd3de";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="6d8d989d0a6fad8d65435318ec2cd3de" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-134.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-133.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-132.html" class="pagination_page">132</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-133.html" class="pagination_page">133</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-134.html" class="pagination_current">134</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-135.html" class="pagination_page">135</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-136.html" class="pagination_page">136</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-135.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8227.html">PvP Server</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8227-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8227-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>PvP Server</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid50957" id="pid50957"></a>
+<div class="post " style="" id="post_50957">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50957.html#pid50957" title="PvP Server">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-18-2004, 03:12 AM <span class="post_edit" id="edited_by_50957"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50957">
+		Although this kind of thing may never be resolved on the PvP server, it&#39;s generally why I knew I wouldn&#39;t be considering it until later pushes.<br />
+<br />
+<a href="http://www.worldofwarcraft.com/thread.aspx?FN=wow-general&amp;T=137961&amp;P=1&amp;ReplyCount=176#post137961" target="_blank" rel="noopener" class="mycode_url">http://www.worldofwarcraft.com/thread.aspx...=176#post137961</a><br />
+<br />
+If you&#39;re a powergamer, it&#39;s something to be worked around - but I generally don&#39;t prefer getting ganked around while trying to mind my own business, etc.  No offense, Mongo - it&#39;s just not worth my time getting aggravated.<br />
+<br />
+Yes, instead I&#39;ll enjoy the aggravation of losing to Van Cleef due to server crashes, player disconnects, or just plain beatdowns 7 times without a victory  :)<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_50957">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50957" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid50963" id="pid50963"></a>
+<div class="post " style="" id="post_50963">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50963.html#pid50963" title="PvP Server">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-18-2004, 06:38 AM <span class="post_edit" id="edited_by_50963"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 07-18-2004, 06:39 AM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50963">
+		I haven&#39;t run into anything of the sort myself.  I still maintain that there&#39;s more griefing on the PvE server than there is on the PvP server.  The Hillsbrad area, though, is a problem.  Horde players go there in their low 20&#39;s, while Alliance players go there in their early 30&#39;s.  Worse, alliance quests then push players north to Alterac and to the Monastery, meaning that small waves of level 30 and up players pass through mid-20&#39;s horde players all the time.  Ganking, etc., is a big problem there and in Booty Bay (why goblin towns aren&#39;t declared "neutral" I don&#39;t know), but otherwise, the possibilities for PvP combat keeps one looking over one&#39;s shoulder and adds tension in areas that would normally consitute a dull grind.<br />
+<br />
+Honestly, my sympathy for the poster only goes so far.  Sure, it&#39;s stupid that some bored level 50&#39;s can take over a town like that and that should be changed, but there&#39;s no reason to hide in the inn or play a different character.  When you die, you have a 40-yard radius in which to resurrect and you can choose the timing and placement of your resurrection. In 2-3 deaths, you&#39;ll be well out of the radius that the griefers (even ones on mounts) will bother you.  At that point, you can go off and do something else until everything blows over.  Get a Shadowfang Keep instance party together, go to the southern Barrens, Stonetalon, or 1k Needles.   Or, do some stuff in Alterac or Arathi if you&#39;re high enough level.  The poster signed on to the PvP server and should have known the rules of the server going into it and the possibilities for griefing.  This is a different situation than in Diablo II where you didn&#39;t have the choice of being on a PK-enabled server or not.  And, of course, the consequences for dying are much less in WoW.<br />
+<br />
+The keys to having fun on the PvP server are: Be flexible in your plans, try if at all possible to do things in groups in heavily contested areas, keep your eyes open, pay attention to the general channels about sightings of players of the other faction, don&#39;t let it phase you when you&#39;re surprised by another player and killed (maybe even congratulate the person&#39;s ingenuity and timing), and even participate in some PvP battles of your own -- either defending your home territory or going on the offensive and attacking players of the other faction (my policy is that the person must be of similar level to me or higher).  There&#39;s supposed to be a war going on, after all.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_50963">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50963" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid50969" id="pid50969"></a>
+<div class="post " style="" id="post_50969">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50969.html#pid50969" title="PvP Server">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-18-2004, 03:10 PM <span class="post_edit" id="edited_by_50969"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50969">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>The poster signed on to the PvP server and should have known the rules of the server going into it and the possibilities for griefing.</blockquote>
+Contrary to what a lot of the loud-mouthed PvP supporters on that board, I don&#39;t really think he was whining.  I&#39;m sure he does know the current rules for the server but was just posting to let people (and Blizzard) know the sort of thing that was happening on the FvF server.  I have a feeling that the way it is currently working is very different than the original Blizzard ideas of what the server should be like and we&#39;ll see changes in game mechanics to try and limit the annoyances and opportunities to grief while still allowing people to engage in faction combat.  <br />
+<br />
+/begin vent<br />
+<br />
+Similarly, I got in a discussion in Ashenvale the other day about PvP on the FvF server.  Myself and a few others were discussing what we thought were bad parts about the way things were going.  It was a rather open discussion where we talked of the weaknesses of the system and the griefing and pointlessness of combat against those +- 5 levels of you.  While we were sharing what we didn&#39;t like about the system, there was no whining.  Yet one loud-mouthed pro-PvP player continually tried to shout us down claiming we were whining and that we should "get off the server."  I think that a lot of people need to learn that "whining" has an inherent negativity in it.  If you&#39;re being productive and not taking things personally, then discussing weaknesses and bad points of something is positive, despite focusing on things you don&#39;t like.  Honestly, we were looking at things we thought were stupid and coming up with possible fixes (which we then /suggest&#39;ed).<br />
+<br />
+/end vent<br />
+<br />
+To sum up, not all discussion of problems and negative parts of things are whining or implies that people are playing on the wrong server.  I think that the poster was just trying to see if there was a plan to fix what he perceived to be a problem with the game.  Given that the poster referenced GM&#39;s and what was said about the rules for PvP, I&#39;m fairly certain he did know the rules of the server.  However, that server is still in its infancy.  There will still be a lot of work on it and the poster was just giving his input into what wasn&#39;t working and searching for ways to fix it.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_50969">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50969" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid50971" id="pid50971"></a>
+<div class="post " style="" id="post_50971">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50971.html#pid50971" title="PvP Server">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-18-2004, 03:30 PM <span class="post_edit" id="edited_by_50971"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50971">
+		Honestly, I&#39;ve not really been a huge fan of player vs. player combat in quest-based games.  I prefer to work with people rather than against them. <br />
+<br />
+However, when the Faction vs. Faction server started up, I figured I&#39;d give it a try and see if I could give some feedback on the way it was implemented (and I have been  :)  ).  I&#39;ve got to say, though, thus far I&#39;ve been far underwhelmed.  The way that Blizzard has trumpeted the FvF combat is as a way to put the "War" back in "Warcraft."  The idea that I had in mind, going into playing on it, was that I&#39;d get a chance to fight against the horde, giving a tougher challenge that the AI&#39;s of the game could not match.  Sadly, I haven&#39;t really seen any of this.<br />
+<br />
+As an advancement-based game, levels mean a great deal to World of Warcraft.  You gain a great deal of strength with every level you gain.  Thus, even seemingly small differences in level can mean a great deal to how you work in combat.  What this means is that it is much harder to find an even playing field since on an uneven playing field, challenge simply doesn&#39;t exist.  If one character is vastly more powerful than another, then the end result is nearly predetermined unless there is a HUGE gap in player skill.  Thus, to have the Player vs. Player work like you would hope (to add challenge to the game), you will have to be rather close in levels to your opponent.<br />
+<br />
+The main problem I see on the FvF server, right now, is that you almost NEVER have a comparable match-up.  It always seems as though you&#39;re either finding players far below your level (and, thus, so easy that it&#39;s almost pointless to bother fighting) or players far above your level (at which point you stand no chance and can only run).  The chance that you&#39;re going to find someone who can actually give you a challenge without dealing you instant death is rather remote in most cases.  <br />
+<br />
+Thus, the main result that I&#39;ve seen on the FvF server, as Bolty expected, is annoyances.  You&#39;re either going around, minding your own business and get ganked or you go out in search of others to fight (and consequently gank others).  Also, it seemingly draws a line in the sand with little crossing over to do quests on the other side.  I think this is why you see almost no alliance players in Ashenvale or Stonetalon: the rate at which you can quest without being interrupted by random death is lower than other, safer regions.  Now, these interruptions aren&#39;t really too bad.  It just means that you&#39;ll need to run around as a ghost for 2-5 minutes, but those are 2-5 minutes that you could have spent finishing up a quest.<br />
+<br />
+Currently, I would conclude that the FvF server is not for me.  To me, it just adds a random chance that I&#39;ll be questing and then suddenly have to make an unexpected corpse run.  In the cases where I HAVE found someone near my level to fight, it has been extremely enjoyable.  But those cases are few and far between, being vastly outweighed by the less enjoyable aspects.  <br />
+<br />
+Perhaps when Blizzard begins to more fully implement the game mechanisms and rules for PvP, it will do what it is designed to do and add the "War" to "Warcraft."  But right now, it&#39;s really adding the "Gank" to "Gankcraft."
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_50971">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50971" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid50977" id="pid50977"></a>
+<div class="post " style="" id="post_50977">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-412.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-412.html">Brista</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,041<br />
+	Threads: 53<br />
+	Joined: Mar 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50977.html#pid50977" title="PvP Server">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-18-2004, 06:10 PM <span class="post_edit" id="edited_by_50977"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50977">
+		<blockquote class="mycode_quote"><cite>TheDragoon,Jul 18 2004, 04:04 PM Wrote:</cite>To sum up, not all discussion of problems and negative parts of things are whining or implies that people are playing on the wrong server.</blockquote>I saw quite a lot of this forum behaviour in SWG and elsewhere<br />
+<br />
+It&#39;s basically a cheap debating tactic to rubbish your argument without engaging your points
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_50977">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=412" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50977" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid50998" id="pid50998"></a>
+<div class="post " style="" id="post_50998">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-50998.html#pid50998" title="PvP Server">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 12:40 AM <span class="post_edit" id="edited_by_50998"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_50998">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>Contrary to what a lot of the loud-mouthed PvP supporters on that board, I don&#39;t really think he was whining. I&#39;m sure he does know the current rules for the server but was just posting to let people (and Blizzard) know the sort of thing that was happening on the FvF server.</blockquote>
+<br />
+It seems strange to be on this side of the argument, since I was one of the most vocal critics of player-killing in D2.  However, there is a great divide between way you interpret his intentions are and the way I read them.  Also, I read the same post prior to Bolty&#39;s linking to it, and some truly whiny sentences were removed.  Either he edited his post to remove them, or he posted his message on multiple forums and decided to change a few things in his postings.<br />
+<br />
+I agree with you that PvP is nowhere near complete and needs a lot of work.  Of course, Blizzard has said from the beginning that the current implementation is nowhere near what they have planned, but they&#39;re using the current system to test some things out.  It is good to let Blizzard know about problems one is experiencing.  To this end, he could have said something along the lines of:<br />
+<br />
+"As a Horde player, I&#39;ve had a lot of problems trying to finish quests in the Hillsbrad Foothills, because of the many higher level Alliance players who stream through the Hillsbrad area and prey on the lower level Horde players in the area.  In fact, I&#39;ve been playing there three days and haven&#39;t been able to complete a single quest, even when I&#39;m in a party.  What&#39;s worse is that today, a group of level 50&#39;s came and took over Tarren Mills.  They killed all the guards, NPC&#39;s, and vendors and then staked out the area to kill any respawns or players who come near.  Look, I like PvP combat as much as anyone, but this is getting over the top.  Hillsrad, one of the best areas for Horde players in their 20&#39;s, has basically become unplayable.  I hope that Blizzard can fix this.  Meanwhile, I&#39;m heading over to Kalimdor to quest there, because the situation in Hillsbrad is just ridiculous."<br />
+<br />
+A person who writes something like this gets my sympathy.  Of course, the issue of Hillsbrad has been beaten to death on the forums, but we do know that the situation has prompted Blizzard to make at least two changes to PvP combat:<br />
+<br />
+1. The new guard system will be extended to all towns in the future.  (I don&#39;t know how effective the system is, but we&#39;ll see).<br />
+<br />
+2. The PvP combat system will be changed to make high level characters not so overpowerful against weaker opponents.  I understand that they&#39;ll make it so that high level characters won&#39;t resist spells cast by lower level characters so much and that lower level characters will be able to hit higher level characters more.  A higher level character will still be able to beat a single low level character, but the idea is that a group of lower level characters will have a chance to gang up on and beat a higher level character.<br />
+<br />
+Also, I hope they rework some of the area in and around Hillsbrad.  Short of removing Southshore altogether, though, I&#39;m not sure if there are any easy fixes to the problem.<br />
+<br />
+Anyway, back to our original poster, the part where he loses my sympathy is when he starts spouting the boloney about being "trapped" in Tarren Mills and that the only way to get out of the situation is to log off and play another character in the hope the level 50&#39;s will go away.  At that point, he loses all credibility with me.  He decided on his own to play on a *beta* PVP server that has the first implementation of PvP combat.  Are there going to be problems?  Of course&#33;  Any good beta tester should try to find out what those problems are and report them so that they can be fixed.  However, any good beta tester should also be flexible enough to figure out a way to get around the problem until it gets fixed.  In this case, the poster has chosen not to use the most obvious way to get around the problem -- rez-die a few times to get out of the area -- and hasn&#39;t bothered to find out if there might be some other place to go level until the Hillsbrad situation gets resolved, like say Stonetalon, southern Barrens, 1k Needles, or Shadowfang Keep.<br />
+<br />
+Was it right for the poster to point out a problem with the game?  Absolutely.  But when he crossed the line and painted himself as a powerless victim, when he really isn&#39;t, I lose much of my sympathy for him.  Also, the fact that he says that there was a fair-sized group there who couldn&#39;t think of the obvious solution to get out of Tarren Mills makes me wonder if he made up the whole story.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_50998">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=50998" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51006" id="pid51006"></a>
+<div class="post " style="" id="post_51006">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-935.html"><img src="http://members.kingston.net/i556up/images/avatar35.jpg" alt="" width="64" height="59" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-935.html">JustAGuy</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 372<br />
+	Threads: 22<br />
+	Joined: Sep 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51006.html#pid51006" title="PvP Server">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 04:31 AM <span class="post_edit" id="edited_by_51006"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51006">
+		To quote one of the posters in that thread:<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>"lol i would just like to reiterate how rofl this was. the best is when people are logging in and u kill them as they log in, that deff. drives my fun meter through the roof."</blockquote>
+This is the worst kind of player, the player that takes pleasure in ruining the fun of other players. Very selfish, VERY immature and only semi-literate. This type of player, as we all know, will always be around. The good thing about the FvF/PvP server is that this player has a definite place he can go. Those who choose to avoid him can go to the non-FvF/PvP server, where his powers would be limited. This is the kind of player that has no home on the PvE server. <br />
+<br />
+It seems like the PvE server is the "real" World of Warcraft and the FvF server is the "other" server, just for those griefer types who don&#39;t really want to play the game -- they only want to cause trouble for other players.<br />
+<br />
+Then again, I wonder, why would someone want to play on the PvP/FvF server at all? I suppose it&#39;s to engage in Faction vs. Faction combat, but I can&#39;t see that happening when people treat it like the PvE server (i.e. people soloing, or small groups questing, not caring what happens at a certain town until they actually need to do things there).<br />
+<br />
+As for Cleefy-cakes, I got tired of the losses, so a few of us went in tonight as smoked him good. It was a cake-walk, considering that we were 25, 28, 33, and 34. I think I got 50 exp or so when Cleef died, making a total of 50 exp gained for the whole excursion. :)  Delicious cheese.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 1pt;" class="mycode_size"><span style="color: gray;" class="mycode_color">"Yay&#33; We did it&#33;"<br />
+"Who are <span style="font-weight: bold;" class="mycode_b">you</span>?"<br />
+"Um, uh... just ... a guy." <span style="font-style: italic;" class="mycode_i">*flee*</span></span></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51006">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=935" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51006" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51010" id="pid51010"></a>
+<div class="post " style="" id="post_51010">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51010.html#pid51010" title="PvP Server">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 04:58 AM <span class="post_edit" id="edited_by_51010"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51010">
+		The only way a PvP server will ever be fair is if it is challenge-based - you can issue challenges to characters of equal or higher level, and the two of you can fight only if the challenge is accepted.<br />
+<br />
+RvR servers, being team-based, require only that there be a special "arena" outside of the main gameworld where the fighting takes place, where organization can be made beforehand and a distance must be crossed to engage the enemy.<br />
+<br />
+Of course, such controls would be an outrage to hardcore PvPers, because they enforce fairness and eliminate their primary source of fun - griefing.<br />
+<br />
+If the controls are in place, I&#39;ll be there.  If not (likely), I too am glad that those people will have someplace to go and ... express their fine selves.<br />
+ :P
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51010">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51010" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51022" id="pid51022"></a>
+<div class="post " style="" id="post_51022">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51022.html#pid51022" title="PvP Server">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 12:51 PM <span class="post_edit" id="edited_by_51022"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51022">
+		I even thought leveleing up on Mordred(DAoc) was fun.<br />
+But good PvP servers require a complex ruleset, or they become a messy game of Quake.<br />
+<br />
+One of the most important things - NO REWARDS FOR PVP. The only rewards should be titles etc. If you make it so people "win" the game by ganking you end up destroying immersion and make a game where the masses mostly just through themselves at each other because its the fastest way all around to earn points.<br />
+<br />
+<br />
+I hope Blizz thinks hard as is developes this server.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51022">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51022" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51024" id="pid51024"></a>
+<div class="post " style="" id="post_51024">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-100.html"><img src="http://i.imgur.com/H03sWNHt.jpg?dateline=1428341867" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-100.html">Tal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Stormrage Cat Herder<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,920<br />
+	Threads: 296<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51024.html#pid51024" title="PvP Server">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 12:59 PM <span class="post_edit" id="edited_by_51024"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51024">
+		the perfect reason why I won&#39;t be going over to the PvP in its current form, if at all. I was part of the forces that went to Menethil Harbor to try and repulse the Horde. I watched for awhile until I saw a level 25 orc warrior (I was level 23) and decided to give him a go. I charged, rended and had almost gotten him down to just a sliver when a level ?? Tauren warrior one shot me. Res and the graveyard and run back and retrieve my body a distance from the fight to watch. Same ?? Tauren charges and one shots me again. I repeated the process and recovered farther away to watch the rest of the fight. I was kind of surprised by the complaints in chat about the higher level Horde players beating up on the lower level Alliance players. What people seemed to forget is that they <span style="font-style: italic;" class="mycode_i">chose</span> to attack those Horde and get killed over and over again. <br />
+<br />
+I <span style="font-style: italic;" class="mycode_i">like</span> being able to choose when I engage the enemy rather than getting jumped as I go about my business - and with the number of times I ran across Horde players in my trips up and down the road of Darkshire and Redridge it would have been very very often. I like being able to participate in repulsing a raid or travelling with a raid.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51024">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=100" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51024" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51027" id="pid51027"></a>
+<div class="post " style="" id="post_51027">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51027.html#pid51027" title="PvP Server">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 01:23 PM <span class="post_edit" id="edited_by_51027"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51027">
+		Hi,<br />
+<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">this player has a definite place he can go</span><br />
+<br />
+I think so, too.  But there are laws against sending him there, unfortunately.  Would make a fine filter for the gene pool. ;)<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51027">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51027" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51039" id="pid51039"></a>
+<div class="post " style="" id="post_51039">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-935.html"><img src="http://members.kingston.net/i556up/images/avatar35.jpg" alt="" width="64" height="59" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-935.html">JustAGuy</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 372<br />
+	Threads: 22<br />
+	Joined: Sep 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51039.html#pid51039" title="PvP Server">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 04:14 PM <span class="post_edit" id="edited_by_51039"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51039">
+		Neutral Temperment
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 1pt;" class="mycode_size"><span style="color: gray;" class="mycode_color">"Yay&#33; We did it&#33;"<br />
+"Who are <span style="font-weight: bold;" class="mycode_b">you</span>?"<br />
+"Um, uh... just ... a guy." <span style="font-style: italic;" class="mycode_i">*flee*</span></span></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51039">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=935" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51039" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51054" id="pid51054"></a>
+<div class="post " style="" id="post_51054">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51054.html#pid51054" title="PvP Server">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 07:59 PM <span class="post_edit" id="edited_by_51054"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51054">
+		Cryptic, the PvP system you propose is pretty close to the current PvE server.  Certainly all of those things could be allowed on the PvE (adding party-based or guild based duels or even an arena would be trivial), most of them are already allowed, and several things you wouldn&#39;t allow are even allowed there.  So I guess if we bother to have an FvF server, it has to be something way beyond this.  Of course, that doesn&#39;t mean you have to play there.<br />
+<br />
+Trying to implement a real faction war in this game has so many problems, I don&#39;t even know where to start.  Perhaps the best starting point would be to ask "What is the goal of the faction war?"  We have two opposing sides, so that is a better starting point than Diablo PvP.  Are we trying to defend our citizens from enemy raiders?  Trying to conquer enemy towns?  Trying to take over the enemy capitols and literally win the war?  You can&#39;t actually do any of it.  You can only kill enemy PCs thereby delaying them for the time it takes to retrieve their corpse.  And since most enemy PCs are either way above or way below you in power, it will usually either be considered a suicide mission or "grief play".<br />
+<br />
+We&#39;ve taken a very static, completely unwinnable, cooperative game, and turned it into a completely static, completely unwinnable, competitive game.  And then to make things more confusing and ensure that PvP balance has no relationship to player skills or teamwork, we combine the two games into one.  Now, this might actually turn out to be fun (maybe, maybe not).  But I think people are certainly going to have to take some things for granted, like the idea that every now and then you are going to get shredded by higher level foes that you have no interest in fighting.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51054">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51054" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51070" id="pid51070"></a>
+<div class="post " style="" id="post_51070">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51070.html#pid51070" title="PvP Server">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-19-2004, 09:37 PM <span class="post_edit" id="edited_by_51070"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51070">
+		Ah well, thanks for the information.  It sounds like I wonât be on the FvF servers at all.  :)  It might be fun if there was at least a disincentive for ganking â say, an honor/dishonor system.  If you fight and kill a higher level character, you gain honor.  Say youâre level 20 and you kill a level 25 â you get 5 honor points.  Dishonor occurs when you kill characters of lower level.  If you have honor, you gain titles and appear on a ârealm charter of heroes.â  If you have dishonor, you actually lose XP when you commit another dishonorable kill, according to how bad your dishonor is.<br />
+<br />
+This would reward players who play fairly and take on difficult challenges.  Cowards and gankers would either have to take an XP hit if they want to continue their behavior, or actually try to fight some high-level opponents for awhile to get their dishonor cleaned up.  Those who refuse to do so end up taking big XP hits.<br />
+<br />
+Yes, Iâm dreaming.  PvP just isnât my style.  Counterstrike, Quake, etc. are fun.  You play on honest servers and everyone starts off on equal footing.  RPGs are immersive and cooperative, and are level-based.  There is an implied superiority, often insurmountable, in most battles before the fight even begins.  You can rate your opponent, and if theyâre 99% killable, you âduelâ them.  Lots of time is spent seeking such uneven matchups, executing, and bragging about them.<br />
+<br />
+Is that really fun for some people?  I guess it is.  But itâs not for me.<br />
+ :huh:
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51070">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51070" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51092" id="pid51092"></a>
+<div class="post " style="" id="post_51092">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51092.html#pid51092" title="PvP Server">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-20-2004, 02:33 AM <span class="post_edit" id="edited_by_51092"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51092">
+		<blockquote class="mycode_quote"><cite>Cryptic,Jul 19 2004, 06:31 PM Wrote:</cite>If you fight and kill a higher level character, you gain honor.&amp;nbsp; Say youâre level 20 and you kill a level 25 â you get 5 honor points.&amp;nbsp; Dishonor occurs when you kill characters of lower level.</blockquote>Won&#39;t work.  It&#39;s the same as the "high level chars shouldn&#39;t be able to attack low level chars" argument - with a system like that, each side will send level 1 characters in to the opponent&#39;s sides to scout around and be pests, because nobody would want to insta-kill the char due to the dishonor penalty.  Abuse would follow.<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51092">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51092" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51104" id="pid51104"></a>
+<div class="post " style="" id="post_51104">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51104.html#pid51104" title="PvP Server">#16</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-20-2004, 06:23 AM <span class="post_edit" id="edited_by_51104"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 07-20-2004, 06:25 AM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51104">
+		<blockquote class="mycode_quote"><cite>Quote:</cite> Ah well, thanks for the information. It sounds like I wonât be on the FvF servers at all.</blockquote>
+<br />
+A reminder:  This is literally Blizzard&#39;s first quick-and-dirty implementation of a sort of FvF type game, and they have said that this is nowhere near what they have envisioned for the future.  They say that they are working on battlegrounds and the ability to take over towns, etc.  I have no idea how it&#39;ll work either, but give them some time.<br />
+<br />
+I know it sounds like I&#39;m being an apologist for the PvP server, but it just comes from the fact that I&#39;ve seen more griefing the times I&#39;ve been on the PvE server than I have seen on the PvP server.  Maybe now that there are bored level 50&#39;s around, that&#39;ll change, but we still have to see.  Meanwhile, I&#39;m actually enjoying myself on the PvP server, even when I get ganked.  The possibility adds some tension to many areas that would otherwise be a boring grind.  (The Shimmering Flats are a prime example).  It also adds tension to doing things as simple as running up to the Scarlet Monastery, going to Dread Mist Peak (which is NW of crossroads) to finish an Ashenvale quest, and getting to Razorfen Downs.  And, yeah, it&#39;s fun to get into fights with Horde players on occation.<br />
+<br />
+I guess what I&#39;m saying is that don&#39;t let a poster or two, who perhaps lends support to your own biases and imagination, sway you into thinking the PvP server (currently anyway) is one huge grief-fest.  Are there problems on the server?  Absolutely&#33;  But I have to say that I&#39;m enjoying the thrill and suspence of traveling through and questing in contested areas more than I ever would have on the PvE server.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51104">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51104" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51128" id="pid51128"></a>
+<div class="post " style="" id="post_51128">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1343.html"><img src="https://www.lurkerlounge.com/forums/D2_Skill_Strafe.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1343.html">Brainiac4</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 21<br />
+	Threads: 2<br />
+	Joined: Mar 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51128.html#pid51128" title="PvP Server">#17</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-20-2004, 05:27 PM <span class="post_edit" id="edited_by_51128"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51128">
+		I have no problem with the idea that players provide the best opponents. I&#39;ve played a lot of DOOM, Duke Nukem 3d, Quake, Quake II, Quake3Arena, Unreal Tournament.... you get the idea. I&#39;m not opposed to facing other players as my opponents. But in those games, I can go from newly-spawned to fully equipped in perhaps a minute. And even in those, camping spawn points (for either players or equipment) is generally frowned on. <br />
+<br />
+But for me, non-consensual PvP adds nothing to an RPG. So I won&#39;t be playing on the PvP/FvF server. Which, of course, will get me called a "carebear" by the jerks who want to grief me without fear of retribution. <br />
+<br />
+That said, though, I think that the suggestion about honor loss for killing low-level guys could work nicely. You&#39;d simply need to make it only apply to characters in their home area. So killing a level 1 Alliance player in Horde territory is no big deal ("he knew the risks") but killing one in Alliance territory gets you dishonor.  You might even have players get reps as lawbreakers affecting their home territory, so that enough of a killing spree of newbies gets you hunted in every town, not just the enemy ones. <br />
+<br />
+If you do have a system that gives dishonor, you&#39;d want some means of gaining honor as well, apart from defeating higher-level opponents. Not sure what that would be, though....
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Of course, your mileage may vary.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51128">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1343" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51128" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51133" id="pid51133"></a>
+<div class="post " style="" id="post_51133">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51133.html#pid51133" title="PvP Server">#18</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-20-2004, 06:12 PM <span class="post_edit" id="edited_by_51133"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51133">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>That said, though, I think that the suggestion about honor loss for killing low-level guys could work nicely. You&#39;d simply need to make it only apply to characters in their home area. So killing a level 1 Alliance player in Horde territory is no big deal ("he knew the risks") but killing one in Alliance territory gets you dishonor. </blockquote>
+<br />
+Ah, you must not be aware of how the FvF server is setup.  Newbie zones and slightly higher zones are designated as faction territory.  If you are a member of that faction in your own territory, you cannot be attacked by players of the other faction unless you first initiate combat yourself.  Therefore, there a level 1 character who is in his usual newbie area has nothing directly to fear from level 50&#39;s, except for the possibility that the level 50 player might kill some important NPC&#39;s.  Of course, the newbie towns are better protected than most by the guard system, so generally this isn&#39;t a major problem.  One can get as high as level 20 without needing to travel outside your faction&#39;s territory.  Faction territories are the following:<br />
+<br />
+Alliance:<br />
+Teldrassil<br />
+Elowynn Forest<br />
+(Dwarf starting area)<br />
+Westfall<br />
+Loch Modan<br />
+Darkshore<br />
+<br />
+Horde:<br />
+Mulgore<br />
+Duotar<br />
+Tirisifal Glades<br />
+The Barrens<br />
+Silverpine Forest<br />
+<br />
+All other areas are "contested," meaning that PvP combat can be initiated with a member of the opposing faction at any time.<br />
+<br />
+My hope is that Blizzard introduces another type of zone:  Neutral Territory.  It just makes sense to me that PvP combat should not be allowed in goblin controled towns.  After all, such fighting would be bad for business.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51133">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51133" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51155" id="pid51155"></a>
+<div class="post " style="" id="post_51155">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51155.html#pid51155" title="PvP Server">#19</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-20-2004, 11:49 PM <span class="post_edit" id="edited_by_51155"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51155">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>My hope is that Blizzard introduces another type of zone: Neutral Territory. It just makes sense to me that PvP combat should not be allowed in goblin controled towns. After all, such fighting would be bad for business.</blockquote>
+Even better, I saw some suggestions on the Blizzard WoW General Board where people said that they&#39;d like to see the guards attack anyone who attacks another while in the "neutral" towns.  If people continue to be nuisances in those towns, perhaps the townsfolk could eventually become completely hostile toward you and not do business with you at all.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_51155">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51155" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid51159" id="pid51159"></a>
+<div class="post " style="" id="post_51159">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8227-post-51159.html#pid51159" title="PvP Server">#20</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">07-21-2004, 01:00 AM <span class="post_edit" id="edited_by_51159"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_51159">
+		Ideally in some zones, if you just have to kill someone you can, but you do so knowing a lvl 70 gaurd is going come over and hand you your butt. Even better tie faction into iso maybe youll get away with it once a month but if you do it too much you become Kill On Sight in said town.<br />
+<br />
+Kind of like real life.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_51159">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8227&amp;replyto=51159" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8227" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8227-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8227-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8227-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8227-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8227">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-8227.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=68242f918bc516149ff1889eef98b99d">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:54 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8227&amp;pid=50957#pid50957" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8227&amp;pid=50957#pid50957" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

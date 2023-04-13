@@ -1,0 +1,2076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Rest State</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "eb546225bc158de6f6ef426dab968cb7";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="eb546225bc158de6f6ef426dab968cb7" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-135.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-134.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-133.html" class="pagination_page">133</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-134.html" class="pagination_page">134</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-135.html" class="pagination_current">135</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-136.html" class="pagination_page">136</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-137.html" class="pagination_page">137</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-136.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8357.html">Rest State</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (4):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8357-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="thread-8357-page-3.html" class="pagination_page">3</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="thread-8357-page-4.html" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8357-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Rest State</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid49221" id="pid49221"></a>
+<div class="post " style="" id="post_49221">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49221.html#pid49221" title="Rest State">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-23-2004, 04:14 PM <span class="post_edit" id="edited_by_49221"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49221">
+		Here&#39;s an article from <a href="http://www.anyuzer.com/archives/132.php" target="_blank" rel="noopener" class="mycode_url">anyuzer.com</a> that&#39;s an interesting read.  He sums up Blizzard&#39;s intentions well - to be the first MMO to bridge the gap between hardcore and casual players.  Yes, hardcore players will still be higher levels and have more "stuph" than casuals, but the casual player will be able to log in and have this mystical thing called "fun," because with the exp boost they can have the joy of strong advancement in a short period of time.<br />
+<br />
+However, the Rest State is still flawed.  As he points out, when you start out at a Rested state, everything below that feels like a penalty and not a bonus.  The game currently is NOT geared correctly toward the Rest State, as I&#39;ve commented earlier.  Blizzard needs to gear the entire game toward the "Tired" state, and call it Normal.  Then have Rested and Well Rested ABOVE it as bonuses.<br />
+<br />
+I&#39;d say that right now the exp/kill and quest rewards seem to be aligned toward having a "Normal" (150%) rest state.  Since I&#39;m a loser and I play too much, I&#39;m usually in the "Tired" (100%) state, and I blow through quests like crazy.  It forces me to jump all over the world to find areas with quests to do - and while I&#39;m now finding plenty to do, the fact remains that I haven&#39;t seen my home lands of the Night Elves with my Night Elf priest since she was level 12.  Ouch.  This makes it so if I&#39;m playing a human character, it&#39;s all the same.  If I play as a Night Elf, I&#39;d like to be doing a majority of Night Elf-storyline quests&#33;  This actually adds replayability, since you&#39;d want to make a dwarf/gnome character to play THOSE quests later on.  Right now, I have to go and do basically ALL Alliance quests, so there&#39;s no storyline difference between playing a Night Elf, Dwarf, Gnome, or Human.  Blah&#33;  BORING&#33;<br />
+<br />
+I think Blizzard&#39;s getting close with Rest State in the form that is desired - a simple system to provide a little extra fun to the casual gamer - but just a few more tweaks will get it right.  Thoughts?<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49221">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49221" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49209" id="pid49209"></a>
+<div class="post " style="" id="post_49209">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49209.html#pid49209" title="Rest State">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-23-2004, 04:43 PM <span class="post_edit" id="edited_by_49209"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49209">
+		Hi,<br />
+<br />
+Again I ask a simple question, what&#39;s the use of the rest state?<br />
+<br />
+In PvE, does it matter to the casual player that people playing 25 hours a day are going to get to level 999 in five days?  Does it reduce *his* ability to level, to do quests, to find people to join with, etc. etc.?  Not that I can see.  If the game is balanced for the casual player, then the presence of power gamers affects him not at all.  So, there is no problem in PvE and thus no need to fix one.<br />
+<br />
+In PvP, will a casual player ever develop the *player* skills necessary for him to go heads up against a power player at anything like his level?  Yeah, right.  And no "rest" system is ever going to let someone that plays less get to a higher level than someone who plays more (unless they implement a *negative* experience gain after some period of time -- like say half an hour).  So, unless Blizzard changes the set up so that lower level players get some huge handicap (and that could be done with or without a rest system), the power player is always going to own the casual player in PvP.  Some might see a problem in that someone who doesn&#39;t practice as much doesn&#39;t get as good as someone who does, but even that perceived "problem" isn&#39;t really addressed by the rest system.<br />
+<br />
+The rest system: an ineffectual solution to a non existing problem.  In this push, they fixed half of the rest system by taking half of it out.  I think they should go ahead and fix the rest the same way.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49209">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49209" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49230" id="pid49230"></a>
+<div class="post " style="" id="post_49230">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49230.html#pid49230" title="Rest State">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-23-2004, 05:34 PM <span class="post_edit" id="edited_by_49230"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49230">
+		I pretty much agree with everything that you said.  I think the rest system is a really good idea and I hope that Blizzard will hone in on a better application of the system than they currently have.  <br />
+<br />
+However, I&#39;d like to expand upon what you said in the following with my own experiences in this game.<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>I&#39;d say that right now the exp/kill and quest rewards seem to be aligned toward having a "Normal" (150%) rest state. Since I&#39;m a loser and I play too much, I&#39;m usually in the "Tired" (100%) state, and I blow through quests like crazy. It forces me to jump all over the world to find areas with quests to do - and while I&#39;m now finding plenty to do, the fact remains that I haven&#39;t seen my home lands of the Night Elves with my Night Elf priest since she was level 12. Ouch. This makes it so if I&#39;m playing a human character, it&#39;s all the same.</blockquote>
+I agree that it does appear as though the game is geared toward the "Normal" state of 150% XP.  I&#39;ve found that if I just play at this setting, then things seem to pass at a reasonable rate and quests don&#39;t feel TOO spread out.  I&#39;ve found that, as far as I&#39;ve played, when I&#39;m "Rested" I tend to get ahead of the curve for quests and tend to complete them when green or below.  When I&#39;m "Tired" I do just what you detail and hop around the world, doing every quest that I can find.  As you say, this makes playing any character for a given faction exactly the same.<br />
+<br />
+-But I would go even farther.  I would say that playing a given race has exactly the same problem.  Currently, when starting a Night Elf I will go through and do every single quest I can get my hands on in Teldrassil in order to get enough XP to move on to Darkshore at a reasonable level.  The same goes for all other races that I&#39;ve played in their starting areas.  There&#39;s literally no difference in the story for one character of a race from another (aside from the rare class-specific quests).  Currently, I am loathe to abandon any quests or try to specialize my questing to a certain area because I know that for each quest that I abandon, I&#39;ll be short on that many quests later on.  <br />
+<br />
+For this sort of problem, there isn&#39;t really any easy solution.  Personally, I think the best case answer would be to put in more quests.  Lots more quests.  I&#39;d like to see all sorts of quests as you can imagine for each area.  Make it so that a player isn&#39;t forced to do EVERY quest.  Let the players choose which types of quest their character wants to do.  Make it so that it&#39;s not a big deal to skip that quest that takes you deep into the heart of a mage mob base as a Warrior.  With so many choices of quest types, a player will have his choice of when to move on to the next region.  Many will probably progress to the next area similar to how they do now.  Sure, some might stay and complete every single quest in an area just to be thorough (I&#39;m often guilty of this) but at least they&#39;ll be having fun as they do this.  And, of course, better rewards are to be had in the next area so people will tend to progress into more difficult areas more naturally.  More quests means more control and leeway as to how you want to play your character and, hence, more ability to "immerse yourself in the world" as Blizzard always points out is their goal.  <br />
+<br />
+-----------<br />
+<br />
+To change gears a bit, I&#39;d also like to address the fact that the experience earned during "Normal" currently is laughably small.  Five bubbles on the experience bar is not much at all.  I&#39;ve found that I will often move from the Rested-Normal boundary to the Normal-Tired boundary in about an hour.  If, as Blizzard claims, they want to see most people play most of their time in Normal, they&#39;ll need to expand this region a lot or balance the game toward the Tired end of the spectrum.  I highly doubt that most people are only going to play for an hour or two a day if they&#39;re really getting into the game.  <br />
+<br />
+However, I think a better solution is what Bolty and anyuzer point at.  When you start the game at 200% XP, when you hit that point where you switch from being Rested to Tired, it&#39;s kind of like hitting a wall.  You see your XP drop but the amount of XP to level go up.  It&#39;s almost unfair.  I would tend to agree that you should start the game at 100% (Normal).  However, when I thought about it, I have the feeling that Blizzard set new characters to "Rested" because, if you could rest right off the bat, then players would probably make every character they ever wanted to play on their account at the start and let most of them rest up to gain the full bonus.  As such, if you balanced the newbie areas for the Normal level, then when those 2nd and 3rd characters for a person start out, they&#39;d start with the bonus and blast through those early areas.  <br />
+<br />
+I think Blizzard foresaw this and just started all characters at "Rested."  Then, once you reach a certain level (around clvl 10 or 12) you start to descend into the Normal and Tired regions.  This is so that you actually have to have played the character for a while before you reach the point where you get the bonus to discourage creating characters and letting them sit for a week before actually playing them.  But there&#39;s another way to do this&#33;  Why not start at "Normal" and then not let rest start accumulating until clvl 10 or 12?  That way, the areas could be geared toward 100% XP and so when you reach clvl 14, your XP doesn&#39;t drop off despite the fact that you&#39;re fighting harder mobs than before.  It&#39;s the same idea as what is in, but goes along with the idea of making it seem like a "bonus" rather than a "penalty."<br />
+<br />
+----------------------------<br />
+<br />
+I&#39;ve said a lot in here, so I&#39;ll do a quick summary of what I&#39;d like to see.  :)<br />
+<br />
+I agree that "Normal" should be 100% XP and it should be what the baseline game is designed for.  Players should start at "Normal" and not start accumulating rest until around clvl 10 (and perhaps phase it in, even).  But even then, players who spend all of their time in "Normal" should be able to decline or abandon quests without having to grind through monsters to make up for the lost XP.  That way, the story is not so constantly linear for all characters of the Alliance or Horde.  This means that there would have to be a huge number of new quests introduced to the game so that you don&#39;t have to jump around from area to area in order to find quests to do.  <br />
+<br />
+If nothing else, Blizzard should re-think how much XP it takes to go from "Rested" to "Tired" because I&#39;ve found that I currently spend most of my time in either "Rested" or "Tired" with very little time spent in "Normal."
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49230">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49230" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49232" id="pid49232"></a>
+<div class="post " style="" id="post_49232">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-216.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Sorceror03.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-216.html">Nystul</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,250<br />
+	Threads: 16<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49232.html#pid49232" title="Rest State">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-23-2004, 05:57 PM <span class="post_edit" id="edited_by_49232"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49232">
+		If the most "fun" aspect of the game is watching your experience bar hit the next level, then I don&#39;t see it ever appealing to casual gamers.  Since there is essentially no such thing as "end game", what exactly are we hurrying them along to get to?  The fun in a game should come primarily from the journey rather than the destination.  In my opinion, the rest state makes it harder to give everyone a fun journey, because it is a disruptive variable in the game balance.  If the quest/level ratio is balanced for a moderate to light gamer, then someone like you is going to complain when they run out of quests.  If the ratio is balanced for you, then the true casual gamer is going to either be stuck doing a bunch of quests that are way too easy, or be overwhelmed by the massive number of unfinished quests they have to choose from.  To me, it would be better to make this ratio constant, and focus on making the early game itself fun in order to appeal to casual gamers.  The early game never seems fun to power gamers, but that is mainly because they have blasted through it 20 times already.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49232">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=216" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49232" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49239" id="pid49239"></a>
+<div class="post " style="" id="post_49239">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1352.html"><img src="http://www.nine-muses.net/img/fierce.gif" alt="" width="48" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1352.html">Roane</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 129<br />
+	Threads: 3<br />
+	Joined: Apr 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49239.html#pid49239" title="Rest State">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-23-2004, 07:17 PM <span class="post_edit" id="edited_by_49239"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49239">
+		<blockquote class="mycode_quote"><cite>TheDragoon,Jun 23 2004, 01:25 PM Wrote:</cite>Personally, I think the best case answer would be to put in more quests.&amp;nbsp; Lots more quests.&amp;nbsp; I&#39;d like to see all sorts of quests as you can imagine for each area.&amp;nbsp; Make it so that a player isn&#39;t forced to do EVERY quest.&amp;nbsp; Let the players choose which types of quest their character wants to do.&amp;nbsp; Make it so that it&#39;s not a big deal to skip that quest that takes you deep into the heart of a mage mob base as a Warrior.</blockquote>I really like this, and think this may be more of a key to retaining casual players than the rest state is.<br />
+<br />
+When I&#39;m playing more casually (and I do tend to fluctuate, myself, between the power player side of the spectrum and the casual play side), I love that sometimes I can jump in and do a quest and jump out.  More quests would make that practical more often.<br />
+<br />
+And having more choices is rarely a bad thing.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 1pt;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">One day, the Champions of the Fierce Bunny will ride again...</span>&lt;!--sizec--&gt;</span>&lt;!--/sizec--&gt;
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49239">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1352" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49239" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49286" id="pid49286"></a>
+<div class="post " style="" id="post_49286">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-218.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-218.html">dkass</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 22<br />
+	Threads: 2<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49286.html#pid49286" title="Rest State">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 12:34 AM <span class="post_edit" id="edited_by_49286"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49286">
+		<blockquote class="mycode_quote"><cite>Pete,Jun 23 2004, 09:34 AM Wrote:</cite>In PvE, does it matter to the casual player that people playing 25 hours a day are going to get to level 999 in five days?&amp;nbsp; Does it reduce *his* ability to level, to do quests, to find people to join with, etc. etc.?&amp;nbsp; Not that I can see.&amp;nbsp; If the game is balanced for the casual player, then the presence of power gamers affects him not at all.&amp;nbsp; So, there is no problem in PvE and thus no need to fix one.</blockquote>To some extent, I have to disagree.  Even the casual player wants to think he/she can get to the end, become the most powerful...  <br />
+<br />
+It can also be discouraging to find oneself in a world where everyone else is either way ahead of you or breezing by at insane speed (there is nothing more annoying when playing than trying to party only to find you&#39;re irrelevant to the group because you don&#39;t have the absolute best gear possible at level 6; or worse finding no one is interested in doing the quests you want because they&#39;re not required and they&#39;re waiting for their high level buddy to give them everything on a silver platter).  The latter is almost exclusively a function of twinking (and why I hate twinking).  I don&#39;t know how possible twinking is in WOW (hearing of sending money seems to make it completely possible, even if it isn&#39;t common yet).  I suppose if they really manage to get an ever growing population of casual gamers this might not be as relevant.<br />
+<br />
+I have no idea if the rest system can solve these problems.<br />
+<br />
+<blockquote class="mycode_quote"><cite>Pete,Jun 23 2004, 09:34 AM Wrote:</cite>In PvP, will a casual player ever develop the *player* skills necessary for him to go heads up against a power player at anything like his level?&amp;nbsp; Yeah, right. ... the power player is always going to own the casual player in PvP.&amp;nbsp;</blockquote>Actually, depending on how the game works, I can easily see the casual gamer handing the power player his head (I&#39;m thinking strategy/tactical games here so it may not apply to WOW).  Some part of skill is practice, but some part is knowledge/situational awareness/correct choices and the like.  This is especially true of non-twitch games that don&#39;t revolve around memorizing layouts/levels (twitch games can also fall in this category, but in this case its reaction time that counts, not necessarily intelligence, but my understanding is that WOW is not a twitch game).  Consider the regular DII power player.  Many in that population barely know how to build and run the uberpower cookie cutter and would be helpless with any more sophisticated.  Now consider a lurker.  A game needs to have strategic and tactical depth for this to apply so perhaps it is irrelevant to WOW.  Also remember there are grades of casual gamers.  The two hour a week type is much less likely to get there.  The 6 or 8 hour a week gamer (I&#39;d still definitely call this casual) is IMHO quite capable of matching the skills of the average power gamer, given the same character/equipment (or at least fairly close equipment).  This is especially true for someone who also reads good sites (like the Lounge), they get to learn a lot quick without experimenting--note that many medium casual players do have that extra bit of time (in 10 or 15 minute chunks, sometimes at work) to keep up with a few relatively modest, high SNR sites.<br />
+<br />
+There will be the good power gamer who is and will always be better than the casual gamer.  They&#39;re the ones who have the talent of the good casual gamer and the time to go further.  I&#39;m actually glad they exist since they&#39;re the ones that generate the material for places like this.  But in my experience, they make up a small part of the power gamer population.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+---<br />
+Ebony Flame
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49286">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=218" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49286" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49294" id="pid49294"></a>
+<div class="post " style="" id="post_49294">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49294.html#pid49294" title="Rest State">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 02:05 AM <span class="post_edit" id="edited_by_49294"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49294">
+		Hi,<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Even the casual player wants to think he/she can get to the end, become the most powerful</span><br />
+<br />
+And a skid row bum can dream to buy out Bill Gates.  Should that idea be nurtured, given that all but the most inane know that it is a false hope?<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">I don&#39;t know how possible twinking is in WOW</span><br />
+<br />
+Fairly limited because of the level requirements on nearly everything and the fact that so many things are bound.  Since a typical player will get few or any items much better than what he can get at the vendors, and with a little bit of money management can usually afford all those items pretty close to when they are available, there really will be not much difference between a twinked player and a "pure" player.  Besides, good, bad, or indifferent, twinking has nothing to do with the rest state.<br />
+<br />
+<span style="font-style: italic;" class="mycode_i"> I suppose if they really manage to get an ever growing population of casual gamers this might not be as relevant.</span><br />
+<br />
+Exactly.  Without *negative* adjustments, if a casual player and a power player start out together at the same time, after the casual guy packs it in for the day, the power guy will stay on and grind out five more levels.  The next day they will not be able to play together no matter what.  The only way the two can ever play together for any length of time is if the power gamer creates an "auxiliary" character that he only plays with his casual friend.<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">I have no idea if the rest system can solve these problems.</span><br />
+<br />
+I&#39;m sorry, but you are doing it, too.  What "problems"?  That everyone wants to feel big?  That two players playing different lengths of time or at different speeds will develop a level gap?  These are not problems, they are just everyday facts of life.  Now, if Blizzard wants to change reality so that everyone gets what they "want" regardless of what they put into it, then I suggest a study of the *former* USSR and just what made it "former".<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Actually, . . . they make up a small part of the power gamer population.</span><br />
+<br />
+Unfounded claim with a strong stench of sour grapes.  Consider the ultimate non twitch game: chess.  So non-twitch that they had to put clocks in it (about a hundred years ago) so that someone couldn&#39;t win a match by just waiting for his opponent to die.  Prior to that, someone remarked that to play chess "didn&#39;t take brains, it just took buttocks."  And yet, at each level you will find that there are more people who got there by working at it than by just playing the odd game every now and again.  So even at that extreme, practice is a major contributor.  Admittedly, without talent practice can only take you so far.  But without practice, talent is but a politician&#39;s promise.<br />
+<br />
+But, if what you say is true, then it supports my claim that the rest system is useless.  For if the ten hour a week casual player can, through nothing more than determination and native talent, beat the ten hour a day power gamer, then why handicap that poor power gamer who needs all the advantage he can get.<br />
+<br />
+I don&#39;t believe your claim.  And I just make the more modest claim that, from two people of equal native talent, the one who worked harder at developing that talent *should* win.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49294">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49294" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49322" id="pid49322"></a>
+<div class="post " style="" id="post_49322">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-176.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-176.html">Jarulf</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 983<br />
+	Threads: 113<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49322.html#pid49322" title="Rest State">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 08:50 AM <span class="post_edit" id="edited_by_49322"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49322">
+		<blockquote class="mycode_quote"><cite>Pete,Jun 24 2004, 02:56 AM Wrote:</cite>I&#39;m sorry, but you are doing it, too.&amp;nbsp; What "problems"?</blockquote>It doesn&#39;t nessecarilly have to solve a problem, it could have been added to add some new possibilities to the game as well. Here I agree with you though, or reason along the same lines, what new possibilities? I donÃ¤t see any at all :) <br />
+<br />
+Just wanted to nit on your argumentation :)
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+There are three types of people in the world. Those who can count and those who can't.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49322">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=176" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49322" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49323" id="pid49323"></a>
+<div class="post " style="" id="post_49323">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1008.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1008.html">Saxywoo</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 166<br />
+	Threads: 38<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49323.html#pid49323" title="Rest State">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 09:34 AM <span class="post_edit" id="edited_by_49323"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49323">
+		One thing that I&#39;ve noticed about the Rest State, is that it seems to be messed up with this push.<br />
+<br />
+Wednesday, I played and somehow got down to a "Rested" state.  I signed off while in an inn, for about 12-14 hours, and then went out yesterday (Thursday), and I was still at a "Rested" state.  Considering that it&#39;s supposed to be 8 hours of resting, then I should have been bumped up to a "Well Rested" state, if not completely rested.<br />
+<br />
+I am a casual player, though I do sometimes go on binges where I will play a couple of nights in a row.<br />
+<br />
+Has anyone run into this in this patch?<br />
+<br />
+-SaxyCorp
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49323">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1008" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49323" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49334" id="pid49334"></a>
+<div class="post " style="" id="post_49334">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-100.html"><img src="http://i.imgur.com/H03sWNHt.jpg?dateline=1428341867" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-100.html">Tal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Stormrage Cat Herder<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,920<br />
+	Threads: 296<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49334.html#pid49334" title="Rest State">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 11:59 AM <span class="post_edit" id="edited_by_49334"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49334">
+		I have. Shalandrax is <span style="font-style: italic;" class="mycode_i">still</span> showing as tired even after being in the Inn for the past 14 + hours. In fact, because I&#39;ve played her every night this week (for about 2 to 3 hours total each time) she hasn&#39;t been well rested at all. I skipped playing her again last night and will probably wait until the weekend to attempt playing with her again.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49334">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=100" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49334" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49340" id="pid49340"></a>
+<div class="post " style="" id="post_49340">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49340.html#pid49340" title="Rest State">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 02:35 PM <span class="post_edit" id="edited_by_49340"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49340">
+		There is no "Well Rested" in the current patch.  There is only "Tired" (100% XP), "Normal" (150% XP), and "Rested" (200% XP).  You can continue to accumulate rest for 5.5 days, too.  You might want to read what Blizzard had to say about the matter...<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>Once you hit about level 14, the "Normal" state lasts for 5 bubbles of pure monster kills (the rule is 5 bubbles or 5000xp, whichever is greater, and I believe the level at which 5 bubbles is greater is 14). It takes 11 hours to gain that much bonus experience back. So if you hit tired and log off in an inn for exactly 11 hours and 2 minutes, you should gain back enough bonus XP to get you through exactly 5 bubbles at normal. Any time beyond moves you gradually into "Rested".<br />
+<br />
+The maximum amount of bonus experience you can ever accumulate is 12 times the "normal" cap. Getting that high requires being in an inn or city for about 5.5 days. Since you are getting twice as much bonus experience at rested as you are at normal, bonus xp will be depleted twice as fast at rested as it will at normal.<br />
+<br />
+Since you are always resting when offline, even if outside (at 1/4 the rate of an Inn), the character selection should almost never say you are tired. The only time you would ever see that is when logging out if you manage to log out and load the character select screen in less time than it takes to accumulate 1 point of bonus XP. It should, however, say rested sooner or later, but it is independent of the in-game calculations, and may have a bug of its own.<br />
+<br />
+There is no longer any penalty for leaving an Inn early, you are constantly accumulating bonus experience while in an inn or city. If you leave and come back, the only time lost is the time you were outside. You do not have to worry about wasting an 11 hour rest session because you left after 10 hours. You will still have earned 10 hours worth of bonus experience.<br />
+<br />
+The basic goal for this system is that someone who plays for a few hours every night will spend some time in rested, a little more time in normal, and a little time tired, and be able to repeat that again the next night. But if you only play a few nights a week or only play on weekends, you will spend a much larger portion of your time at rested.<br />
+<br />
+That&#39;s how things are supposed to work in this version. QA is trying to reproduce the problems some people have experienced, we will get them fixed if we can find them. And as always, how things are supposed to work now isn&#39;t necessarily how the final product will work. Finding out what works and what doesn&#39;t is why you&#39;re all here. </blockquote>
+<br />
+That is from <a href="http://www.worldofwarcraft.com/thread.aspx?FN=wow-general&amp;T=96388&amp;P=1" target="_blank" rel="noopener" class="mycode_url">this thread</a>.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49340">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49340" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49342" id="pid49342"></a>
+<div class="post " style="" id="post_49342">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49342.html#pid49342" title="Rest State">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 02:50 PM <span class="post_edit" id="edited_by_49342"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49342">
+		Hi,<br />
+<br />
+First, from the <a href="http://www.worldofwarcraft.com/patchnotes/patch-6-12-04.shtml#c" target="_blank" rel="noopener" class="mycode_url">patch notes:</a><br />
+<br />
+<span style="font-style: italic;" class="mycode_i"><span style="font-weight: bold;" class="mycode_b">The Rest State system has undergone several changes. There are now three tiers of rest states: Rested = 200% experience, Normal = 150% experience and Tired = 100% experience. </span></span><br />
+<br />
+So you did not "get down" to rested.  And you&#39;ll be waiting a long time to see "well rested" again :)<br />
+<br />
+Most of the rest of what the patch notes say is either incorrect or wishful thinking.  Some more information is available from a post by Ogre in this <a href="http://www.worldofwarcraft.com/thread.aspx?FN=wow-general&amp;T=96388&amp;S=BLIZZARD#blizzard" target="_blank" rel="noopener" class="mycode_url">thread.</a>  The most pertinent part of that post, IMO, is:<br />
+<br />
+"<span style="font-style: italic;" class="mycode_i">That&#39;s how things are <span style="font-weight: bold;" class="mycode_b">supposed</span> to work in this version. QA is trying to reproduce the problems some people have experienced, we will get them fixed if we can find them.</span>"  (emphasis mine).<br />
+<br />
+In reality, the rest state as it is is a dog&#39;s breakfast.  People are reporting going from rested to normal after just a few minutes of play with a character that&#39;s spent days at an inn.  People are reporting characters still being &#39;normal&#39; after having been parked at an inn for days.  And some haven&#39;t seen any drop in their character&#39;s status at all.  It seems to depend on what server one is on, whether the character is from push 1, 2, or 3, and, for all I can tell, the parity of the CRC of the character&#39;s name.<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Has anyone run into this in this patch?</span><br />
+<br />
+So far I&#39;ve been lucky and have seen nothing but &#39;rested&#39;.  I hope it stays that way :)<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49342">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49342" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49355" id="pid49355"></a>
+<div class="post " style="" id="post_49355">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-935.html"><img src="http://members.kingston.net/i556up/images/avatar35.jpg" alt="" width="64" height="59" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-935.html">JustAGuy</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 372<br />
+	Threads: 22<br />
+	Joined: Sep 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49355.html#pid49355" title="Rest State">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 04:15 PM <span class="post_edit" id="edited_by_49355"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49355">
+		Yesterday, I was playing until I got "Tired". I sat at the inn for a total of two seconds, and it moved up to "Normal". I logged out at that point by selecting "Quit". <br />
+<br />
+Today, I logged on, and saw my state at "Rested", but the little experience penalty indicator was right on my current experience position. So I stepped out and killed some defias, and sure enough, I went back down to "Normal". I went back to the inn and it said, "37 minutes to be fully rested", and the experience penalty marker on my exp bar was very close (about a 1/3rd of the bar up).<br />
+<br />
+In about an hour, I&#39;m going to log in again and see if the state has properly changed.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 1pt;" class="mycode_size"><span style="color: gray;" class="mycode_color">"Yay&#33; We did it&#33;"<br />
+"Who are <span style="font-weight: bold;" class="mycode_b">you</span>?"<br />
+"Um, uh... just ... a guy." <span style="font-style: italic;" class="mycode_i">*flee*</span></span></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49355">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=935" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49355" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49361" id="pid49361"></a>
+<div class="post " style="" id="post_49361">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49361.html#pid49361" title="Rest State">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 06:02 PM <span class="post_edit" id="edited_by_49361"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 06-24-2004, 06:06 PM by <a href="https://www.lurkerlounge.com/forums/user-773.html">Cryptic</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49361">
+		It is important not to lose sight of the other types of players who will be participating in the game once it goes gold and live.  We represent the power gamers, or at least the genre devotees.  There are two other factions â the PvP group, and the true casuals, those who actually use the game as an SCA-equivalent, fashion show, or even just a glorified chatroom.  Iâm not a big fan of these latter two groups, but their money is just as green as mine, so I expect to see them be catered to.<br />
+<br />
+As an individual, I do not like the rest state.  PvPâers donât seem to like it either.  (Our two groups seem to be roughly 60/40 against the current rest state, reading comments across the web.)  The casuals, however, will love it.  As a game focusing on the bridge between casual and hardcore, Blizzard is unlikely to dump the rest state entirely just to please us.  Theyâll likely try to find a happy medium that is tolerable to us and thrilling to the casuals.<br />
+<br />
+I do, however, see the rest state as having an actual beneficial effect on the gameâs interest level, if implemented properly.  Too many players (sometimes myself included) approach RPGs as a power-leveling mechanism â they want to have the strongest, highest-level character possible, with the most treasure, in the shortest amount of time.  This has the effect of cloistering the MMORPG community into boring elite clans that donât converse outside of their own clique, and who look like everybody else does.  If the rest state is done correctly, players will be encouraged to play different characters while their âbig-timersâ are resting off fatigue, thereby increasing the diversity of characters in the game, and probably increasing the desire among hardcore players to party with other groups (since their clan friends are usually, percentage-wise, power-leveling while youâre âoffâ and stuck with the normals).  Itâs a forced socialization method for hardcore, exclusive gamers, which could either backfire catastrophically or work like a dream.  I withhold judgment until the game is clearer.<br />
+<br />
+Concerning quest material, I think the push right now is just to get as much content into the game as possible.  Added quests, IMHO, should be generic for now, to benefit as many players as possible.  Once there are so many quests in the game that a player couldnât possibly complete them all with one character, then they should add class- and race- specific quests for variety.  Keep in mind two things:  [1]  A quest that benefits only one class or one race, no matter how interesting, benefits a minority of players only, and probably less than 20%.  [2]  Most of you, as testers, have played multiple characters many times.  When the game actually begins, all of us as âoutsidersâ will be experiencing the game for the first time.  We, as first-time players, do not need variety in the content.  We need content, period.  Once weâve spent a long time in the game and want to start new characters to seek variety (probably tied to the rest state issue, as above), then weâll want to see some differentiation between the paths we can select.  So, at launch, general content that everyone can enjoy is paramount.  There are even two different factions we can play.  A month or three down the road (and longer for casuals), weâll be looking for class- and race-specific content.<br />
+<br />
+Long-winded, and no, Iâm not a beta player â¦ but please recognize that in this type of game, thinking outside of your own personal preferences often leads to the crafting of a game that is more fun for everyone.<br />
+<br />
+ ;)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49361">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49361" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49367" id="pid49367"></a>
+<div class="post " style="" id="post_49367">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-168.html"><img src="https://www.lurkerlounge.com/forums/noavatar.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-168.html">TriggerHappy</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 129<br />
+	Threads: 6<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49367.html#pid49367" title="Rest State">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 07:43 PM <span class="post_edit" id="edited_by_49367"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49367">
+		The rest state won&#39;t just hurt the level grinders, it will hurt those with unusual gaming habits.  Personally, I don&#39;t have time to play games during weekdays, so I do marathon gaming sessions during the weekends, 5-8 hours on Saturday, another 3-4 on Sunday.<br />
+  <br />
+I&#39;d be greatly pissed to be classified a "level grinder" just because <span style="font-weight: bold;" class="mycode_b">one</span> day of the week I played like one.  I would see the rest state&#39;s "normal" and "tired" state as an undeserved penalty.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49367">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=168" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49367" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49368" id="pid49368"></a>
+<div class="post " style="" id="post_49368">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49368.html#pid49368" title="Rest State">#16</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 07:51 PM <span class="post_edit" id="edited_by_49368"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 06-24-2004, 07:53 PM by <a href="user-10.html">--Pete</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49368">
+		Hi,<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">If the rest state is done correctly, players will be encouraged to play different characters while their âbig-timersâ are resting off fatigue</span><br />
+<br />
+Not likely. It didn&#39;t happen last push, when power gamers didn&#39;t start a second character until after they&#39;d maxed.  It probably will not ever happen.  A power gamer wants the biggest baddest character as soon as possible in *real* time.  He&#39;ll take advantage of any "bonus" he gets at the beginning of the session, but ultimately it makes no sense for him to build a second character.  Every minute spent on the second character is one minute not spent on the main -- and thus one minute wasted for the power gamer.  Now, people building characters for sale might do that (build multiple characters at once, playing each only until the rest state changes).  But that is a small group (I think).<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">please recognize that in this type of game, thinking outside of your own personal preferences often leads to the crafting of a game that is more fun for everyone.</span><br />
+<br />
+Yes.  But (1) I still haven&#39;t heard for whom the present rest state is going to make the game more fun.  Will the casual gamer have more fun because the power gamer is being held back?  And (2) a rest state that made any sense in terms of the game (e.g., as you get tired your strength and stamina and spirit all drop) would have had little opposition, I think.  It is not just the addition of a rest state that is pissing many off.  It is the addition of *this* poorly conceived and even more poorly implemented rest state that makes so many so mad.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49368">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49368" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49370" id="pid49370"></a>
+<div class="post " style="" id="post_49370">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49370.html#pid49370" title="Rest State">#17</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 07:51 PM <span class="post_edit" id="edited_by_49370"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49370">
+		This has already been addressed.<br />
+<br />
+<a href="http://www.worldofwarcraft.com/thread.aspx?FN=wow-general&amp;T=31929&amp;P=1" target="_blank" rel="noopener" class="mycode_url">http://www.worldofwarcraft.com/thread.aspx...ral&amp;T=31929&amp;P=1</a><br />
+<br />
+Quotes:<br />
+<br />
+"To add to this adjustment, people who do not play for long periods of time (weekend warrior types) will accumulate extra rest. This will allow those who only play once or twice a week the added bonus of playing as âwell restedâ for longer than those who play on a daily basis. "<br />
+<br />
+"Overall, we are happy with the Rest State feature and appreciate everyoneâs continued feedback. We realize that it still needs to be adjusted and will continue to do so until itâs where we want it to be."
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49370">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49370" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49373" id="pid49373"></a>
+<div class="post " style="" id="post_49373">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-773.html"><img src="https://www.lurkerlounge.com/forums/Diablo/D1_Warrior02.gif" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-773.html">Cryptic</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 233<br />
+	Threads: 9<br />
+	Joined: Jul 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49373.html#pid49373" title="Rest State">#18</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 08:02 PM <span class="post_edit" id="edited_by_49373"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49373">
+		Well, as it stands, I&#39;ve seen Blizzard be very responsive to gamer concerns over the development of the game.  Power gamers are in the minority, although they are by far the most vocal.  To be honest, I don&#39;t think Blizzard is looking to cater to a 100% power gamer crowd.  That crown is already rather tightly secured by EverQuest 1 &amp; 2.  The PvPers are largely concentrated in DAoC (and likely Guild Wars).  I believe that Blizzard is trying to find the middle ground between *all* types of play, so that they appeal to as many gamers as possible.  Whether they succeed in that balancing act remains to be seen.<br />
+<br />
+Power gamers and PvPers who are absolutely unwilling to bend are probably going to realize rather quickly that WoW is not the game for them.<br />
+<br />
+Is this wise?  I&#39;m not sure.  Hardcore PvPers, for example, are disruptive to the entire community; if they account for 20% of subscriptions but also 50% of cancellations, then the game is probably better off without them.  But I would like to see a game that softcore PvPers, level grinders, and casuals can all find to their taste.  It will be interesting to see if they can pull it off, but I think their eagerness to listen to the community is promising.<br />
+<br />
+I must honestly say that if quality decisions are made that piss off the top 10% of extreme level grinders, forcing them into another game, I won&#39;t be sad.  Social games become less fun the more nasty people there are about.  But that&#39;s just me, and I expect my opinion to carry the same weight as anyone else&#39;s, so if I&#39;m outweighed, I&#39;ll live with it.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_49373">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=773" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49373" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49374" id="pid49374"></a>
+<div class="post " style="" id="post_49374">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49374.html#pid49374" title="Rest State">#19</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 08:48 PM <span class="post_edit" id="edited_by_49374"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49374">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>I still haven&#39;t heard for whom the present rest state is going to make the game more fun. Will the casual gamer have more fun because the power gamer is being held back?</blockquote>
+Many of your complaints that I&#39;ve read hinge upon how you feel that the power gamers are being "held back."    I don&#39;t think that Blizzard&#39;s goal with the rest system is to hold back the power gamers.  Rather, I think they&#39;re just trying to give a little help to those who don&#39;t play as often.  <br />
+<br />
+Let me pose a situation for you.  What if Blizzard completely removed the rest system, for now, and balanced the game with just the normal 100% XP.  Then, at the very end of the beta or perhaps for the commercial release, they reimplemented the rest system starting every at "Normal" for new character.  No change to the XP required to level, just the addition of a small amount of bonus XP for those who don&#39;t play as much.<br />
+<br />
+I imagine that this is as close to a "bonus" as you would find.  Would you still have the same complaints?  What would you say to those people who DO appreciate the rest system and were glad to see it put it back in?  In that case, if it were up to you would you tear down the rest system and deny that bonus to the people who enjoy it or would you leave it in so that the hardcore players can play the game at 100% XP and other people get their bonus XP?
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49374">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49374" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid49378" id="pid49378"></a>
+<div class="post " style="" id="post_49378">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8357-post-49378.html#pid49378" title="Rest State">#20</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-24-2004, 11:25 PM <span class="post_edit" id="edited_by_49378"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_49378">
+		Hi,<br />
+<br />
+Why have a rest system at all?<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Many of your complaints that I&#39;ve read hinge upon how you feel that the power gamers are being "held back." </span><br />
+<br />
+No, no, no, no&#33;  Quote where I&#39;ve said that.<br />
+<br />
+Let me try again:<br />
+1.) In PvE there is no competition between players.<br />
+2.) All PvE players will get the same quests, etc. no matter how fast they level or when they start to play.<br />
+3.) In PvE, there is no competition and there is no advantage to leveling fast.<br />
+4.) Thus there is no need to either reward those that play less or punish those that play more.<br />
+5.) For PvE the rest state is meaningless&#33;<br />
+<br />
+6.) In PvP it is all about the competition.<br />
+7.) A difference of a few levels will usually dominate the competition.<br />
+8.) With people of (nearly) the same level, skill is the determining factor (if the classes are "balanced")<br />
+9.) People that play more will level faster unless there is a penalty that actually takes experience away.<br />
+10.) People that play more, and especially play PvP more, will develop better PvP skills.<br />
+11.) For PvP the rest state is useless.<br />
+<br />
+And that is my argument -- that it is a useless and meaningless measure that helps nobody in any significant way and simply increases the grind for some players.<br />
+<br />
+Your recommendation, just like most recommendations for changing the system would probably yield a better system.  But what you and all the supporters of the system have failed to do to date (or at least I&#39;ve failed to find it if it has been done) is to give a logically valid reason to have a rest state in there in the first place.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_49378">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8357&amp;replyto=49378" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8357" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8357-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8357-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (4):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-8357-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="thread-8357-page-3.html" class="pagination_page">3</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="thread-8357-page-4.html" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-8357-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8357">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-8357.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=9aaa9d67b337cfe115c8e5f7275ac0a7">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:55 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="https://www.lurkerlounge.com/forums/task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8357&amp;pid=49221#pid49221" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8357&amp;pid=49221#pid49221" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

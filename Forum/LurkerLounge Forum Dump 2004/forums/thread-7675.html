@@ -1,0 +1,2459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Patch is here&#33;</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "e6f5626fdc1dab576a8421e7f163a0f0";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="e6f5626fdc1dab576a8421e7f163a0f0" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-128.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-127.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-126.html" class="pagination_page">126</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-127.html" class="pagination_page">127</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-128.html" class="pagination_current">128</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-129.html" class="pagination_page">129</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-130.html" class="pagination_page">130</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-129.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-7675.html">Patch is here&#33;</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-7675-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-7675-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Patch is here&#33;</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid59178" id="pid59178"></a>
+<div class="post " style="" id="post_59178">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59178.html#pid59178" title="Patch is here&#33;">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 10:45 PM <span class="post_edit" id="edited_by_59178"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-07-2004, 10:48 PM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59178">
+		The newest patch is here&#33;  It&#39;s about 19 MB.  Start yer downloads and break out your paladins and hunters&#33;<br />
+<br />
+(Note:  I suspect it&#39;s so small, because we probably already downloaded most of the graphics and sound files for the new content a few days ago.  Graphic and sound files tend to dwarf actual game code).
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59178">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59178" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59181" id="pid59181"></a>
+<div class="post " style="" id="post_59181">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-72.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-72.html">Kevin</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				formerly Gnollguy<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 5,138<br />
+	Threads: 299<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59181.html#pid59181" title="Patch is here&#33;">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 10:52 PM <span class="post_edit" id="edited_by_59181"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-07-2004, 10:55 PM by <a href="user-72.html">Kevin</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59181">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Nov 7 2004, 04:45 PM Wrote:</cite>The newest patch is here&#33;&amp;nbsp; It&#39;s about 19 MB.&amp;nbsp; Start yer downloads and break out your paladins and hunters&#33;<br />
+<br />
+(Note:&amp;nbsp; I suspect it&#39;s so small, because we probably already downloaded most of the graphics and sound files for the new content a few days ago.&amp;nbsp; Graphic and sound files tend to dwarf actual game code).<br />
+[right][snapback]59568[/snapback][/right]</blockquote><br />
+<br />
+For those of us where this is the first time we have had a patch come out, where do you get it from?  Can&#39;t get to the WoW site.  The Blizzard downloader isn&#39;t showing me anything either.<br />
+<br />
+<span style="font-style: italic;" class="mycode_i">Edit: </span> Nevermind, after I launched WoW and tried to log in, it updated the Blizzard downloader and that is pulling the patch now.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+---<br />
+It's all just zeroes and ones and duct tape in the end.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59181">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://thepumpkinking.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=72" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59181" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59183" id="pid59183"></a>
+<div class="post " style="" id="post_59183">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1464.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_1464.jpg?dateline=1330034266" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1464.html">Lissa</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A Donkey they allowed to go to School<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,943<br />
+	Threads: 181<br />
+	Joined: Jul 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59183.html#pid59183" title="Patch is here&#33;">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 11:05 PM <span class="post_edit" id="edited_by_59183"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59183">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Nov 7 2004, 03:45 PM Wrote:</cite>The newest patch is here&#33;&amp;nbsp; It&#39;s about 19 MB.&amp;nbsp; Start yer downloads and break out your paladins and hunters&#33;<br />
+<br />
+(Note:&amp;nbsp; I suspect it&#39;s so small, because we probably already downloaded most of the graphics and sound files for the new content a few days ago.&amp;nbsp; Graphic and sound files tend to dwarf actual game code).<br />
+[right][snapback]59568[/snapback][/right]</blockquote><br />
+Looking over the notes, Priests got hit by the nerf stick again...sigh...<br />
+<br />
+We got new quest spells (cool), no facing requirement for 4 spells (Shackle, MC, SW:P, and Soothe), but they now require reagents for PW:F at lv 4+ and Levitate, they also have made Shackle and MC break more easily (with the changes to Undead, Shackle is very limited already, so why change it to break early?  Also, why make MC break even easier, most Priests don&#39;t use it now becaue it takes them out of the fight too), and Res is no longer useable in combat.<br />
+
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Sith Warriors - They only class that gets a new room added to their ship after leaving Hoth, they get a <a href="http://www.torhead.com/npc/b6HRlx6/broonmark" target="_blank" rel="noopener" class="mycode_url">Brooncloset</a><br />
+<br />
+Einstein said Everything is Relative.<br />
+Heisenberg said Everything is Uncertain.<br />
+Therefore, everything is relatively uncertain.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59183">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1464" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59183" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59185" id="pid59185"></a>
+<div class="post " style="" id="post_59185">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-205.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-205.html">lemekim</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				It's been how long?!<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 681<br />
+	Threads: 5<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59185.html#pid59185" title="Patch is here&#33;">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 11:20 PM <span class="post_edit" id="edited_by_59185"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59185">
+		Could you guys post the patch notes please? For those who are struggling to even get a connection to the server =&#092;<br />
+
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59185">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=205" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59185" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59186" id="pid59186"></a>
+<div class="post " style="" id="post_59186">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59186.html#pid59186" title="Patch is here&#33;">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 11:27 PM <span class="post_edit" id="edited_by_59186"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59186">
+		<div class="codeblock"><div class="title">Code:</div><div class="body" dir="ltr"><code>--------------------------------------------------------------------------------<br />
+- World of Warcraft Client Patch &#40;2004-11-07&#41;<br />
+--------------------------------------------------------------------------------<br />
+<br />
+<br />
+ Racial Traits<br />
+ &amp;nbsp;Racial traits are now available for all races. &amp;nbsp;Each race receives at <br />
+ &amp;nbsp;least 4 traits &#40;several passive and at least one active trait per <br />
+ &amp;nbsp;race&#41;. &amp;nbsp;Undead racial traits have changed to be more consistent with <br />
+ &amp;nbsp;the new traits and Undead players are now considered Humanoid targets <br />
+ &amp;nbsp;rather than Undead targets. &amp;nbsp;The following is a full list of traits&#58;<br />
+<br />
+ Dwarf &amp;nbsp;<br />
+ &amp;nbsp;Stoneform&#58; Activate to gain immunity to poison, disease, and bleed <br />
+ &amp;nbsp;Gun Specialization&#58; Increase Gun Skill<br />
+ &amp;nbsp;Frost Resistance&#58; Increase Cold Resistance<br />
+ &amp;nbsp;Treasure Finding&#58; &amp;nbsp;Activate to see treasure chests on mini map - <br />
+ &amp;nbsp;lasts until canceled - no cooldown<br />
+<br />
+ Gnome &amp;nbsp;<br />
+ &amp;nbsp;Escape Artist&#58; Activate to break out of a Root or Snare effect <br />
+ &amp;nbsp;Expansive Mind&#58; Increase Intelligence<br />
+ &amp;nbsp;Arcane Resistance&#58; Increase Arcane Resistance<br />
+ &amp;nbsp;Engineering Specialist&#58; Increase skill bonus to Engineering<br />
+<br />
+ Human &amp;nbsp;<br />
+ &amp;nbsp;Perception&#58; Activate to increase stealth detection radius <br />
+ &amp;nbsp;The Human Spirit&#58; Increase Spirit <br />
+ &amp;nbsp;Diplomacy&#58; Bonus to faction point gain<br />
+ &amp;nbsp;Sword Specialization&#58; Increase Sword skill<br />
+<br />
+ Night Elf &amp;nbsp;<br />
+ &amp;nbsp;Shadowmeld&#58; Activate while immobile and out of combat to enter <br />
+ &amp;nbsp;stealth mode<br />
+ &amp;nbsp;Quickness&#58; Dodge chance increased<br />
+ &amp;nbsp;Wisp Spirit&#58; Become a wisp when dead with movement speed increase <br />
+ &amp;nbsp;Nature Resistance&#58; Increase Nature Resistance<br />
+<br />
+ Orc &amp;nbsp;<br />
+ &amp;nbsp;Blood Fury&#58; Activate to increase Strength<br />
+ &amp;nbsp;Hardiness&#58; Increase resistance to stun &amp; knockout effects<br />
+ &amp;nbsp;Command&#58; Pet melee damage increased<br />
+ &amp;nbsp;Axe Specialization&#58; Increase to Axe skill<br />
+<br />
+ Tauren &amp;nbsp;<br />
+ &amp;nbsp;War Stomp&#58; Activate to stun opponents<br />
+ &amp;nbsp;Endurance&#58; Max Health increased <br />
+ &amp;nbsp;Cultivation&#58; Increase skill bonus to Herbalism<br />
+ &amp;nbsp;Nature Resistance&#58; Increase Nature Resistance<br />
+<br />
+ Troll &amp;nbsp;<br />
+ &amp;nbsp;Berserking&#58; Activate when &#34;Wounded&#34; to increase melee &amp; <br />
+ &amp;nbsp;spellcasting speed <br />
+ &amp;nbsp;Regeneration&#58; Increase health regen bonus<br />
+ &amp;nbsp;Beast Slaying&#58; Increase damage bonus to Beasts<br />
+ &amp;nbsp;Throwing Weapon Specialization&#58; Increase Throwing Weapon skill.<br />
+<br />
+ Undead &amp;nbsp;<br />
+ &amp;nbsp;Will of the Forsaken&#58; Activate to become immune to fear, sleep, <br />
+ &amp;nbsp;and charm effects <br />
+ &amp;nbsp;Cannibalize&#58; Increase health regeneration while consuming a corpse <br />
+ &amp;nbsp;Underwater Breathing&#58; Underwater breath increased <br />
+ &amp;nbsp;Shadow Resistance&#58; &amp;nbsp;Increase Shadow Resistance<br />
+<br />
+<br />
+ New Raid Encounters<br />
+ &amp;nbsp;Rumors of Onyxia, an enormous black dragon, have been heard through<br />
+ &amp;nbsp;out Azeroth. Be sure to bring many brave warriors for she wonât<br />
+ &amp;nbsp;take kindly to intruders in her lair. Both factions will need to<br />
+ &amp;nbsp;complete unique, and challenging quests to gain access to the<br />
+ &amp;nbsp;Onyxia encounter. &amp;nbsp;**During the beta testing there will be a <br />
+ &amp;nbsp;temporary placeholder vendor who sells keys to Onyxiaâs lair for <br />
+ &amp;nbsp;testing purposes. <br />
+<br />
+ &amp;nbsp;Discovered in the heart of Blackrock Mountain beyond the Depths, <br />
+ &amp;nbsp;lies the Molten Core. &amp;nbsp;Within the Molten Core lives a multitude of <br />
+ &amp;nbsp;ancient and powerful evil. &amp;nbsp;Adventurers be ware, for the dangers found <br />
+ &amp;nbsp;within the Molten Core are many and takes many forms.<br />
+<br />
+ &amp;nbsp;**Raid loot is being worked on and temporary loot has been placed in <br />
+ &amp;nbsp;raid encounters <br />
+<br />
+<br />
+ New Kodo mounts&#33;<br />
+ &amp;nbsp;There is but one creature in all of Kalimdor that possesses the <br />
+ &amp;nbsp;strength and stamina to bear a tauren rider into battle&#58; the <br />
+ &amp;nbsp;majestic kodo beast. Swifter and slightly smaller than their <br />
+ &amp;nbsp;wild cousins, kodo mounts nevertheless demonstrate the same <br />
+ &amp;nbsp;resilience and fearlessness found in their untamed brethren, traits <br />
+ &amp;nbsp;that serve them well when bearing their equally resolute riders. It <br />
+ &amp;nbsp;is said that only the most virtuous of tauren can win the affection <br />
+ &amp;nbsp;of a kodo war mount, for these mighty beasts only serve those that <br />
+ &amp;nbsp;approach them with honor and respect in <br />
+ &amp;nbsp;their hearts.<br />
+<br />
+ &amp;nbsp;Tauren players will no longer have the Plainsrunning ability, due <br />
+ &amp;nbsp;to the availability of Kodo mounts&#33; &amp;nbsp;Tauren players can purchase the <br />
+ &amp;nbsp;Kodo mount at Bloodhoof village.<br />
+<br />
+ &amp;nbsp;**Currently there is an active bug that prevents players from <br />
+ &amp;nbsp;purchasing mounts from different races regarding of reputation, this <br />
+ &amp;nbsp;bug will be addressed in the next patch.<br />
+<br />
+<br />
+ General<br />
+- Higher level dungeon monsters &#40;level 30+&#41; have had their experience <br />
+ &amp;nbsp;values increased.<br />
+- Experience needed to gain levels from level 30+ has been increased <br />
+ &amp;nbsp;&#40;to compensate for the dungeon monster change&#41;.<br />
+- On death, all eqipped items will lose 10% durability.<br />
+- Durability loss through fighting has been decreased &#40;mainly to <br />
+ &amp;nbsp;accommodate the new penalty for dying&#41;<br />
+- The penalty for using a Spirit Healer has been changed - there is no <br />
+ &amp;nbsp;longer any experience loss, instead all items &#40;equipped and <br />
+ &amp;nbsp;inventory&#41; will take 100% durability loss and the character will gain <br />
+ &amp;nbsp;resurrection sickness for a duration that scale according to level.<br />
+- Spells that activate &#40;proc&#41; on kill will work on all players, but only <br />
+ &amp;nbsp;monsters that would give experience points.<br />
+- All spears are now polearms.<br />
+- Polearm proficiency can now be learned by Hunters, Paladins, <br />
+ &amp;nbsp;Warriors.<br />
+- Spear proficiency has been removed.<br />
+- Minimum range on abilities now account for size of target and <br />
+ &amp;nbsp;attacker.<br />
+- Armor can&#39;t be swapped out while in combat. &amp;nbsp;Other equipment <br />
+ &amp;nbsp;such as weapons and accessories can still be swapped out.<br />
+- Shift-click item info linking has been added to the auction <br />
+ &amp;nbsp;interface.<br />
+- You now get a 10% discount at high reputation for buying items, <br />
+ &amp;nbsp;item repair, training costs, and taxi flights.<br />
+- Line of sight calculation takes into account creature size.<br />
+- Creatures should be more adept at chasing players.<br />
+- Spawn animations for game objects are now visible.<br />
+- Skills will not increase from use while dueling or engaged in <br />
+ &amp;nbsp;PvP.<br />
+- Texture linear filtering is turned on for the user interface.<br />
+- Escort NPCs will assist players more often.<br />
+- Escort NPCs and guards will no longer follow enemy players <br />
+ &amp;nbsp;around.<br />
+- NPCs which are performing work emotes will pause them and turn to<br />
+ &amp;nbsp;you when you interact with them.<br />
+- The Reanimated Corpse actually falls down now when it plays dead.<br />
+- New graveyards have been added to many zones.<br />
+- Players will not be able to train and purchase non-race specific <br />
+ &amp;nbsp;mounts. &amp;nbsp;In the next patch, we plan to implement a system in which <br />
+ &amp;nbsp;players can obtain mounts from other races once they have reached a <br />
+ &amp;nbsp;certain level of reputation with that race.<br />
+<br />
+<br />
+ Quests<br />
+- Onyxia Key Quests for both the Horde and Alliance are in and <br />
+ &amp;nbsp;fully functional.<br />
+- Eastern and Western Plaguelands have dozens of new quests.<br />
+- Tirion Fordring&#39;s questline is now complete.<br />
+- New PvP, Raid, and PvP Raid quests are live.<br />
+- Quests for Molten Core have been added.<br />
+- The completion of a quest may now result in a reputation <br />
+ &amp;nbsp;adjustment of a faction or a group of factions.<br />
+- More quests added to Desolace, including several Horde <br />
+ &amp;nbsp;specific quests.<br />
+- Horde quests added to Ashenvale, ranging from levels 19-30.<br />
+- Hemet Nesingwary and his companions now like Horde players in <br />
+ &amp;nbsp;addition to Alliance players.<br />
+- More quests added to Stonetalon.<br />
+- More quests added to Blackfathom Deeps. &amp;nbsp;Blackfathom has been <br />
+ &amp;nbsp;moved to Ashenvale and now has Horde quests.<br />
+<br />
+<br />
+ PvP<br />
+- Mind Control and Hunter&#39;s Mark flag you for PvP when used on <br />
+ &amp;nbsp;enemy players.<br />
+- Healing and buffing NPCs will not flag you for PvP unless those <br />
+ &amp;nbsp;NPCs are in combat.<br />
+- NPCs no longer tap creatures they are fighting.<br />
+<br />
+<br />
+ Talents<br />
+- Paladin talents are now available.<br />
+- Hunter talents are now available.<br />
+<br />
+<br />
+ Auctions<br />
+- The current high-bidder&#39;s name no longer displays in the auction <br />
+ &amp;nbsp;interface.<br />
+- Each time a bid is made on an item, a small amount of time is <br />
+ &amp;nbsp;added to the remaining auction duration.<br />
+- Items you are the high bidder on will be indicated as such in the <br />
+ &amp;nbsp;interface.<br />
+<br />
+<br />
+ Professions<br />
+- Leatherworking is now complete, you can make up to 300 <br />
+ &amp;nbsp;leatherworking skill items.<br />
+- Enchanting is now complete, you can perform enchantments that <br />
+ &amp;nbsp;require up to 300 enchanting skill.<br />
+- Engineering is now complete, there are engineering recipes that <br />
+ &amp;nbsp;require up to 300 engineering skill.<br />
+- Epic player crafted items that require raiding are now available.<br />
+- Skeleton Keys added to blacksmithing. &amp;nbsp;Smiths can now open locks <br />
+ &amp;nbsp;&#40;though the keys are consumed&#41;<br />
+- Expert and above skill tiers for secondary skills are no longer <br />
+ &amp;nbsp;available on trainers, you need to find the books to teach you them. &amp;nbsp;<br />
+ &amp;nbsp;Expert level is on a vendor somewhere in the world, artisan level <br />
+ &amp;nbsp;requires a quest to be completed.<br />
+- Elixirs no longer stack with player spells that improve the same <br />
+ &amp;nbsp;attribute<br />
+- Enchanting recipes generally require more reagents for 200-250 <br />
+ &amp;nbsp;skill items<br />
+- Limited Invulnerability Potion Re-added to Alchemy, but at a higher <br />
+ &amp;nbsp;level than it was previously.<br />
+- Leatherworking recipes added to let light leather be turned into <br />
+ &amp;nbsp;medium leather, medium leather into heavy and so on. &amp;nbsp; <br />
+- Light leather requirements for some 15-20th leather level items <br />
+ &amp;nbsp;reduced to allow for faster skillup in that range.<br />
+- Leatherworking Scorpid Recipes now require 2x the scorpid scales, <br />
+ &amp;nbsp;but scorpids now drop the scales 4x as frequently.<br />
+- Light leather now only takes 3 scraps to make instead of 4.<br />
+- Starting Leatherworking recipe items improved.<br />
+- Medium and Heavy leather now sells for less to vendors.<br />
+- Pick pocketing now has a chance of getting you a locked Junkbox, <br />
+ &amp;nbsp;which is a locked item that generally has money in it.<br />
+- Ironweb Spider Silk now drops more often and some Tailoring <br />
+ &amp;nbsp;Recipes require less.<br />
+- The ingredients required to make some gnomish engineering items <br />
+ &amp;nbsp;were changed.<br />
+- Elixirs effects reduced somewhat for the higher level elixirs.<br />
+- Dark Iron Armor stats have been changed.<br />
+- Living Essence and Essence of Undeath drops decreased.<br />
+- Silk and Mageweave cloth now sell for less to vendors.<br />
+- All remaining profession trainers who train a single recipe <br />
+ &amp;nbsp;have been turned into vendors.<br />
+- Catseye Ultra Goggles and Catseye Elixir reduced in effectiveness.<br />
+- Requirements to make blacksmithing recipes annihilator and <br />
+ &amp;nbsp;invulnerable mail increased.<br />
+- Artisan Level Fishing, Cooking, and First Aid quests are in the <br />
+ &amp;nbsp;game. Trainers will no longer train artisan level in the <br />
+ &amp;nbsp;aforementioned professions. Players must complete quests to gain <br />
+ &amp;nbsp;artisan levels.<br />
+<br />
+<br />
+ Pets<br />
+- Pets, summons and guardians are not susceptible to charm.<br />
+- Pets should be much better at chasing moving targets.<br />
+- Pets and summons will use their combat abilities as often as <br />
+ &amp;nbsp;possible.<br />
+- When your pet or demon learns new spells and abilities they will <br />
+ &amp;nbsp;show up on the pet action bar.<br />
+- Charmed creatures will no longer use their summon spells while <br />
+ &amp;nbsp;charmed.<br />
+- The pet action bar is greyed out while the pet is confused or fleeing<br />
+- Imps no longer run around aimlessly if you turn off auto-cast for <br />
+ &amp;nbsp;their firebolt.<br />
+<br />
+<br />
+ Druid<br />
+- Removed facing direction requirement from Entangling Roots, Faerire <br />
+ &amp;nbsp;Fire, Hibernate, and Soothe Animal.<br />
+- New Spell&#58; Rebirth &#40;Level 20&#41;.<br />
+- New Ability&#58; Feline Grace &#40;Level 40&#41;.<br />
+- Bear Form abilities that target one or more enemies now generate <br />
+ &amp;nbsp;additional threat.<br />
+- Enrage&#58; Cooldown increased.<br />
+- Growl&#58; Now gives the target enough threat to attack you, cooldown <br />
+ &amp;nbsp;added.<br />
+- Hibernate&#58; Increased the chance of breaking early.<br />
+- Mark of the Wild&#58; Ranks 5, 6, and 7 now require reagents.<br />
+<br />
+ Hunter<br />
+- Glimpse of Instincts&#58; Removed.<br />
+- Outdoorsmanship skill line renamed Survival.<br />
+- Ranged Combat skill line renamed Marksmanship.<br />
+- Removed facing requirement from Hunter&#39;s Mark and Scare Beast.<br />
+- Aspect of the Cheetah&#58; Speed increased.<br />
+- Aspect of the Pack&#58; Speed increased.<br />
+- Concussive Shot&#58; No longer causes additional threat, duration and <br />
+ &amp;nbsp;cooldown slightly increased, mana cost reduced.<br />
+- Disengage&#58; Effect boosted, cooldown added.<br />
+- Hunter&#39;s Mark&#58; Duration increased, dispels itself if the Hunter dies.<br />
+- Mongoose Bite&#58; Damage increased, mana cost increased.<br />
+- Scare Beast&#58; Increased the chance of breaking early.<br />
+- Wing Clip&#58; Slow effect now scales with level.<br />
+- Feign Death&#58; Duration increased.<br />
+- New Spell&#58; Track Beasts &#40;Level 1&#41;.<br />
+- New Spell&#58; Track Humanoids &#40;Level 10&#41;.<br />
+- New Spell&#58; Track Undead &#40;Level 18&#41;.<br />
+- New Spell&#58; Track Hidden &#40;Level 24&#41;.<br />
+- New Spell&#58; Track Elementals &#40;Level 26&#41;.<br />
+- New Spell&#58; Track Demons &#40;Level 32&#41;.<br />
+- New Spell&#58; Track Giants &#40;Level 40&#41;.<br />
+- New Spell&#58; Track Dragonkin &#40;Level 50&#41;.<br />
+- New Spell&#58; Distracting Shot &#40;Level 12&#41;.<br />
+- New Spell&#58; Aspect of the Wild &#40;Level 46&#41;.<br />
+<br />
+ Mage<br />
+- Blink should work much more reliably and will not stop your movement.<br />
+- Removed facing requirement from Counterspell, Detect Magic, and <br />
+ &amp;nbsp;Polymorph.<br />
+- Polymorph&#58; Now dismounts the enemy target, increased the chance of <br />
+ &amp;nbsp;breaking early.<br />
+- Blizzard&#58; Deals its damage in more frequent intervals.<br />
+- Arcane Intellect&#58; Ranks 4 and 5 now require reagents.<br />
+- Teleport&#58; Now requires a reagent.<br />
+- Portal&#58; Now requires a reagent.<br />
+- Slow Fall&#58; Now requires a reagent.<br />
+<br />
+ Paladin<br />
+- Retribution Aura&#58; Moved to level 16.<br />
+- Judgement&#58; Moved to level 50, renamed Holy Wrath.<br />
+- Removed facing requirement from Hammer of Justice and Turn Undead.<br />
+- Cleanse&#58; Moved to level 42, mana cost increased.<br />
+- Holy Light&#58; Causes less threat, heal effect and mana cost increased.<br />
+- Purify&#58; Mana cost increased.<br />
+- Turn Undead&#58; Increased the chance of breaking early.<br />
+- Holy Strike&#58; Removed.<br />
+- Crusader Strike&#58; Removed.<br />
+- Seal of Reckoning&#58; Removed.<br />
+- Healing Aura&#58; Removed.<br />
+- Dominance Aura&#58; Removed.<br />
+- Wisdom Aura&#58; Removed.<br />
+- Redemption&#58; Removed.<br />
+- Resurrection&#58; renamed Redemption, no longer useable in combat.<br />
+- **All Seals renamed Blessings. &amp;nbsp;Several new spells have been added, <br />
+ &amp;nbsp;which now use the naming convention &#34;Seal&#34;.<br />
+- New Spell&#58; Seal of the Crusader &#40;Level 12&#41;.<br />
+- New Spell&#58; Seal of Justice &#40;Level 22&#41;.<br />
+- New Spell&#58; Seal of Light &#40;Level 30&#41;.<br />
+- New Spell&#58; Seal of Wisdom &#40;Level 38&#41;.<br />
+- New Spell&#58; Flash of Light &#40;Level 20&#41;.<br />
+- New Spell&#58; Judgement &#40;Level 10&#41;.<br />
+- New Spell&#58; Blessing of Might &#40;Level 8&#41;.<br />
+- New Spell&#58; Blessing of Wisdom &#40;Level 14&#41;.<br />
+- New Spell&#58; Blessing of Light &#40;Level 40&#41;.<br />
+- New Spell&#58; Concentration Aura &#40;Level 22&#41;.<br />
+- New Spell&#58; Divine Intervention &#40;Level 30&#41;.<br />
+- Resistance Aura&#58; Split up into 3 new spells...Shadow Resistance Aura <br />
+ &amp;nbsp;&#40;Level 28&#41;, Frost Resistance Aura &#40;Level 32&#41;, and Fire Resistance Aura <br />
+ &amp;nbsp;&#40;Level 36&#41;.<br />
+- Seal of Fury has changed significantly.<br />
+- Seal of Righteousness has changed significantly.<br />
+- Blessing of Sacrifice&#58; Moved to level 46, now transfers a flat amount <br />
+ &amp;nbsp;of damage per hit, and has replacements.<br />
+- Blessing of Salvation&#58; Moved to level 26, duration increased, cooldown <br />
+ &amp;nbsp;removed, effect reduced.<br />
+- Blessing of Freedom&#58; Moved to level 18.<br />
+- Blessing of Protection&#58; Moved to level 10.<br />
+<br />
+ Priest<br />
+- Resurrect spells now use the same timer as when reclaiming your corpse. &amp;nbsp;<br />
+ &amp;nbsp;When a player is resurrected, they will have to wait for a set amount <br />
+ &amp;nbsp;before they can click the accept button.<br />
+- Resurrect now teleports you to the location at which the spell was cast, <br />
+ &amp;nbsp;not to the caster&#39;s present location.<br />
+- Removed facing requirement from Mind Control, Mind Soothe, Shackle <br />
+ &amp;nbsp;Undead and Shadow Word&#58; Pain.<br />
+- Resurrection&#58; No longer useable in combat.<br />
+- Levitate will now be cancelled if any damage is taken, now requires a <br />
+ &amp;nbsp;reagent.<br />
+- Power Word&#58; Fortitude&#58; Ranks 4, 5, and 6 now require reagents.<br />
+- Mind Control&#58; Increased the chance of breaking early.<br />
+- Shackle Undead&#58; Increased the chance of breaking early.<br />
+- New Spell&#58; Desperate Prayer &#40;Level 10&#41;. &amp;nbsp;&#40;Dwarf/Human only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Starshards &#40;Level 10&#41;. &amp;nbsp;&#40;Night Elf only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Touch of Weakness &#40;Level 10&#41;. &amp;nbsp;&#40;Undead only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Hex of Weakness &#40;Level 10&#41;. &amp;nbsp;&#40;Troll only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Fear Ward &#40;Level 20&#41;. &amp;nbsp;&#40;Dwarf only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Feedback &#40;Level 20&#41;. &amp;nbsp;&#40;Human only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Elune&#39;s Grace &#40;Level 20&#41;. &amp;nbsp;&#40;Night Elf only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Devouring Plague &#40;Level 20&#41;. &amp;nbsp;&#40;Undead only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Shadowguard &#40;Level 20&#41;. &amp;nbsp;&#40;Troll only.&#41; &amp;nbsp;&#40;Quest&#41;<br />
+<br />
+ Rogue<br />
+- Vanish will now cancel spells in progress and missiles in flight if <br />
+ &amp;nbsp;they are being cast at the vanished player.<br />
+- Poisons&#58; Should now be resistable.<br />
+- Removed facing requirement from Blind and Pick Pocket.<br />
+- Lockpicking&#58; No longer auto-ranks. &amp;nbsp;It must be used to improve.<br />
+- Sap&#58; Increased the chance of breaking early.<br />
+- New Poison&#58; Wound Poison &#40;Level 32&#41;.<br />
+- New Ability&#58; Safe Fall &#40;Level 40&#41;.<br />
+<br />
+ Shaman<br />
+- Removed facing requirement from Purge.<br />
+- Rebirth&#58; Renamed Ancestral Spirit, no longer useable in combat.<br />
+- Water Walking&#58; Now cancelled if any damage is taken, requires reagent.<br />
+- Water Breathing&#58; Now requires a reagent.<br />
+- Earth Shock&#58; Now causes additional threat.<br />
+- Healing Stream Totem&#58; Heals in smaller, more frequent intervals <br />
+ &amp;nbsp;&#40;roughly the same total over time&#41;.<br />
+- Mana Spring Totem&#58; Restores mana in smaller, more frequent intervals <br />
+ &amp;nbsp;&#40;roughly the same total over time&#41;.<br />
+- Rockbiter Weapon&#58; Now also makes your melee attacks cause additional <br />
+ &amp;nbsp;threat.<br />
+- Windfury Weapon&#58; Much more responsive.<br />
+- Windfury Totem&#58; Much more responsive.<br />
+<br />
+ Warlock<br />
+- Only party members can participate in rituals.<br />
+- Voidwalkers will wait for enemies in the area before casting Suffering.<br />
+- Target of summoning ritual must already be in the same instance if <br />
+ &amp;nbsp;caster is in an instance.<br />
+- Summoning gives a confirmation dialog to person being summoned.<br />
+- Ghosts can no longer be summoned.<br />
+- A bug has been fixed in the calculation of total mana for Warlock pets.<br />
+- Lash of Pain &#40;Succubus&#41;&#58; no longer requires the succubus to be behind <br />
+ &amp;nbsp;the target.<br />
+- Seduction &#40;Succubus&#41;&#58; Mana cost reduced, increased the chance of <br />
+ &amp;nbsp;breaking early.<br />
+- Soulstones&#58; Now soulbound when created, are consumed to store the <br />
+ &amp;nbsp;target&#39;s soul. &amp;nbsp;When that target dies, he may resurrect himself any <br />
+ &amp;nbsp;time up until release. &amp;nbsp;Cooldown added.<br />
+- Removed facing requirement from Banish, Corruption, all Curses, <br />
+ &amp;nbsp;Enslave Demon, and Fear.<br />
+- Demon spells are now available as Grimoires from the Demon Trainers in <br />
+ &amp;nbsp;the world. &amp;nbsp;Purchase the Grimoire and read it while the appropriate <br />
+ &amp;nbsp;demon is summoned to teach it the spell.<br />
+- Enslave Demon once again requires a soul shard, increased the chance <br />
+ &amp;nbsp;of breaking early if cast repeatedly on the same target.<br />
+- Howl of Terror&#58; Increased the chance of breaking early.<br />
+- Fear&#58; Increased the chance of breaking early.<br />
+- Rain of Fire&#58; Duration, mana cost, and damage slightly reduced, deals <br />
+ &amp;nbsp;its damage in more frequent intervals.<br />
+- New Spell &#40;Imp&#41;&#58; Phase Shift &#40;Level 12&#41;.<br />
+- New Spell&#58; Summon Felhunter &#40;Level 30&#41;. &amp;nbsp;&#40;Quest&#41;<br />
+- New Spell&#58; Inferno &#40;Level 50&#41;. &amp;nbsp;&#40;Monster Loot&#41;<br />
+- New Spell&#58; Curse of Doom &#40;Level 60&#41;.<br />
+- New Spell&#58; Ritual of Doom &#40;Level 60&#41;. &amp;nbsp;&#40;Monster Loot&#41;<br />
+<br />
+ Warrior<br />
+- Inner Rage&#58; Removed.<br />
+- Pummel&#58; Removed.<br />
+- Heroic Strike&#58; Now available in all Stances, damage increased on some <br />
+ &amp;nbsp;ranks, decreased on others.<br />
+- Sunder Armor&#58; Now available in all Stances.<br />
+- Shield Bash&#58; Now available in all Stances.<br />
+- Hamstring&#58; Now available in Battle and Berserker Stance.<br />
+- Rend&#58; Now available in Battle and Defensive Stance, damage slightly <br />
+ &amp;nbsp;increased on some ranks.<br />
+- Recklessness&#58; Moved to level 50, moved to Berserker Stance, can be<br />
+ &amp;nbsp;cancelled early, now causes the Warrior to take extra damage instead <br />
+ &amp;nbsp;of decreasing armor.<br />
+- Bloodrage&#58; Available in all Stances, cooldown increased.<br />
+- Cleave&#58; Moved to level 20, available in all Stances, damage reduced.<br />
+- Mocking Blow&#58; Moved to level 16, damage increased, replaced more <br />
+ &amp;nbsp;frequently.<br />
+- Shield Wall&#58; Moved to level 28.<br />
+- Slam&#58; Available in all Stances, damage reduced, casting is pushed back <br />
+ &amp;nbsp;when hit.<br />
+- Thunder Clap&#58; Damage increased.<br />
+- Defensive Stance&#58; Now reduces damage taken and damage caused instead <br />
+ &amp;nbsp;of increasing Defense skill.<br />
+- Intimidating Shout&#58; Moved to level 22, no longer causes the targeted <br />
+ &amp;nbsp;enemy to run in fear, but will cower in fear. &amp;nbsp;The cowering effect is <br />
+ &amp;nbsp;broken by damage.<br />
+- Warrior abilities that target one or more enemies now generate <br />
+ &amp;nbsp;additional threat.<br />
+- Taunt&#58; Now gives the target just enough threat to attack you. &amp;nbsp;<br />
+ &amp;nbsp;Cooldown added.<br />
+- Berserker Rage&#58; Moved to level 32.<br />
+- New Ability&#58; Retaliation &#40;Level 20&#41;.<br />
+- New Ability&#58; Execute &#40;Level 24&#41;.<br />
+- New Ability&#58; Intercept &#40;Level 30&#41;.<br />
+- New Ability&#58; Whirlwind &#40;Level 40&#41;.<br />
+<br />
+<br />
+ Mac<br />
+ &amp;nbsp;Shader based options are still disabled on the Mac client and are <br />
+ &amp;nbsp;awaiting release of driver bug fixes from Apple and GPU vendors. We will <br />
+ &amp;nbsp;release a patch to re-enable shader based graphic effects in Mac WoW when <br />
+ &amp;nbsp;that becomes feasible<br />
+<br />
+<br />
+Bug Fixes<br />
+- Monsters with extra dodge chances have been corrected.<br />
+- Abilities that activate off critical hits work off critical hits from <br />
+ &amp;nbsp;abilities as well &#40;Blood Craze, Enrage&#41;.<br />
+- Blessing of salvation correctly affects healing over time spells.<br />
+- If you tame the leader of a herd of Kodo with the Kodo Kombobulator the <br />
+ &amp;nbsp;whole herd won&#39;t follow you.<br />
+- If you close the disenchanting loot pane without looting the item, the <br />
+ &amp;nbsp;Dust or Essence or Shard is automatically looted for you. &amp;nbsp;&#40;You no <br />
+ &amp;nbsp;longer destroy the enchanted item if you close the loot pane with the <br />
+ &amp;nbsp;results of the disenchantment&#41;<br />
+<br />
+<br />
+ Miscellaneous<br />
+- Vocal emotes now display a normal emote to the chat window, instead of <br />
+ &amp;nbsp;the &#34;Player says...&#34; text. &amp;nbsp;Voice Emote Audio is unchanged. &amp;nbsp; <br />
+- There is now a checkbox to turn off audio emotes.<br />
+- Many boxes and crates ready to be looted have been added around the <br />
+ &amp;nbsp;world.<br />
+- Many new rare vendors selling weapons/armor/potions have been added <br />
+ &amp;nbsp;around the world.</code></div></div>
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59186">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59186" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59187" id="pid59187"></a>
+<div class="post " style="" id="post_59187">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-100.html"><img src="http://i.imgur.com/H03sWNHt.jpg?dateline=1428341867" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-100.html">Tal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Stormrage Cat Herder<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,920<br />
+	Threads: 296<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59187.html#pid59187" title="Patch is here&#33;">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 11:39 PM <span class="post_edit" id="edited_by_59187"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59187">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Nov 7 2004, 07:27 PM Wrote:</cite><div class="codeblock"><div class="title">Code:</div><div class="body" dir="ltr"><code>--------------------------------------------------------------------------------<br />
+- World of Warcraft Client Patch &#40;2004-11-07&#41;<br />
+<br />
+ Paladin<br />
+<br />
+- Holy Strike&#58; Removed.<br />
+- Crusader Strike&#58; Removed.<br />
+- Seal of Reckoning&#58; Removed.<br />
+- Healing Aura&#58; Removed.<br />
+- Dominance Aura&#58; Removed.<br />
+- Wisdom Aura&#58; Removed.<br />
+- Redemption&#58; Removed.</code></div></div>[right][snapback]59576[/snapback][/right]</blockquote><br />
+&gt;.&lt; I don&#39;t know what to make of these...
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59187">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=100" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59187" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59189" id="pid59189"></a>
+<div class="post " style="" id="post_59189">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59189.html#pid59189" title="Patch is here&#33;">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-07-2004, 11:48 PM <span class="post_edit" id="edited_by_59189"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-07-2004, 11:53 PM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59189">
+		<blockquote class="mycode_quote"><cite>Lissa,Nov 7 2004, 04:05 PM Wrote:</cite>Looking over the notes, Priests got hit by the nerf stick again...sigh...<br />
+<br />
+We got new quest spells (cool), no facing requirement for 4 spells (Shackle, MC, SW:P, and Soothe), but they now require reagents for PW:F at lv 4+ and Levitate, they also have made Shackle and MC break more easily (with the changes to Undead, Shackle is very limited already, so why change it to break early?Â  Also, why make MC break even easier, most Priests don&#39;t use it now becaue it takes them out of the fight too), and Res is no longer useable in combat.</blockquote><br />
+The change to MC is strange, but the key for me would be whether the aggro on MC has been reduced.  If a mob can be taunted off me after MC breaks, then that&#39;d be fine.  If it can&#39;t be, then yeah, I&#39;d end up using MC even less. :-/<br />
+<br />
+The rest of it sounds fine.  Looking over the other classes, it looks like all of the high-end buffs require reagents now.  I suspect that these reagents will be available in a shop somewhere like most rogue poisons.  So, in essense, this seems like little more than a minor money sink.  It&#39;ll be neat to see what these new race-specific spells are like.<br />
+<br />
+So looking forward to tracking down horde scum with Track Humanoids... :-)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59189">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59189" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59190" id="pid59190"></a>
+<div class="post " style="" id="post_59190">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-241.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-241.html">Ruvanal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,201<br />
+	Threads: 22<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59190.html#pid59190" title="Patch is here&#33;">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 12:04 AM <span class="post_edit" id="edited_by_59190"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59190">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Nov 7 2004, 07:48 PM Wrote:</cite>The change to MC is strange, but the key for me would be whether the aggro on MC has been reduced.&amp;nbsp; If a mob can be taunted off me after MC breaks, then that&#39;d be fine.&amp;nbsp; If it can&#39;t be, then yeah, I&#39;d end up using MC even less. :-/<br />
+<br />
+[right][snapback]59579[/snapback][/right]</blockquote><br />
+From the warrior notes.<br />
+<span style="font-style: italic;" class="mycode_i">- Taunt: Now gives the target just enough threat to attack you.  <br />
+ Cooldown added.</span><br />
+<br />
+Similar text on other taunt like effects.  <br />
+<br />
+So effectively Taunt will set the taunters aggro to max+1 so that if successful it will automatically pull the aggro off of anyone.  Big change, especially considering how it was so broken in the last patch.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59190">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=241" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59190" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59193" id="pid59193"></a>
+<div class="post " style="" id="post_59193">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1464.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_1464.jpg?dateline=1330034266" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1464.html">Lissa</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A Donkey they allowed to go to School<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,943<br />
+	Threads: 181<br />
+	Joined: Jul 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59193.html#pid59193" title="Patch is here&#33;">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 12:09 AM <span class="post_edit" id="edited_by_59193"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59193">
+		<blockquote class="mycode_quote"><cite>Tal,Nov 7 2004, 04:39 PM Wrote:</cite>&gt;.&lt; I don&#39;t know what to make of these...<br />
+[right][snapback]59577[/snapback][/right]</blockquote><br />
+It looks like they were renamed in some way.  Take a look at the spells that have been added.<br />
+<br />
+and as stated this morning...<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">I deem thee....PO&#39;&#33;</span>    :P
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Sith Warriors - They only class that gets a new room added to their ship after leaving Hoth, they get a <a href="http://www.torhead.com/npc/b6HRlx6/broonmark" target="_blank" rel="noopener" class="mycode_url">Brooncloset</a><br />
+<br />
+Einstein said Everything is Relative.<br />
+Heisenberg said Everything is Uncertain.<br />
+Therefore, everything is relatively uncertain.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59193">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1464" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59193" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59194" id="pid59194"></a>
+<div class="post " style="" id="post_59194">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1464.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_1464.jpg?dateline=1330034266" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1464.html">Lissa</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A Donkey they allowed to go to School<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,943<br />
+	Threads: 181<br />
+	Joined: Jul 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59194.html#pid59194" title="Patch is here&#33;">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 12:33 AM <span class="post_edit" id="edited_by_59194"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59194">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Nov 7 2004, 04:27 PM Wrote:</cite>Druid<br />
+<br />
+- New Spell: Rebirth (Level 20).<br />
+[right][snapback]59576[/snapback][/right]</blockquote><br />
+Just noticed this...<br />
+<br />
+Sounds like some form a res now for the druid, either self res or full on res.  If full on res and no change to Priest talents, the number of Priests is going to decrease even further now.<br />
+
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Sith Warriors - They only class that gets a new room added to their ship after leaving Hoth, they get a <a href="http://www.torhead.com/npc/b6HRlx6/broonmark" target="_blank" rel="noopener" class="mycode_url">Brooncloset</a><br />
+<br />
+Einstein said Everything is Relative.<br />
+Heisenberg said Everything is Uncertain.<br />
+Therefore, everything is relatively uncertain.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59194">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1464" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59194" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59195" id="pid59195"></a>
+<div class="post " style="" id="post_59195">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59195.html#pid59195" title="Patch is here&#33;">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 12:37 AM <span class="post_edit" id="edited_by_59195"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 11-08-2004, 12:39 AM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59195">
+		<blockquote class="mycode_quote"><cite>Ruvanal,Nov 7 2004, 05:04 PM Wrote:</cite>From the warrior notes.<br />
+<span style="font-style: italic;" class="mycode_i">- Taunt: Now gives the target just enough threat to attack you.Â  <br />
+ Cooldown added.</span><br />
+<br />
+Similar text on other taunt like effects.Â  <br />
+<br />
+So effectively Taunt will set the taunters aggro to max+1 so that if successful it will automatically pull the aggro off of anyone.Â  Big change, especially considering how it was so broken in the last patch.</blockquote><br />
+<br />
+Ah... so that&#39;s what that meant.  Yeah, that&#39;ll definitely change a battle&#39;s dynamic.  A warrior wouldn&#39;t have to break their taunt keys so much when trying to spam taunt something off someone but at the same time, they won&#39;t be able to build up a ton of aggro on a mob at the start of the battle by spamming taunt.  I imagine a lot of kiting happening between warriors and strong ranged attackers.  That is, a warrior will taunt, the ranged attackers will pull aggro with attacks, warrior taunts, etc.<br />
+<br />
+If this is the case, then I think Mind Control actually got a proxy boost in power and usefulness.  No longer would an early MC break = dead priest in an instance.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59195">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59195" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59196" id="pid59196"></a>
+<div class="post " style="" id="post_59196">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1404.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1404.html">Valamyr</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 11<br />
+	Threads: 1<br />
+	Joined: May 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59196.html#pid59196" title="Patch is here&#33;">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 01:04 AM <span class="post_edit" id="edited_by_59196"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59196">
+		Big changes, big changes, including some I was not expecting.<br />
+<br />
+About the paladins changes...<br />
+<br />
+Well the class IS massively reworked, but dont worry, the removed abilities are replaced and not truly gone. The list sure isnt quite exhaustive. <br />
+<br />
+I admit it looks lighter on melee abilities than I was expecting, I&#39;m thinking the patch notes for the paladins are simply incomplete really.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59196">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1404" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59196" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59198" id="pid59198"></a>
+<div class="post " style="" id="post_59198">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1208.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1208.html">Treesh</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Rubi-in-training<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,892<br />
+	Threads: 139<br />
+	Joined: Jan 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59198.html#pid59198" title="Patch is here&#33;">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 01:12 AM <span class="post_edit" id="edited_by_59198"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59198">
+		<blockquote class="mycode_quote"><cite>Valamyr,Nov 7 2004, 07:04 PM Wrote:</cite>I&#39;m thinking the patch notes for the paladins are simply incomplete really.<br />
+[right][snapback]59586[/snapback][/right]</blockquote>What?&#33;  Blizzard having incomplete patch notes in one of their games?&#33; Inconceivable&#33;  ;) :P<br />
+<br />
+<br />
+Sorry folks.  Just a little tired and silly and waiting for the servers to come back up.  :)
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Intolerant monkey.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59198">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1208" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59198" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59200" id="pid59200"></a>
+<div class="post " style="" id="post_59200">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-1008.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-1008.html">Saxywoo</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 166<br />
+	Threads: 38<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59200.html#pid59200" title="Patch is here&#33;">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:00 AM <span class="post_edit" id="edited_by_59200"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59200">
+		<blockquote class="mycode_quote"><cite>Lissa,Nov 7 2004, 11:05 PM Wrote:</cite>Looking over the notes, Priests got hit by the nerf stick again...sigh...<br />
+<br />
+We got new quest spells (cool), no facing requirement for 4 spells (Shackle, MC, SW:P, and Soothe), but they now require reagents for PW:F at lv 4+ and Levitate, they also have made Shackle and MC break more easily (with the changes to Undead, Shackle is very limited already, so why change it to break early?&amp;nbsp; Also, why make MC break even easier, most Priests don&#39;t use it now becaue it takes them out of the fight too), and Res is no longer useable in combat.<br />
+[right][snapback]59573[/snapback][/right]</blockquote><br />
+From the sound of it, Paladins have been cut off at the knees.  We&#39;ve lost all of the spells that we rely on so heavily.  I&#39;m in total shock - This game is on the chopping block as far as I&#39;m concerned.<br />
+<br />
+-SaxyCorp
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59200">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1008" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59200" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59201" id="pid59201"></a>
+<div class="post " style="" id="post_59201">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59201.html#pid59201" title="Patch is here&#33;">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:04 AM <span class="post_edit" id="edited_by_59201"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59201">
+		<blockquote class="mycode_quote"><cite>Saxywoo,Nov 7 2004, 09:00 PM Wrote:</cite>From the sound of it, Paladins have been cut off at the knees.&amp;nbsp; We&#39;ve lost all of the spells that we rely on so heavily.&amp;nbsp; I&#39;m in total shock - This game is on the chopping block as far as I&#39;m concerned.<br />
+[right][snapback]59590[/snapback][/right]</blockquote><br />
+Oh come on now, you know that until you try out the changes, there&#39;s no way to know for sure what&#39;s happened.  Each class, when they finally get talents, gets reworked - that&#39;s their M.O.<br />
+<br />
+Of course, they&#39;re still doing major reworks to class balance 2 weeks before retail, but I suppose I&#39;m just a broken record on this by now.<br />
+<br />
+-Bolty<br />
+
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59201">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59201" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59202" id="pid59202"></a>
+<div class="post " style="" id="post_59202">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1404.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1404.html">Valamyr</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 11<br />
+	Threads: 1<br />
+	Joined: May 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59202.html#pid59202" title="Patch is here&#33;">#16</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:05 AM <span class="post_edit" id="edited_by_59202"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59202">
+		<blockquote class="mycode_quote"><cite>Saxywoo,Nov 8 2004, 02:00 AM Wrote:</cite>From the sound of it, Paladins have been cut off at the knees.&amp;nbsp; We&#39;ve lost all of the spells that we rely on so heavily.&amp;nbsp; I&#39;m in total shock - This game is on the chopping block as far as I&#39;m concerned.<br />
+<br />
+-SaxyCorp<br />
+[right][snapback]59590[/snapback][/right]</blockquote><br />
+Really there&#39;s no need to get upset before taking a look at your new spellbook and talent set. <br />
+<br />
+The paladin class will be different than before, thats for sure, but it&#39;ll come out far better. The abilities havent just vanished, they&#39;ve been changed; but they&#39;re still there. <br />
+<br />
+Servers are back up as of this, I&#39;m on right now, looking at the talent trees of paladins and hunters. And frankly, I dont think Blizzard has jumped the gun on either.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59202">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1404" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59202" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59203" id="pid59203"></a>
+<div class="post " style="" id="post_59203">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-241.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-241.html">Ruvanal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,201<br />
+	Threads: 22<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59203.html#pid59203" title="Patch is here&#33;">#17</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:13 AM <span class="post_edit" id="edited_by_59203"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59203">
+		<blockquote class="mycode_quote"><cite>Valamyr,Nov 7 2004, 10:05 PM Wrote:</cite>Really there&#39;s no need to get upset before taking a look at your new spellbook and talent set. <br />
+<br />
+The paladin class will be different than before, thats for sure, but it&#39;ll come out far better. The abilities havent just vanished, they&#39;ve been changed; but they&#39;re still there. <br />
+<br />
+Servers are back up as of this, I&#39;m on right now, looking at the talent trees of paladins and hunters. And frankly, I dont think Blizzard has jumped the gun on either.<br />
+[right][snapback]59592[/snapback][/right]</blockquote><br />
+I am temporarily stuck not being able to connect due to the amount of traffic trying to sign on.  But I saw this:<br />
+<a href="http://forums.worldofwarcraft.com/thread.aspx?fn=wow-general&amp;t=531403&amp;p=1&amp;tmp=1#post531403" target="_blank" rel="noopener" class="mycode_url">http://forums.worldofwarcraft.com/thread.a...mp=1#post531403</a><br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>1. Important Notice Regarding Guilds | 11/8/2004 1:04:45 AM GMTST	<br />
+&amp;nbsp; &amp;nbsp; &amp;nbsp; 	Quote this post&amp;nbsp; Reply to this post<br />
+As of this patch, guild names will be unique across server regions: Pacific and Mountain Time servers are one region (USWest), and Central and Eastern servers (USEast) are another. Because of this change, guilds will have to be recreated when you log in. We apologize for not informing you of this change beforehand and for any inconvenience this may cause you. Thank you again for helping us test World of Warcraft. - Caydiem -<br />
+Assistant Community Manager, WoW</blockquote>
+<br />
+A heads up to some of you.  There will need to be some cooperation in getting enough players on some of the servers together to sign the charters to remake the guilds.<br />
+
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59203">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=241" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59203" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59204" id="pid59204"></a>
+<div class="post " style="" id="post_59204">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-100.html"><img src="http://i.imgur.com/H03sWNHt.jpg?dateline=1428341867" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-100.html">Tal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Stormrage Cat Herder<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,920<br />
+	Threads: 296<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59204.html#pid59204" title="Patch is here&#33;">#18</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:37 AM <span class="post_edit" id="edited_by_59204"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59204">
+		<blockquote class="mycode_quote"><cite>Ruvanal,Nov 7 2004, 10:13 PM Wrote:</cite>A heads up to some of you.&amp;nbsp; There will need to be some cooperation in getting enough players on some of the servers together to sign the charters to remake the guilds.<br />
+[right][snapback]59593[/snapback][/right]</blockquote><br />
+I have created a Sharanna on the PvP server and tried to whisper Mongo to help out by signing the charter before the servers went down again. I suggest we all do that and then the PvP&#39;ers could help us on the Beta server by signing ours. Roane has the gold to help us get a tabbard since I spent what I had to buy some spells.  :rolleyes:
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59204">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=100" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59204" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59205" id="pid59205"></a>
+<div class="post " style="" id="post_59205">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1464.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_1464.jpg?dateline=1330034266" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1464.html">Lissa</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A Donkey they allowed to go to School<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,943<br />
+	Threads: 181<br />
+	Joined: Jul 2004
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59205.html#pid59205" title="Patch is here&#33;">#19</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 02:40 AM <span class="post_edit" id="edited_by_59205"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59205">
+		<blockquote class="mycode_quote"><cite>Lissa,Nov 7 2004, 04:05 PM Wrote:</cite>Looking over the notes, Priests got hit by the nerf stick again...sigh...<br />
+<br />
+We got new quest spells (cool), no facing requirement for 4 spells (Shackle, MC, SW:P, and Soothe), but they now require reagents for PW:F at lv 4+ and Levitate, they also have made Shackle and MC break more easily (with the changes to Undead, Shackle is very limited already, so why change it to break early?&amp;nbsp; Also, why make MC break even easier, most Priests don&#39;t use it now becaue it takes them out of the fight too), and Res is no longer useable in combat.<br />
+[right][snapback]59573[/snapback][/right]</blockquote><br />
+Unlearning Talents now costs money.  First time unlearning is 1 G at lv 60 (not sure what the cost is at other levels).  Price goes up each time you unlearn as well (not sure by how much though).
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Sith Warriors - They only class that gets a new room added to their ship after leaving Hoth, they get a <a href="http://www.torhead.com/npc/b6HRlx6/broonmark" target="_blank" rel="noopener" class="mycode_url">Brooncloset</a><br />
+<br />
+Einstein said Everything is Relative.<br />
+Heisenberg said Everything is Uncertain.<br />
+Therefore, everything is relatively uncertain.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_59205">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1464" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59205" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid59208" id="pid59208"></a>
+<div class="post " style="" id="post_59208">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7675-post-59208.html#pid59208" title="Patch is here&#33;">#20</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">11-08-2004, 03:01 AM <span class="post_edit" id="edited_by_59208"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_59208">
+		<blockquote class="mycode_quote"><cite>Tal,Nov 7 2004, 07:37 PM Wrote:</cite>I have created a Sharanna on the PvP server and tried to whisper Mongo to help out by signing the charter before the servers went down again. I suggest we all do that and then the PvP&#39;ers could help us on the Beta server by signing ours. Roane has the gold to help us get a tabbard since I spent what I had to buy some spells.&amp;nbsp; :rolleyes:</blockquote><br />
+<br />
+I&#39;ll get a charter set up, and I have plenty of cash.  Not to worry.  Actually, it&#39;s getting about time to decide on an actual name for our guild and a real tabard design.  I was just thinking of "Lurking Loungers," but if anyone has any suggestions or preferences let me know.<br />
+<br />
+Also, do we want to keep with the white heart with the deep red background?  I still like it a lot, but I&#39;m also open to suggestions.<br />
+
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_59208">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7675&amp;replyto=59208" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="7675" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-7675-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-7675-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		<!-- start: multipage -->
+<div class="pagination">
+<span class="pages">Pages (2):</span>
+<!-- start: multipage_page_current -->
+ <span class="pagination_current">1</span>
+<!-- end: multipage_page_current --><!-- start: multipage_page -->
+<a href="thread-7675-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="thread-7675-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<!-- end: multipage -->
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=7675">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-7675.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=ac3c5ec1597b318c8fae971c139c3111">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:50 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=7675&amp;pid=59178#pid59178" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=7675&amp;pid=59178#pid59178" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

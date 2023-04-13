@@ -1,0 +1,1572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Horde Push Changes</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "1a6ddd4bfd4f35a1e095335275afa875";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="1a6ddd4bfd4f35a1e095335275afa875" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-139.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-138.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-137.html" class="pagination_page">137</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-138.html" class="pagination_page">138</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-139.html" class="pagination_current">139</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-140.html" class="pagination_page">140</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-141.html" class="pagination_page">141</a>
+<!-- end: multipage_page --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-140.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8898.html">Horde Push Changes</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>Horde Push Changes</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid43018" id="pid43018"></a>
+<div class="post " style="" id="post_43018">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43018.html#pid43018" title="Horde Push Changes">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 03:06 AM <span class="post_edit" id="edited_by_43018"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 04-15-2004, 03:07 AM by <a href="user-1.html">Bolty</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43018">
+		<a href="http://www.worldofwarcraft.com/patchnotes/patch-4-13-04.shtml" target="_blank" rel="noopener" class="mycode_url">See the patch notes here</a>.<br />
+<br />
+Blizzard is using their typical comment system.  Lines such as "The VanCleef encounter and Goblin Foundry in the Deadmines have been retuned" are classic.  I&#39;m assuming they made them easier.  Two of my parties attempting Van Cleef were annihilated in the Goblin Foundry, and I&#39;ve heard from leme that killing Van Cleef is just insanely tough.<br />
+<br />
+But for Mages (what can I say, they&#39;re the only class I have experience with):<br />
+"Phantasm has been removed"  - argh&#33;  Everyone thought they were going to beef them up, and they&#39;ve been removed&#33;<br />
+"Mana Shield now drains 2 mana per hit point absorbed" - now it&#39;s even worse than before&#33;<br />
+<br />
+But...<br />
+<br />
+"New Spell: Sleep is gained at levels 8, 20 and 40. Sleep duration has changed to 20, 30 and 40 seconds."  And thus, the Mage is balanced.<br />
+<br />
+YAY&#33;<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43018">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43018" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43019" id="pid43019"></a>
+<div class="post " style="" id="post_43019">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-205.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-205.html">lemekim</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				It's been how long?!<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 681<br />
+	Threads: 5<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43019.html#pid43019" title="Horde Push Changes">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 03:34 AM <span class="post_edit" id="edited_by_43019"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 04-15-2004, 03:36 AM by <a href="user-205.html">lemekim</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43019">
+		It wasn&#39;t me talking about Van Cleef, it was Mongo =) 3 times I believe their party tried, and got killed every time. The only time I had a decent party trying to do Van Cleef, the instance was broken and we could not even get into it&#33; I guess I will have to wait a while before trying Van Cleef again.<br />
+<br />
+On a different note, I am surprised mages did not get any kind of tank, and even got phantasm removed. You would think that their damage would be improved to reflect this...
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43019">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=205" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43019" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43022" id="pid43022"></a>
+<div class="post " style="" id="post_43022">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-50.html"><img src="https://www.lurkerlounge.com/forums/images/default_avatar.png" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-50.html">DeeBye</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,495<br />
+	Threads: 411<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43022.html#pid43022" title="Horde Push Changes">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 04:31 AM <span class="post_edit" id="edited_by_43022"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43022">
+		There are some incredibly interesting changes.  I was going to list all of the ones that caught my eye, but I soon realised that it was most of them.<br />
+<br />
+If I had to pick one as the most interesting, it would be <a href="http://www.worldofwarcraft.com/patchnotes/patch-4-13-04.shtml#reststate" target="_blank" rel="noopener" class="mycode_url">Rest State, Inns &amp; Hearthstones</a>.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43022">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=50" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43022" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43024" id="pid43024"></a>
+<div class="post " style="" id="post_43024">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43024.html#pid43024" title="Horde Push Changes">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 04:37 AM <span class="post_edit" id="edited_by_43024"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43024">
+		Yeah, it was me.  I got to Van Cleef three times.  The first time, he and his minions slaughtered our group mercilessly.  The second time, I was with an *awesome* group that I had a great feeling would be able to beat him -- and then Blizzard decided to take down the server for maintenance just as we got there.  That began my conspiracy theory that Blizzard intends no one ever kill Van Cleef.  I think it&#39;s like the Kobeoshi Maru -- the no-win scenario -- in Star Trek.  If you are ever in a group that could take down Van Cleef, they&#39;ll take the server down to prevent it.<br />
+<br />
+The third time, Blizzard was even more clever.  They instilled a mole in our party.  Up until Van Cleef, the group was good and worked well together.  It wasn&#39;t quite as good as the aforementioned second party but still quite good.  I felt we had a decent chance to win.  We killed everything up until Van Cleef&#39;s platform, then the mole, who up until that point had been a fantastic partymate, decides to walk up onto the platform on the top of the ship "just to see" and Van Cleef and his horde appear (they&#39;re like rogues with their Sneak) and slaughter a disorganized, wounded, and largely out of mana party. *sigh*<br />
+<br />
+I will get you Van Cleef&#33;
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43024">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43024" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43032" id="pid43032"></a>
+<div class="post " style="" id="post_43032">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-2.html"><img src="http://home.comcast.net/~djtoes/badger.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-2.html">Griselda</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,063<br />
+	Threads: 48<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43032.html#pid43032" title="Horde Push Changes">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 05:45 AM <span class="post_edit" id="edited_by_43032"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43032">
+		Boy, my priest is sure going to miss sleep&#33;  That made such a huge difference for me when I was soloing more than one monster.  Of course, I realize that that mages probably need that sort of help more than the priests did, at least from my limited perspective.  Having renew as an instant cast sounds nice, though. :)<br />
+<br />
+-Griselda
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Why can't we all just get along<br />
+<br />
+--Pete
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43032">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com/diablo2/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=2" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43032" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43034" id="pid43034"></a>
+<div class="post " style="" id="post_43034">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43034.html#pid43034" title="Horde Push Changes">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 06:02 AM <span class="post_edit" id="edited_by_43034"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 04-15-2004, 08:00 AM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43034">
+		Some comments while waiting the estimated 35 hours it&#39;ll take for the game to download.<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>Blizzard is using their typical comment system. Lines such as "The VanCleef encounter and Goblin Foundry in the Deadmines have been retuned" are classic.</blockquote>
+<br />
+I see near the bottom, the Van Cleef change is described in more detail:<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">Two of Vancleef&#39;s Guards have been removed.</span><br />
+<br />
+Having been there three times, I can say that that sounds about right.  What was so hard about Van Cleef was that he had so many strong Sneaking bodyguards that they overwhelmed parties.  Removing two guards would keep the quest difficult but no longer impossible to complete.  Kudos, Blizzard&#33;<br />
+<br />
+Since Bolty talked about the written changes to the mage, I&#39;ll give my two cents on the changes to priests:<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">Renew is now an instant cast spell.</span><br />
+<br />
+Hurray&#33;  Renew is the heal-over-time healing spell in contrast with a variety of insta-heal spells.  I think my now frozen priest could heal like 200 damage over 15 seconds with Renew, and it was my favorite healing spell in parties.  Why, you ask?  Because Renew is far more mana efficient than the other healing spells, a crucial factor for the always mana-starved priest.  Whenever I would see a partymate take some damage (say, about 25% of health removed), I would cast Holy Shield to first instantly protect him or her and then cast Renew on him or her.  The Holy Shield would protect the partymate while the Renew worked its magic.  I only used the mana-hog insta-heal spells in dire emergencies.  Now that Renew is instant cast, that will make it much easier for me as a priest to heal my party in a fast moving battle.  Thanks, Blizzard&#33;<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">Sleep spell removed.</span><br />
+<br />
+Ouch&#33;  Ouch ouch ouch ouch&#33;  So, Sleep has been moved from the Priest to the Mage.  As a priest, I have to say that that smarts, but stepping back, I have to admit it&#39;s a good idea.  Sleep does make more sense as a mage spell, and it would allow mages to be able to handle being attacked by two whole enemies instead of just one.  Meanwhile, the priest has some other less powerful but still potentially useful AI affecting spells he can use.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">New Spell: Shackle Undead is gained at levels 20 and 40.</span><br />
+<br />
+Interesting idea.  I assume it&#39;s some sort of prison thing that can only be cast on undead.  I guess I&#39;ll have to get quick about determining if I&#39;m fighting an undead monster or not.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">New Spell: Fade is gained at levels 8, 20, 30 and 40.</span><br />
+<br />
+Gives me some hope that this makes up for the removal of Sleep.  Does this make it harder for enemies to see the priest (ala a Rogue&#39;s sneak)?  Or, is this like D2&#39;s assassin&#39;s fade with a bonus to resistances?  It&#39;ll be interesting to see.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b">New Spell: Flash Heal is gained at levels 20, 26, 32 and 38.</span><br />
+<br />
+I&#39;m guessing that this is an insta-cast insta-heal spell.  If so, it&#39;s probably a mana hog.<br />
+<br />
+Overall, I have to say from the patch descriptions, it sounds like Blizzard did the right thing with the priest.  The removal of Sleep hurts, but honestly, it was always a luxury item in a priest&#39;s arsenal -- a darned useful luxery item, but a luxery item nonetheless.  Overall, there weren&#39;t any huge changes to the priest, at least as described by the patch notes.  I&#39;m particularly glad they didn&#39;t mess with Holy Shield.  The balance with it seems right to me.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43034">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43034" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43118" id="pid43118"></a>
+<div class="post " style="" id="post_43118">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43118.html#pid43118" title="Horde Push Changes">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 09:21 PM <span class="post_edit" id="edited_by_43118"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 04-15-2004, 09:25 PM by <a href="user-853.html">MongoJerry</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43118">
+		Some initial impressions from my level 4 undead priest, while Blizzard conducts another shutdown of the server:<br />
+<br />
+"Skill points" no longer seem to be given when you level up.  Instead, they seem to be given more often than that.  I&#39;m not sure if it&#39;s tied to experience points levels or how well one has trained in one&#39;s skills.  So far, I&#39;ve been afraid to assign skill points to boost things like intelligence until I see how many skill points it costs to train in skills like herbalism.<br />
+<br />
+You get talent points after every levelup, but as the push description says, those talent skills are disabled at the present time, so those talent points don&#39;t mean anything.<br />
+<br />
+I&#39;ve been running into some early frustrations in the undead starting area.  The early undead quests are similar to the early quests given to humans -- go to a mine and kill monsters there, except it&#39;s spiders in this case instead of kobolds.  The problem is that the mine is very small and the number of people competing for kills is large.  There&#39;s a lot of competition for far too few monsters, so every time a monster spawns, there&#39;s a race to be the first one to hit and "tag" it so that you get the credit for its death.<br />
+<br />
+Now, the mine isn&#39;t too bad, because at least people can party up temporarily and get credit for party kills.  What&#39;s worse is the next quest -- gathering Scarlet armbands.  Partying up doesn&#39;t make the quest go faster, and there&#39;s only one camp of Scarlet guards to attack so that there&#39;s huge competition to tag those guards so people can collect armbands.  It&#39;s strange.  In the human areas, Blizzard did a good job of giving people a choice of several areas where they can fulfill their quests or giving them large areas to work in so that people aren&#39;t running into each other too much.  The undead starting area, though, is a major traffic jam.  They need to make the spider mine much bigger and create at least three Scarlet camps.  There&#39;s plenty of room to do this, so it shouldn&#39;t be a problem.<br />
+<br />
+Also, I&#39;ve run into some bugs with invincible spiders and bats.  I think it&#39;s a problem with terrain -- like the game has trouble with bats flying over hills and stuff.  Or it could be a lag problem.  I haven&#39;t figured it out, yet, but it happens often enough to be annoying.<br />
+<br />
+Despite these things, I&#39;ve enjoyed the new push so far.  There are just some issues that need to be worked out -- and that&#39;s why we&#39;re beta testing the game, right?
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43118">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43118" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43124" id="pid43124"></a>
+<div class="post " style="" id="post_43124">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-683.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-683.html">BEEFMOTRTON</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 44<br />
+	Threads: 2<br />
+	Joined: Jun 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43124.html#pid43124" title="Horde Push Changes">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 09:46 PM <span class="post_edit" id="edited_by_43124"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43124">
+		From what I understand, mana shield used to soak 3 mana per 1 hp damaged. So changing it to 2 is a 50% increase in efficiency.<br />
+<br />
+Also, fade apparently is just a spell that reduces the priests aggro for a short period of time, which will be handy, but it&#39;s nothing on the level of sleep.<br />
+<br />
+Now can someone get to level 10 with a druid and tell us how the bear performs? :)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43124">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=683" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43124" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43131" id="pid43131"></a>
+<div class="post " style="" id="post_43131">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-19.html"><img src="http://home.comcast.net/~thedragoon/avatars/acalan_sm_80x80.gif" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-19.html">TheDragoon</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,990<br />
+	Threads: 84<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43131.html#pid43131" title="Horde Push Changes">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-15-2004, 11:02 PM <span class="post_edit" id="edited_by_43131"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43131">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>Now can someone get to level 10 with a druid and tell us how the bear performs? </blockquote>
+I&#39;ll be on it as soon as I finish downloading the new client.   :lol:
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+ -TheDragoon
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43131">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://home.comcast.net/~thedragoon/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=19" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43131" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43140" id="pid43140"></a>
+<div class="post " style="" id="post_43140">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-683.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-683.html">BEEFMOTRTON</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 44<br />
+	Threads: 2<br />
+	Joined: Jun 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43140.html#pid43140" title="Horde Push Changes">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 12:35 AM <span class="post_edit" id="edited_by_43140"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43140">
+		<blockquote class="mycode_quote"><cite>TheDragoon,Apr 15 2004, 10:53 PM Wrote:</cite>I&#39;ll be on it as soon as I finish downloading the new client.&amp;nbsp;  :lol:</blockquote>I should have figured you of all people would be on it. I&#39;ll expect a calculator from your findings within a week  :P
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43140">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=683" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43140" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43170" id="pid43170"></a>
+<div class="post " style="" id="post_43170">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-176.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-176.html">Jarulf</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 983<br />
+	Threads: 113<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43170.html#pid43170" title="Horde Push Changes">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 04:52 AM <span class="post_edit" id="edited_by_43170"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43170">
+		<blockquote class="mycode_quote"><cite>MongoJerry,Apr 15 2004, 10:12 PM Wrote:</cite>So far, I&#39;ve been afraid to assign skill points to boost things like intelligence until I see how many skill points it costs to train in skills like herbalism.</blockquote>I can&#39;t tell for herbalism specifically since it vary with skill, but it sems that the first "level" of a trade skill is along 5-10 or so skill points, next level (to learn up to 150 or whatever it is) costs arround 50-75 skill points, and final level is at 200-300 from what I have seen. My level 4 characters (have got 3 there but none further) seems to sit arround 5-7 skill points (or something like that). No idea if skill points will come to you in the same pace all the time or change with level. The read mes says you get them from fighting monsters though.
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+There are three types of people in the world. Those who can count and those who can't.
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43170">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=176" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43170" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43174" id="pid43174"></a>
+<div class="post " style="" id="post_43174">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-2.html"><img src="http://home.comcast.net/~djtoes/badger.jpg" alt="" width="64" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-2.html">Griselda</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,063<br />
+	Threads: 48<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43174.html#pid43174" title="Horde Push Changes">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 05:33 AM <span class="post_edit" id="edited_by_43174"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43174">
+		I started a Tauren druid, but I found that I couldn&#39;t read the dark blue text very well against the grassy Tauren background.  So, I decided to take my chances with "advanced chat".<br />
+<br />
+When advanced chat is checked, you can select each of your chat window areas and fiddle with them.  They&#39;re called "chat 1" and "chat 2", but you can rename them.  That&#39;s of course NOT the same as "channel 1", etc.  It was pretty easy to customize the font size, and change the colors around.  It changes everything in the window, which is helpful, because you can read your own scrollback to see how it looks, rather than having to spam people to send you different kinds of messages.<br />
+<br />
+At the present moment, it seems that all chat-type messages appear in "chat 1", and all combat-type messages appear in "chat 2".  I know in NWN it was easy to customize this so that you could have change where you saw different types of messages.  So, when I saw the chat channel I was in (lurkers, of course&#33;) in the customization section for "chat 2", I assumed that was where I might change where my "lurkers" chat appeared.  For the record, clicking on that made error messages pop up, and my chat 2 disappeared for a while.  I&#39;m guessing that&#39;s because the channel isn&#39;t available in chat 2, so there was nothing to customize about it at the moment, but I&#39;m not sure.<br />
+<br />
+I&#39;ll fiddle with it some more when I get a chance.<br />
+<br />
+-Griselda
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+Why can't we all just get along<br />
+<br />
+--Pete
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_43174">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com/diablo2/" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=2" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43174" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43187" id="pid43187"></a>
+<div class="post " style="" id="post_43187">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43187.html#pid43187" title="Horde Push Changes">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 09:02 AM <span class="post_edit" id="edited_by_43187"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43187">
+		<blockquote class="mycode_quote"><cite>Jarulf,Apr 16 2004, 04:43 AM Wrote:</cite>No idea if skill points will come to you in the same pace all the time or change with level. The read mes says you get them from fighting monsters though.</blockquote>My priestess is now level 9 and the skill points have been coming fast and furious.  I&#39;ve maxed out my intelligence and spirit stats and even threw two skill points into stamina to prop it up by one point.  It only added like 7 health, so for the moment, investing in stamina with a priest doesn&#39;t seem worth it.  Anyway, even after all that, she has like 20-25 skill points left over.  Skill point gains seem tied to your experience points but not directly to your level.  It could be that you get a skill point every 1000 experience points, for example (just making up a number).  However, things cost more at higher levels.  For example, for the first few levels, I could buy an intelligence point 1-for-1, but after about five levels, it started costing two skill points to boost my intelligence by one.  Same for spirit.  Also, as you mentioned, expert level trade skills cost a *lot* of skill points.  For example, to get expert enchanting costs 200 skill points and just to get intermediate enchanting, it costs 50 skill points.  I think herbalism expertise costs twice as much.<br />
+<br />
+So, one could imagine characters who don&#39;t specialize in any trades and invest their skill points into boosting their stats.  However, the law of diminishing returns will probably catch up to such characters quickly as the skill point costs per point become expensive.  Similarly, one could invest heavily in trade skills, but then your character would be a comparitively weak fighter.  Teamwork could compensate for this in that guilds could have some people who are very focused on certain trade skills and provide their services to the more fighting focused characters in their guild.  And yet, it looks like one could be a decent fighting character and still specialize in a small number of trade skills.  It seems to me that all of this is Blizzard&#39;s intention as a way to encourage social interaction and provide facilities for creating a wide variety of characters.  And yet, the diminishing returns formulas are there to keep extreme characters from being too unbalancing.  This sounds like a good idea.  The devil, as they say, is in the details.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43187">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43187" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43188" id="pid43188"></a>
+<div class="post " style="" id="post_43188">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-241.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-241.html">Ruvanal</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 1,201<br />
+	Threads: 22<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8898-post-43188.html#pid43188" title="Horde Push Changes">#14</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 09:21 AM <span class="post_edit" id="edited_by_43188"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43188">
+		<blockquote class="mycode_quote"><cite>Jarulf,Apr 16 2004, 12:43 AM Wrote:</cite>... No idea if skill points will come to you in the same pace all the time or change with level. The read mes says you get them from fighting monsters though.</blockquote><a href="https://www.worldofwarcraft.com/thread.aspx?FN=wow-general&amp;T=21414&amp;P=4" target="_blank" rel="noopener" class="mycode_url">https://www.worldofwarcraft.com/thread.aspx...ral&amp;T=21414&amp;P=4</a><br />
+<br />
+Katricia:<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>There is NO cap on skill points - NO skill point cap per level and NO skill point cap for the life of your character. After you level your character to max (level 60), you can still continue to gain skill points by killing creatures. <br />
+<br />
+While doing quests vs not doing quests might initially (in the first few levels) slow down your skill point gain, it will not in any way affect how many skill points you will be able to accumulate. <br />
+<br />
+Furthermore, by questing and killing creatures you should have more than enough skill points to spend on attributes with points left over to spend on secondary skills. Questing was taken into account when the system was put into place. That&#39;s not saying that it won&#39;t need to be tweaked, it might .. and that&#39;s why we&#39;re all here. <br />
+<br />
+Also, each "raw" 600 experience points gained from killing creatures goes towards another skill point. "Raw" means the base experience that you get from killing a creature, before they are modified by being well rested or fatigued. <br />
+<br />
+Please continue to list your questions regarding this, I&#39;m gathering up the answers as I can. <br />
+<br />
+~Kat :) </blockquote>
+<br />
+So you basically get 1 skill point for every 600 exp of monsters slain <span style="font-weight: bold;" class="mycode_b">before</span> any fatigue or level adjustments are applied to the earned amount.  Play all the time with well rested characters and you will earn skill points slowly compared to how fast you level.  Play character to exaustion and the skill points will roll in fast compared to the pace at which you level.  With no cap on the earned skill points, that will mean that maximum stats and all trade skills can be learned eventually, it is just a matter of what you want to work on first.<br />
+<br />
+Now if I can only get the client to run without immediately crashing, I might be able to see what some of this is like in the game itself.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43188">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=241" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43188" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid43213" id="pid43213"></a>
+<div class="post " style="" id="post_43213">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-853.html"><img src="http://www.lurkerlounge.com/mongo/Griz_icon.jpg" alt="" width="61" height="64" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-853.html">MongoJerry</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Posting Freak<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 2,600<br />
+	Threads: 220<br />
+	Joined: Aug 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="thread-8898-lastpost.html#pid43213" title="Horde Push Changes">#15</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">04-16-2004, 05:42 PM <span class="post_edit" id="edited_by_43213"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_43213">
+		<blockquote class="mycode_quote"><cite>Ruvanal,Apr 16 2004, 09:12 AM Wrote:</cite>So you basically get 1 skill point for every 600 exp of monsters slain <span style="font-weight: bold;" class="mycode_b">before</span> any fatigue or level adjustments are applied to the earned amount.&amp;nbsp; Play all the time with well rested characters and you will earn skill points slowly compared to how fast you level.&amp;nbsp; Play character to exaustion and the skill points will roll in fast compared to the pace at which you level.&amp;nbsp; With no cap on the earned skill points, that will mean that maximum stats and all trade skills can be learned eventually, it is just a matter of what you want to work on first.</blockquote>Very interesting.  At first this seems unbalancing.  This allows for the possiblity of fully maxed out attribute characters with Expert level skills in all trades.  However, the diminishing returns formula becomes a factor in two ways.  First, each attribute point increases in skill point cost the higher you boost it.  So, it might end up costing like 20 skill points just to boost your attributes one point later in the game.  Second, there&#39;s the more subtle diminishing returns issue that is best demonstrated by an example:  If you have 100 mana, a 10 point mana boost is significant.  If you have 2000 mana, a 10 point mana boost isn&#39;t.<br />
+<br />
+However, once again, the devil is in the details.  We&#39;ll have to see how well Blizzard has designed the system to prevent people from creating such overpowering characters.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_43213">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=853" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8898&amp;replyto=43213" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8898" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8898-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8898-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8898">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="../index.html">The Lurker Lounge</a></li>
+				<li><a href="thread-8898.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=28634357338708545349c2c757d2566c">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:58 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8898&amp;pid=43018#pid43018" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8898&amp;pid=43018#pid43018" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

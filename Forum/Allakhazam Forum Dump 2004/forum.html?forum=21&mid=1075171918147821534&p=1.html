@@ -1,0 +1,897 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Lessons Learned (previous MMORPGs) :: World of Warcraft :: ZAM</title>
+  <link rel="icon" href="favicon.ico?3">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/font-awesome.min.css?a">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/global.css?bj">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/wow/c/site.css?bi" id="css">
+  <link rel="stylesheet" type="text/css" href="https://zam.zamimg.com/c/print.css?d" media="print">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WK3KTMS');</script>
+  <!-- End Google Tag Manager -->
+  <script>isIE=false</script><!--[if IE]><script>isIE=true</script><![endif]-->
+  <script src="https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery-1.10.2.min.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://zam.zamimg.com/j/jquery.cookie.min.js"></script>
+  <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script src="https://cdn.zamimg.com/zaf/1.7.x/zaf.min.js"></script>
+  <script src="https://cdn.zamimg.com/zul/2.2.0/zul.min.js"></script>
+  <script src="https://zam.zamimg.com/j/global.js?v"></script>
+  <script src="https://zam.zamimg.com/wow/j/site.js?a"></script>
+  <script src="https://zam.zamimg.com/j/tooltips.js?c"></script>
+  <!-- Begin comScore Tag -->
+  <script>
+    var _comscore = _comscore || [];
+    var _cs_ucfr= localStorage.getItem('optIn') === 'true' ? '1' : '0';
+    _comscore.push({ c1: "2", c2: "6036197", cs_ucfr: _cs_ucfr  });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "https://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+  <img src="https://sb.scorecardresearch.com/p?c1=2&c2=6036197&cv=2.0&cj=1&cs_ucfr=0" />
+</noscript>
+<!-- End comScore Tag -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1459431-39', 'auto');
+  ga('create', 'UA-1459431-57', 'auto', {'name' : 'generic1'});
+  ga('create', 'UA-1459431-63', 'auto', {'name' : 'generic2'});
+  ga('send', 'pageview');
+  ga('generic1.send', 'pageview');
+  ga('generic2.send', 'pageview');
+
+</script>
+<!--Blockthrough Script-->
+<script src="https://btloader.com/tag?o=5714333134749696&upapi=true"></script>
+<!--Opt Out Script-->
+  <link rel="stylesheet" href="https://s3.amazonaws.com/sitemaps.services.zam.com/gdpr_optout.css"/>
+  <meta name="robots" content="noindex">
+<link rel="search" type="application/opensearchdescription+xml" href="https://zam.zamimg.com/shared/os11-wow.xml" title="WoW at ZAM">
+
+</head>
+<body class="non-premium">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK3KTMS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<div id="skin-bg">
+  <div id="AKZ_1x1"></div>
+</div>
+<div id="zaf-script-container">
+  <script async src="https://zaf.api.fanbyte.com/stable/js/akz-allakhazam.js"></script>
+</div>
+<div id="zul-bar-container">
+  <script>ZUL.init({ state: 'loggedOut' });</script>
+</div>
+<!--[if lte IE 8]><script>document.body.className+=' pre-ie9'</script><![endif]-->
+<div id="tmpItemFrm"></div>
+<div id="bg-wrapper">
+<div id="header"><div id="livesearch"></div>
+  <!--[if lt IE 8]><script>ZAM.warnIE()</script><![endif]-->
+  <div id="logo"><a href="https://wow.allakhazam.com/"></a></div>
+  <form action="https://wow.allakhazam.com/search.html" name="search"><input name="q" style="width:562px" type="text" minlength="3" maxlength="75" title="This search box needs a minimum of 3 characters and a maximum of 75 characters." onfocus="this.select()" value=""><a href="javascript:document.search.submit();"></a></form>
+  <div id="nav">
+    <ul id="menu_horiz"><li class="has-sub first-child  nc-home"><a href="https://wow.allakhazam.com/">Home</a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-news-archives"><a href="news_archives.html">News Archives</a></li><li class="ext nc-support"><a href="https://help.zam.com">Support</a></li><li class="nc-new-comments"><a href="newcomments.html">New Comments</a></li><li class="last-child  nc-zam-tools"><a href="enhancements.html"><span class="icon-tools">ZAM Tools</span></a></li></ul></div></li><li class="has-sub  ext nc-database"><a href="http://www.wowhead.com/"><span class="icon-wh">Database</span></a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-achievements"><a href="db/achievementlist.html?1">Achievements</a></li><li class="nc-factions"><a href="db/factionlist.html?1">Factions</a></li><li class="nc-item-sets"><a href="db/itemsetlist.html?1">Item Sets</a></li><li class="nc-items"><a href="db/itemlist.html?1">Items</a></li><li class="nc-npcs"><a href="db/moblist.html?1">NPCs</a></li><li class="nc-objects"><a href="db/objectlist.html?1">Objects</a></li><li class="nc-quests"><a href="db/questlist.html?1">Quests</a></li><li class="nc-spells"><a href="db/spelllist.html?1">Spells</a></li><li class="nc-zones"><a href="db/zonelist.html?1">Zones</a></li><li class="nc-enchantments"><a href="db/enchantlist.html">Enchantments</a></li><li class="last-child  nc-characters"><a href="characters.html">Characters</a></li></ul></div></li><li class="has-sub  nc-wiki"><a href="https://wow.allakhazam.com/wiki/">Wiki</a><div><em></em><var></var><strong></strong><ul><li class="has-sub first-child  nc-general-info"><a class="no-href">General Info</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Character_Creation_(WoW)">Character Creation</a></li><li><a href="wiki/Money_(WoW)">Money</a></li><li><a href="wiki/Reputation_(WoW)">Reputation</a></li><li><a href="wiki/Leveling_(WoW)">Leveling</a></li><li><a href="wiki/Category:Terms_(WoW)">Game Terminology</a></li><li><a href="wiki/Category:Guides_(WoW)">Player-written Guides</a></li><li class=" last-child"><a href="wiki/Category:Wow_Updates">Updates and Patch Notes</a></li></ul></div></li><li class="has-sub  nc-characters"><a class="no-href">Characters</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Races_(WoW)">Races</a></li><li><a href="wiki/Classes_(WoW)">Classes</a></li><li><a href="wiki/Ability_lists_(WoW)">Abilities</a></li><li><a href="wiki/Achievements_(WoW)">Achievements</a></li><li><a href="wiki/Talents_(WoW)">Talents</a></li><li><a href="wiki/Skills_(WoW)">Skills</a></li><li><a href="wiki/Category:WoW_Professions">Professions</a></li><li class=" last-child"><a href="wiki/factions_(wow)">Factions</a></li></ul></div></li><li class="has-sub  nc-interface"><a class="no-href">Interface</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Interface_(WoW)">Interface</a></li><li><a href="wiki/Inventory_(WoW)">Inventory</a></li><li><a href="wiki/Quests_(WoW)">Quests</a></li><li><a href="wiki/Combat_(WoW)">Combat</a></li><li><a href="wiki/Mods_(WoW)">Mods</a></li><li class=" last-child"><a href="wiki/Macro_(WoW)">Macro</a></li></ul></div></li><li class="has-sub  nc-community"><a class="no-href">Community</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Player_interaction_(WoW)">Player interaction</a></li><li><a href="wiki/Communication_(WoW)">Communication</a></li><li><a href="wiki/PvP_(WoW)">PvP</a></li><li><a href="wiki/Raiding_(WoW)">Raiding</a></li><li class=" last-child"><a href="wiki/Common_courtesy_(WoW)">Common courtesy</a></li></ul></div></li><li class="has-sub  nc-items-and-gear"><a class="no-href">Items and Gear</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Tradeskills_(WoW)">Tradeskills</a></li><li><a href="wiki/Weapons_(WoW)">Weapons</a></li><li><a href="wiki/Armor_items_(WoW)">Armor</a></li><li><a href="wiki/Mounts_(WoW)">Mounts</a></li><li><a href="wiki/Vanity_Pets">Vanity Pets</a></li><li class=" last-child"><a href="wiki/Emblem_Gear_(WoW)">Emblem Gear</a></li></ul></div></li><li class="has-sub  nc-game-mechanics"><a class="no-href">Game Mechanics</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Attribute_(WoW)">Attributes</a></li><li><a href="https://wow.allakhazam.com/wiki/Rage%2C_Energy%2C_and_Mana_(WoW)">Rage, Energy, and Mana</a></li><li><a href="wiki/Itemization_Formulas_(WoW)">Itemization Formulas</a></li><li><a href="wiki/The_Math_of_Combat_(WoW)">The Math of Combat</a></li><li><a href="wiki/Threat_(WoW)">Threat</a></li><li class=" last-child"><a href="wiki/Category:Mechanics_(WoW)">More Mechanics</a></li></ul></div></li><li class="has-sub  nc-people-and-places"><a class="no-href">People and Places</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Zones_and_Regions_(WoW)">Zones and Regions</a></li><li><a href="wiki/People_(WoW)">People</a></li><li><a href="wiki/Events_(WoW)">Events</a></li><li class=" last-child"><a href="wiki/Travel_(WoW)">Travel</a></li></ul></div></li><li class="has-sub  nc-beyond-the-mmo"><a class="no-href">Beyond the MMO</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Warcraft_Series">Warcraft Series</a></li><li><a href="wiki/WoW_Products">WoW Products</a></li><li class=" last-child"><a href="wiki/Category:Blizzcon_2008_(WoW)">Blizzcon 2008</a></li></ul></div></li><li class="has-sub last-child  nc-db-categories"><a class="no-href">DB Categories</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="wiki/Category:WoW_Mobs">Mobs</a></li><li><a href="wiki/Category:WoW_Items">Items</a></li><li><a href="wiki/Category:WoW_Quests">Quests</a></li><li class=" last-child"><a href="wiki/Category:WoW_Rare_Mobs">Rare Mobs</a></li></ul></div></li></ul></div></li><li class="has-sub  cur nc-forums"><a href="forum.html">Forums</a><div><em></em><var></var><strong></strong><ul><li class="first-child  nc-wow-general"><a href="forum.html?forum=21">WoW General</a></li><li class="nc-pvp"><a href="forum.html?forum=214">PvP</a></li><li class="nc-tradeskills"><a href="forum.html?forum=69">Tradeskills</a></li><li class="nc-classes"><a href="forum.html?forum=243">Classes</a></li><li class="has-sub  nc-cross-site"><a href="forum.html?cat=9">Cross Site</a><div><em></em><var></var><strong></strong><ul><li class=" first-child"><a href="forum.html?forum=3">Site Feedback</a></li><li><a href="forum.html?forum=82">Wikibase Feedback</a></li><li><a href="forum.html?forum=22">General Game Discussion</a></li><li><a href="forum.html?forum=5">TV, Movies, Anime &amp; Books</a></li><li><a href="forum.html?forum=25">Computer Hardware &amp; Troubleshooting</a></li><li><a href="forum.html?forum=28">Out of Topic</a></li><li class=" last-child"><a href="forum.html?forum=4">The Asylum</a></li></ul></div></li><li class="nc-live-forum-updates"><a href="live.html">Live Forum Updates</a></li><li class="nc-followed-threads"><a href="follow.html">Followed Threads</a></li><li class="last-child  nc-"><a class="no-href"></a></li></ul></div></li></ul>
+  </div>
+  <div id="header-misc"><span id="theme"><strong>&middot;</strong><span><b><i></i>Theme</b></span><ul><li class="empty"><em></em><var></var></li>
+          <li class="no-check"><a href="https://secure.fanbyte.com/login.html">Login for themes</a></li></ul></span><i></i></div><script>Nav.init()</script>
+</div>
+<div id="wrapper">
+  <div id="shadows"><div id="s-top"></div><div id="s-bot"></div><div id="s-left"></div><div id="s-right"></div></div>
+  <div id="body">
+    <div id="row-top"><div id="row-top-inner"><div id="row-top-inner-2">
+      <div id="video-au"></div>
+      
+    <div id="header-bg">
+    <!-- /76136274/AKZ_Horizontal_ATF -->
+        <div id='AKZ_Horizontal_ATF'>
+        </div>
+    </div>
+    
+    </div></div></div>
+    <div id="cols">
+      <div id="col-right"><div id="col-right-inner"><div id="col-right-inner-2">
+        
+    <div id="column-bg">
+    <!-- /76136274/AKZ_Vertical_ATF -->
+        <div id='AKZ_Vertical_ATF'>
+        </div>
+    </div>
+    
+      </div></div></div>
+      <div id="col-main"><div id="col-main-inner"><div id="col-main-inner-2"><div id="col-main-inner-3"><div id="buffer-top"></div>
+
+<script>
+  qcdata = {} || qcdata;
+       (function(){
+       var elem = document.createElement('script');
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "https://pixel") + ".quantserve.com/aquant.js?a=p-80xBzMhbKolFI";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem,scpt);
+     }());
+
+
+   var qcdata = {qacct: 'p-80xBzMhbKolFI',
+                        labels: ''
+                        };
+</script>
+  <noscript>
+    <img src="https://pixel.quantserve.com/pixel/p-80xBzMhbKolFI.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+  </noscript>
+<script>logView('Skinnable Interior Page', 'ZAM - wow')</script><div class="forums" id="thread">
+      <form class="f-search" action="https://wow.allakhazam.com/tsearch.html">
+        <input type="hidden" name="thread" value="1075171918147821534">
+        <input type="text" name="q" class="inactive" value="Search this thread..." onfocus="if(this.className == 'inactive') {this.className = ''; this.value = ''} else{this.select();}" onblur="if(this.className == '' &amp;&amp; this.value == '') {this.className = 'inactive'; this.value='Search this thread...'}">
+      </form>
+    <div id="f-settings-wrapper"><a href="javascript:;" id="f-settings-link" onclick="$('#f-settings').fadeIn('fast')">Forum Settings</a>
+
+  <div id="f-settings" class="bcont">
+    <form name="pref" action="https://wow.allakhazam.com/cgi-bin/prefs-new.pl">
+  
+    <input type="checkbox" name="msgMo" id="prefs-msgMo" value="1" onclick="createCookie('msgMo',this.checked,365);" checked="checked">
+    <label for="prefs-msgMo">Mouseover Previews</label> &nbsp;
+  
+    <input type="checkbox" name="hideAvatars" id="prefs-hideAvatars" value="1" onclick="this.form.submit();">
+    <label for="prefs-hideAvatars">Hide Images</label> &nbsp;
+  <input type="hidden" name="style" value=""><input type="hidden" name="msgord" value="desc"> &nbsp; <select name="howmany"  onchange="this.form.submit();">
+<option value="10">10 posts per page</option>
+<option selected="selected" value="25">25 posts per page</option>
+</select> &nbsp; <select name="score"  onchange="this.form.submit();">
+<option value="1">Never Filter</option>
+<option selected="selected" value="2">Default Filter </option>
+<option value="3">Decent and better</option>
+<option value="4">Good and better</option>
+<option value="5">Excellent Only</option>
+</select><a href="javascript:;" class="icon-unfollow" onclick="$('#f-settings').fadeOut('fast')"></a></form></div></div>
+
+
+<ul class="path">
+  <li class="root"><b><a href="forum.html">Forums</a></b></li>
+  <li class="has-sub"><a href="forum.html?cat=54">World of Warcraft</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class=" first-child"><a href="forum.html?cat=9">Cross Site</a></li>
+  <li class=""><a href="forum.html?cat=20">Dark Age of Camelot</a></li>
+  <li class=""><a href="forum.html?cat=18">EverQuest</a></li>
+  <li class=""><a href="forum.html?cat=50">EverQuest II</a></li>
+  <li class=""><a href="forum.html?cat=19">Final Fantasy XI</a></li>
+  <li class=""><a href="forum.html?cat=67">FFXI Servers</a></li>
+  <li class=""><a href="forum.html?cat=153">Final Fantasy XIV</a></li>
+  <li class=""><a href="forum.html?cat=281">FFXIV Disciples</a></li>
+  <li class=""><a href="forum.html?cat=354">Lord of the Rings Online</a></li>
+  <li class="cur last-child"><a href="forum.html?cat=54">World of Warcraft</a></li>
+</ul></div></div></li>
+  <li class="has-sub"><a href="forum.html?forum=21"> General Discussion</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class="cur first-child"><a href="forum.html?forum=21"> General Discussion</a></li>
+  <li class=""><a href="forum.html?forum=243">Class Discussion</a></li>
+  <li class=""><a href="forum.html?forum=214">PvP</a></li>
+  <li class=" last-child"><a href="forum.html?forum=69">Trade Skills</a></li>
+</ul></div></div></li>
+  <li>Lessons Learned (previous MMORPGs)</li>
+</ul>
+<div style="clear:left"></div>
+
+<div class="pagesel"></div><div class="post-buttons"><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1075171918147821534&amp;p=1" rel="nofollow nott"><span>Reply To Thread</span><b></b></a></div>
+    <div id="posts">
+      <h1><span>Lessons Learned (previous MMORPGs)</span><small><a id="follow_1075171918147821534" onclick="followToggle2(this)" href="javascript:" class="f-follow"><span>Follow</span><b></b></a></small></h1>
+    <div id="1" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1075171918147821534">
+        <div class="info" id="m1075171918147821534">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1075171918147821534" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1075171918147821534&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#1" title="Link to this post">#1<b></b></a>
+          <span class="posted" title="Last edited Jan 26 2004 at  9:53 PM"><span>Jan 26 2004</span> at <span> 9:51 PM</span></span>
+          <span class="rating">Rating: <span>Excellent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Sage"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591796158724"><b>__DEL__1591796158724</b></a></div><div class="title">Sage</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">64 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">MMORPGs are no longer in their infancy, as enough have come out in the past 5 years that some lessons should have been learned on what seems to work and what doesn't. If you were to summarize what are the important do's and don'ts, what would be on your list? <br> <br> <br>My initial list and reasons: <br> <br><b><span style="color:Gold">DO's</span></b> <br>---- <br>1. <b>Make it fun at all levels of play.</b> Whether you are a first level person who only plays an hour at a time or you are a hardcore player who spends 60 hours a week, the game should be enjoyable.  <br> <br>2. <b>Make content feel unique.</b> Canned entries and canned quests suck because it shows that the development team put no effort into telling a story. It is like watching a movie with no story or dialogue but with lots of special effects: it might appeal to some of the people some of the time, but if you want people to play month after month, you need to make them feel like they are part of an ongoing epic story, not a &quot;cut and paste&quot; computer script. <br> <br>3. <b>Customization.</b> No one wants to feel they are identical, or even similar, to another person of the same profession. People want to be unique, so the game should focus on allowing people to be unique. You also need to keep it balanced, or everyone loses their uniqueness in favor of the &quot;power template.&quot;  <br> <br>4. One thing that SOE has done that people seem to grudgingly like is put in <b>games within the game</b> to give players something to do. Casinos are a money sink and add to the games appeal by adding variety. Developers should focus on variety like this. What is wrong with having archery tournaments that are entirely server driven? Jousting tournaments? Trivia tournaments about the history of Azeroth? A Thieves Challenge? The casino is just the easiest to code to this facet of MMORPGs, but there is more to a knight's life (or any other profession) than killing monsters.  <br> <br>5. <b>Storywrite with consistency.</b> I don't think this is going to be a problem with WoW, since they are used to keeping a solid story without discrepencies, but it seems to plague other MMORPGs: too many people writing the story that don't know the entire history of the world, so they are contradicting parts. Players like a good story, but they probably don't want something convoluted, doesn't make sense, or is not easy to remember for retelling to other players. <br> <br>6. <b>Even non-PvPers like to PvP sometimes.</b> PvP is one of the most elusive aspects to do correctly, but if it is done right, your game will be held in the highest esteem and everyone will emulate your model. <br> <br> <br><b><span style="color:Gold">DON'Ts</span></b> <br>------ <br>1. <b>Don't keep certain key aspects unofficial, or if you do, make sure it is well advertised.</b> For instance, in Star Wars Galaxies, they had two unofficial role-playing servers, yet most people didn't know which they are. Role-players were scattered on many servers and eventually role-playing died off. Without newbie customers knowing which server focuses on which aspect of the game, the churn made every server boil down to the least common denominator of non-focused blandness. <br> <br>2. <b>Don't nerf unless it is necessary.</b> No one likes nerfs. It is better to start everyone off weak and balance them upwards then to start people off strong and balance them downwards. You attract more flies with honey then you do with vinegar. <br> <br><i><span class="sm">Edited, Mon Jan 26 21:53:14 2004 by Kuritsu</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="2" class="post even"><div class="post-inner">
+      <div class="head" id="msg107732964580857253">
+        <div class="info" id="m107732964580857253">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-107732964580857253" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=107732964580857253&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#2" title="Link to this post">#2<b></b></a>
+          <span class="posted"><span>Feb 20 2004</span> at <span> 9:14 PM</span></span>
+          <span class="rating">Rating: <span>Excellent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Guru"><div class="name"><a href="https://wow.allakhazam.com/users/Darqflame"><b>Darqflame</b></a></div><div class="title">Spankatorium Administratix</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">1oooo posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Very well said!  <img border="0" src="https://zam.zamimg.com/i/smilies/yippee.gif" alt="Smiley: yippee"></div>
+        <div class="sig"><div class="bar">____________________________</div> <br></div>
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="3" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1077491134307359892">
+        <div class="info" id="m1077491134307359892">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1077491134307359892" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1077491134307359892&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#3" title="Link to this post">#3<b></b></a>
+          <span class="posted"><span>Feb 22 2004</span> at <span> 6:06 PM</span></span>
+          <span class="rating">Rating: <span>Good</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592261040486"><b>__DEL__1592261040486</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">94 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I would also like to add that I hope they keep something like Diablo 2's randomized loot method in the game. That would make the game a huge step forward from the typical MMORPG. This would bring a huge variety to the items a player could own. And although everyone would be after the same ultimate &quot;legendary&quot; items, there would be   <br> <br> <br><span style="color:Blue">Magic Items</span> have a prefix and/or suffix that give the user an idea of its power. They are randomly created, with higer level mobs having access to more powerful prefixes and suffixes. I.e.: &quot;the fiery katana of maiming&quot; or &quot;the cobalt amulet of frost&quot; <br> <br><span style="color:Yellow">Rare Magic Items (Epic)</span> Are like magic items, although they have more powers and have a random name. While a magic item has access to 2 attributes, a rare magic item has access to 2 to 6 attributes.   <br> <br><span style="color:Orange">Crafted Items</span> Allow players to determine the powers, rather then leaving it up to chance. <br> <br><span style="color:Green">Socketed Items</span> Another addition that would add significant value to the WoW loot system. EQ copied the system and it works pretty well. <br> <br><span style="color:Olive">Set Items (Legendary)</span> Like Magic Items, but become more powerful when you have more items of the set and not randomly generated, but developer created. So having a imbued Blademasters helmet, breastplate, boots or greaves might grant you +1 to max damage and +2 to strength each, but when you are wearing the whole set the benefit becomes +6 damage, +12 strength and +3 to your sword skill. Many players would wear matching set equipment to increase their effectiveness (not only to have a coordinated appearance). <br> <br><span style="color:Gold">Unique Items (semi-unique)</span> The only other items that would have to be created exclusively by the developers. Like the Druidic Armor &quot;Shaftstop&quot; or the Paladin shield &quot;Stormchaser&quot; or the Hunter's Bow &quot;Magewrath&quot; or the sword &quot;Frostmourne.&quot; These would be the rarest of the rare. </div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="4" class="post even"><div class="post-inner">
+      <div class="head" id="msg1078548936667072086">
+        <div class="info" id="m1078548936667072086">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1078548936667072086" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1078548936667072086&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#4" title="Link to this post">#4<b></b></a>
+          <span class="posted"><span>Mar 05 2004</span> at <span>11:56 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591799229178"><b>__DEL__1591799229178</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">526 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I belive that the writer in a certain monthly magazine said it best, i will try to remember as much of the quote as possile: <br> <br>I am entirely fed up of the Crystals of power, the crystals of engergy, the dark crystal which has fallen into the hands of the evil tyrant that unless you can turn the crystal to the light the doom of the world will be upon us in 45 crystallian parsecs. <br> <br>=P <br> <br>no im not really serious, but, honestly, there are quite a few games that have some form of a crystal in it. repetition not only improves memory, but, also brings about some memories that may be unwanted. <br> <br> <br>neway: <br>DO <br> <br>I agree with the pvp, that one player who thinks they are a god and cannot be scratched let alone killed is always a fun challenge. <br> <br>BETA TEST!!!!! i am thouroghly shocked and apphaled at a lot of the games that come out today that have to have a release day patch to fix whatever <i>Should</i> have been found in a simple beta test. if the game isnt done yet, DONT release it!!! <br> <br> <br>about ur #4 post, omg, /kneel. yes, more games inside of a game. for FFXI, fishing and stuff can almost be considered extra games. but, i love your archery contest idea.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="5" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1085777163994757492">
+        <div class="info" id="m1085777163994757492">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1085777163994757492" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1085777163994757492&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#5" title="Link to this post">#5<b></b></a>
+          <span class="posted" title="Last edited May 28 2004 at  3:47 PM"><span>May 28 2004</span> at <span> 3:46 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1593966484111"><b>__DEL__1593966484111</b></a><div class="actions-wrapper"><div class="bcont actions"><a href="https://wow.allakhazam.com/journal.html?user=250894" class="f-reply"><span>View User Forum</span></a></div></div></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">246 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text"><span style="color:Silver">Excellent idea, my contribution: <br> <br>Do: <br> <br><b>Crafting that means something</b> : Crafted items should be able to add to your character. They should balance the level of it also. As of right now, its very rare in a MMORPG that an item that you can craft at level 10 is useful for a level 10 character. I'm sick of crafting systems like SWG, where the only useful items are made by a maxxed crafter, and where all the items besides the few last one are only used to gain point, and then dumped......  <br> <br>Don't: <br> <br><b>Let RP die</b>: RP brings a lot to the game, and RP'ers are one of the most loyal fan base you will ever have if they enjoy RP'ing in your world. Now I understand that not everyone wants to RP, but choose one or 2 servers, label them as &quot;RP server&quot; and enforce RP there. (okay, its more a do than a don't.....) </span>  <br> <br><i><span class="sm">Edited, Fri May 28 16:47:44 2004 by ZelerianIA</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="6" class="post even"><div class="post-inner">
+      <div class="head" id="msg1086296367423016289">
+        <div class="info" id="m1086296367423016289">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1086296367423016289" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1086296367423016289&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#6" title="Link to this post">#6<b></b></a>
+          <span class="posted" title="Last edited Jun 03 2004 at  4:02 PM"><span>Jun 03 2004</span> at <span> 4:01 PM</span></span>
+          <span class="rating">Rating: <span>Default</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592261209635"><b>__DEL__1592261209635</b></a></div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">79 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I can't play a game without PVP, I tried FFXI, played it for 5 months, now I can't stand to even look at it, Ballista isn't even worth levling up to play in <br> <br>Also, another thing that would be nice is <br> <br><b>Make it possible to solo</b>, at least for more than just one &lt;A TITLE=&quot;Click for more information about job&quot; STYLE=&quot;text-decoration: none; border-bottom: medium solid green;&quot; HREF=&quot;http://search.targetwords.com/u.search?x=5977|1||||job|AA1VDw&quot;&gt;job&lt;/A&gt; (Hint hint, FFXI Beastmaster was only job taht could solo all the way) <br> <br>I loved EQ because 'basically' every class could solo up til at least 50 (Although some classes would require very nice equipment to make it possible), also I loved how its possible to level in EQ with just a party of 2, and level effeciently, unlike FFXI... <br>...&quot;This party don't have 6 players, it sucks!&quot; <br>&quot;Where is the white mage, this Taru RDM won't be able to be healer!&quot; <br>&quot;Omg, I didn't get 200 exp off that kill, I'm leaving&quot; <br> <br><i><span class="sm">Edited, Thu Jun  3 17:00:12 2004 by Aeons</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="7" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087143366908865726">
+        <div class="info" id="m1087143366908865726">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087143366908865726" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087143366908865726&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#7" title="Link to this post">#7<b></b></a>
+          <span class="posted"><span>Jun 13 2004</span> at <span>11:16 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592761082155"><b>__DEL__1592761082155</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">4,520 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">One thing I'd like to state that one of the above posters put was that the company shouldnt release a game if its not done. This is true, but sometimes the developers need help, hence beta. And because of this beta stage you get a lot of people who instead of trying to test out the game and announce any problems with it they play it just to play it and say how they got to play it before everyone else. I do have to say that all the people on these forums have done a great job on reporting what they've seen in the game and announcing what problems the game has and what it has going for it. Just hate to see those people who say &quot;look!, i was the first 100 to get this game...oh...how is it?...well...its ok i guess...i mean i only got it to play it for free before everyone else, to tell ya the truth i dont even like these games anymore&quot;. ugh. If your going to play a beta, play it as a psuedo tester in that you have to hype the good, bash the bad(in a mature maner hopefully). This way developers (if by somechance they do read user boards, which they probably do seeing as how its in beta) know what people want, like, or hate. Once its out for beta its not so much the devopers choice to know whats good and whats bad anymore.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="8" class="post even"><div class="post-inner">
+      <div class="head" id="msg1087154058256284031">
+        <div class="info" id="m1087154058256284031">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087154058256284031" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087154058256284031&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#8" title="Link to this post">#8<b></b></a>
+          <span class="posted"><span>Jun 13 2004</span> at <span> 2:14 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591799229178"><b>__DEL__1591799229178</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">526 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Yea, they need a beta test, not a &quot;Game is now released everyone go buy it so we can find out what's wrong with it&quot; test. If youll excuse my example, but, look at the start of Star Wars Galaxies. They had a massive hype about the game, and when it was released, nothing worked, and they had to get a patch out within the first week. Where was the beta test that should have figured this stuff out before the retail release? Now i hear that SWG is doing much much better these days, but, if they are going to release a game that is that screwed up on release.... well... lets just say that unless that game goes free monthly fee, i aint even gunna go near it. <br> <br>Now, i am in the beta for WoW as you may know, things are going well, ive found a few things that dont work, but the majority of it does. Honestly, if blizzard wanted to, they could release it now and it would probably do better then most MMORPG starts. And they could add in the higher level content thats not in the beta yet later. Sending out a quick update every few weeks. But blizzard wont do this, and you know why? Because blizzard takes pride in its work, and will not release something that is not complete. they will release it when its done. I think it was Diablo II that when they announced it and it kept getting pushed back. &quot;So when is it come out&quot; 'soon'. 6 months later &quot;when is it coming out?&quot; 'soon'. People thought that blizzard was either going to close down because they ran out of money, or the game was going to be one of the best of all time. Wanna take a shot in the dark as to which one they did? Diablo II is still played today. Same for Starcraft, Warcraft II, and of course III. Blizzard has a reputation for releaseing great games that have as many bugs and exploits as possible worked out. The main reason that blizzard is one of my favorite game publishers. </div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="9" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087193753888069388">
+        <div class="info" id="m1087193753888069388">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087193753888069388" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087193753888069388&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#9" title="Link to this post">#9<b></b></a>
+          <span class="posted" title="Last edited Jun 14 2004 at  3:35 AM"><span>Jun 14 2004</span> at <span> 1:15 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592761664577"><b>__DEL__1592761664577</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">1,430 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text"><div class="quote"><div class="source">Quote:</div><div class="orig">Now, i am in the beta for WoW as you may know, things are going well, ive found a few things that dont work, but the majority of it does. Honestly, if blizzard wanted to, they could release it now and it would probably do better then most MMORPG starts. And they could add in the higher level content thats not in the beta yet later. Sending out a quick update every few weeks. But blizzard wont do this, and you know why? Because <b>blizzard takes pride in its work, and will not release something that is not complete</b>. they will release it when its done. I think it was Diablo II that when they announced it and it kept getting pushed back. &quot;So when is it come out&quot; 'soon'. 6 months later &quot;when is it coming out?&quot; 'soon'. People thought that blizzard was either going to close down because they ran out of money, or the game was going to be one of the best of all time. Wanna take a shot in the dark as to which one they did? Diablo II is still played today. Same for Starcraft, Warcraft II, and of course III. Blizzard has a reputation for releaseing great games that have as many bugs and exploits as possible worked out. The main reason that blizzard is one of my favorite game publishers.  <br></div></div> <br> <br>Ohhhhh, that gives me shivers down my spine when I read something like that. Very few companies follow this motto (the only ones that do are Nintendo, Valve, and Bungie to name a few) and I love it when I get my hands on a game that has been perfected. Blizzard, continue to torture me and make me feel like it was worth it. <br> <br><i><span class="sm">Edited, Mon Jun 14 04:35:23 2004 by Redmoonxl</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="10" class="post even"><div class="post-inner">
+      <div class="head" id="msg1087237028433256108">
+        <div class="info" id="m1087237028433256108">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087237028433256108" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087237028433256108&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="forum.html?forum=21&amp;mid=1075171918147821534&amp;p=1#10" title="Link to this post">#10<b></b></a>
+          <span class="posted"><span>Jun 14 2004</span> at <span> 1:17 PM</span></span>
+          <span class="rating">Rating: <span>Default</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591798089017"><b>__DEL__1591798089017</b></a></div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">241 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">This kinda goes along the lines of the first thing posted, but I think they should REALLY consider the part time players as well as the fulltime players.  I don't know how many people has quit Everquest over the planar progression crap they have on there.  Developers should understand not everybody can get into a guild that can form 72 people raids to take out all these npc's just to allow acces to a zone we all ready paid for.  <br> <br>I guess what im getting at is don't lock out half the zones of a expansions like Planes of Power did, and keep plenty of content for the average joe player who isn't in *insert top 5 guilds of your server*. <br> <br>I am seriously debateing on rather or not I want to keep playing Everquest or not.  I have spent 21 hours between pickup mb raids, grummus raids, and other flagging mob raids and have either failed, or not gotten my flag due to a game error (and of course GM's didn't do anything about the game errors.) <br> <br> <br> <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="11" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087238420433257133">
+        <div class="info" id="m1087238420433257133">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087238420433257133" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087238420433257133&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#11" title="Link to this post">#11<b></b></a>
+          <span class="posted"><span>Jun 14 2004</span> at <span> 1:40 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591800231147"><b>__DEL__1591800231147</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">342 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Do: <br> <br>Make a central economic system.  Nobody likes having to spend weeks waiting for a certain person to come online to make them an item.  Have a central location to sell items at. <br> <br>Make classes unique.  The one thing I don't like with FFXI sometimes is there isn't a huge difference between some jobs.  What exactly sets the damage-dealers apart really?   <br> <br>Make things to do besides questing and levelling.  I don't like levelling that much, I'd sooner sit in a tavern all day weaving and crafting, things I find far more appealing.  I love watching (and manipulating) game economies. <br> <br>Do NOT: <br> <br>Make crafting a secondary thing everyone does.  I love crafting, I love how unique it feels to be like one of three high-levelled people in a particular craft.  Crafting should require devotion and time aside from levelling.  I'm worried crafting in WoW will just be a side thing everyone does. <br> <br>Make PvP mandatory.  I love helping others, giving them equipment, advice, and gil.  I can't stand PvP, and avoid it like the plague, that's why I like FFXI.  I play to socialize, not to kill people.  Any game that makes PvP free game or adds player-killing, I'm out of. <br> <br>Make the game too easy.  Blizzard games have a tendancy to be very easy...no offense to them.  Make a MMO too easy, and you'll lose your player base fast.  That's why MMOs take so much time to play, you want to keep your player base active as long as possible. <br> <br>Make soloing too effective.  Why party when you can solo faster? If soloing becomes too good, nobody will party.  The rare times I level, I'd much rather do it in a slow relaxed party that chats and occasionally kills, not doing it by myself.  Encourage partying, especially at later levels.  Soloing your first few levels is fine. <br> <br> <br>Few other things for people to remember. <br> <br>In response to the guy who mentioned the crystals, that's like the linking theme between FFs, so if you play FFs, expect to see crystals :P. <br> <br>Also, remember one thing. <br> <br>Blizzard is a company, they care about their money.  Blizzard does NOT care about you.  Square-Enix does NOT care about you.  Sony does NOT care about you.  They DO care about your money, which you happen to have.  So yes, they will listen to suggestions and possibly implement them, and try and make your enviroment pleasant for you.  Some GMs might even care about the playerbase, but the company does NOT.  They are all out there for money, so try not to get too attached to them, a company is a company, and you mean nothing to them if you aren't buying/paying for their products. <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="12" class="post even"><div class="post-inner">
+      <div class="head" id="msg1087239800441345822">
+        <div class="info" id="m1087239800441345822">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087239800441345822" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087239800441345822&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#12" title="Link to this post">#12<b></b></a>
+          <span class="posted"><span>Jun 14 2004</span> at <span> 2:03 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Sage"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592259968426"><b>__DEL__1592259968426</b></a></div><div class="title">Sage</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">469 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Sounds like you might enjoy the PvP servers in EQ. WoW is most certainly not for everyone, and it doesn't sound like you'd enjoy it too much. <br> <br>Regarding the whole &quot;Blizzard is a company and they wants your delicious money&quot; thing: Yes. They're a company. A damn fine company that makes damn fine games. As long as these games continue to provide me with an absurdly enjoyable, long-lasting fun gameplay experience, then I will continue to throw my money at them.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="13" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087241582357546498">
+        <div class="info" id="m1087241582357546498">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087241582357546498" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087241582357546498&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#13" title="Link to this post">#13<b></b></a>
+          <span class="posted"><span>Jun 14 2004</span> at <span> 2:33 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591801056186"><b>__DEL__1591801056186</b></a></div><div class="title">Scholar</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">88 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text"><div class="quote"><div class="source">TsuDymphna wrote:</div><div class="orig">Do: <br> <br>Make a central economic system.  Nobody likes having to spend weeks waiting for a certain person to come online to make them an item.  Have a central location to sell items at. <br></div></div> <br> <br>I love FFXI's Auction House.  I hope that something like that can be considered, especially since it can be hard to get to know and ask people to make you something rare/special, but lots of people can access an Auction House. <br> <br><div class="quote"><div class="source">TsuDymphna wrote:</div><div class="orig">Do NOT: <br> <br>Make soloing too effective.  Why party when you can solo faster? If soloing becomes too good, nobody will party.  The rare times I level, I'd much rather do it in a slow relaxed party that chats and occasionally kills, not doing it by myself.  Encourage partying, especially at later levels.  Soloing your first few levels is fine.</div></div> <br> <br>Yes and no.... FFXI is just impossible to get anything done unless you are in a party, and if you have to do things in a party, that means you have to be on their schedule.  I think partying should be more effecient than solo xp, but solo xp should also be a viable option for someone who isn't sure how long they can play, or who can't stay up all hours of the night to stay in a party because they have a RL job they have to go to the next morning.  I know that I would love the later levels of FFXI a lot more if I could get a set party going, but between time zones and job requirements, I simply can't get one (even though I play 2 of the most desirable jobs) because I end up holding the others back, or waiting forever on their schedule.  This is not fun.  Guild chat can let you chat and kill at a leisurely pace solo, right? <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="14" class="post even"><div class="post-inner">
+      <div class="head" id="msg10873916172522546">
+        <div class="info" id="m10873916172522546">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-10873916172522546" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=10873916172522546&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#14" title="Link to this post">#14<b></b></a>
+          <span class="posted" title="Last edited Jun 17 2004 at  3:16 AM"><span>Jun 16 2004</span> at <span> 8:13 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592759916230"><b>__DEL__1592759916230</b></a></div></div><div class="posts">7 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">i got another DO :  <br> <br>make the Server safer then the Bnet ones .. there are 2 reasons: <br> <br>1st to prevent such things as fake trades where Hack programs sent fake IP packages to copy a fake immage of an item into trade window... and stuff as duping hacks and such which only took place in D2 cuz u had the Server version on your computer too due to Multiplayer option in D2 where u could scout the Network traffic and easy could work out hacks. <br> <br>2nd due to the stuff named above alot ppl used Bots .. why??well i can tell from my opinion .. i played without botting at all for like 6 month and traded alot of my legit stuff for a &quot;legit&quot; Bow (D2 players know what kinda Bow =) ) ater 5 or 6 games i joined a game where someone else had the same &quot;legit&quot; Bow with the same Item code on it and both went poof .. so well i traded all my hard earned stuff for an item that poofed after 5 games... which actualy made myself beeing that much frustated so i just went and bottet 24/7 until i had that bow .. which was like 3 weeks .. from then i played without using any bot again .. like 2 weeks later i lost all my equip due to a death where i died while having an Item on Curser i just picked up with full inventory and like everyone was happy they could pick up my gear .. it was gone in like 2 seconds i didnt wanna bot again so i just stopped playing D2 .. <br> <br>I realy realy hope Blizard learned of the stuff that was going on in D2 and keeps the servers safe ..  <br> <br>Another thing was those guys who announced Websites where every single file u downloaded was infected with Trojans and those guys who where ripping off newbs with making announcements all the time acting like they where from Blizzard staff telling u have to send a message to them with PW and Acc name to safe your Data .. i dunno how much ppl told em .. but im sure alot did ..  <br> <br>From what i know about scripting and chat channels it would be easy to log such announcements and put a little effort into permanent banning those CD keys. <br> <br>I realy hope Blizzard gonna keep their eyes open on chatlogs since alot of those D2 ripoff jerks gonna be arround and gonna try their luck. <br> <br>IMO: <br>making Announcement in chat like: <br> <br>Staff@Blizzard announces: /msg Blizzardstaff &lt;pass&gt; &lt;accname&gt; to safe your accountdata due to upcomming patch will delete all unsafed accounts <br> <br>Ppl who respond to that arent real smart but hell can u blame them for it?? nah u cant .. But can u blame Blizzard for not banning CD keys for making such announcements?? <br> <br>IMO Blizzard ruined Bnet due to their lazyness on banning for such acting(u didnt even have to log the chat 10 minutes in chat and u could see 10 of such announcements).Since alot of ppl came onto Botting cuz they lost their gear to such jerks. <br>I know Botting isnt the right way and it isnt Botting in D2 ruined the game for me and D2 wasnt fun anymore. <br> <br>I realy hope they grew smarter and wont let that happen again ..  since i realy think WoW gonna become enjoyable game and i hope i can play without such jerks. <br> <br><i><span class="sm">Edited, Wed Jun 16 09:15:48 2004 by Ericdb</span></i> <br> <br><i><span class="sm">Edited, Thu Jun 17 04:16:39 2004 by Ericdb</span></i></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="15" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087432953649924372">
+        <div class="info" id="m1087432953649924372">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087432953649924372" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087432953649924372&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#15" title="Link to this post">#15<b></b></a>
+          <span class="posted"><span>Jun 16 2004</span> at <span> 7:42 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Sage"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592259968426"><b>__DEL__1592259968426</b></a></div><div class="title">Sage</div></div><div class="stars"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"><img src="https://zam.zamimg.com/i/star-gold-on-dark.png" alt="*"></div><div class="posts">469 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">I'm sorry the second I saw you mention D2 and: <br><div class="quote"><div class="source">Quote:</div><div class="orig">I realy realy hope Blizard learned of the stuff that was going on in D2 and keeps the servers safe .. </div></div> <br>I stopped reading your post. If you would like to remove everything comparing an isometric action game with an MMORPG from your post, I would be happy to discuss any points you bring up.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="16" class="post even"><div class="post-inner">
+      <div class="head" id="msg1087459827368321618">
+        <div class="info" id="m1087459827368321618">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087459827368321618" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087459827368321618&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#16" title="Link to this post">#16<b></b></a>
+          <span class="posted"><span>Jun 17 2004</span> at <span> 3:10 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592759916230"><b>__DEL__1592759916230</b></a></div></div><div class="posts">7 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Well trying to ripoff in chat == trying to ripoff in chat <br>Im not comparing the Game i show what ppl will try ripoff other ppl .. and if Blizzard screws it those peeps gonna find their way to cheat @ the disadvantage of other player. <br> </div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="17" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087500987645259803">
+        <div class="info" id="m1087500987645259803">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087500987645259803" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087500987645259803&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#17" title="Link to this post">#17<b></b></a>
+          <span class="posted"><span>Jun 17 2004</span> at <span> 2:36 PM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user Scholar"><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591809328217"><b>__DEL__1591809328217</b></a></div><div class="title">Scholar</div></div><div class="posts">17 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Back to an earlier Idea : <br> <br>I dislike FFXI, but they did get a couple things right. The Auction House is an outstanding way to get the things you need without /shout spamming the area for a craftperson, or running all over goddesses green earth looking for an NPC that sells it. <br> <br> <br> <br></div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="18" class="post even"><div class="post-inner">
+      <div class="head" id="msg1087544393695499583">
+        <div class="info" id="m1087544393695499583">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087544393695499583" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087544393695499583&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#18" title="Link to this post">#18<b></b></a>
+          <span class="posted"><span>Jun 18 2004</span> at <span> 2:39 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1592759916230"><b>__DEL__1592759916230</b></a></div></div><div class="posts">7 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">ya Auctionhouse in FFXI is best i seen so far even thou if EQ Bazaar wouldnt make things that choppy due to the tons of characters arround it would be a good alternate if you could go offline while bazaaring... the Bazaar search in EQ is insane which makes the Bazaar of FFXI looks pointless since u dont have search option in FFXI and u have to check Bazaars manually. <br> <br>IMO if you could Bazaar your items while offline i would prefer EQ Bazaar over FFXI Auction House system.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    <div id="19" class="post odd"><div class="post-inner">
+      <div class="head" id="msg1087554628764951934">
+        <div class="info" id="m1087554628764951934">
+          
+          <div class="actions"><a href="javascript:;" onclick="multiQuote(this)" id="quote-1087554628764951934" class="f-quote"><span>Quote</span><b></b></a><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1087554628764951934&amp;p=1" rel="nofollow nott" class="f-reply"><span>Reply</span><b></b></a></div>
+          <a class="button post-link" href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;h=25&amp;p=1#19" title="Link to this post">#19<b></b></a>
+          <span class="posted"><span>Jun 18 2004</span> at <span> 5:30 AM</span></span>
+          <span class="rating">Rating: <span>Decent</span></span>
+          <span class="rate"></span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="poster">
+        <div class="user "><div class="name"><a href="https://wow.allakhazam.com/users/__DEL__1591809420001"><b>__DEL__1591809420001</b></a></div></div><div class="posts">15 posts</div>
+      </div>
+      <div class="body">
+        <div class="post-text">Do!: <br> <br><b>Make the community work together:</b> This is supposed to be a cooperative game but in many you never meet anyone and end up playing alone cause everyone soloes. No thanks! <br> <br>Don't: <br> <br><b>Make a definite point where a character can't get stronger:</b> This has to be my biggest peeve. No one enjoys the point that there is nothing left but PvP. Make some kind've system to allow people to get stronger after max level. (Periodically raise the cap, make a stat buying system, I don't care) A game I play currently gives all classes attacks based on their current hp and/or mp and then allows them to be buy HP and MP. This isn't exactly the best system because the PvP turns into nothing more than who has the biggest attack, but it's an idea. You can always progress. There's no point where you might as well either make a new character or quit. I hate getting to that point.</div>
+        
+      </div>
+      <div class="f-toplink"><a href="javascript:scrollTo(0,0);">&#9650; Page top</a></div>
+      <div class="clear"></div>
+    </div></div>
+    
+  
+    </div>
+    <div class="pagesel"></div>
+    <div class="post-buttons"><a href="https://wow.allakhazam.com/forum.html?forum=21&amp;mid=1075171918147821534&amp;post=1&amp;replyto=1075171918147821534&amp;p=1" rel="nofollow nott"><span>Reply To Thread</span><b></b></a></div>
+    <div id="quick-reply">
+    
+    <div id="post">
+      <form name="pm" action="https://wow.allakhazam.com/fcluster/Post.pl" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="parent_id" value="1075171918147821534">
+        <input type="hidden" name="action" value="pm">
+        <input type="hidden" name="page" value="1">
+        <input type="hidden" name="forum" value="21">
+        <input type="hidden" name="preview" value="0">
+        <input type="hidden" name="edit" value="0">
+        <input type="hidden" name="mid" value="1075171918147821534">
+        <input type="hidden" name="oc" value="MMORPGs are no longer in their infancy, as enough have come out in the past 5 years that some lessons should have been learned on what seems to work and what doesn't. If you were to summarize what are the important do's and don'ts, what would be on your list?
+
+
+My initial list and reasons:
+
+[b][Gold]DO's[/Gold][/b]
+----
+1. [b]Make it fun at all levels of play.[/b] Whether you are a first level person who only plays an hour at a time or you are a hardcore player who spends 60 hours a week, the game should be enjoyable. 
+
+2. [b]Make content feel unique.[/b] Canned entries and canned quests suck because it shows that the development team put no effort into telling a story. It is like watching a movie with no story or dialogue but with lots of special effects: it might appeal to some of the people some of the time, but if you want people to play month after month, you need to make them feel like they are part of an ongoing epic story, not a &quot;cut and paste&quot; computer script.
+
+3. [b]Customization.[/b] No one wants to feel they are identical, or even similar, to another person of the same profession. People want to be unique, so the game should focus on allowing people to be unique. You also need to keep it balanced, or everyone loses their uniqueness in favor of the &quot;power template.&quot; 
+
+4. One thing that SOE has done that people seem to grudgingly like is put in [b]games within the game[/b] to give players something to do. Casinos are a money sink and add to the games appeal by adding variety. Developers should focus on variety like this. What is wrong with having archery tournaments that are entirely server driven? Jousting tournaments? Trivia tournaments about the history of Azeroth? A Thieves Challenge? The casino is just the easiest to code to this facet of MMORPGs, but there is more to a knight's life (or any other profession) than killing monsters. 
+
+5. [b]Storywrite with consistency.[/b] I don't think this is going to be a problem with WoW, since they are used to keeping a solid story without discrepencies, but it seems to plague other MMORPGs: too many people writing the story that don't know the entire history of the world, so they are contradicting parts. Players like a good story, but they probably don't want something convoluted, doesn't make sense, or is not easy to remember for retelling to other players.
+
+6. [b]Even non-PvPers like to PvP sometimes.[/b] PvP is one of the most elusive aspects to do correctly, but if it is done right, your game will be held in the highest esteem and everyone will emulate your model.
+
+
+[b][Gold]DON'Ts[/Gold][/b]
+------
+1. [b]Don't keep certain key aspects unofficial, or if you do, make sure it is well advertised.[/b] For instance, in Star Wars Galaxies, they had two unofficial role-playing servers, yet most people didn't know which they are. Role-players were scattered on many servers and eventually role-playing died off. Without newbie customers knowing which server focuses on which aspect of the game, the churn made every server boil down to the least common denominator of non-focused blandness.
+
+2. [b]Don't nerf unless it is necessary.[/b] No one likes nerfs. It is better to start everyone off weak and balance them upwards then to start people off strong and balance them downwards. You attract more flies with honey then you do with vinegar.
+
+[i][sm]Edited, Mon Jan 26 21:53:14 2004 by Kuritsu[/sm][/i]">
+        <input type="hidden" name="ocp" value="REDACTED">
+        <div class="bcont">
+          <input type="hidden" id="post-subject" name="subject" value="Lessons Learned (previous MMORPGs)">
+          <p id="markup">
+    <script>function setImageId(id) {doTag(document.pm.body, '[img=', ']', id);}</script>
+    <button type="button" onclick="doTag(document.pm.body, '[b]', '[/b]', 'Bold Text');"><b>B</b></button>
+    <button type="button" onclick="doTag(document.pm.body, '[i]', '[/i]', 'Italic Text');"><i>i</i></button>
+    <button type="button" onclick="doTag(document.pm.body, '[u]', '[/u]', 'Underlined Text');"><u>U</u></button>
+    <button type="button" onclick="doTag(document.pm.body, '[s]', '[/s]', 'Struck Text');"><s>S</s></button>
+    <button type="button" onclick="doTag(document.pm.body, '[sm]', '[/sm]', 'Small Text');">Small</button>
+    <button type="button" onclick="doTag(document.pm.body, '[lg]', '[/lg]', 'Large Text');">Large</button>
+    <button type="button" onclick="zamDialogue('<form action=\'\' onsubmit=\'forumTags(1);return false\'><input type=\'text\' id=\'url-input\' class=\'dialogue-width\' value=\'https://\'></form>', 'Enter the URL to go to:', 'forumTags(0)');ge('url-input').select()">Link</button>
+    <button type="button" onclick="window.open('/cgi-bin/userimages-popup.pl','imagespopup','width=600,height=400,scrollbars=1,resizable=1');">Image</button>
+    <button type="button" onclick="doTag(document.pm.body, '[ul]', '[/ul]', '\n[li]Item 1[/li]\n[li]Item 2[/li]\n[li]Item 3[/li]\n');">List</button>
+    <button type="button" onclick="doTag(document.pm.body, '[li]', '[/li]', 'List Item');">List Item</button>
+    <button type="button" onclick="doTag(document.pm.body, '[quote]', '[/quote]', 'Quoted Text');">Quote</button>
+    <button type="button" onclick="doTag(document.pm.body, '[pre]', '[/pre]', 'Preformated Text');">Code</button>
+    <button type="button" onclick="doTag(document.pm.body, '[spoiler]', '[/spoiler]', 'Spoiler Text');">Spoiler</button>
+    <button type="button" onclick="return doPoll()">Poll</button>
+    <button type="button" onclick="doTag(document.pm.body, '[[', ']]', 'Wiki Link');">Wiki Link</button>
+    <button type="button" onclick="zamDialogue('<form action=\'\' onsubmit=\'forumTags(1);return false\'><input type=\'text\' id=\'youtube-input\' class=\'dialogue-width\' value=\'\'></form>', 'Enter the Video ID to go to:', 'forumTags(0)');ge('youtube-input').focus()">YouTube</button>
+    <span class="nobr"><span id="colors" onmousedown="return false"><span>Colors</span><b class="bcont"><i><script><!--
+      var c=new Array('000','003','006','009','00c','00f','030','033','036','039','03c','03f','060','063','066','069','06c','06f','090','093','096','099','09c','09f','0c0','0c3','0c6','0c9','0cc','0cf','0f0','0f3','0f6','0f9','0fc','0ff','300','303','306','309','30c','30f','330','333','336','339','33c','33f','360','363','366','369','36c','36f','390','393','396','399','39c','39f','3c0','3c3','3c6','3c9','3cc','3cf','3f0','3f3','3f6','3f9','3fc','3ff','600','603','606','609','60c','60f','630','633','636','639','63c','63f','660','663','666','669','66c','66f','690','693','696','699','69c','69f','6c0','6c3','6c6','6c9','6cc','6cf','6f0','6f3','6f6','6f9','6fc','6ff','900','903','906','909','90c','90f','930','933','936','939','93c','93f','960','963','966','969','96c','96f','990','993','996','999','99c','99f','9c0','9c3','9c6','9c9','9cc','9cf','9f0','9f3','9f6','9f9','9fc','9ff','c00','c03','c06','c09','c0c','c0f','c30','c33','c36','c39','c3c','c3f','c60','c63','c66','c69','c6c','c6f','c90','c93','c96','c99','c9c','c9f','cc0','cc3','cc6','cc9','ccc','ccf','cf0','cf3','cf6','cf9','cfc','cff','f00','f03','f06','f09','f0c','f0f','f30','f33','f36','f39','f3c','f3f','f60','f63','f66','f69','f6c','f6f','f90','f93','f96','f99','f9c','f9f','fc0','fc3','fc6','fc9','fcc','fcf','ff0','ff3','ff6','ff9','ffc','fff');
+      for (var i in c) {
+        document.write('<u onclick="doTag(document.pm.body, \'[#'+c[i]+']\', \'[/#'+c[i]+']\', \'Text\')" style="background:#'+c[i]+'"></u>');
+        if (i == 35 || i == 71 || i == 107 || i == 143 || i == 179) document.write('</i><i>');
+      }
+      // --></script></i></b></span>
+   
+      <span id="smilies"><a rel="external" href="https://wow.allakhazam.com/wiki/Frequently_Asked_Questions_(Forum)#Smilies" target="_blank">Smileys</a><b class="bcont" onmousedown="return false"><script><!--
+        var s=new Array('grin','nod','cool','mad','smile','lol','frown','eek','wink','sly','laugh','bah','blush','clown','glare','tongue','rolleyes','oyvey','dubious','disappointed');
+        for (var i in s) {
+          document.write('<img onclick="dosmilie(this.src)" src="//zam.zamimg.com/i/smilies/'+s[i]+'.gif" alt="">');
+        }
+        // --></script>
+      </b></span> <a href="javascript:;" onclick="insertAtCaret(document.pm.body,'[quote='+document.pm.ocp.value+']'+document.pm.oc.value+'[/quote]');return false" class="quote">Quote Original</a><a href="javascript:;" onclick="ajaxMultiQuote();return false" class="quote" id="hidden-quote">Quote Checked</a><input type="hidden" id="hidden-quote-response" name="hidden-quote-response"> <a href="https://wow.allakhazam.com/wiki/Frequently_Asked_Questions_(Forum)" class="help" rel="external">Help</a></span></p>
+          <p><textarea name="body" rows="20" cols="80" onkeyup="storeSel(this);" onclick="storeSel(this);" onselect="storeSel(this);" tabindex="3" id="post-body"></textarea></p>
+          <p><input type="hidden" name="parse" value="1"><input type="checkbox" value="1" id="post-addsig" name="addsig" checked="checked"><label for="post-addsig"> Attach Signature</label></p>
+          <p><button type="submit" onclick="document.pm.preview.value =0" tabindex="4"><b>Post</b></button> &nbsp; <button type="submit" onclick="document.pm.preview.value =1" accesskey="B" tabindex="5">Preview</button></p>
+        </div>
+      </form>
+      <script>
+        function sizeBody () {
+          var b=ge('post-body');
+          if (b.parentNode.offsetWidth) b.style.width = b.parentNode.offsetWidth - 6 + 'px';
+          var h = b.offsetHeight > 100 ? b.offsetHeight : 150;
+          b.style.height = h + 'px';
+        }
+        addEvent(window,'load',sizeBody);
+      </script>
+    </div>
+  </div>
+    <div class="timezone">
+      
+    <b id="recent-link"><a onclick="$('#recent').slideToggle('fast');return false" href="javascript:;">Recent Visitors</a>: 65</b>
+    All times are in CST
+    <div id="recent" class="bcont"><span class="nobr">Anonymous Guests (65)</span></div>
+  
+    </div>
+    
+    <script>$('.spoiler').hover(function(){this.className=''},function(){this.className='spoiler'});multiQuote()</script>
+  <ul class="path bottom" style="margin-bottom:0">
+  <li class="root"><b><a href="forum.html">Forums</a></b></li>
+  <li class="has-sub"><a href="forum.html?cat=54">World of Warcraft</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class=" first-child"><a href="forum.html?cat=9">Cross Site</a></li>
+  <li class=""><a href="forum.html?cat=20">Dark Age of Camelot</a></li>
+  <li class=""><a href="forum.html?cat=18">EverQuest</a></li>
+  <li class=""><a href="forum.html?cat=50">EverQuest II</a></li>
+  <li class=""><a href="forum.html?cat=19">Final Fantasy XI</a></li>
+  <li class=""><a href="forum.html?cat=67">FFXI Servers</a></li>
+  <li class=""><a href="forum.html?cat=153">Final Fantasy XIV</a></li>
+  <li class=""><a href="forum.html?cat=281">FFXIV Disciples</a></li>
+  <li class=""><a href="forum.html?cat=354">Lord of the Rings Online</a></li>
+  <li class="cur last-child"><a href="forum.html?cat=54">World of Warcraft</a></li>
+</ul></div></div></li>
+  <li class="has-sub"><a href="forum.html?forum=21"> General Discussion</a><div style="display:none"><div><em></em><var></var><strong></strong><ul>  <li class="cur first-child"><a href="forum.html?forum=21"> General Discussion</a></li>
+  <li class=""><a href="forum.html?forum=243">Class Discussion</a></li>
+  <li class=""><a href="forum.html?forum=214">PvP</a></li>
+  <li class=" last-child"><a href="forum.html?forum=69">Trade Skills</a></li>
+</ul></div></div></li>
+  <li>Lessons Learned (previous MMORPGs)</li>
+</ul></div>
+        <div class="clear"></div><div id="buffer-bottom"></div>
+      </div></div></div></div>
+    </div><script>heightCheck();</script>
+  </div>
+
+    <div id="horizontal-bg">
+    <!-- /76136274/AKZ_Horizontal_BTF -->
+        <div id='AKZ_Horizontal_BTF'>
+        </div>
+    </div>
+    
+
+</div>
+
+
+<footer>
+    <div class="block-content pad10" style="line-height:24px">
+        <ul class="site-footer">
+            <li><a href="http://legacy.fanbyte.com/subscribe.html">Subscribe</a></li>
+            <li><a href="https://www.fanbyte.com/about/">About Fanbyte</a></li>
+            <li><a href="https://corp.fanbyte.com/legal/privacy?zaf_referer=https://wow.allakhazam.com">Privacy Policy</a></li>
+            <li><a href="https://corp.fanbyte.com/legal/terms">Terms of Service</a></li>
+            <li><a href="wiki/Forum_Rules">Forum Rules</a></li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="div15"></div>
+
+    <div class="row">
+        <div class="footer-featured-sites col-lg-3 pad10 block-content">
+            <h2>Featured Game Sites</h2>
+            <table style="width:100%">
+                <tr>
+                  <td style="text-align:center"><a href="http://www.wowhead.com"><img style="width:100px;height:100px" src="i/wowhead-logo-complete.png" border="0"></a></td>
+                </tr>
+                <tr>
+                  <td style="text-align:center;width:100px;height:100px"><a href="https://www.hearthstonetopdecks.com/"><strong><span style="font-size:18px;color:black">HEARTHSTONE<br> Top Decks</span></strong></a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer-zam col-lg-9">
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Database Sites</h2>
+                    <ul>
+                        <li><a href="http://www.wowhead.com">Wowhead</a></li>
+                        <li><a href="http://everquest.allakhazam.com">EverQuest</a></li>
+                        <li><a href="http://eq2.fanbyte.com">EverQuest II</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Addon Sites</h2>
+                    <ul>
+                        <li><a href="http://www.mmoui.com">MMOUI</a></li>
+                        <li><a href="http://www.wowinterface.com">WowInterface</a></li>
+                        <li><a href="http://www.esoui.com/">ESOUI</a></li>
+                        <li><a href="http://www.riftui.com">RiftUI</a></li>
+                        <li><a href="http://www.swtorui.com">SWTORUI</a></li>
+                        <li><a href="http://www.eqinterface.com">EQInterface</a></li>
+                        <li><a href="http://www.eq2interface.com">EQ2Interface</a></li>
+                        <li><a href="http://www.lotrointerface.com">LOTROInterface</a></li>
+                        <li><a href="http://www.cwmods.com/">CWMods</a></li>
+                        <li><a href="http://www.secretui.com/">SecretUI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block-content">
+                <div class="pad10">
+                    <h2>Community Sites</h2>
+                    <ul>
+                        <li><a href="http://www.wowhead.com/forums">Wowhead Forums</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social block-content">
+                <div class="pad10">
+                    <div class="footer-callout">
+                        <a href="https://www.fanbyte.com/"><img src="i/fanbyte_footer.png" border="0"></a>
+                        <h2>Join the world's largest<br>MMO gaming network.</h2>
+                        <a href="https://secure.fanbyte.com/login.html?action=new" class="btn btn-site">No account?<br>Sign up now!</a>
+                    </div>
+                    <div class="footer-social-links">
+                        <h2>Connect With Fanbyte</h2>
+                        <a href="https://www.facebook.com/Fanbyte/"><img style="width:25px;height:25px;background-color:#41c8f5" src="https://wow.zamimg.com/images/icons/facebook.gif"></a>
+                        <a href="https://twitter.com/FanbyteMedia"><img style="width:25px;height:25px;background-color:#41c8f5" src="https://wow.zamimg.com/images/icons/twitter.png"></a>
+                        <a href="https://www.youtube.com/user/ZAMOfficial"><img style="width:25px;height:25px;background-color:red" src="https://wow.zamimg.com/images/icons/youtube-light.png"></a>
+                        <a href="https://www.twitch.tv/fanbyte" class="twitch"></a>
+                        <a href="http://legacy.fanbyte.com/newsfeed.xml?view=preview&version=2" class="last"><img style="width:25px;height:25px" src="https://wow.zamimg.com/images/icons/rss.gif"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">&copy; 2023 Fanbyte LLC</div>
+
+</div>
+
+<script>ZAM.whTooltips()</script>
+<script src="https://zam.zamimg.com/j/css.js"></script>
+<script src="https://zam.zamimg.com/j/standardista-table-sorting.js"></script>
+<!-- Opt Out Script -->
+<script src="https://s3.amazonaws.com/sitemaps.services.zam.com/gdpr_standalone.js" type="text/javascript"></script>
+
+    <div id="skin-bg">
+    <!-- /76136274/AKZ_1x1 -->
+        <div id='AKZ_1x1'>
+        </div>
+    </div>
+    <script></script>
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6036197" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "https://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="https://b.scorecardresearch.com/p?c1=2&c2=6036197&cv=2.0&cj=1" />
+</noscript>
+</body>
+</html>
+

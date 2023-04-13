@@ -1,0 +1,1402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>In depth study of Rogue Skills</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "eb546225bc158de6f6ef426dab968cb7";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="eb546225bc158de6f6ef426dab968cb7" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-135.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-134.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-133.html" class="pagination_page">133</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-134.html" class="pagination_page">134</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-135.html" class="pagination_current">135</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-136.html" class="pagination_page">136</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-137.html" class="pagination_page">137</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-136.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-8398.html">In depth study of Rogue Skills</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		
+	</div>
+	<div class="float_right">
+		
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>In depth study of Rogue Skills</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid48719" id="pid48719"></a>
+<div class="post " style="" id="post_48719">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-817.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-817.html">Yuen</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 36<br />
+	Threads: 7<br />
+	Joined: Dec 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48719.html#pid48719" title="In depth study of Rogue Skills">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-18-2004, 01:03 AM <span class="post_edit" id="edited_by_48719"><!-- start: postbit_editedby -->
+<span class="edited_post">(This post was last modified: 06-20-2004, 10:41 AM by <a href="user-817.html">Yuen</a>.)</span>
+<!-- end: postbit_editedby --></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48719">
+		Please discuss, critique and rip apart.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">ROGUE GUIDE</span></span><br />
+Abbreviations: BS=Backstab, SS=Sinister Strike, CP=Combo Points, DPS=damage per second, CC=crowd control, DoT=Damage over Time, CS=Cheap Shot, SnD=Slice and Dice<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">SECTION 1: NON-STEALTH OPENING MOVES</span></span><br />
+<br />
+Non-Stealth Opening moves should be judged on 3 factors:<br />
+(1) Damage/Energy Ratio<br />
+(2) Utility (interrupt spells, decrease aggro, etc)<br />
+(3) CP/energy ratio<br />
+<br />
+Q: How does Damage/Energy ratio relate to DPS?<br />
+A: DPS is the damage/energy ratio multiplied by ~10. This is because energy recharges at a rate of ~10nrg per second. As nothing changes the recharge rate, 10 units of energy directly relates to 1 second. &lt;edit â just heard reports there are energy drink/potions now in beta build 3&gt;<br />
+As they are proportional, I use both terms interchangeably throughout the course of this guide.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">BACKSTAB</span></span><br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">Description</span></span>: Backstab the target, causing [150% dagger dmg] + [x] additional dmg. Must be behind target + have dagger in main hand.<br />
+Lvl	Damage	<br />
+ 4	150%+15	<br />
+12	150%+30	<br />
+20	150%+45	<br />
+28	150%+69	<br />
+36	150%+90<br />
+44 150%+135<br />
+52 150%+165<br />
+60 150%+210<br />
+Dmg/Nrg Ratios depend on the weapon used, the AC of the monsters, and many other variables so have not been calculated.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 60<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .017<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe the aim is to make BS the highest dmg/energy ratio non-stealth opener without utility. Other moves become used for their utility. SS becomes used if you cannot get behind the target and for other reasons discussed in the SS section.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #DPS-This is under most circumstances the best DPS non-stealth opening move (Under certain circumstances SS can become better).<br />
+#Two rogues can play ping-pong with BS.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #As your recast delay is based on energy, BS prefers a slow high dmg dagger over a fast low dmg dagger (assuming equal DPS daggers).<br />
+#Gouge + Backstab combo allows the rogue to use BS while soloing.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">SINISTER STRIKE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: A wicked strike causing [your weapon dmg] + [x] additional dmg. Can use any weapon in main hand.<br />
+Lvl	Damage	<br />
+1	100%+4	<br />
+6	100%+6	<br />
+14	100%+10	<br />
+22	100%+15<br />
+30	100%+22	<br />
+38	100%+33<br />
+46 100%+52<br />
+54 100%+68	<br />
+Dmg/Nrg ratio depends on weapon choice amongst other variables.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 45<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .022<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe the aim is to make SS have less dmg/energy ratio than BS, but you donât have to be behind the target.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Group setting - Use SS above BS in 5 scenarios:<br />
+(1) You can&#39;t get behind the target (eg because you hold aggro)<br />
+(2) You are wearing paper for armour and are trying not to gain aggro and every time you BS you get aggro and have trouble losing it<br />
+(3) You are trying to get to 5CP faster than BS will allow (SS has higher CP/nrg ratio)<br />
+(4) You are using a high dmg non-dagger weap for SS that makes SSâs DPS better than BS (see below)<br />
+(5) You are bored of seeing BS animations, and would like to vary your combat animations so you look cool<br />
+<br />
+#Is SS ever better dps than BS? Yes, in the situation of using a very high dmg non-dagger weapon in your main hand.<br />
+Q: How high dmg?<br />
+A: Take the mean dmg from your dagger BS. Then take the mean dmg from your sword/non dagger SS and multiply it by 4/3. If your SS value is higher then SS has better DPS and should be used under all circumstance as its CP/nrg ratio is higher.<br />
+Q: What if I donât own the sword/non-dagger weapon and want to guess at which is better?<br />
+The weapon dmg required at which the dps becomes equal is:<br />
+WeaponDmg= 1.125xDaggerDmg +0.75xBSbonus âSSbonus -0.25xMiscellaneousDmg bonus.<br />
+A number of things to consider:<br />
+(1) When DPS becomes equal, SS&gt;BS as cp/nrg ratio is better<br />
+(2) The Miscellaneous Dmg bonus depends on many factors: Agi, Str, Level, Weapon Skill, Innate procs, Poison, Enchants, etc.<br />
+(3) This comparison assumes that the dps on sword and dagger is equal and not an issue. However consider that instant poisons etc favour the faster weapon<br />
+(4) I believe the AC mitigation formula is currently Damage Reduction=[0.3x(DefenderAC-1)/10x(AttackerLevel+89)]. As this mitigates damage by a percentage, it is not considered in the SS vs BS debate. However should Blizzard ever revert to their old 5ac=1dmg mitigated formula (or variation thereof) it should be considered as a negative factor in the Miscellaneous Dmg Bonus section.<br />
+(5) Damage shields (eg thorns aura) should also be considered against SS<br />
+<br />
+#Solo setting - a controlled 1v1 fight â Consider Gouge/wait/BS vs Gouge/wait/SS combos. This will likely net the same result as BS vs SS above.<br />
+#Solo setting - fighting 2 or more non-CCed monsters. The quick kill now becomes important (as you are being wailed on despite your gouge and you should no longer wait for your gouge to almost time out). We now consider Gouge/BS vs continual SSâs. The CP/nrg ratio and dmg/nrg ratio should both favour continual SSâs under most circumstances. I donât think this requires much discussion.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: # Like BS, SS prefers a slow high dmg weapon over a fast low dmg one (assuming equal DPS).<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">GOUGE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Causes [x] damage, dazes(sleeps) for 4s, turns off your attack. Target must be facing you. Any dmg will revive target. 10 second cooldown.<br />
+Lvl	Damage	<br />
+4	10	<br />
+18	20	<br />
+32 32<br />
+46 55<br />
+60 75<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 45<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .022<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: To allow a rogue to backstab while soloing. Also interrupt casters and minor crowd control (full uses below)<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Gouge/BS combo while soloing<br />
+#Solo Setting â a controlled 1v1 fight â Gouge for an almost free CP â you gouge and wait for energy to refill, then SS just as monster wakes up. 2 combo points for the price of one SS. NB the 10s cooldown. (alternatively if your timing is good and your lag is low you could time your BS just as gouge is running out)<br />
+#To help with fleeing - If you become so accustomed to fighting a mob you know approx the health at which it will turn and run, gouge just before it will turn, then build energy to backstab and high CP Eviscerate/Rupture.<br />
+#Gouge Kiting â Snare poison + ranged weapon. Only works if you have a lot of room. (Would work even better with a ranged hunter partner)<br />
+#Vs Caster - Interrupt spells (discussion in kick section as to pros and cons of kick vs gouge)<br />
+#Minor CC-  While travelling through areas where monsters annoyingly attack you and stun you and you donât want to stop and fight them - Gouge them and keep running with your head start. Hopefully you will lose them.<br />
+#Minor CC- Gouge can be used as minor CC in a group multi-pull situation. A mini-sleep. NB changing targets loses you any CP.<br />
+#Minor CC- As a minor stun before you run away.<br />
+#Gouge + Use a bandage immediately. You will get hit a couple of times but hopefully your bandage will more than make up for it. (bandages became interruptible in the new patch. So this tactic is fubared)<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #Does NOT work on mechanical. DOES work on non-humanoid eg beasts. (?Undead)<br />
+#Solo - Your DoTs (eg garrotte, rupture and poisons) stuff up all Gouge combos as each dmg tick wakes the monsters.<br />
+#Group - Their DoTs, hits, nukes will break your gouge. So in the group setting, only use gouge to interrupt casters. Or on a target that is not being attacked. (Anyway you donât need gouge to set up your BS in a group, hopefully you can just walk behind as the tank will have aggro).<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">FEINT</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Causes no damage but lowers your threat/aggro/hate by an amount.<br />
+<span style="font-weight: bold;" class="mycode_b">Dmg/Energy</span>: 0<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 35<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .029<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: An aggro management tool in a group setting.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Decrease aggro so you donât tank in a group setting. Probably only useful on high HP encounters (eg elites, boss). On a low HP monster who draws your aggro, why not just go all out and kill him? On boss mobs you should balance your DPS with feint to the perfect ratio where you almost never tank.<br />
+#You want to get CP &lt;really&gt; fast. (To start a long &gt;30s boss fight with the Expose finisher?)<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #Easy way to raise feint. Duel a friend. Feint repeatedly.<br />
+#If you have been disarmed, you can still feint.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">KICK</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: A quick kick that injures a single foe for [x] damage and interrupts the spell being cast 100% of the time for 6 sec. 10s cooldown. This is not technically an opening move as it does not award a combo point.<br />
+Level	Damage	<br />
+12	15	<br />
+26	30	<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 25<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: 0<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: To pwn casters.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Vs caster - delay the spell being cast.<br />
+#Discussion: Kick vs Gouge - which should be the primary spell interruption mechanism.<br />
+Advantages of Kick<br />
+(1) Higher hit % (can anyone confirm this?)<br />
+(2) Requires less energy<br />
+(3) Cool animation<br />
+Disadvantages of Kick<br />
+(1) Doesn&#39;t give a CP<br />
+(2) Kick only delays 6s â gouge interrupts completely<br />
+# When NOT to use kick and gouge vs a caster - the caster has such low HP you are better off  just speed killing them<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #If you have been disarmed, you can still kick.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">SECTION 2: STEALTH OPENING MOVES</span></span><br />
+<br />
+I am considering Stealth opening moves vs one another and not comparing them to non-stealth opening moves. (Since obviously equivalent moves such as Ambush and Backstab result in Ambush &gt; Backstab in all areas)<br />
+<br />
+The 4 factors on which stealth openers should be judged are:<br />
+(1) Damage<br />
+(2) Damage/Energy Ratio<br />
+(3) Utility<br />
+(4) CP/Energy Ratio<br />
+<br />
+Q: Why is straight damage an additional factor?<br />
+A: Because you use 2 resources when performing a stealth opener. You use (1) energy  and (2) you use up your stealth stance. Now it would be silly to make up a Damage/StealthLost ratio as Stealth Lost would always equal 1. Thus Damage/StealthLost becomes simply Damage.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">GARROTTE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Garrotte the enemy causing [x] dmg over 18s. Must be stealthed and behind the target.<br />
+Lvl	Damage	<br />
+14 108 over 18s (6.0dps)	<br />
+22 162 over 18s (9.0dps)<br />
+30	222 over 18s (12.3dps)<br />
+38 282 over 18s (15.7dps)<br />
+46 348 over 18s (19.3dps)<br />
+54 580 over 18s (32.2dps)<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 50<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .020<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe the aim is to have Garrotte do more damage than Ambush given a full duration of effect. Thus Garrotte should be used in long fights and Ambush in ones that will be over very quickly.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Discussion: Garrotte vs Ambush. How long does Garrotte have to last for before it becomes better than Ambush? (is discussed in Ambush Section)<br />
+#Group Setting â Garrotte draws less aggro than Ambush. Use if you are too easily gaining aggro.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #Solo Settingâ Garrotte will break gouge stopping you from using the Gouge/BS combos amongst others.<br />
+#Garrotte damage is not reduced by AC (Makes sense as they are bleeding from their throats J)<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">AMBUSH</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Ambush the target, causing [250% dagger dmg] + [x] additional dmg. Must be stealthed, behind the target and have dagger in main hand.<br />
+Level	Damage	<br />
+18	250%+75	<br />
+26	250%+100	<br />
+34	250%+125<br />
+42 250%+185<br />
+50 250%+230<br />
+58 250%+290	<br />
+<span style="font-weight: bold;" class="mycode_b">[B]Energy</span>: 60<br />
+CP/Energy[/B]: .017<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe the aim of Ambush is to be the stealth opener for a speed kill.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Whenever you think the monster has such low hp it will die very quickly to your onslaught.<br />
+Q: How long does a fight have to last before Garrotte becomes better than Ambush?<br />
+A: The calculations for Garrotte are easy. The calculations for Ambush use &lt;many&gt; assumptions. In beta the value of these assumptions are changing too rapidly for me to bother doing calculations with hard numbers. Thus I will simply list the variable which these calculations use.<br />
+The factors which bias Ambush&gt;Garrotte<br />
+(1) The higher the base damage on your weapon<br />
+(2) The higher the miscellaneous damage bonuses on your weapon. These include Str, Agi, Level, Innate Procs, Poisons, etc<br />
+The factors which bias Garrotte&gt;Ambush<br />
+(1) The higher the AC of the target. (Since Garrotte is unaffected by AC)<br />
+(2) The longer the fight will last<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #Like BS and SS, Ambush prefers a slow high dmg weapon over a faster low dmg one (assuming equal DPS).<br />
+#(Bug) Using Ambush from max range did not break stealth in beta1. (you move back a bit after landing the attack) (this should have already been removed)<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">CHEAP SHOT</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Stuns the target for 4 sec. Must be stealthed. Awards 2 CP.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 60<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: .033<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe Blizzard aims for this to be the opener of choice in a group setting (exceptions see below). Or to interrupt a caster.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Solo Setting- a controlled 1v1 fight. You may decide to use Ambush if you are aiming for a very quick kill. In other situations you should compare CS vs Garrotte.<br />
+Lets consider the skills at level 30. Garrotte has a dmg/nrg ratio of 4.44. Calculating CS is slightly more involved. In a controlled 1v1 fight stunning a monster should be considered like a time stop for the monster, while you continue to attack and regain energy. The net Energy use of CS therefore becomes 60-40(the nrg regained in 4s)=20. To find the dmg/nrg ratio of CS =(DPSx4secs)/(20nrg)=DPS/5. That means at level 30 to make CS&gt;Garrotte your DPS must be 22. You should note that this DPS value must be modified to take into account both beneficial factors such as poison and procs, as well as negative factors such as mitigation from the monsters AC.<br />
+<br />
+#Solo Setting- About to start a fight with 2 or more monsters â Sap should be your stealth opener (if humanoids). When you are fighting more than one monster, CS can no longer be considered a time stop as the monsterâs buddy is wailing on you (and most certainly not frozen in time).<br />
+#Group Setting- With no better stunner in the group (ie paladin) vs 1 monster = Definitely CS. The combined DPS output of your group in the 4s stun period will create a better dmg/nrg ratio than any other stealth opener.<br />
+#Group Setting- With a paladin â The stunning system in WoW has a mechanism to prevent the abuse of continuous stuns - Each successive stun on the monster becomes less effective (is this correct? needs testing). Basically you want the paladinâs 10s stun to go first. Not your comparatively weak 4s stun. In this situation you may choose to use Garrotte or Ambush.<br />
+#Group Setting- 2 non CCed monsters â Many variables to consider. If only one monster has a high dps, and the other monsters have low dps you may want to CS the high dps monster and just let the low dps ones attack. If all monsters are high dps, but low hp you may want to use your stealth opener to speed kill one (ie Ambush).<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #(Bug) Using CS from max range did not break stealth in beta1. (should have been removed)<br />
+#If you get a CS you wont have to set-up a gouge for your first BS.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">SAP</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Knocks the target out for [x] seconds. Must be stealthed. Only works on Humanoids that are not in combat. Any damage caused will revive the target. Only 1 target may be sapped at a time. This move is not technically an opener as it does not award a combo point.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 65<br />
+<span style="font-weight: bold;" class="mycode_b">Dmg/Energy</span>: 0<br />
+<span style="font-weight: bold;" class="mycode_b">CP/Energy</span>: 0<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: I believe Blizzardâs aim for this skill is for helping a rogue to solo while keeping his CC role in a group setting to a minimum. The continual changes to downgrade sap are what make me say this (also Blizzard/Tigole has stated that was the skillâs intention). Beta1 sap was certainly overpowered. Beta2 it was still useful in a group setting. Beta3 it has been downgraded again. Yet in every incarnation its ability to help the solo rogue split a duo has remained untouched and powerful. <br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #You are about to fight 2 or more monsters. Sap A. Fight and kill B. When you are ready break the sap and kill A.<br />
+#Sap Pulling â A group of monsters (usu 3 or more). Walk up, knock one out and run like hell. If you get away the other monsters will run back to their spots. You then walk calmly into aggro range, the one you sapped will run out solo to come find you. (would like verification on this)<br />
+#Sap Pulling Type 2 â A group of 2 or more monsters. Sap monster A, run out of monster Aâs aggro. Fight the other monsters. If you have another CC with you they can CC one of the other monsters you pulled. Donât forget to gouge (?evade) as you run back to the group to avoid getting hit it the back. Then go back and kill monster A. (Alternatively you sneak up and sap, mage casts sleep on one incoming, run back with remainder)<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #AE effects (like Warriors Thunderclap, Mages Pillar of Fire, Meteor Shardâs proc) will break your sap<br />
+#Only works on humanoids. (What about undead humanoids?)<br />
+#Does not work if the monster is already in combat. NB monsters triggered by stepping in the aggro radius is not âin combatâ. Thus âincomingâ mobs are still sap worthy. What constitutes combat is (1) mob taking dmg (2) mob taking an offensive combat action (ie priest NPC casting shield does not count) &lt;edit beta build 3 changed to no sapping running incoming mobs. Needs further testing to find new sap conditions&gt;<br />
+#Reapplying sap â you can reapply sap to a mob. You sapping it doesnât count as âin combatâ. However you lose all your CP on your current target when you switch targets. So build up your CP by SS (takes too long with BS + could build aggro), let loose with a finisher (Rupture), then run over to sapped mob, stealth, resap, run back. Repeat. (Does this still work in beta3?) &lt;edit beta3 - sapping a mob now counts as in combat. You can no longer reapply sap&gt;<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">FINISHING MOVES</span></span><br />
+<br />
+Finishing moves should be judged on 3 factors:<br />
+(1) Damage<br />
+(2) Utility<br />
+(3) Damage/Energy Ratio<br />
+<br />
+Q: Why list damage first (and why is dmg/nrg last)?<br />
+A: Because when you perform a finishing move you use 2 resources â Energy and Combo Points. Thus the 2 ratios you care about are Dmg/CP and Dmg/Nrg. Now since the CP cost is going to be the same no matter what finisher you do we can just look at the numerator (ie Pure Damage). As for why I considered Damage/Energy to be less important than straight dmg - if you consider the relative difficulty in obtaining 5CP and the relative difficulty in obtaining 25-35 energy, the energy cost is almost irrelevant, the true cost of the move is losing 5CP. (However if you consider doing a finisher at 1CP then the dmg/nrg ratio becomes more important).<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">EVISCERATE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Finishing move that causes damage per combo point.<br />
+&lt;Missing early level data info&gt;<br />
+Level 24<br />
+1 point : 47-67 dmg<br />
+2 points : 84-104 dmg<br />
+3 points : 121-141 dmg<br />
+4 points : 158-178 dmg<br />
+5 points : 195-215 dmg<br />
+Level 32<br />
+1 point : 66-99 dmg<br />
+2 points : 123-153 dmg<br />
+3 points : 177-207 dmg<br />
+4 points : 231-261 dmg<br />
+5 points : 285-215 dmg<br />
+Level 40<br />
+1 point : 104-148 dmg<br />
+2 points : 186-230 dmg<br />
+3 points : 268-312 dmg<br />
+4 points : 350-394 dmg<br />
+5 points : 432-476 dmg<br />
+Level 48<br />
+1 point : 158-226 dmg<br />
+2 points : 282-350 dmg<br />
+3 points : 406-474 dmg<br />
+4 points : 530-598 dmg<br />
+5 points : 654-722 dmg<br />
+Level 56<br />
+1 point : 216-312 dmg<br />
+2 points : 384-480 dmg<br />
+3 points : 552-648 dmg<br />
+4 points : 720-816 dmg<br />
+5 points : 888-984 dmg <br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 35<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: Used for speed kills and finishing blows. To do less damage than Rupture if Rupture is given full duration.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Finishing Blow- when you can kill something instantly with it. It will live less time than any other finisher, thus you will take the least damage. Thus generally good on low HP mobs like casters.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #Learn when to build to 5cp or when unloading at less CP is fine (ie kill the monster)<br />
+#Remember that Eviscerate is affected by armour so the dmg dealt is significantly less than shown on paper. Rupture is not affected by AC.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">SLICE AND DICE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Finishing move that increases melee attack speed by 20%. Lasts longer per combo point:<br />
+1 point : 9 seconds<br />
+2 points: 12 seconds<br />
+3 points: 15 seconds<br />
+4 points: 18 seconds<br />
+5 points: 21 seconds<br />
+At Level 42, skill increases to provide 30% haste.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 25<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: The self haste finisher. It stacks with other effects and is the only finisher that continues to benefit you after the monster is dead. <br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Often in groups you have combo points built up and the mob is almost dead and there is another mob waiting to be killed. SnD is a great way to not let CPs from the almost dead monster "go to waste". With SnD you can âuse the CPâsâ (ie use your haste) on the 2nd monster.<br />
+#Damage compared to Rupture: SnD at 5CP lasts 21s and increases dmg by 20%. Rupture at level 36 and 5cp does 440dmg over 22s. To make SnD better than rupture, your DPS(including procs but not specials)=440x5/22=100DPS. I &lt;really&gt; doubt that at level 36. Thus SnD is weak compared to Rupture against single targets. Only use is to not waste combo points.<br />
+#Someone people think that SnD benefits faster weapons with procs more. This is false. If a slow weapon without procs had equal DPS to a fast weapon with procs before SnD, it will have equal DPS after as well.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">RUPTURE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>:<br />
+Level 20 (i think these values are from beta2)<br />
+1 point : 60 dmg over 6 seconds<br />
+2 points : 100 dmg over 10 seconds<br />
+3 points : 140 dmg over 14 seconds<br />
+4 points : 180 dmg over 18 seconds<br />
+5 points : 220 dmg over 22 seconds<br />
+Level 28<br />
+1 point : 69 dmg over 6 seconds<br />
+2 points : 115 dmg over 10 seconds<br />
+3 points : 161 dmg over 14 seconds<br />
+4 points : 207 dmg over 18 seconds<br />
+5 points : 253 dmg over 22 seconds<br />
+Level 36<br />
+1 point : 96 dmg over 6 seconds<br />
+2 points : 160 dmg over 10 seconds<br />
+3 points : 224 dmg over 14 seconds<br />
+4 points : 288 dmg over 18 seconds<br />
+5 points : 352 dmg over 22 seconds<br />
+Level 44<br />
+1 point : 135 dmg over 6 seconds<br />
+2 points : 225 dmg over 10 seconds<br />
+3 points : 315 dmg over 14 seconds<br />
+4 points : 405 dmg over 18 seconds<br />
+5 points : 495 dmg over 22 seconds<br />
+Level 52<br />
+1 point : 186 dmg over 6 seconds<br />
+2 points : 310 dmg over 10 seconds<br />
+3 points : 434 dmg over 14 seconds<br />
+4 points : 558 dmg over 18 seconds<br />
+5 points : 682 dmg over 22 seconds<br />
+Level 60<br />
+1 point : 255 dmg over 6 seconds<br />
+2 points : 425 dmg over 10 seconds<br />
+3 points : 595 dmg over 14 seconds<br />
+4 points : 765 dmg over 18 seconds<br />
+5 points : 935 dmg over 22 seconds <br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 25<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: The DoT finisher. Supposed to do more damage than Eviscerate given time to run its full course.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Finish off fleeing monsters: DoTs are handy to apply on a near dead mob that likes to run around at crazy speeds and angles when they get low on health. They die running away from you.<br />
+#Great in groups to keep your hate low and not pull aggro off of the tank.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #The damage on rupture is not affected by AC. The damage on paper is the damage dealt. Sweet&#33;<br />
+#Solo settingâ rupture stuffs up gouge combos.<br />
+#Learn when to build to 5CP and when you should unleash earlier.<br />
+<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">KIDNEY SHOT</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Finishing move that stuns the target. Lasts 1 second per combo point. 20s cooldown.<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 25<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: Stun stuff. Interrupt casters.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: #Interrupt caster<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: # Single target: Assuming eviscerate has the same hit/miss ratio you should use this whenever you can do more dmg in 5s than you could with eviscerate. This will be particularly true in groups attacking single targets.<br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-size: 7pt;" class="mycode_size">EXPOSE</span></span><br />
+<span style="font-weight: bold;" class="mycode_b">Description</span>: Finishing move that exposes the target, reducing armor by [x] per combo point. Lasts 30 seconds.<br />
+Lvl AC reduced per CP<br />
+14 25AC/CP<br />
+26 40AC/CP<br />
+36 55AC/CP<br />
+46 70AC/CP<br />
+56 85AC/CP<br />
+<span style="font-weight: bold;" class="mycode_b">Energy</span>: 25<br />
+<span style="font-weight: bold;" class="mycode_b">Intended Use</span>: Debuff. To make melee characters like you and want to be your friend.<br />
+<span style="font-weight: bold;" class="mycode_b">Uses</span>: Iâm tired. I&#39;m going to sleep rather than write uses for Expose.<br />
+<span style="font-weight: bold;" class="mycode_b">Tips</span>: #I think the current mitigation formula is: Damage Reduction=[0.3x(DefenderAC-1)/10x(AttackerLevel+89)]
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48719">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=817" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48719" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48805" id="pid48805"></a>
+<div class="post " style="" id="post_48805">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-205.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-205.html">lemekim</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				It's been how long?!<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 681<br />
+	Threads: 5<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48805.html#pid48805" title="In depth study of Rogue Skills">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-18-2004, 08:32 PM <span class="post_edit" id="edited_by_48805"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48805">
+		Very nice (and very indepth) write up. I will definately be looking more and more at it as I keep leveling my rogue. The second sap pull (with sapping one mob out of several, running out of range to loose them, then coming back and fighting the lone sapped mob) already proved useful to me several times =) I will try to report any changes to rogues this push that I see.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48805">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=205" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48805" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48826" id="pid48826"></a>
+<div class="post " style="" id="post_48826">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48826.html#pid48826" title="In depth study of Rogue Skills">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-19-2004, 12:56 AM <span class="post_edit" id="edited_by_48826"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48826">
+		I hope some more beta people make posts like this on their classes.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48826">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48826" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48876" id="pid48876"></a>
+<div class="post " style="" id="post_48876">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-79.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-79.html">Thenryb</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 284<br />
+	Threads: 8<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48876.html#pid48876" title="In depth study of Rogue Skills">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-19-2004, 03:08 PM <span class="post_edit" id="edited_by_48876"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48876">
+		This was really an excellent post of the type I have not seen on any of the forums so far.  With respect to the sap pull, I have found it to be far more limiting since the push.  Considering the scenario of a rogue grouping with a mage and a paladin or warrior,  and two mobs were in sight and a potential third which might or might not be activated, the mage could sleep one and if two came running instead of the anticipated one, the rogue could sap the trailer. That is no longer possible since the third is considered "in combat" and cannot be sapped. I mainly use sap in group situations where it is desired to sleep more than one. The group must wait for the rogue to stealth up and sap one, then the mage sleeps another and the party concentrates on the third. Some groups I have played with are not sufficiently patient to allow the rogue to do her work in this situation and disaster results.  I also use sap when soloing to sleep one and try to kill the other while the first is asleep. I have found that to be more useful in theory than in practice, since, most of the time, I cannot kill the first one fast enough to permit me to heal a little before taking on the second unless I happen to have a heal pot or two on me. Even using gouge on the second doesn&#39;t permit give enough time to use a bandage, let alone eat.  Also, a common tactic suggested is using gouge to get behind an enemy to backstab. I have found this to be very hard to execute. When I first get behind the gouged target, I have insufficient energy to execute a backstab. By the time energy is sufficient, the stun affect of the gouge wears off and the enemy turns to face me.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48876">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=79" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48876" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48877" id="pid48877"></a>
+<div class="post " style="" id="post_48877">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-817.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-817.html">Yuen</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 36<br />
+	Threads: 7<br />
+	Joined: Dec 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48877.html#pid48877" title="In depth study of Rogue Skills">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-19-2004, 03:08 PM <span class="post_edit" id="edited_by_48877"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48877">
+		<blockquote class="mycode_quote"><cite>Quote:</cite> I hope some more beta people make posts like this on their classes.</blockquote>
+<br />
+I&#39;m not in beta. :( I probably should have made that point somewhere in the guide.<br />
+<br />
+Probably explains why heaps of the stuff there says - "needs testing/confirmation". That&#39;s where I was hoping the lurkers could come in. All of you being the inquisitive intelligent fellows that you are.<br />
+<br />
+BTW I added finishing moves to the original post
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48877">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=817" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48877" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48878" id="pid48878"></a>
+<div class="post " style="" id="post_48878">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-817.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-817.html">Yuen</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 36<br />
+	Threads: 7<br />
+	Joined: Dec 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48878.html#pid48878" title="In depth study of Rogue Skills">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-19-2004, 03:14 PM <span class="post_edit" id="edited_by_48878"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48878">
+		<blockquote class="mycode_quote"><cite>Quote:</cite>Considering the scenario of a rogue grouping with a mage and a paladin or warrior, and two mobs were in sight and a potential third which might or might not be activated, the mage could sleep one and if two came running instead of the anticipated one, the rogue could sap the trailer. That is no longer possible since the third is considered "in combat" and cannot be sapped.</blockquote>
+<br />
+Good point. Changed that in the post.<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>Also, a common tactic suggested is using gouge to get behind an enemy to backstab. I have found this to be very hard to execute.</blockquote>
+<br />
+I think most people who attempt the gouge backstab combo wait till they have very high energy before starting the combo.<br />
+<br />
+I guess just before full energy would be the best time to do it. If you let it reach full, you may run the risk of letting energy &#39;go to waste&#39; and decrease your potential DPS.<br />
+<br />
+Just before full would definitely allow you to the the combo. Gouge (45) + BS (60) = 105. With at least 3 seconds waiting that is 105-30=85 energy.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48878">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=817" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48878" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48879" id="pid48879"></a>
+<div class="post " style="" id="post_48879">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-205.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-205.html">lemekim</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				It's been how long?!<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 681<br />
+	Threads: 5<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48879.html#pid48879" title="In depth study of Rogue Skills">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-19-2004, 03:51 PM <span class="post_edit" id="edited_by_48879"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48879">
+		Btw, gouge does work on non-humanoids (beasts and such), but it still does not work on Mechanical. Not sure about undead, haven&#39;t seen any yet.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48879">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=205" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48879" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48904" id="pid48904"></a>
+<div class="post " style="" id="post_48904">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-817.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-817.html">Yuen</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 36<br />
+	Threads: 7<br />
+	Joined: Dec 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-8398-post-48904.html#pid48904" title="In depth study of Rogue Skills">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-20-2004, 10:43 AM <span class="post_edit" id="edited_by_48904"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48904">
+		<blockquote class="mycode_quote"><cite>Quote:</cite> Btw, gouge does work on non-humanoids (beasts and such), but it still does not work on Mechanical. Not sure about undead, haven&#39;t seen any yet. </blockquote>
+<br />
+Cool. Thanks for the info. Keep it coming.<br />
+<br />
+BTW: I have added beta 3 values to most moves now + tidied up some formatting.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48904">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=817" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48904" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid48989" id="pid48989"></a>
+<div class="post " style="" id="post_48989">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-817.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-817.html">Yuen</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Junior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 36<br />
+	Threads: 7<br />
+	Joined: Dec 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="thread-8398-lastpost.html#pid48989" title="In depth study of Rogue Skills">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">06-21-2004, 06:24 PM <span class="post_edit" id="edited_by_48989"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_48989">
+		<a href="http://www.worldofwarcraft.com/thread.aspx?FN=wow-rogue&amp;T=2002&amp;P=1&amp;ReplyCount=9#post2002" target="_blank" rel="noopener" class="mycode_url">http://www.worldofwarcraft.com/thread.aspx...ount=9#post2002</a><br />
+<br />
+Good post on the official rogue boards.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_48989">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=817" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		<!-- start: postbit_quote -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=8398&amp;replyto=48989" title="Quote this message in a reply" class="postbit_quote postbit_mirage"><span>Reply</span></a>
+<!-- end: postbit_quote -->
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="8398" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-8398-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-8398-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=8398">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-8398.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=9aaa9d67b337cfe115c8e5f7275ac0a7">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:55 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="https://www.lurkerlounge.com/forums/task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=8398&amp;pid=48719#pid48719" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=8398&amp;pid=48719#pid48719" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->

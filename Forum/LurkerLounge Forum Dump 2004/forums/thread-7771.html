@@ -1,0 +1,1417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The WoW Honor System</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1821"></script>
+
+<link type="text/css" rel="stylesheet" href="cache/themes/theme9/global.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/star_ratings.css" />
+<link type="text/css" rel="stylesheet" href="https://www.lurkerlounge.com/forums/cache/themes/theme1/showthread.css" />
+<link type="text/css" rel="stylesheet" href="cache/themes/theme1/css3.css" />
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results&hellip;";
+	lang.select2_searching = "Searching&hellip;";
+
+	var templates = {
+		modal: '<div class=\"modal\">\
+	<div style=\"overflow-y: auto; max-height: 400px;\">\
+		<table border=\"0\" cellspacing=\"0\" cellpadding=\"5\" class=\"tborder\">\
+			<tr>\
+				<td class=\"thead\" colspan=\"2\"><strong>__message__</strong></td>\
+			</tr>\
+			<tr>\
+				<td colspan=\"2\" class=\"trow1\">\
+				<div style=\"text-align: center\" class=\"modal_buttons\">__buttons__</div></td>\
+			</tr>\
+		</table>\
+	</div>\
+</div>',
+		modal_button: '<input type=\"submit\" class=\"button\" value=\"__title__\"/>&nbsp;'
+	};
+
+	var cookieDomain = "www.lurkerlounge.com";
+	var cookiePath = "/forums/";
+	var cookiePrefix = "mybb1";
+	var cookieSecureFlag = "0";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait&hellip;';
+	var saving_changes = 'Saving changes&hellip;';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "9921dfdb539499fa245deea46a8218cb";
+	var rootpath = "https://www.lurkerlounge.com/forums";
+	var imagepath = "https://www.lurkerlounge.com/forums/images";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://www.lurkerlounge.com/forums/images/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+	lang.post_deleted_error = "You can not perform this action to a deleted post.";
+	lang.softdelete_thread = "Soft Delete Thread";
+	lang.restore_thread = "Restore Thread";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/report.js?ver=1820"></script>
+<script src="jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="https://www.lurkerlounge.com/forums/jscripts/thread.js?ver=1822"></script>
+</head>
+<body>
+	<!-- start: header -->
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo">
+				<div class="wrapper">
+					<a href="index.php"><img src="images/oldlounge/logo.gif" alt="The Lurker Lounge Forums" title="The Lurker Lounge Forums" /></a>
+					<ul class="menu top_links">
+						<!-- start: header_menu_portal -->
+<li><a href="portal.php" class="portal">Portal</a></li>
+<!-- end: header_menu_portal -->
+						<!-- start: header_menu_search -->
+<li><a href="search.php" class="search">Search</a></li>
+<!-- end: header_menu_search -->
+						<!-- start: header_menu_memberlist -->
+<li><a href="https://www.lurkerlounge.com/forums/memberlist.php" class="memberlist">Member List</a></li>
+<!-- end: header_menu_memberlist -->
+						<!-- start: header_menu_calendar -->
+<li><a href="calendar.php" class="calendar">Calendar</a></li>
+<!-- end: header_menu_calendar -->
+						<li><a href="misc.php?action=help" class="help">Help</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<!-- start: header_quicksearch -->
+						<form action="search.php">
+						<fieldset id="search">
+							<input name="keywords" type="text" class="textbox" />
+							<input value="Search" type="submit" class="button" />
+							<input type="hidden" name="action" value="do_search" />
+							<input type="hidden" name="postthread" value="1" />
+						</fieldset>
+						</form>
+<!-- end: header_quicksearch -->
+						<!-- start: header_welcomeblock_guest -->
+						<!-- Continuation of div(class="upper") as opened in the header template -->
+						<span class="welcome">Hello There, Guest! <a href="member.php?action=login" onclick="$('#quick_login').modal({ fadeDuration: 250, keepelement: true, zIndex: (typeof modal_zindex !== 'undefined' ? modal_zindex : 9999) }); return false;" class="login">Login</a> <a href="member.php?action=register" class="register">Register</a></span>
+					</div>
+				</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://www.lurkerlounge.com/forums/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<input name="my_post_key" type="hidden" value="9921dfdb539499fa245deea46a8218cb" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<!-- start: header_welcomeblock_guest_login_modal -->
+<tr>
+	<td class="trow1" width="25%"><strong>Username:</strong></td>
+	<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+</tr>
+<tr>
+	<td class="trow2"><strong>Password:</strong></td>
+	<td class="trow2">
+		<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /><br />
+		<a href="member.php?action=lostpw" class="lost_password">Lost Password?</a>
+	</td>
+</tr>
+<tr>
+	<td class="trow1">&nbsp;</td>
+	<td class="trow1 remember_me">
+		<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+		<label for="quick_login_remember">Remember me</label>
+	</td>
+</tr>
+<tr>
+	<td class="trow2" colspan="2">
+		<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+	</td>
+</tr>
+<!-- end: header_welcomeblock_guest_login_modal -->
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+<!-- end: header_welcomeblock_guest -->
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+			</div>
+		</div>
+		<div id="content">
+			<div class="wrapper">
+				
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="index.php">The Lurker Lounge Forums</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-6.html">Lurker Games</a><!-- start: nav_sep -->
+&rsaquo;
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="forum-16-page-129.html">World of Warcraft</a><!-- start: nav_dropdown -->
+ <img src="images/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_prevpage -->
+<a href="forum-16-page-128.html" class="pagination_previous">&laquo; Previous</a>
+<!-- end: multipage_prevpage --><!-- start: multipage_start -->
+<a href="forum-16.html" class="pagination_first">1</a>  &hellip;
+<!-- end: multipage_start --><!-- start: multipage_page -->
+<a href="forum-16-page-127.html" class="pagination_page">127</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-128.html" class="pagination_page">128</a>
+<!-- end: multipage_page --><!-- start: multipage_page_link_current -->
+ <a href="forum-16-page-129.html" class="pagination_current">129</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-16-page-130.html" class="pagination_page">130</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-16-page-131.html" class="pagination_page">131</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+&hellip;  <a href="forum-16-page-141.html" class="pagination_last">141</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-16-page-130.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="images/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active"><a href="thread-7771.html">The WoW Honor System</a></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<!-- end: header -->
+	
+	
+	<div class="float_left">
+		
+	</div>
+	<div class="float_right">
+		<!-- start: showthread_newreply_closed -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7771" class="button closed_button"><span>Thread Closed</span></a>&nbsp;
+<!-- end: showthread_newreply_closed -->
+	</div>
+	
+	<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed clear">
+		<tr>
+			<td class="thead">
+				<div class="float_right">
+					<span class="smalltext"><strong><a href="javascript:void(0)" id="thread_modes">Thread Modes</a></strong></span>
+				</div>
+				<div>
+					<strong>The WoW Honor System</strong>
+				</div>
+			</td>
+		</tr>
+<tr><td id="posts_container">
+	<div id="posts">
+		<!-- start: postbit -->
+
+<a name="pid57430" id="pid57430"></a>
+<div class="post " style="" id="post_57430">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1008.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1008.html">Saxywoo</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 166<br />
+	Threads: 38<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57430.html#pid57430" title="The WoW Honor System">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-20-2004, 03:16 PM <span class="post_edit" id="edited_by_57430"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57430">
+		The Honor System within WoW is something that should be thoroughly thought through.  Iâm planning on suggesting the following, but I need your help, My Fellow Lurkers, to help me find holes in the system that people may try to exploit.<br />
+<br />
+First, Iâll put in my assumptions.  Iâm assuming that Blizzard uses extensive databases to keep track of everything.  Iâm also assuming that there will invariably be groups/raid parties containing a very wide variety of character levels (10 â 60), who would use the level 10s to scout other groups/parties.  Iâm sure that there are some here that Iâm forgetting some things here, or Iâm flat wrong on what Iâve written, but if you can help me hereâ¦ I would appreciate it.  All PvP fighting can be broken down into 3 classifications â Group vs. Group, Group vs. Individual, Individual vs. Individual.<br />
+<br />
+<span style="font-size: 14pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b">Group vs. Group <span style="font-style: italic;" class="mycode_i">(Skirmishes, Raids, Sieges, Assaults and Battles)</span></span></span><br />
+When you have a group fighting a group, it would be open season on any member of the opposing group, regardless of the character level.  The killing of an opposing party member would be considered honorable, on the basis that you are involved in the skirmish to begin with.<br />
+<br />
+Controls that would definitely need to be implemented here would be if a level 60 hits a level 10, the level 10 couldnât simply drop from the group/party.  Once you are in a group, and the group engages into battle, you are locked in the group until either you die, or the battle ends.  When (not if) the level 60 kills the level 10, it is honorable since it was the level 10âs choice to be in that situation in the first place.  Group adds are accepted, just not drops.  I donât know if there is a way for the servers to check and see if there is someone with a lower level that was killed in a skirmish, logged out and is then trying to join in with a higher level character.  <br />
+<br />
+If you are killed in the skirmish, there are your normal ways of returning to life â Release and Resurrect, Resurrection, Soul Stone.  You can resurrect as many times as needed or desired.  If killed, you can at that time decide to leave the group/party, and your PvP status would be reset since your âallegianceâ has changed slightly.  In this case only, would the level 10 be protected by way of the honor system.<br />
+<br />
+This would require a change in the display color of a characterâs status.  The current colors for characters when they are in Allied, Contested or Horde territory apply as normal, just that a new color would need to be placed into the mix to handle this.<br />
+<br />
+<span style="font-size: 14pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b">Group vs. Individual  <span style="font-style: italic;" class="mycode_i">(Uneven but Balanced Brawls and Synchronized Jumping)</span></span></span><br />
+This would be only honorable for a group to attack a much higher level, as opposed to vise versa (of course, this all being within reason).  <br />
+<br />
+<span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i"><span style="font-size: 7pt;" class="mycode_size">Uneven but Balanced Brawls</span></span></span><br />
+You canât have 2 level 60s and 3 level 10s roving around in a party attacking level 50s.  First, itâs not a fair fight.  Second, a level 50 wouldnât even both going up against a level 60 and honestly expect to win.<br />
+<br />
+You could, however, have a group of 4 level 20s attack a lone level 40.  There is the chance that the level 40 could escape, and there is also the chance that the level 40 would win the fight.<br />
+<br />
+The problem that I wrestle with here is where to draw the line on what would still constitute a fair fight?  Would 3 level 30 players vs. a lone level 40?  Unfortunately, Iâve just attained the highest level Iâve gotten last night, which is 25, so those of you that have experience in dealing with the higher level characters should put their input in on this point.  We have the general rule of it being okay to attack something 3 levels above or below your level when itâs a normal mob, but I think that the equation does not fit when it comes to elites, and especially does not fit when it comes to PvP players.<br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">Synchronized Jumping/Getting Jumped</span></span></span><br />
+What about 5 people (low level) that are not partied, but have a execute a coordinated attack on a higher level character?  I donât think that this falls under the âUneven but Balanced Brawlâ or âGetting Jumped.â  The key points here are the difference in levels, as well as the fact that the attackers are much lower in level than the higher level player.  Whether the group is a roving bunch, or they setup and ambush, it doesnât matter.  Itâs a coordinated attack either way you look at it.  Itâs an ill-conceived notion that by not attacking as a party would make the fight seem dishonoring to the higher level player on the basis of reducing the fight from Group vs. Individual to Individual vs. Individual.  In either case, the âSelf Defenseâ (see below) case would apply <br />
+<br />
+<span style="font-size: 14pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b">Individual vs. Individual  <span style="font-style: italic;" class="mycode_i">(Anti-Corpse Camping, Cross Faction Duels and Self Defense)</span></span></span><br />
+When it comes to this, I think that just about everyone that has spent any reasonable amount of time in contested territory has been âgankedâ at least once.  I personally didnât enjoy my first time that much, but Iâm not going to cry about it.<br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">Anti-Corpse Camping</span></span></span><br />
+It would be nice if there some is sort of feature that kept people from âcorpse camping.â  I had experienced this marvelous method to grief on my way to Pyrewood Village one night.  When another player is killed, there should be something where as a in a ghost state, you can cast something like âHauntâ on someone that is too close to your corpse, which would have the same effect of âFearâ on anyone flagged for PvP within xx yards of your corpse (not your spirit).  This would at least scare the campers away so you can resurrect your corpse in relative safety.<br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">Cross Faction Duels (When fair fights cease to be fair)</span></span></span><br />
+Based off of another experience that I had in Pyrewood Village, I was a level 23 Paladin waiting in the town for  Mongo and Lem to arriave to hit SFK.  A level 20 undead mage (who will remain nameless) thought that he could take me on.  Within 10 seconds of the fight starting, the mage was down to 1/3 of his HP.  He polymorphed me, and then ran to get help from a level 21 rogue.  I then proceeded to die.  However, if you start a fight with someone 3 levels above or below you, and then are forced get assistance from another character of approx. the same level, the fight ceases to be a fair fight.  Once you start a fight alone, it should remain a lone fight (more of a cross-faction duel).<br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">Self Defense</span></span></span><br />
+Just like with the laws in the real life judicial system (real life?  What the hell is âreal life?â), there is a stipulation on self defense being a worthy defense in court if the person you are defending yourself against is killed.  The same concept should apply to WoW.  <br />
+<br />
+If you have someone that you can definitely pound into the ground that attacks you, are you going to stand there and let them kill you?  Two words â âHell no.â  And unless you have a mount, you canât just run away, since everyone runs at the same speed.  Yes, you can stun your attacker, but you then have a timer on that ability.  If youâre up against a rogue, itâs going to boil down to a case where youâre going to have to either go toe-to-toe or die.<br />
+<br />
+So letâs say that you do engage, and are simply pummeling the poor fool.  Reason would dictate that your attacker would run when they get hurt enough.  This is probably not so, not to mention that by the time they run, youâre probably starting to swing again.  So you swing and they die.  Was it your fault?  No.  You were defending yourself.  You were attacked, and in the event of you defending yourself, you killed him.  Whether or not it was a fair fight doesnât enter into it at that point.  <br />
+<br />
+Regardless, if someone comes at me like that, Iâll take the honor hit rather than have someone take advantage of the current and flawed system.<br />
+<br />
+<span style="font-size: 14pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b">Special Roles <span style="font-style: italic;" class="mycode_i">(The âProtectorâ and  The âTown Defenderâ Roles)</span></span></span><br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">The âProtectorâ Role</span></span></span><br />
+Iâm not sure how to go about this one.  Perhaps this could be a quest where you can choose to be a protector of a certain area, for a set amount of time.  This would enable a level 60 to come along and help out a member of the same faction who is being attacked by a member of the other faction.  Though it may be situations where the fight would normally be unfair, there would be honor, should the quest be completed.  This would be something that would be helpful for the contested areas, where you have members of both factions running around and the chances of encounters are generally pretty high.  <br />
+<br />
+For instance, if the quest is given in Duskwood, this âprotectorâ role would only apply within Duskwood.  If the player leaves Duskwood, or goes AFK, the quest is failed.  But as long as the quest is valid, any member of the opposing faction is fair game, within the specified time that the quest is effective.<br />
+<br />
+<span style="font-size: 7pt;" class="mycode_size"><span style="font-weight: bold;" class="mycode_b"><span style="font-style: italic;" class="mycode_i">The âTown Defenderâ Role</span></span></span><br />
+I have only heard of this, where it is like the being a âChampionâ except you are defending a town or city from members of the other faction.  The same rules would apply to the role as the âProtectorâ Role (see above), but the limits of the quest and role would be confined to the limits of the specific town or city that the role is given.<br />
+<br />
+<br />
+<br />
+<span style="font-family: Courier;" class="mycode_font">There you guys go.  Rip it up.  This will then become a "Lurker Lounge Suggestion to Blizzard on the Honor System."<br />
+<br />
+<br />
+SaxyCorp<br />
+<br />
+</span>
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57430">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1008" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57569" id="pid57569"></a>
+<div class="post " style="" id="post_57569">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1008.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1008.html">Saxywoo</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 166<br />
+	Threads: 38<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57569.html#pid57569" title="The WoW Honor System">#2</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-22-2004, 03:40 PM <span class="post_edit" id="edited_by_57569"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57569">
+		Okay, it&#39;s been two days, and nobody has posted on this?   :blink: <br />
+<br />
+I know that I didn&#39;t think through this THAT well.....   :P <br />
+<br />
+Seriously everyone, if you have thoughts on something that isn&#39;t right, adds, subtracts, or disagreements, please, voice them&#33;<br />
+<br />
+Those of you that have been on the PvP server quite a bit and have experience with dealing with the other factions, I need help in determining what is a fair fight.  <br />
+<br />
+Thanks,<br />
+SaxyCorp
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57569">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1008" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57570" id="pid57570"></a>
+<div class="post " style="" id="post_57570">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-10.html"><img src="https://www.lurkerlounge.com/forums/uploads/avatars/avatar_10.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-10.html">--Pete</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				A gentler, kinder Curmudgeon<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 4,063<br />
+	Threads: 68<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57570.html#pid57570" title="The WoW Honor System">#3</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-22-2004, 03:57 PM <span class="post_edit" id="edited_by_57570"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57570">
+		Hi,<br />
+<br />
+Well, there might be a few reasons that you haven&#39;t gotten any replies.<br />
+<br />
+For one, this community largely dates back to games where &#39;PKer&#39; and &#39;wanker&#39; were pretty much synonymous.  Thus, many of us have avoided PK as best as we can and have no valid opinions on the subject -- just a prejudice against it.<br />
+<br />
+For a second, the game is far from finished (but not, I fear, from shipping).  Any details (such as how many characters of what levels levels (and, presumably, classes and (possibly) races) (I really have to quit using LISP :) ) can pick on whom and still be &#39;fair&#39; are probably too far from completion to tell.  Besides, as strategies evolve, the whole equation may be thrown off.<br />
+<br />
+And third, what difference does it make?  This is a MMOG.  You can set up your own ethics and live by them.  But if you run into somebody that doesn&#39;t give a damn about your concepts of fair play, what are you going to do?  Start a new game?<br />
+<br />
+I suspect that a combination of these factors are why you have no responses yet.  And may not get any for quite a while.<br />
+<br />
+--Pete
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<span style="font-size: 4pt;" class="mycode_size"><div style="text-align: center;" class="mycode_align"><span style="color: yellow;" class="mycode_color"><span style="font-style: italic;" class="mycode_i"><br />
+How big was the aquarium in Noah's ark?<br />
+<br />
+</span></span></div></span>
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_57570">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=10" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57599" id="pid57599"></a>
+<div class="post " style="" id="post_57599">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57599.html#pid57599" title="The WoW Honor System">#4</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-23-2004, 01:33 AM <span class="post_edit" id="edited_by_57599"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57599">
+		Another reason that you may have not had replies is that people who have played in other various PvP MMORPs may think your  making mess of the issue. Thats my veiw at least.<br />
+<br />
+I dont really want to argue the details because personally I think your a bit clueless on how it will play out. <br />
+People will always find ways to win(tactic, teams etc) and other people will always see it as unbalanced when they lose.<br />
+<br />
+<br />
+From my perspective the current plan is pretty good, with one major issue.<br />
+<br />
+The current honor systen plan will allow low lvls to grief high levels. <br />
+Either the high level will have to let a low lvl slowy kill him or the high lvl will defend himself and lose honor - either way the low level griefs him.<br />
+<br />
+Everything else looks fine to me, I am sure Blizz will do more tweaking of the system, so I am not getting to excited about the details.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57599">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57648" id="pid57648"></a>
+<div class="post " style="" id="post_57648">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1008.html"><img src="https://www.lurkerlounge.com/forums/noavatar" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1008.html">Saxywoo</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 166<br />
+	Threads: 38<br />
+	Joined: Oct 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57648.html#pid57648" title="The WoW Honor System">#5</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-24-2004, 02:33 AM <span class="post_edit" id="edited_by_57648"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57648">
+		Hey, thanks for the pseudo-discouraging reply.   &lt;_&lt;   But I expected something like that.... I honestly did.<br />
+<br />
+The concept here is theory.  Being an old Angel of Hell (Diablo I Guild), we had our own conept of what was ethical and what wasn&#39;t.<br />
+<br />
+Regardless of whether or not you think that I am clueless when it comes to this, I now have my own opinions of you, which I might add, aren&#39;t in your favor.<br />
+<br />
+I also don&#39;t know if you are even aware of my history when it comes to MMORPGs.  If you don&#39;t, it&#39;s your own fault, considering that I posted that in this very forum about 2 weeks after the beta started.<br />
+<br />
+I refuse to blindly go into something.  I always do research before I get into something.  Which is what I am doing here in this thread.  And I did mention in the beginning of this thread that I am rather inexperienced when it comes to the PvP portion of the game.  Perhaps you should re-read what I had written.<br />
+<br />
+Pete did bring up some very good points.  I honestly do appreciate his reply, though it wasn&#39;t much of a help in my "research."  You were far and away nothing more than a distraction, which has caused me to spend much more time explaining myself to you - someone who I really don&#39;t care what you think of me or my ideas.  I&#39;m sorry if that hurts your feelings, but please, if I have offended you, by all means...  Start a Horde character on the PvP server, find me, and gank away.<br />
+<br />
+<br />
+ANYWAY, for those of you that really do have your heads straight on your shoulders:<br />
+<br />
+It seems to me that a Rogue has a vastly unfair advantage if they can go stealth, come up behind you and then just pound away at you while you are stunned.  This being at any level, against any level.  <br />
+<br />
+I&#39;m also finding myself more and more in contested areas, and I&#39;m looking to see what you (the helpful people) thought what a level 26 paladin could or could not handle.  I&#39;m asking you to draw on your experience.<br />
+<br />
+I fully understand that this is all subject to change at any given moment, when Blizz decides to change something.  I plan on testing that out when things change.<br />
+<br />
+PM me, post here.... do what you will.<br />
+<br />
+<br />
+But please, keep the flames to yourself, or send them in a PM.<br />
+<br />
+SaxyCorp
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57648">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1008" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57658" id="pid57658"></a>
+<div class="post " style="" id="post_57658">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57658.html#pid57658" title="The WoW Honor System">#6</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-24-2004, 05:05 AM <span class="post_edit" id="edited_by_57658"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57658">
+		Veiled insults will get you banned.<br />
+<br />
+"ANYWAY, for those of you that really do have your heads straight on your shoulders" That just saying Im dumb in other words.<br />
+<br />
+Its one thing to say I am wrong or that I that you dont think I know what I am talking about. But that was just a plain old ad-hominem attack you pulled.<br />
+<br />
+As has been explained to me, thats not allowed.<br />
+<br />
+<br />
+<br />
+Whats odd is that you ask me not to "flame" your "reseach". However the original post was actually a list of suggestions and pronouncements, not questions. And you ended the original post with this comment "There you guys go. Rip it up."<br />
+<br />
+It seems you didnt realize what you originally wrote?<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+Also I dont think you know what "pseudo" means. It means "false" or "fake". Looking at your text it appears you thought it meant "unsuccessful" ot "weak".
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57658">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57680" id="pid57680"></a>
+<div class="post " style="" id="post_57680">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-70.html"><img src="http://www.theamazonbasin.com/d2/forums/uploads/av-1049.jpg" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-70.html">FoxBat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 338<br />
+	Threads: 2<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57680.html#pid57680" title="The WoW Honor System">#7</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-24-2004, 08:49 PM <span class="post_edit" id="edited_by_57680"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57680">
+		<blockquote class="mycode_quote"><cite>Ghostiger,Oct 24 2004, 12:05 AM Wrote:</cite>Veiled insults will get you banned.</blockquote><br />
+I wish.   :rolleyes: <br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>As has been explained to me, thats not allowed.</blockquote>
+<br />
+Wonder who explained that to you.   :blink:
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57680">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.planetdiablo.com/theforge" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=70" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57681" id="pid57681"></a>
+<div class="post " style="" id="post_57681">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57681.html#pid57681" title="The WoW Honor System">#8</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-24-2004, 09:40 PM <span class="post_edit" id="edited_by_57681"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57681">
+		Griz, but it depends what you called veiled  I guess. Saxxywoo  actually made a direct personal attacl(ad-hominem attack), she just did it in a rather verbose way. I guess you could made a veiled insult with good use of irony or analogies and be just fine.<br />
+<br />
+Perhaps I should have just said personally attacks are againt the rules , and left it at that.<br />
+<br />
+No matter what you call it its clearly against the rules to belittle someones intelligence(even in cases where they make an error in logic), Griz made that clear to me.<br />
+<br />
+But on the other hand I beleive special rules apply to me because Im unpopular.
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57681">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57683" id="pid57683"></a>
+<div class="post " style="" id="post_57683">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-70.html"><img src="http://www.theamazonbasin.com/d2/forums/uploads/av-1049.jpg" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-70.html">FoxBat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 338<br />
+	Threads: 2<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57683.html#pid57683" title="The WoW Honor System">#9</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-24-2004, 10:01 PM <span class="post_edit" id="edited_by_57683"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57683">
+		<blockquote class="mycode_quote"><cite>Ghostiger,Oct 24 2004, 04:40 PM Wrote:</cite>Griz, but it depends what you called veiled&amp;nbsp; I guess. Saxxywoo&amp;nbsp; actually made a direct personal attacl(ad-hominem attack), she just did it in a rather verbose way.</blockquote><br />
+Therin lying the distinction between "direct" and "indirect."<br />
+<br />
+<blockquote class="mycode_quote"><cite>Quote:</cite>No matter what you call it its clearly against the rules to belittle someones intelligence(even in cases where they make an error in logic), Griz made that clear to me.</blockquote>
+<br />
+Geniune as Griz is, it&#39;s hard to uproot years of tradition.  Hey, you aren&#39;t that new here are you?   :P
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57683">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.planetdiablo.com/theforge" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=70" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57694" id="pid57694"></a>
+<div class="post " style="" id="post_57694">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57694.html#pid57694" title="The WoW Honor System">#10</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-25-2004, 12:10 AM <span class="post_edit" id="edited_by_57694"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57694">
+		<br />
+I fail to see the signifigance of what you are saying. If you disagree with the semantics off my using "veiled" fine - I made it clear in the last pst what I meant. But the definetion os veiled is "disguised" so I think it fit fine. It was disguised, but poorly.<br />
+<br />
+<br />
+And as far as the "years of tradition" thats a seperate issue, which I wasnt complaining about. But to be accurate we USED to be allowed to be agressive. <br />
+But rules change and I can deal with that - as long as it applies to everyone.<br />
+
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57694">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57699" id="pid57699"></a>
+<div class="post " style="" id="post_57699">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="https://www.lurkerlounge.com/forums/user-70.html"><img src="http://www.theamazonbasin.com/d2/forums/uploads/av-1049.jpg" alt=""  /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="https://www.lurkerlounge.com/forums/user-70.html">FoxBat</a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Senior Member<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 338<br />
+	Threads: 2<br />
+	Joined: Feb 2003
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57699.html#pid57699" title="The WoW Honor System">#11</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-25-2004, 12:56 AM <span class="post_edit" id="edited_by_57699"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57699">
+		<blockquote class="mycode_quote"><cite>Ghostiger,Oct 24 2004, 07:10 PM Wrote:</cite>But to be accurate we USED to be allowed to be agressive. <br />
+But rules change and I can deal with that - as long as it applies to everyone.<br />
+[right][snapback]58057[/snapback][/right]</blockquote><br />
+Guess I&#39;ve been away too long.  :blink:  But anything&#39;s possible...
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57699">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.planetdiablo.com/theforge" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=70" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57704" id="pid57704"></a>
+<div class="post " style="" id="post_57704">
+<div class="post_author">
+	
+	<div class="author_information">
+			<strong><span class="largetext">Guest</span></strong> <br />
+			<span class="smalltext">
+				Guest<br />
+				
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_guest -->
+&nbsp;
+<!-- end: postbit_author_guest -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="https://www.lurkerlounge.com/forums/thread-7771-post-57704.html#pid57704" title="The WoW Honor System">#12</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-25-2004, 01:42 AM <span class="post_edit" id="edited_by_57704"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57704">
+		Refresh your memory :)    <a href="http://www.network54.com/Forum/99199?it=5" target="_blank" rel="noopener" class="mycode_url">http://www.network54.com/Forum/99199?it=5</a><br />
+<br />
+<br />
+Gris actually told me once that things have changed now and I couldnt behave like we did back in the days of  Spiderdrake, Omega and all(yes I know both still post here.)
+	</div>
+	
+	
+	<div class="post_meta" id="post_meta_57704">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit --><!-- start: postbit -->
+
+<a name="pid57785" id="pid57785"></a>
+<div class="post " style="" id="post_57785">
+<div class="post_author">
+	<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="user-1.html"><img src="http://www.lurkerlounge.com/bolty/forumavatar3.jpg" alt="" width="70" height="70" /></a></div>
+<!-- end: postbit_avatar -->
+	<div class="author_information">
+			<strong><span class="largetext"><a href="user-1.html"><span style="color: green;"><strong><em>Bolty</em></strong></span></a></span></strong> <!-- start: postbit_offline -->
+<img src="https://www.lurkerlounge.com/forums/images/buddy_offline.png" title="Offline" alt="Offline" class="buddy_status" />
+<!-- end: postbit_offline --><br />
+			<span class="smalltext">
+				Lurking Lounger<br />
+				<img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><img src="https://www.lurkerlounge.com/forums/images/star.png" border="0" alt="*" /><br />
+				
+			</span>
+	</div>
+	<div class="author_statistics">
+		<!-- start: postbit_author_user -->
+
+	Posts: 3,476<br />
+	Threads: 542<br />
+	Joined: Apr 2010
+	
+<!-- end: postbit_author_user -->
+	</div>
+</div>
+<div class="post_content">
+	<div class="post_head">
+		<!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="thread-7771-lastpost.html#pid57785" title="The WoW Honor System">#13</a></strong>
+
+</div>
+<!-- end: postbit_posturl -->
+		
+		<span class="post_date">10-25-2004, 09:43 PM <span class="post_edit" id="edited_by_57785"></span></span>
+		
+	</div>
+	<div class="post_body scaleimages" id="pid_57785">
+		I think this thread has run its course.  Locking due to personal attacks.  Please keep the discussion on the concepts and not the posters.<br />
+<br />
+-Bolty
+	</div>
+	
+	<!-- start: postbit_signature -->
+<div class="signature scaleimages">
+<blockquote class="mycode_quote"><cite>Quote:</cite><span style="font-size: x-small;" class="mycode_size"><span style="font-style: italic;" class="mycode_i">Considering the mods here are generally liberals who seem to have a soft spot for fascism and white supremacy (despite them saying otherwise), me being perma-banned at some point is probably not out of the question.</span></span></blockquote>
+
+</div>
+<!-- end: postbit_signature -->
+	<div class="post_meta" id="post_meta_57785">
+		
+		<div class="float_right">
+			
+		</div>
+	</div>
+	
+</div>
+<div class="post_controls">
+	<div class="postbit_buttons author_buttons float_left">
+		<!-- start: postbit_www -->
+<a href="http://www.lurkerlounge.com" target="_blank" rel="noopener" title="Visit this user's website" class="postbit_website"><span>Website</span></a>
+<!-- end: postbit_www --><!-- start: postbit_find -->
+<a href="https://www.lurkerlounge.com/forums/search.php?action=finduser&amp;uid=1" title="Find all posts by this user" class="postbit_find"><span>Find</span></a>
+<!-- end: postbit_find -->
+	</div>
+	<div class="postbit_buttons post_management_buttons float_right">
+		
+	</div>
+</div>
+</div>
+<!-- end: postbit -->
+	</div>
+</td></tr>
+		<tr>
+			<td class="tfoot">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="7771" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					<strong>&laquo; <a href="https://www.lurkerlounge.com/forums/thread-7771-nextoldest.html">Next Oldest</a> | <a href="https://www.lurkerlounge.com/forums/thread-7771-nextnewest.html">Next Newest</a> &raquo;</strong>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="float_left">
+		
+	</div>
+	<div style="padding-top: 4px;" class="float_right">
+		<!-- start: showthread_newreply_closed -->
+<a href="https://www.lurkerlounge.com/forums/newreply.php?tid=7771" class="button closed_button"><span>Thread Closed</span></a>&nbsp;
+<!-- end: showthread_newreply_closed -->
+	</div>
+	<br class="clear" />
+	
+	
+	
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<!-- start: showthread_printthread -->
+<li class="printable"><a href="https://www.lurkerlounge.com/forums/printthread.php?tid=7771">View a Printable Version</a></li>
+<!-- end: showthread_printthread -->
+			
+			
+			
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="https://www.lurkerlounge.com/forums/forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="4" > The Lurker Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="12" >-- The Lounge</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >-- News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Suggestion Box</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" > Lurkers Guild</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Public Chat</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" > Lurker Games</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >-- Path of Exile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >-- Diablo III</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" selected="selected">-- World of Warcraft</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Diablo II</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" >-- Diablo</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").on('change', function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br class="clear" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing -->
+	<!-- start: footer -->
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_showteamlink -->
+<li><a href="showteam.php">Forum Team</a></li>
+<!-- end: footer_showteamlink -->
+				<!-- start: footer_contactus -->
+<li><a href="mailto:forumadmin@lurkerlounge.com">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="https://www.lurkerlounge.com">The Lurker Lounge</a></li>
+				<li><a href="thread-7771.html#top">Return to Top</a></li>
+				<li><a href="https://www.lurkerlounge.com/forums/misc.php?action=switch_version&amp;my_post_key=a298c84ec7a8a8d44e190f8c9bc94f7a">Mobile Version</a></li>
+				<li><a href="misc.php?action=markread">Mark all forums read</a></li>
+				<li><a href="misc.php?action=syndication">RSS Syndication</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="current_time"><strong>Current time:</strong> 04-06-2023, 05:51 PM</span>
+			<span id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community.
+					It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact,
+					to show your support for MyBB.  If you choose to remove or modify the copyright below,
+					you may be refused support on the MyBB Community Forums.
+
+					This is free software, support us and we'll support you. -->
+				Powered By <a href="https://mybb.com" target="_blank" rel="noopener">MyBB</a>, &copy; 2002-2023 <a href="https://mybb.com" target="_blank" rel="noopener">MyBB Group</a>.
+				<!-- End powered by -->
+			</span>
+		</div>
+	</div>
+</div>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+</div>
+<!-- end: footer -->
+	<div id="thread_modes_popup" class="popup_menu" style="display: none;"><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=linear&amp;tid=7771&amp;pid=57430#pid57430" class="popup_item">Linear Mode</a></div><div class="popup_item_container"><a href="https://www.lurkerlounge.com/forums/showthread.php?mode=threaded&amp;tid=7771&amp;pid=57430#pid57430" class="popup_item">Threaded Mode</a></div></div>
+	<script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		var thread_deleted = "";
+		if(thread_deleted == "1")
+		{
+			$("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+			$("#moderator_options_selector option.option_mirage").attr("disabled","disabled");
+		}
+	</script>
+</body>
+</html>
+<!-- end: showthread -->
