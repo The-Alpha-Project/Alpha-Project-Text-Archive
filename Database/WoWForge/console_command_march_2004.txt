@@ -1,0 +1,976 @@
+=============================================================================
+                        Guide to WoW Console Commands
+
+http://www.wowforge.net
+=============================================================================
+
+
+=========================
+   Keyboard Shortcut List:
+=========================
+
+
+Ctrl+Y - Displays current player statistics.
+Ctrl+R - Displays current FPS.
+ Alt+P - Displays graphic rendering statistics.
+ Alt+B - Displays player movement boundaries.
+
+======================================
+   CombatDebugForceAction Variables:
+======================================
+
+0 ALWAYSBLOCK
+1 ALWAYSPARRY
+2 ALWAYSDODGE
+3 ALWAYSCRIT
+4 ALWAYSSPELLCRIT
+5 ALWAYSPROC
+6 ALWAYSCOMBATSTUN
+7 ALWAYSHIT
+8 ALWAYSSPELLHIT
+9 ALWAYSMISS
+10 ALWAYSSPELLMISS
+11 ALWAYSATTEMPTDUALWIELD
+12 ALWAYSSPELLINTERRUPT
+13 NEVERSPELLINTERRUPT
+14 ALWAYSIMMUNE
+15 DEBUGCOMBAT_NEVERDODGEMELEE
+16 DEBUGCOMBAT_NEVERPARRYMELEE
+17 DEBUGCOMBAT_NEVERBLOCKMELEE
+
+   Description: CombatForceDebugAction is used to make a target act in a way you request.
+
+ - CombatDebugForceActionOn
+   --> Usage: combatdebugforceactionon <x> <0 or 1>
+       Note: <x> is one of the variables above.
+
+ - CombatDebugForceActionOff
+   --> Usage: combatdebugforceactionoff <x> <0 or 1>
+       Note: <x> is one of the variables above.
+
+ - CombatDebugForceActionOtherOn
+   --> Usage: combatdebugforceactionotheron <x> <0 or 1>
+       Note: <x> is one of the variables above.
+
+ - CombatDebugForceActionOtherOff
+   --> Usage: combatdebugforceactionotheroff <x> <0 or 1>
+       Note: <x> is one of the variables above.
+
+ - CombatDebugShowFlags
+
+   
+=========================
+   Debug Command List:
+=========================
+
+ - Bug
+ - Suggestion
+ - Note
+ - SndDebugPingSound
+ - SndDebugRoomType
+ - env
+
+ - envlist
+   --> Description: Lists all currently playing environmental sounds.
+
+ - nuke
+   --> Description: Ban a user from the current server.
+
+ - enumTextures
+ - enumTextureGxCache
+
+ - ghost
+   --> Description: Watch a player.
+
+ - zoneintroreset
+   --> Description: Replays current zone introduction.
+
+ - invite
+   --> Description: Invites a player to join your current group.
+
+ - PLightInfo
+   --> Usage: plightinfo <index>
+
+ - PLightEnable
+ - PLightOmni
+
+ - PLightDirPos
+   --> Usage: plightdirpos <index> <x> <y> <z>
+
+ - PLightAmbColor
+   --> Usage: plightambcolor <index> <r> <g> <b>
+
+ - PLightDirColor
+   --> Usage: plightdircolor <index> <r> <g> <b>
+
+ - PLightAmbIntens
+   --> Usage: plightambintens <index> <number>
+
+ - PLightDirIntens
+   --> Usage: plightdirintens <index> <number>
+
+ - cameraClip
+
+ - SeeIfWorldFrameSucks
+   --> Description: Let Jeff know dammit! Nukes away!
+
+ - learn 
+   --> Usage: learn <spell>
+       Or type 'learn -1' for all spells.
+
+ - cooldown 
+   --> Toggles cooldowns.
+
+ - cooldownPet
+   --> Toggles pet cooldowns.
+
+ - useskill
+   -->  Usage: useskill <skillname>
+        Description: Simulate usage of a spell without actually casting, to test skill rank-ups.
+
+ - setskill
+   --> Usage: setskill <level> <skill line name>
+       Description: Manually set a skills level.
+
+ - bootme
+
+ - levelup
+   --> Description: Automatica character level-up.
+
+ - setfaction
+   --> Usage: setfaction <level> <faction name>
+       Description: Manually set your faction. (Alliance / Horde)
+
+ - pet
+   --> Description: Tells you the GUID of your current pet.
+
+ - TaxiShowNodes
+   --> Description: Shows you all available taxi nodes.
+
+ - cinematic
+   --> Description: Start an in game cinematic.
+
+ - forceanim
+   --> Description: Force a monster animation.
+
+ - rese
+   --> Description: Resurrects your current character.
+
+ - whois
+   --> Usage: whois <accountname>
+       Description:  Ask the server to do an account/real name lookup on a character name.
+
+ - rwhois
+ - dtime
+ - time
+ - gametime
+
+ - localtime
+   --> Usage: localtime <1-24>
+       Description: Sets the in-game time. Typing localtime 3 will make it very dark, while localtime 12 will make it noon.
+
+ - spawntime
+   --> Description: Tells the server how frequently to spawn mobs.
+
+ - loc
+
+ - dloc
+   --> Description: Tells you the x,y,z co-ordinates you are currently standing in.
+
+ - facing
+
+ - dfacing
+   --> Description: Tells you the angle in degrees you are currently facing.
+
+ - showbounds
+   --> Description: Shows the character bounds. (Newbie translation: Ooh! A bubble!)
+
+ - tloc
+   --> Description: Tells you the targets x,y,z co-ordinates.
+
+ - TerminalVelocity
+   --> Usage: TerminalVelocity <1-100>
+       Description: Similar to gravity. Setting this to 1 allow you to "fly", while setting it high will treat you like a stone.
+
+ - speed
+   --> Usage: speed <1-60>
+       Description: Increases the game accordingly. Recommended: 50.
+
+ - walkspeed
+   --> Usage: walkspeed <1-60>
+       Description: Increases your walk speed accordingly. Recommended: 50
+
+ - swimspeed
+   --> Usage: swimspeed <1-60>
+       Description: Increases your swim. Recommended: 60.
+
+ - turnspeed
+   --> Usage: turnspeed <1-60>
+       Description: Increases your turn speed. Recommended: Default.
+
+ - port
+
+ - worldport
+   --> Usage: worldport <continentID> <x y z> <facing>
+       Example: 
+       Description: Warps you to the specified location / continent.
+
+ - money
+   --> Usage: money <copper>
+       Description: Instantly become rich using this console command.
+
+ - db
+   --> Usage: TableName <Name or #ID> 
+       Note:Wildcard use * in TableName or Name not ID though.
+       Description: Select a table from the database.
+
+ - drawlog
+ - animlog
+
+ - beastmaster
+   --> Description: Beastmaster allows you to walk freely around the world without having monsters attack you.
+
+ - sendevent
+ - mem
+
+ - level
+   --> Usage: level <level>
+       Description: Manually enter your level.
+
+ - petlevel
+   --> Usage: petlevel <level>
+       Description: Manually enter your pets level.
+
+ - clearquest
+   --> Description:
+
+ - flagquest
+
+ - TaxiClearAllNodes
+   --> Description: Disables all Taxi Nodes as viable forms of transportation.
+
+ - TaxiEnableAllNodes
+   --> Description: Enables all Taxi Nodes as viable forms of transportation.
+
+ - ChangeCellZone
+
+ - finishquest
+   --> Usage: finishquest <questID>
+       Description: Automatically mark your quest as completed.
+
+ - cameratarget
+
+ - questquery
+   --> Usage: questquery <questgiver> <questID>
+       Description: Automatically attain a quest.
+
+ - questaccept
+   --> Usage: questaccept <questgiver> <questID>
+       Description: Accept the proposed quest.
+  
+ - questcomplete
+   --> Usage: questcomplete <questgiver> <questID>
+       Description: Automatically complete specified quest.
+
+ - questcancel
+   --> Usage: questcancel <questgiver> <questID>
+       Description: Automatically accept the proposed quest.
+
+ - reclaim
+   --> Usage: reclaim <corpseGUID>
+       Description: Reclaim the specified body.
+   
+ - buyspell
+   --> Usage: buyspell <trainer> <spellID>
+       Description: Buy specified spell from specified trainer.
+
+ - sellitem
+   --> Usage: sellitem <merchant> <item>
+       Description: Sell specified item to desired merchant.
+
+ - buyitem
+   --> Usage: buyitem <merchant> <muID> <quantity> 
+       Description: Buy specified item from specified merchant.
+
+ - buyiteminslot
+   --> Usage: buyiteminslot <merchant> <muID> <container> <quantity>
+       Description: Buy an item in the specified slot.
+
+ - SndDebugDumpChunk
+ - SndDebugShowCurrentChunk
+ - SndDebugSetChunkProperty
+ - SndDebugSetCurrentChunk
+ - SndDebugCreateChunk
+ - SndDebugListChunks
+
+=======================
+   Game Command List:
+=======================
+
+ - HeapUsage
+   --> Description: Displays a list of the heaps in use.
+
+ - ObjUsage
+   --> Description: Displays the object manager list status.
+
+ - newleader
+   --> Description: Sets a new leader in your current group.
+
+ - lootmethod
+   --> Usage: lootmethod <method>
+       Description: Toggles your loot method between freeforall / roundrobin / master.
+
+ - cast
+   --> Usage: cast <skillname>
+       Description: Cast a spell.
+
+ - cancelaura
+   --> Usage: cancelaura <index>
+       Description: Cancels an aura given the aura's index, not auraID.
+
+ - spellstring
+   --> Usage: spellstring <string>
+       Description: Opens up an edit box for the specificed spell.
+
+ - playercombatlogdebug
+   --> Usage: playercombatlogdebug <0-1>
+       Description: Toggles combat logging on/off.
+
+ - invite
+   --> Usage: invite <player>
+       Description: Invites a player to join your group.
+
+ - accept
+   --> Description: Accepts the group invitation.
+
+ - decline
+   --> Description: Declines the group invitation.
+
+ - disband
+   --> Description: Disband your current group (Must be group leader).
+
+ - uninvite
+   --> Usage: uninvite <player>
+       Description: Remove a member from your group (Must be group leader).
+
+ - repopme
+   --> Usage: repopme <0-1>
+       Description: Repops you when you're dead.
+
+ - who
+   --> Description: Displays a list of the other users on the server.
+
+ - undressme
+   --> Description: Strips your character of all of its equipment.
+
+ - godmode
+   --> Description: Makes you invulnerable to all elements in the world.
+
+ - acceptres
+   --> Description: Accept resurrection request.
+
+ - declineres
+   --> Description: Decline resurrection request.
+
+ - guildcreate
+   --> Usage: guildcreate <name>
+       Description: Creates a guild.
+
+ - TogglePVP
+   --> Description: Toggles PvP on current server.
+
+ - friends
+   --> Description: Displays your current friends list.
+
+ - addfriend
+   --> Usage: addfriend <name>
+       Description: Adds specified friend to your friends list.
+
+ - removefriend
+   --> Usage: removefriend <name>
+       Description: Removes specified friend from your friends list.
+
+ - trade
+ - addtradeitem
+ - cleartradeitem
+ - cleartrade 
+ - accepttrade
+ - canceltrade
+ - showtrade
+ - tradegold
+ - unaccepttrade
+ - ci
+ - cm
+ - cgo
+ - dm
+ - save
+
+ - deathbind
+   --> Usage: deathbind <bindstoneid>
+       Description: Binds you to the inputted bindstoneID.
+
+ - recharge
+   --> Description: Instantly fully heal yourself.
+
+ - played
+
+===========================
+   Graphics Command List:
+===========================
+
+ - gxRestart
+   --> Description: Restart the graphics engine.
+
+ - reloadUI
+   --> Description: Reloads the user interface.
+
+ - light
+   --> Usage: light <0-1>
+       Description: Toggles light on/off.
+
+ - fog
+   --> Usage: fog <0-1>
+       Description: Toggles fog on/off.
+
+ - DepthTest
+   --> Usage: depthtest <0-1>
+       Description: Toggles depthtest on/off.
+
+ - DepthSet
+   --> Usage: depthset <0-1>
+       Description: Toggles depthwriting on/off.
+
+ - culling
+   --> Usage: culling <0-1>
+       Description: Toggles backface culling on/off.
+
+ - dblbuffer
+   --> Usage: dblbuffer <0-1>
+       Description: Toggles double buffering on/off.
+
+ - resxy
+   --> Usage: resxy <x> <y>
+       Description: Sets the screen resolution to x by y pixels. If no parameters are given, the current resolution will be displayed.
+
+ - resmode
+   --> Usage: resmode <1-3>
+       Description: Sets the screen resolution mode x, which is a number from 0 to 3. If no parameter is given, the possible modes will be displayed.
+
+ - bitdepth
+   --> Usage: bitdepth <16 or 32>
+       Description: Sets the color depth 16 or 32 bits.  If no parameter is given, the current color depth will be displayed.
+
+ - 3dapi
+   --> Usage: resmode <OpenGL or Direc3d>
+       Description: 3dapi toggles the 3D API between OpenGL and Direct3D.  Changes won't take effect until the game is restarted.
+
+ - showDetailDoodads
+   --> Usage: showdetaildoodads <0-1>
+       Description: Toggles the showing of detailing doodads (grass, flowers) on/off.
+
+ - maxLOD
+   --> Usage: maxLOD <0-10>
+       Description: Set the maximum land shape value.
+
+ - showCull
+   --> Usage: maxLOD <0-1>
+       Description: Toggle culling on/off.
+
+ - setShadow 
+   --> Usage: setShadow <0-1>
+       Description: Shadow colors must be in range (0.0,1.0).
+
+ - mapObjLightMode
+   --> Description: Toggle between vertex light / lightmaps.
+
+ - waterShow \
+              > Both do the same.
+ - showWater /
+   --> Usage: watershow <0-1>
+       Description: Toggles viewing water on/off.
+
+ - waterMaxLOD
+   --> Usage: maxLOD <0-10>
+       Description: Set the maximum water shape value.
+
+ - waterWaves
+   --> Usage: waterwaves <0-1>
+       Description: Toggles water waves on/off.
+
+ - waterSpecular
+   --> Usage: waterspecular <0-1>
+       Description: Toggles water specularity on/off.
+
+ - waterRipples
+   --> Usage: waterripples <0-1>
+       Description: Toggles water ripples on/off.
+
+ - waterParticulates
+   --> Usage: waterparticulates <0-1>
+       Description: Toggles water particulates on/off.
+
+ - showShadow
+   --> Usage: showshadow <0-1>
+       Description: Toggles terrain shadows on/off.
+
+ - showLowDetail
+   --> Usage: showlowdetail <0-1>
+       Description: Toggles showing low detail on/off.
+
+ - showSimpleDoodads
+   --> Usage: showsimpledoodads <0-1>
+       Description: Toggles showing "simple" doodads on/off.
+
+ - detailDoodadAlpha
+   --> Usage: showsimpledoodads <0-255> 
+       Description: Set the doodad alpha level.
+       *** Lower is better.
+
+ - shadowLOD
+   --> Usage: shadowlod <0-1> 
+       Description: Set the shadow LOD.
+
+ - showplayer
+   --> Usage: showplayer <0-1> 
+       Description: Toggles showing your character on/off.
+
+ - motionBlend
+   --> Usage: motionblend <0-1> 
+       Description: Toggles motion blending on/off.
+
+ - SkyCloudLayers
+   --> Usage: skycloudlayers <0.0-1.0> 
+       Description: Set the sky cloud layers.
+
+ - SkyCloudDensity
+   --> Usage: skycloudlayers <0.0-1.0> 
+       Description: Set the sky cloud density.
+
+ - SkySunGlare
+   --> Usage: skysunglare <0-1> 
+       Description: Toggles sun glare on/off.
+
+ - SkyShow
+   --> Usage: skyshow <0-1> 
+       Description: Toggles sky on/off.
+
+===========================
+   Console Command List:
+===========================
+
+ - run
+   --> Description: Runs a wtf file from the wtf folder.
+
+ - new
+   --> Description: Starts recording a new script.
+
+ - append
+   --> Description: Adds command to the end of an existing wtf file.
+
+ - end
+   --> Description: Stops recording a new script.
+
+ - type
+   --> Usage: type <filename>
+       Description: Types the script to the console.
+
+ - dirwtf
+   --> Description: Lists the wtf files.
+
+ - fontcolor
+   --> Usage: fontcolor <colorclassname> <red 0-255> <green 0-255> <blue 0-255>
+       Description: Change the console font color.
+
+ - bgcolor
+   --> Usage: bgcolor <alpha 0-255> <red 0-255> <green 0-255> <blue 0-255>
+       Description: Change the console background color.
+
+ - highlightcolor
+   --> Usage: highlightcolor <alpha 0-255> <red 0-255> <green 0-255> <blue 0-255>
+       Description: Change the highlighted text color.
+
+ - fontsize
+   --> Usage: fontsize <15-50>
+       Description: Set the console font size.
+
+ - font
+   --> Usage: font <fontname>
+       Description: Set the console font face, be sure to use the .ttf file name.
+
+ - consolelines
+   --> Usage: consolelines <0-100>
+       Description: Set the console viewscreen size. This is also do-able by clicking the bottom of the console and dragging it to a desired size.
+
+ - clear
+   --> Description: Clears all text in the console window.
+
+ - proportionaltext
+   --> Description: Makes the text proportional, example below.
+       Example: Test Text = T  e  s  t    T  e  x  t
+
+ - spacing
+   --> Usage: spacing <size>
+       Description: Sets the spacing between text in pixels.
+
+ - settings
+   --> Usage: settings <0-1>
+       Description: Returns information about the console.
+
+ - default
+   --> Description: Returns console preferences to their default values.
+
+ - closeconsole
+   --> Description: Closes the console.
+
+=============================
+   Default Command List:
+=============================
+
+ - help
+   --> Usage: help <topic>
+       Description: Displays help information about the requested category.
+
+ - quit
+   --> Description: Exits the program to desktop.
+
+ - ver
+   --> Description: Displays the current version and build date.
+
+ - set
+   --> Usage: set <variable> <value>
+       Description: Sets a variable to the defined value.
+
+ - cvar_reset
+   --> Usage: cvar_reset <cvar>
+       Description: Sets the value of a CVar to it's startup value.
+
+ - cvar_default
+   --> Description: Sets the value of a CVar to it's color coded default value.
+
+ - cvarlist
+   --> Description: Lists every CVar.
+
+ - gxColorBits
+   --> Usage: gxcolorbits <16, 24, or 30>
+              gxrestart
+       Description: Sets the color bits to be used.
+
+ - gxDepthBits
+   --> Usage: gxdepthbits <16, 24, or 32>
+              gxrestart
+       Description: Sets the color depth to be used.
+
+ - gxResolution
+   --> Usage: gxresolution <resolution>
+              gxrestart
+       Example: gxresolution 1024x768
+                gxrestart
+       Description: Sets the color depth to be used.
+
+ - gxRefresh
+   --> Usage: gxrefresh <refreshrate>
+              gxrestart
+       Description: Sets the refresh rate.
+       Note: Must be one of 60, 70, 72, 75, 85, 90, 100, 120, 160, 180, 200.
+
+ - gxApi
+   --> Usage: gxapi <api>
+              gxrestart
+       Description: Sets the 3d api to render.
+       Note: Must be either Direct3d, OpenGL.
+
+ - gxVSync
+   --> Usage: gxvsync <0-1>
+              gxrestart
+       Description: Toggles vertical sync on/off.
+
+ - gxWindow
+   --> Usage: gxwindow <0-1>
+              gxrestart
+       Description: Toggles windowed mode on/off.
+
+ - hwDetect
+   --> Usage: hwdetect <0-1>
+       Description: Toggles hardware detection on/off.
+
+ - lod
+   --> Usage: lod <0-1>
+       Description: Toggles land smoothing on/off.
+
+ - fullAlpha
+   --> Usage: fullalpha <0-1>
+       Description: Toggles full alpha on doodads on/off.
+
+ - doodadAnim
+   --> Usage: doodadanim <0-1>
+       Description: Toggles doodad animation on/off.
+
+ - mapShadows
+   --> Usage: mapshadows <0-1>
+       Description: Toggles terrain shadows on/off.
+
+ - lightMaps
+   --> Description: Always returns (null).
+
+ - lodDist
+   --> Usage: loddist <50-250>
+       Description: Sets the land smoothing maximum distance from player in feet.
+
+ - SmallCull
+   --> Usage: smallcull <0.001-2.0>
+       Description: Sets the doodad culling level.
+
+ - DistCull
+   --> Usage: distcull <1.0-888.888916>
+       Description: Sets the doodad culling level.
+
+ - MaxLights
+   --> Usage: maxlights <0-8>
+       Description: Sets the maximum number of simultaenous light sources.
+
+ - shadowLevel
+   --> Usage: shadowlevel <0-1>
+       Description: Toggles the shadow mip level on/off.
+
+ - alphaLevel
+   --> Usage: alphalevel <0-1>
+       Description: Toggles the alpha mip level on/off.
+
+ - texLodBias
+   --> Usage: textlodbias <-1.0 - 1.0>
+       Description: Unknown.
+
+ - trilinear
+   --> Usage: trilinear <0-1>
+       Description: Toggles trilinear filtering on/off.
+
+ - detailDensity
+   --> Usage: detaildensity <1-128>
+       Description: Sets doodad density levels.
+
+ - farclip
+   --> Usage: farclip <177-777>
+       Description: Sets the maximum distance you can see.
+
+ - nearclip
+   --> Usage: nearclip <177-777>
+       Description: Sets the maximum distance you can see.
+
+ - fov
+   --> Usage: fov <1-179>
+       Description: Sets your characters field of view.
+
+ - specular
+   --> Usage: specular <0-1>
+       Description: Toggles specular shading on/off.
+
+ - pixelShaders
+   --> Usage: pixelshaders <0-1>
+       Description: Toggles pixel shading shading on/off.
+
+ - particleDensity
+   --> Usage: particledensity <0.3-1>
+       Description: Sets particle density level.
+
+ - unitDrawDist 
+   --> Usage: unitdrawdist <20-150>
+       Description: Sets the unit draw maximum distance.
+
+
+ - waterLOD
+   --> Usage: waterlod <0-1>
+       Description: Toggles water smoothing effects on/off.
+
+ - baseMip
+   --> Usage: basemip <0-1>
+       Description: Toggles basemip on/off.
+
+ - anisotropic
+   --> Usage: anisotropic <1-16>
+       Description: Sets "anisotropic" filtering level.
+
+ - textureLodDist
+   --> Usage: textureloddist <80-777>
+       Description: Sets the maximum distance for the game to texture.
+
+ - ErrorFileLog
+
+ - Errors
+   --> Usage: errors <0-1>
+       Description: Toggles error display on/off.
+
+ - ErrorLevelMin
+ - ErrorLevelMax
+
+ - ErrorFilter
+   --> Usage: errorfilter <filter>
+       Filters: general / world / ui / animation / models / objects / all
+       Note: Use "except" to invert mask.
+
+ - debugTargetInfo
+   --> Usage: debugtargetinfo <0-1>
+       Description: Toggles displaying target debugging information tooltips on/off.
+
+ - showGUIDs
+   --> Usage: showguids <0-1>
+       Description: Toggles displaying GUID tooltips on/off.
+
+ - DesktopGamma
+ - Gamma
+
+ - realmName
+   --> Description: Displays the realm name.
+
+ - realmAddress
+   --> Description: Displays the realm address.
+
+ - profanityFilter
+   --> Usage: profanityfilter <0-1>
+       Description: Toggles the builtin profanity filter on/off.
+
+ - SoundOutputSystem
+ - SoundDriver
+ - SoundMixer
+ - SoundBufferSize
+ - SoundMinHardwareChannels
+ - SoundMixRate
+ - SoundSoftwareChannels
+ - SoundInitFlags
+ - SoundMemoryCache
+ - Music
+ - MasterVolume
+ - MasterSoundEffects
+
+ - EnableMusic
+   --> Usage: enablemusic <0-1>
+       Description: Toggles enabling music on/off.
+
+ - EnableSound
+   --> Usage: enablesound <0-1>
+       Description: Toggles enabling sound on/off.
+
+ - realmList
+   --> Description: Shows a list of all current realms.
+
+ - Joystick
+
+ - mouseInvertYaw
+   --> Usage: mouseinvertyaw <0-1>
+       Description: Toggles mouse inversion on/off.
+
+ - mouseInvertPitch
+   --> Usage: mouseinvertpitch <0-100>
+       Description: Sets mouse inversion pitch level.
+
+ - camerasmooth
+ - cameraSmoothingRate
+ - cameraLinearSpeed
+ - cameraAngularSpeed
+ - cameraAngleA
+ - cameraDistanceA
+ - cameraAngleB
+ - cameraDirection
+ - cameraAngleC
+ - cameraDistanceC
+ - cameraAngleD
+ - cameraDistanceD
+
+ - EnableGroupSpeech
+   --> Usage: enablesound <0-1>
+       Description: Toggles enabling hearing group speech on/off.
+
+ - EnableErrorSpeech
+   --> Usage: enableerrorspeech <0-1>
+       Description: Toggles enabling error sounds on/off.
+
+ - AmbienceVolume
+
+ - EnableAmbience
+   --> Usage: enableambience <0-1>
+       Description: Toggles enabling ambience sounds on/off.
+
+ - MapWaterSounds
+   --> Usage: mapwatersounds <0-1>
+       Description: Toggles enabling water sounds on/off.
+
+ - statusBarText
+   --> Usage: statusbartext <0-1>
+       Description: Toggles status bar text on/off.
+
+ - assistAttack
+ - minimapZoom
+ - minimapInsideZoom
+
+ - combatLogOn
+   --> Usage: combatlogon <0-1>
+       Description: Toggles combat logging on/off.
+
+ - PlayerFadeMouseOver
+ - PlayerFadeInRate
+ - PlayerFadeOutRate
+ - PlayerFadeOutAlpha
+ - DamageFontHeight
+ - DamageFontOutline
+ - DamageFontFadeInTime
+ - DamageFontTotalTime
+ - DamageFontConeAngle 
+
+ - showsmartrects
+   --> Usage: showsmartrects <0-1>
+       Description: Toggles showing "smart" rectangles on/off.
+
+ - UnitNameRenderMode
+ - UnitNamePlayerName
+ - UnitNamePlayerGuild
+ - UnitNamePlayerTitle
+ - UnitName
+ - UnitNameUnitTitle
+ - UnitNameUnitSummonedBy
+
+ - weapontrails
+   --> Usage: showsmartrects <0-1>
+       Description: Toggles weapon trails on/off.
+
+ - ObjectSelectionCircle
+   --> Usage: showsmartrects <0-1>
+       Description: Toggles the object selection circle or not. Turning it off will be confusing.
+
+ - DebugTargetPath
+
+ - FootstepSounds
+   --> Usage: footstepsounds <0-1>
+       Description: Toggles playing footstep sounds on/off.
+
+ - CombatLogRange
+ - CombatDeathLogRange
+ - CombatLogPeriodicSpells
+
+ - showfootprints
+   --> Usage: showfootprints <0-1>
+       Description: Toggles showing footprints on/off.
+
+ - showfootprintparticles
+   --> Usage: showfootprintparticles <0-1>
+       Description: Toggles showing footprints particulates on/off.
+
+ - ShowBreath
+   --> Usage: showbreath <0-1>
+       Description: Toggles showing characters breath on/off.
+
+ - violenceLevel
+   --> Usage: violencelevel <0-5>
+       Description: Sets the violence level.
+
+ - SkyCloudLOD
+   --> Usage: skycloudlod <0-1>
+       Description: Toggles sky texture effects/smoothing on/off.
+
+ - logout
+   --> Description: Logs you out of the current realm.
+
+ - script
+   --> Usage: script <scriptname.wtf>
+       Description: Executes the specifed wtf file on the client.
+
+
+=============================================================================
