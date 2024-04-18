@@ -1,0 +1,22 @@
+<br />
+<b>Warning</b>:  mysql_connect(): Too many connections in <b>/home/ogaming/public_html/wow/forum/sources/Drivers/mySQL.php</b> on line <b>67</b><br />
+<br />
+<b>Warning</b>:  mysql_select_db(): supplied argument is not a valid MySQL-Link resource in <b>/home/ogaming/public_html/wow/forum/sources/Drivers/mySQL.php</b> on line <b>70</b><br />
+ERROR: Cannot find database ogaming_wow<br />
+<b>Warning</b>:  mysql_query(): supplied argument is not a valid MySQL-Link resource in <b>/home/ogaming/public_html/wow/forum/sources/Drivers/mySQL.php</b> on line <b>103</b><br />
+<html><head><title>Invision Power Board Database Error</title>
+    		   <style>P,BODY{ font-family:arial,sans-serif; font-size:11px; }</style></head><body>
+    		   &nbsp;<br><br><blockquote><b>There appears to be an error with the World of Warcraft OGaming Forum database.</b><br>
+    		   You can try to refresh the page by clicking <a href="javascript:window.location=window.location;">here</a>, if this
+    		   does not fix the error, you can contact the board administrator by clicking <a href='mailto:wow?subject=SQL+Error'>here</a>
+    		   <br><br><b>Error Returned</b><br>
+    		   <form name='mysql'><textarea rows="15" cols="60">mySQL query error: SELECT t.*, f.topic_mm_id, f.name as forum_name, f.quick_reply, f.id as forum_id, f.read_perms, f.reply_perms, f.parent_id, f.use_html,
+                       f.start_perms, f.allow_poll, f.password, f.posts as forum_posts, f.topics as forum_topics, f.upload_perms,
+                       f.show_rules, f.rules_text, f.rules_title,
+                       c.name as cat_name, c.id as cat_id
+                       FROM ibf_topics t, ibf_forums f , ibf_categories c
+                       WHERE t.tid=3649 and f.id = t.forum_id and f.category=c.id
+
+mySQL error: Too many connections
+mySQL error code: 
+Date: Sunday 24th of October 2004 06:18:09 PM</textarea></form><br>We apologise for any inconvenience</blockquote></body></html>
