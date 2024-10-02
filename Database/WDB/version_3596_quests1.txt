@@ -1,0 +1,514 @@
+ID: 456
+Title: The Balance of Nature
+Objective: Kill 5 Young Nightsabers and 3 Young Thistle Boars and return to Conservator Ilthalaine.
+Description: Greetings, $N.  I am Conservator Ilthalaine.  My purpose in Shadowglen is to ensure that the balance of nature is maintained.$b$bThe spring rains were particularly heavy this year, causing some of the forest's beasts to flourish while others suffered.$b$bUnfortunately, the nightsaber and thistle boar populations grew too large.  Shadowglen can only produce so much food for the beasts.  Journey forth, young $c, and thin the boar and saber populations so that nature's harmony will be preserved.
+
+
+ID: 457
+Title: The Balance of Nature
+Objective: Conservator Ilthalaine needs you to kill 4 Mangy Nightsabers and 4 Thistle Boars.
+Description: Thinning the younger population of creatures here in Shadowglen was a good start, $N, but there is still work to be done.$b$bThe resources of the forest will be depleted too quickly if the problem is not addressed.  Killing nature's beasts is a necessary evil for the good of all who share the land.  Venture into the forest and slay mangy nightsabers and thistle boars in the name of balance.
+
+
+ID: 458
+Title: The Woodland Protector
+Objective: Seek out the dryad known as Tarindrella.
+Description: Thank goodness you are here, $c. Strange news has traveled to me through the whisperings of the forest spirits.$b$bThe mysterious woodland protector, Tarindrella, has returned to Shadowglen. The dryad's presence has not been felt in the forests of Kalimdor in years. Something is surely amiss if she has journeyed back to this land.$b$bSeek out Tarindrella and see what business she tends to in our grove. One of the Sentinels reported seeing her to the west of Aldrassil.
+
+
+ID: 459
+Title: The Woodland Protector
+Objective: Collect 6 Fel Moss and bring them to Tarindrella.
+Description: Something evil is brewing in the forests of Teldrassil.  Look yonder to where the peaceful furbolgs used to dwell.  They have deserted their homes and are amassing under the name of the Gnarlpine tribe.$b$bOnly the corruption of wicked Fel Moss could cause such a transformation.  The grells and grelkin have infested the area and are threatening the residents of Shadowglen.  $b$bEngage these grells and grelkin, $N, and see if they are indeed caught under the enchanment of the wicked Fel Moss.
+
+
+ID: 2159
+Title: <NYI> Dolanaar Delivery
+Objective: Bring the Dolanaar Delivery to Melarith.
+Description: Greetings, young $c.  Can you offer me aid?  I have a package of herbs that I must deliver to the town of Dolanaar.  But I still have business with the druids of Shadowglen and cannot yet leave.$B$BCan you deliver this package for me?  It must be sent to Melarith, at the Dolanaar inn.  It lies along the road, to the south.
+
+
+ID: 488
+Title: Zenn's Bidding
+Objective: Bring Zenn Foulhoof outside of Dolanaar 3 Nightsaber Fangs, 3 Strigid Owl Feathers and 3 swatches of Webwood Spider Silk.
+Description: Eager for work, I see.  Lucky for you a day never goes by that I don't wish I had a fledgling $c to perform my bidding.$b$bYou see, $N, I can make you very happy and provide you with things you never dreamed of having.  But in order for that to happen you must bring me certain items.$b$bMy business in the forest often requires certain. . .reagents.  Fetch for me 3 Nightsaber Fangs, 3 Strigid Owl Feathers and 3 swatches of Webwood Spider Silk.$b$bLet's keep this our little secret, $r.
+
+
+ID: 475
+Title: A Troubling Breeze
+Objective: Seek out Gaerloas Talvethren in Starbreeze Village.
+Description: A troubling breeze blows through the forest.$b$bGaerolas Talvethren serves as Great Warden to the hibernating Druids of the Talon in the Ban'ethil Barrow Den.  His duty as the chosen protector of the Sleeping is to ensure their safety so that their pact with Ysera remains fulfilled.$b$bBut word from Gaerolas is now delayed and I grow nervous.  Travel east to Starbreeze Village and bring back a report from Gaerolas so that I can put my worries to rest, knowing my dreaming brethren slumber safely.
+
+
+ID: 476
+Title: Gnarlpine Corruption
+Objective: Return to Athridas Bearmantle in Dolanaar.
+Description: The Gnarlpine tribe has been corrupted!$b$bThe once peaceful furbolgs have turned against the protectors of the forest.  They ambushed me as I left for the Ban'ethil Barrow Den and proceeded to pillage Starbreeze Village.  Ursal the Mauler, their chieftain, is using the evil powers of the Fel Moss to drive them mad.$b$bI am too wounded to return to Athridas to bring him this grave news.  The task is left to you, young $c.  We can only hope that the deranged Gnarlpines have not made it to Ban'ethil yet!
+
+
+ID: 483
+Title: The Relics of Wakening
+Objective: Retrieve the Relics of Wakening and bring them to Athridas Bearmantle in Dolanaar.
+Description: Gnarlpine invaders were seen ravaging the Ban'ethil Barrow Den to the west.$b$bThe slumbering druids will be trapped in the Emerald Dream for eternity, unaware of their fate, unless we help. The delicate hibernation ritual cannot be broken without the Relics of Wakening.$b$bJourney to the Den and retrieve the Raven Claw Talisman, Black Feather Quill, Sapphire of Sky, and Rune of Nesting. The druids store them in sacred chests.  Return them to me and I will prepare the awakening ritual.
+
+
+ID: 997
+Title: Denalan's Earth
+Objective: Bring the package of Rare Earth to Denalan at Lake Al'Ameth.
+Description: Are you heading to the south?  To Lake Al'Ameth?  If so, then I have a task I might ask of you...$B$BMy colleage Denalan has a camp along the eastern end of the lake, where he is studying and experimenting on the plant life of Teldrassil.  He requested a package of rare earths from Darnassus and it was late, only recently arriving here in Dolanaar.$B$BCan you take him the package?
+
+
+ID: 489
+Title: Seek Redemption!
+Objective: Collect 3 Fel Cones and give them to Zenn Foulhoof outside of Dolanaar.
+Description: The Council of the Forest has news that you aided Zenn Foulhoof.  The foul satyr is an enemy of the forest.  As a $r, you should know better than to defile the forest by killing Nature's precious creatures.$b$bYou must redeem yourself in the eyes of the Council if you wish to remain a friend of Teldrassil.$b$bTeach Foulhoof a lesson and you shall be redeemed.  Fel Cones are corrupted seeds that fall from the trees.  Give 3 Fel Cones to Foulhoof who will think you have brought him a harmless snack.
+
+
+ID: 487
+Title: The Road to Darnassus
+Objective: Slay 6 Gnarlpine Ambushers and return to Sentinel Amara Nightwalker outside of Dolanaar.
+Description: The road to Darnassus must be kept safe.  Travelers heading from Dolanaar to Darnassus have been reporting ruthless attacks by corrupted furbolgs from the Gnarlpine tribe.$b$bImportant news and commerce travels to and from Darnassus by way of this road daily.  We cannot afford to have a rogue band of heathens terrorizing people.$b$bTake up arms in the name of the sacred forest, $c.  Their den lies somewhere below this vantage point.  Slay 6 of these Gnarlpine ambushers and report back to me.
+
+
+ID: 486
+Title: Ursal the Mauler
+Objective: Kill Ursal the Mauler and return to Athridas Bearmantle in Dolanaar.
+Description: Now the time has come to save the Druids of the Talon. If we fail now, $N, they will be forever lost in sleep.$b$bI shall prepare the Relics of Wakening and perform the ritual. For my work to take effect, the cursed beast responsible for this horrible situation must be slain.  Only then will the ritual be complete.$b$bIt was Ursal the Mauler who meddled with our brethren's calling and it is Ursal the Mauler who must now pay so they can be freed.  Travel to Gnarlpine Hold in the southwest and slay him.
+
+
+ID: 998
+Title: The Strange Fruit *GOSSIP*
+Objective:
+Description:
+
+
+ID: 918
+Title: Timberling Seeds
+Objective: Bring 8 Timberling Seeds to Denelan at Lake Al'Ameth.
+Description: The timberlings of Teldrassil are elementals of nature.  In some ways they reflect the natural order of plants and animals on our great tree.$B$BSo it is disturbing to see how angry the timberlings have become.$B$BI believe it has something to do with the soil.  I have been working on different methods of nurturing plants and would like to try them on timberling seeds.  Please, can you gather seeds from timberlings around Lake Al'Ameth and bring them to me?
+
+
+ID: 919
+Title: Timberling Sprouts
+Objective: Bring 5 Timberling Sprouts to Denalan at Lake Al'Ameth.
+Description: Small timberlings are sprouting around the waters of Lake Al'Ameth, and Wellspring Lake to the north.  I'm afraid these sprouts are beyond help -- we should try to clear them from the land before they grow large enough to cause trouble.$B$BWhen you're wandering the lakes, if you see any timberling sprouts please take them.  Help keep our land clean!
+
+
+ID: 922
+Title: Rellian Greenspyre
+Objective: Bring a Timberling Seed to Rellian Greenspyre in Darnassus.
+Description: $N, can you take one of the seeds you brought me to my friend, Rellian Greenspyre?  He is a druid in Darnassus, and when last we spoke he revealed his interest in my work with the Timberlings.  He had some ideas himself, and he will appreciate a specimen seed to work with.$B$BThank you, $N.  You have been a great help to me.  I hope that, some day, you will see the fruit of my labors.
+
+
+ID: 923
+Title: Tumors
+Objective: Bring 5 Mossy Tumors to Rellian Greenspyre in Darnassus.
+Description: There is a malevolence growing in the timberlings.  We are trying to find the source, but until we do...in order to keep Teldrassil safe we must cut down the timberlings who are beyond help.  Those that wander Wellspring Lake in northern Teldrassil are the most tainted.  They must be removed!$B$BDestroy the Timberlings you find there, and gather the mossy tumors growing upon them.  Bring the tumors to me so that they may be burned.
+
+
+ID: 984
+Title: How Big a Threat?
+Objective: Find a corrupt furbolg camp in Darkshore and return to Terenthis in Auberdine.
+Description: $N, I've come to find out how rampant the effects of Fel Moss are. Some of my brethren were rescued from a corrupt furbolg in Teldrassil, and I've vowed to stop any more atrocities before more of our kind are injured... or worse.$B$BI have seen a couple hints of corruption in Darkshore already, but I have yet to find any widespread signs. I think it would be logical if the investigation continued with the furbolgs. Would you find one of their camps, and return to me if you see any signs of corruption?
+
+
+ID: 937
+Title: The Enchanted Glade
+Objective: Acquire 6 Bloodfeather Belts and bring them to Sentinel Arynia Cloudsbreak in the Oracle Glade.
+Description: I was dispatched with a small group of Sentinels here to protect the Oracle Tree from the harpies that have made nests all around the glade. Little by little we are trying to push them back.$b$bWhen the Oracle Tree attempted to send a runner to Darnassus with a report, the mesenger was attacked and killed by a group of the harpies.$b$bIf you feel up to the task, go to their nests, slay them, and return their belts to me as proof of your deeds.
+
+
+ID: 954
+Title: Bashal'Aran
+Objective: Find the source of the strange blue aura in the ruins of Bashal'Aran.
+Description: The ruins of Bashal'Aran to the east are overrun with demonic minions. The sprites and satyrs that have taken up residence in the area feed upon the magical energies of the area, their powers growing from continued exposure.$b$bEven with that, I have noticed that there is one shrine they will not approach. On the western side of the ruins, atop a small bluff, a strange blue aura permeates... There must be an explanation to the demons' reluctance.$b$bI would like you to investigate it.
+
+
+ID: 958
+Title: Tools of the Highborne
+Objective: Retrieve 7 Highborne Relics for Thundris Windweaver in Auberdine.
+Description: $C. A task I would ask of you.$b$bHave you seen the ruins of Ameth'Aran? If not, you will find them on the eastern side of the main road, some ways to the south. Once they were the home of many powerful Highborne, now they are a testament to the destruction their dabblings produced.$b$bI have been told by the Sentinels that the spirits of the Highborne persist, and that they wield their ancient magical implements. Those relics must be appropriated, so that we might destroy them.
+
+
+ID: 947
+Title: Cave Mushrooms
+Objective: Bring 5 Scaber Stalks and 1 Death Cap to Barithras Moonshade in Auberdine.
+Description: I am devising a potion that requires rare mushrooms, mushrooms that grow only in a certain cave.  The cave lies behind Cliffspring Falls, to the east and slightly north along the mountains.$B$BI would go there myself, but I was advised by the Grove of the Ancients to stay away from that place.  Our venerable allies sense that the cave is the hiding place for a new evil in Darkshore.$B$BPlease, $N, gather the mushrooms for me.  And while doing so, scout the cave to confirm the Ancients' fears.
+
+
+ID: 1019
+Title: Journey to Menethil!
+Objective:
+Description:
+
+
+ID: 1684
+Title: Elanaria
+Objective: Speak with Elanaria.
+Description: Greetings, warrior.  Your skill grows, but there is more to your profession than you may believe.  To further progress, you must soon find a teacher.$B$BThe warrior Elanaria dwells in Darnassus, at the Warrior's Terrace.  She can instruct you.
+
+
+ID: 60
+Title: Kobold Candles
+Objective: Bring 8 Large Candles to William Pestle in Goldshire.
+Description: Hello, $ggood sir:my lady;!  Do you have a moment?$B$BMy brother and I run an apothecary in Stormwind, and I'm here to gather large candles for their wax.  Can you help me?$B$BYou can get large candles from kobolds, and I hear rumors that kobolds are infesting the Elwynn mines ... the Fargodeep mine to the south and Jasperlode Mine to the east.  I suggest looking for candles in one of those places.
+
+
+ID: 59
+Title: Cloth and Leather Armor
+Objective: Give Sara Timberlain the Stormwind Armor Marker.
+Description: For your shrewdness and valor, I have a marker here that is good for one piece of armor.  I want you to take it to Sara Timberlain at the Eastvale Logging Camp.  Give her the marker, and she will fashion the armor for you.  And after you receive it, $N, use it in the defense of Elwynn.$B$BThe Eastvale Logging Camp is beyond Guard Thomas' post to the east.
+
+
+ID: 456
+Title: The Balance of Nature
+Objective: Kill 5 Young Nightsabers and 3 Young Thistle Boars and return to Conservator Ilthalaine.
+Description: Greetings, $N.  I am Conservator Ilthalaine.  My purpose in Shadowglen is to ensure that the balance of nature is maintained.$b$bThe spring rains were particularly heavy this year, causing some of the forest's beasts to flourish while others suffered.$b$bUnfortunately, the nightsaber and thistle boar populations grew too large.  Shadowglen can only produce so much food for the beasts.  Journey forth, young $c, and thin the boar and saber populations so that nature's harmony will be preserved.
+
+
+ID: 457
+Title: The Balance of Nature
+Objective: Conservator Ilthalaine needs you to kill 4 Mangy Nightsabers and 4 Thistle Boars.
+Description: Thinning the younger population of creatures here in Shadowglen was a good start, $N, but there is still work to be done.$b$bThe resources of the forest will be depleted too quickly if the problem is not addressed.  Killing nature's beasts is a necessary evil for the good of all who share the land.  Venture into the forest and slay mangy nightsabers and thistle boars in the name of balance.
+
+
+ID: 458
+Title: The Woodland Protector
+Objective: Seek out the dryad known as Tarindrella.
+Description: Thank goodness you are here, $c. Strange news has traveled to me through the whisperings of the forest spirits.$b$bThe mysterious woodland protector, Tarindrella, has returned to Shadowglen. The dryad's presence has not been felt in the forests of Kalimdor in years. Something is surely amiss if she has journeyed back to this land.$b$bSeek out Tarindrella and see what business she tends to in our grove. One of the Sentinels reported seeing her to the west of Aldrassil.
+
+
+ID: 459
+Title: The Woodland Protector
+Objective: Collect 6 Fel Moss and bring them to Tarindrella.
+Description: Something evil is brewing in the forests of Teldrassil.  Look yonder to where the peaceful furbolgs used to dwell.  They have deserted their homes and are amassing under the name of the Gnarlpine tribe.$b$bOnly the corruption of wicked Fel Moss could cause such a transformation.  The grells and grelkin have infested the area and are threatening the residents of Shadowglen.  $b$bEngage these grells and grelkin, $N, and see if they are indeed caught under the enchanment of the wicked Fel Moss.
+
+
+ID: 2159
+Title: <NYI> Dolanaar Delivery
+Objective: Bring the Dolanaar Delivery to Melarith.
+Description: Greetings, young $c.  Can you offer me aid?  I have a package of herbs that I must deliver to the town of Dolanaar.  But I still have business with the druids of Shadowglen and cannot yet leave.$B$BCan you deliver this package for me?  It must be sent to Melarith, at the Dolanaar inn.  It lies along the road, to the south.
+
+
+ID: 488
+Title: Zenn's Bidding
+Objective: Bring Zenn Foulhoof outside of Dolanaar 3 Nightsaber Fangs, 3 Strigid Owl Feathers and 3 swatches of Webwood Spider Silk.
+Description: Eager for work, I see.  Lucky for you a day never goes by that I don't wish I had a fledgling $c to perform my bidding.$b$bYou see, $N, I can make you very happy and provide you with things you never dreamed of having.  But in order for that to happen you must bring me certain items.$b$bMy business in the forest often requires certain. . .reagents.  Fetch for me 3 Nightsaber Fangs, 3 Strigid Owl Feathers and 3 swatches of Webwood Spider Silk.$b$bLet's keep this our little secret, $r.
+
+
+ID: 475
+Title: A Troubling Breeze
+Objective: Seek out Gaerloas Talvethren in Starbreeze Village.
+Description: A troubling breeze blows through the forest.$b$bGaerolas Talvethren serves as Great Warden to the hibernating Druids of the Talon in the Ban'ethil Barrow Den.  His duty as the chosen protector of the Sleeping is to ensure their safety so that their pact with Ysera remains fulfilled.$b$bBut word from Gaerolas is now delayed and I grow nervous.  Travel east to Starbreeze Village and bring back a report from Gaerolas so that I can put my worries to rest, knowing my dreaming brethren slumber safely.
+
+
+ID: 476
+Title: Gnarlpine Corruption
+Objective: Return to Athridas Bearmantle in Dolanaar.
+Description: The Gnarlpine tribe has been corrupted!$b$bThe once peaceful furbolgs have turned against the protectors of the forest.  They ambushed me as I left for the Ban'ethil Barrow Den and proceeded to pillage Starbreeze Village.  Ursal the Mauler, their chieftain, is using the evil powers of the Fel Moss to drive them mad.$b$bI am too wounded to return to Athridas to bring him this grave news.  The task is left to you, young $c.  We can only hope that the deranged Gnarlpines have not made it to Ban'ethil yet!
+
+
+ID: 483
+Title: The Relics of Wakening
+Objective: Retrieve the Relics of Wakening and bring them to Athridas Bearmantle in Dolanaar.
+Description: Gnarlpine invaders were seen ravaging the Ban'ethil Barrow Den to the west.$b$bThe slumbering druids will be trapped in the Emerald Dream for eternity, unaware of their fate, unless we help. The delicate hibernation ritual cannot be broken without the Relics of Wakening.$b$bJourney to the Den and retrieve the Raven Claw Talisman, Black Feather Quill, Sapphire of Sky, and Rune of Nesting. The druids store them in sacred chests.  Return them to me and I will prepare the awakening ritual.
+
+
+ID: 997
+Title: Denalan's Earth
+Objective: Bring the package of Rare Earth to Denalan at Lake Al'Ameth.
+Description: Are you heading to the south?  To Lake Al'Ameth?  If so, then I have a task I might ask of you...$B$BMy colleage Denalan has a camp along the eastern end of the lake, where he is studying and experimenting on the plant life of Teldrassil.  He requested a package of rare earths from Darnassus and it was late, only recently arriving here in Dolanaar.$B$BCan you take him the package?
+
+
+ID: 489
+Title: Seek Redemption!
+Objective: Collect 3 Fel Cones and give them to Zenn Foulhoof outside of Dolanaar.
+Description: The Council of the Forest has news that you aided Zenn Foulhoof.  The foul satyr is an enemy of the forest.  As a $r, you should know better than to defile the forest by killing Nature's precious creatures.$b$bYou must redeem yourself in the eyes of the Council if you wish to remain a friend of Teldrassil.$b$bTeach Foulhoof a lesson and you shall be redeemed.  Fel Cones are corrupted seeds that fall from the trees.  Give 3 Fel Cones to Foulhoof who will think you have brought him a harmless snack.
+
+
+ID: 487
+Title: The Road to Darnassus
+Objective: Slay 6 Gnarlpine Ambushers and return to Sentinel Amara Nightwalker outside of Dolanaar.
+Description: The road to Darnassus must be kept safe.  Travelers heading from Dolanaar to Darnassus have been reporting ruthless attacks by corrupted furbolgs from the Gnarlpine tribe.$b$bImportant news and commerce travels to and from Darnassus by way of this road daily.  We cannot afford to have a rogue band of heathens terrorizing people.$b$bTake up arms in the name of the sacred forest, $c.  Their den lies somewhere below this vantage point.  Slay 6 of these Gnarlpine ambushers and report back to me.
+
+
+ID: 486
+Title: Ursal the Mauler
+Objective: Kill Ursal the Mauler and return to Athridas Bearmantle in Dolanaar.
+Description: Now the time has come to save the Druids of the Talon. If we fail now, $N, they will be forever lost in sleep.$b$bI shall prepare the Relics of Wakening and perform the ritual. For my work to take effect, the cursed beast responsible for this horrible situation must be slain.  Only then will the ritual be complete.$b$bIt was Ursal the Mauler who meddled with our brethren's calling and it is Ursal the Mauler who must now pay so they can be freed.  Travel to Gnarlpine Hold in the southwest and slay him.
+
+
+ID: 998
+Title: The Strange Fruit *GOSSIP*
+Objective:
+Description:
+
+
+ID: 918
+Title: Timberling Seeds
+Objective: Bring 8 Timberling Seeds to Denelan at Lake Al'Ameth.
+Description: The timberlings of Teldrassil are elementals of nature.  In some ways they reflect the natural order of plants and animals on our great tree.$B$BSo it is disturbing to see how angry the timberlings have become.$B$BI believe it has something to do with the soil.  I have been working on different methods of nurturing plants and would like to try them on timberling seeds.  Please, can you gather seeds from timberlings around Lake Al'Ameth and bring them to me?
+
+
+ID: 919
+Title: Timberling Sprouts
+Objective: Bring 5 Timberling Sprouts to Denalan at Lake Al'Ameth.
+Description: Small timberlings are sprouting around the waters of Lake Al'Ameth, and Wellspring Lake to the north.  I'm afraid these sprouts are beyond help -- we should try to clear them from the land before they grow large enough to cause trouble.$B$BWhen you're wandering the lakes, if you see any timberling sprouts please take them.  Help keep our land clean!
+
+
+ID: 922
+Title: Rellian Greenspyre
+Objective: Bring a Timberling Seed to Rellian Greenspyre in Darnassus.
+Description: $N, can you take one of the seeds you brought me to my friend, Rellian Greenspyre?  He is a druid in Darnassus, and when last we spoke he revealed his interest in my work with the Timberlings.  He had some ideas himself, and he will appreciate a specimen seed to work with.$B$BThank you, $N.  You have been a great help to me.  I hope that, some day, you will see the fruit of my labors.
+
+
+ID: 923
+Title: Tumors
+Objective: Bring 5 Mossy Tumors to Rellian Greenspyre in Darnassus.
+Description: There is a malevolence growing in the timberlings.  We are trying to find the source, but until we do...in order to keep Teldrassil safe we must cut down the timberlings who are beyond help.  Those that wander Wellspring Lake in northern Teldrassil are the most tainted.  They must be removed!$B$BDestroy the Timberlings you find there, and gather the mossy tumors growing upon them.  Bring the tumors to me so that they may be burned.
+
+
+ID: 984
+Title: How Big a Threat?
+Objective: Find a corrupt furbolg camp in Darkshore and return to Terenthis in Auberdine.
+Description: $N, I've come to find out how rampant the effects of Fel Moss are. Some of my brethren were rescued from a corrupt furbolg in Teldrassil, and I've vowed to stop any more atrocities before more of our kind are injured... or worse.$B$BI have seen a couple hints of corruption in Darkshore already, but I have yet to find any widespread signs. I think it would be logical if the investigation continued with the furbolgs. Would you find one of their camps, and return to me if you see any signs of corruption?
+
+
+ID: 937
+Title: The Enchanted Glade
+Objective: Acquire 6 Bloodfeather Belts and bring them to Sentinel Arynia Cloudsbreak in the Oracle Glade.
+Description: I was dispatched with a small group of Sentinels here to protect the Oracle Tree from the harpies that have made nests all around the glade. Little by little we are trying to push them back.$b$bWhen the Oracle Tree attempted to send a runner to Darnassus with a report, the mesenger was attacked and killed by a group of the harpies.$b$bIf you feel up to the task, go to their nests, slay them, and return their belts to me as proof of your deeds.
+
+
+ID: 954
+Title: Bashal'Aran
+Objective: Find the source of the strange blue aura in the ruins of Bashal'Aran.
+Description: The ruins of Bashal'Aran to the east are overrun with demonic minions. The sprites and satyrs that have taken up residence in the area feed upon the magical energies of the area, their powers growing from continued exposure.$b$bEven with that, I have noticed that there is one shrine they will not approach. On the western side of the ruins, atop a small bluff, a strange blue aura permeates... There must be an explanation to the demons' reluctance.$b$bI would like you to investigate it.
+
+
+ID: 958
+Title: Tools of the Highborne
+Objective: Retrieve 7 Highborne Relics for Thundris Windweaver in Auberdine.
+Description: $C. A task I would ask of you.$b$bHave you seen the ruins of Ameth'Aran? If not, you will find them on the eastern side of the main road, some ways to the south. Once they were the home of many powerful Highborne, now they are a testament to the destruction their dabblings produced.$b$bI have been told by the Sentinels that the spirits of the Highborne persist, and that they wield their ancient magical implements. Those relics must be appropriated, so that we might destroy them.
+
+
+ID: 947
+Title: Cave Mushrooms
+Objective: Bring 5 Scaber Stalks and 1 Death Cap to Barithras Moonshade in Auberdine.
+Description: I am devising a potion that requires rare mushrooms, mushrooms that grow only in a certain cave.  The cave lies behind Cliffspring Falls, to the east and slightly north along the mountains.$B$BI would go there myself, but I was advised by the Grove of the Ancients to stay away from that place.  Our venerable allies sense that the cave is the hiding place for a new evil in Darkshore.$B$BPlease, $N, gather the mushrooms for me.  And while doing so, scout the cave to confirm the Ancients' fears.
+
+
+ID: 1019
+Title: Journey to Menethil!
+Objective:
+Description:
+
+
+ID: 1684
+Title: Elanaria
+Objective: Speak with Elanaria.
+Description: Greetings, warrior.  Your skill grows, but there is more to your profession than you may believe.  To further progress, you must soon find a teacher.$B$BThe warrior Elanaria dwells in Darnassus, at the Warrior's Terrace.  She can instruct you.
+
+
+ID: 60
+Title: Kobold Candles
+Objective: Bring 8 Large Candles to William Pestle in Goldshire.
+Description: Hello, $ggood sir:my lady;!  Do you have a moment?$B$BMy brother and I run an apothecary in Stormwind, and I'm here to gather large candles for their wax.  Can you help me?$B$BYou can get large candles from kobolds, and I hear rumors that kobolds are infesting the Elwynn mines ... the Fargodeep mine to the south and Jasperlode Mine to the east.  I suggest looking for candles in one of those places.
+
+
+ID: 59
+Title: Cloth and Leather Armor
+Objective: Give Sara Timberlain the Stormwind Armor Marker.
+Description: For your shrewdness and valor, I have a marker here that is good for one piece of armor.  I want you to take it to Sara Timberlain at the Eastvale Logging Camp.  Give her the marker, and she will fashion the armor for you.  And after you receive it, $N, use it in the defense of Elwynn.$B$BThe Eastvale Logging Camp is beyond Guard Thomas' post to the east.
+
+
+ID: 52
+Title: Protect the Frontier
+Objective: Kill 8 Prowlers and 5 Young Forest Bears, and then return to Guard Thomas at the east Elwynn bridge.
+Description: Hail, $N.  Wild animals are growing more and more aggressive the farther we get from Goldshire, and the Eastvale Logging Camp suffers nearly constant attacks from wolves and bears!$B$BWe could use your help out here.
+
+
+ID: 109
+Title: Report to Gryan Stoutmantle
+Objective: Talk to Gryan Stoutmantle.  He usually can be found in the stone tower on Sentinel Hill, just off the road, in the middle of Westfall.
+Description: Looks to me you've seen quite a bit of combat in your time, $c.  If you haven't already, you should report to Gryan Stoutmantle.  He heads up the People's Militia, aimed at protecting the farmlands of Westfall.  I bet he could use your help.  You can usually find him in the stone tower on Sentinel Hill, just off the road in the middle of Westfall.
+
+
+ID: 83
+Title: Red Linen Goods
+Objective: Bring 6 Red Linen Bandanas to Sara Timberlain at the Eastvale Logging Camp.
+Description: The Defias gang in Northshire wears burlap masks, but the Defias in Elwynn wears linen which I can use to make fine linen goods.$B$BBring me red linen bandanas and I'll use them to fashion something for you.$B$BDefias gang members were seen outside the Brackwell Pumpkin Patch southwest of here.
+
+
+ID: 46
+Title: Bounty on Murlocs
+Objective: Bring 8 Torn Murloc Fins to Guard Thomas at the east Elwynn bridge.
+Description: The Stormwind Army has placed a bounty on murloc lurkers and foragers in Elwynn.  Slaughter them and bring me their torn murloc fins, and the Stormwind Army will reward you well.$B$BThe murlocs have built a village at Stone Cairn Lake north of here, and another to the south where the stream forks.
+
+
+ID: 1638
+Title: A Warrior's Training
+Objective: Speak with Harry Burlguard.
+Description: You've shown yourself to be a competent warrior, $N.  But you're still young and have a lot to learn.$B$BSpeak with Harry Burlguard--he's usually in the Pig and Whistle tavern, in the Old Town of Stormwind.  Harry is an old veteran and a good teacher.  He can show you a few moves that'll keep you breathing longer.
+
+
+ID: 1639
+Title: Bartleby the Drunk
+Objective: Speak with Bartleby.
+Description: Yeah, I can teach you.  But first I wanna see what moves you have already.$B$BSee that drunk over there at the end of the bar?  Bartleby?  I want you to get his mug.$B$BHah, and if you know Bartleby then you know he won't just give it to you.
+
+
+ID: 1640
+Title: Beat Bartleby
+Objective: Beat Bartleby, then talk to him.
+Description: You want what??  You're crazy!$B$BThe only way you'll get this mug is if you pry it from my cold, dead fingers...
+
+
+ID: 1665
+Title: Bartleby's Mug
+Objective: Bring Bartleby's Mug to Burlguard
+Description: Ok, here's my mug.  Wait!  Let me finish what's in it first... there we go.
+
+
+ID: 1666
+Title: Marshal Haggard
+Objective: Speak with Marshal Haggard.
+Description: You've learned a few moves, but you could still use a decent weapon.  I bet if you spoke with Marshal Haggard he could help you.$B$BMarshal Haggard lives in a manor in Elwynn Forest, at the Eastvale Lumber Camp.  He's retired now but he collected a lot of gear during his career.$B$BLet him know I sent you, and with luck he'll have a spare weapon to offer.
+
+
+ID: 109
+Title: Report to Gryan Stoutmantle
+Objective: Talk to Gryan Stoutmantle.  He usually can be found in the stone tower on Sentinel Hill, just off the road, in the middle of Westfall.
+Description: Looks to me you've seen quite a bit of combat in your time, $c.  If you haven't already, you should report to Gryan Stoutmantle.  He heads up the People's Militia, aimed at protecting the farmlands of Westfall.  I bet he could use your help.  You can usually find him in the stone tower on Sentinel Hill, just off the road in the middle of Westfall.
+
+
+ID: 64
+Title: The Forgotten Heirloom
+Objective: Farmer Furlbrow wants you to retrieve his pocket watch from the wardrobe in his farmhouse at the pumpkin farm to the West.
+Description: It was horrible!  Verna woke me when she heard a ruckus in the fields.  The fields were full of hooligans.  We left in a rush and I forgot to pack my pocket watch.  Verna's pa gave me that watch on our wedding day and I feel just sick knowing those thieves have it.  I left the pocket watch in the wardrobe at the farmhouse.  Look for the field of pumpkins to the West -- you can't miss it.  If you bring it back to me, I'd sure be grateful!
+
+
+ID: 62
+Title: The Fargodeep Mine
+Objective: Explore the Fargodeep Mine, then return to Marshal Dughan in Goldshire.
+Description: The mine in Northshire isn't the only one with problems!  I have reports that the Fargodeep Mine in Elwynn has also become a haven for Kobolds.$B$BExplore the mine and confirm these reports, then return to me.  The mine is almost due south of Goldshire, between the Stonefield and Maclure homesteads.
+
+
+ID: 88
+Title: Princess Must Die!
+Objective: Kill Princess, grab her collar, then bring it back to Ma Stonefield at the Stonefield Farm.
+Description: The Brackwells have a prize-winning pig, Princess.  The sow is HUGE, and she got that way from sneaking over here and eating my veggies!$B$BSo before she comes to our fields...Princess must die!  Bring me her collar as proof of the deed and I'll give you something for your time!$B$BPrincess is usually over at the Brackwell Pumpkin Patch, to the east and beyond the Maclure farm.  Get her before she gets hungry and comes back here!
+
+
+ID: 76
+Title: The Jasperlode Mine
+Objective: Explore the Jasperlode Mine, then report back to Marshal Dughan in Goldshire.
+Description: Thanks to you we know the Fargodeep Mine is infested with kobolds.  Now we need a scout to investigate the more distant Jasperlode Mine.$B$BExplore Jasperlode and confirm any kobold presence.  To reach the mine, travel east along the road until you reach the Tower of Azora.  From the tower, head north and you'll find the mine in the foothills.
+
+
+ID: 239
+Title: Westbrook Garrison Needs Help!
+Objective: Go to the Westbrook Garrison and speak with Deputy Rainer.
+Description: The Garrison on our western border sends word of increasing gnoll and thief activity.  They're requesting we send more Stormwind soldiers... but we just don't have any to spare!$B$BIf you can help, we could use it.  Go and speak with Deputy Rainer at the Westbrook Garrison and see what he needs done.$B$BThe Garrison is down the road to the west.  After you cross the bridge over the small brook it will be to the right.
+
+
+ID: 11
+Title: Riverpaw Gnoll Bounty
+Objective: Bring 8 Painted Gnoll Armbands to Deputy Rainer at the Barracks.
+Description: Gnolls, brutish creatures with no decent business in these lands,  have been seen along the borders of Elwynn Forest.  A large pack of them, many more than we can handle alone, have infested the woods south of the guard tower yonder.$B$BThe Stormwind Army will commend whomever helps kill them.  Bring me their painted gnoll armbands as proof of your deed.
+
+
+ID: 109
+Title: Report to Gryan Stoutmantle
+Objective: Talk to Gryan Stoutmantle.  He usually can be found in the stone tower on Sentinel Hill, just off the road, in the middle of Westfall.
+Description: Looks to me you've seen quite a bit of combat in your time, $c.  If you haven't already, you should report to Gryan Stoutmantle.  He heads up the People's Militia, aimed at protecting the farmlands of Westfall.  I bet he could use your help.  You can usually find him in the stone tower on Sentinel Hill, just off the road in the middle of Westfall.
+
+
+ID: 11
+Title: Riverpaw Gnoll Bounty
+Objective: Bring 8 Painted Gnoll Armbands to Deputy Rainer at the Barracks.
+Description: Gnolls, brutish creatures with no decent business in these lands,  have been seen along the borders of Elwynn Forest.  A large pack of them, many more than we can handle alone, have infested the woods south of the guard tower yonder.$B$BThe Stormwind Army will commend whomever helps kill them.  Bring me their painted gnoll armbands as proof of your deed.
+
+
+ID: 123
+Title: The Collector
+Objective: Go to Marshal Dughan in Goldshire and give him The Collector's Pickup Schedule
+Description: This note is a schedule with a list of days and times when a person -- described only as "The Collector" -- will receive a shipment of gold from the mines in Elwynn Forest.$B$BFrom the schedule, it looks as if the Collector resides near the Brackwell Pumpkin Patch in eastern Elwynn$B$BThis sounds important.  You should report it to Marshal Dughan in Goldshire.
+
+
+ID: 147
+Title: Manhunt
+Objective: Find and kill "the Collector"  then return to Marshal Dughan with The Collector's Ring.
+Description: If the "Collector" is taking gold from our mines then he's stealing from the kingdom!  Bring the Collector to justice, and bring me the ring mentioned in the pickup schedule you gave me.  It may tell us whom the Collector is working for...$B$BThat Pickup Schedule says the Collector is hiding out at the Brackwell Pumpkin Patch.  You should search for him there.
+
+
+ID: 1097
+Title: Elmore's Task
+Objective: Speak with Grimand Elmore.
+Description: There's a dwarven weaponsmith in Stormwind, Grimand Elmore, who sent word that he needs help with a delivery.  I believe he wants a package sent to his homeland in the north.$B$BYou have a sturdy pair on you!  So if you're interested in some legwork then speak with Grimand.  We could use you down here, but we must also keep our ties strong with the dwarves.$B$BYou can find Grimand Elmore at the weapon shop in the Dwarven District of Stormwind, in the northeast section of town.
+
+
+ID: 399
+Title: Humble Beginnings
+Objective: Go to Baros Alexston's house in Westfall and search for his compass, then return it to him in the Trade District of Stormwind.
+Description: It seems an eternity since I was a boy working the farm in Westfall. They say you can never go back, and it's true. Doubly true in my case, my family's home has been burned down and taken over by thieves.$b$bI have spoken with my father about the fate of some of my possessions, including my first compass. He was unable to save them. However, he also says that they should be hidden away on the farm.$b$bYou'll find the Alexston Farmstead west of Sentinel Hill. Perhaps you could go and retrieve it for me?
+
+
+ID: 109
+Title: Report to Gryan Stoutmantle
+Objective: Talk to Gryan Stoutmantle.  He usually can be found in the stone tower on Sentinel Hill, just off the road, in the middle of Westfall.
+Description: Looks to me you've seen quite a bit of combat in your time, $c.  If you haven't already, you should report to Gryan Stoutmantle.  He heads up the People's Militia, aimed at protecting the farmlands of Westfall.  I bet he could use your help.  You can usually find him in the stone tower on Sentinel Hill, just off the road in the middle of Westfall.
+
+
+ID: 399
+Title: Humble Beginnings
+Objective: Go to Baros Alexston's house in Westfall and search for his compass, then return it to him in the Trade District of Stormwind.
+Description: It seems an eternity since I was a boy working the farm in Westfall. They say you can never go back, and it's true. Doubly true in my case, my family's home has been burned down and taken over by thieves.$b$bI have spoken with my father about the fate of some of my possessions, including my first compass. He was unable to save them. However, he also says that they should be hidden away on the farm.$b$bYou'll find the Alexston Farmstead west of Sentinel Hill. Perhaps you could go and retrieve it for me?
+
+
+ID: 47
+Title: Gold Dust Exchange
+Objective: Bring 10 Gold Dust to Remy "Two Times" in Goldshire.  Gold Dust is gathered from Kobolds in Elwynn Forest.
+Description: The Kobolds in these parts sometimes carry Gold Dust on them.  I could really use the stuff - bring me a load of it and I'll give you the best price in town...best price in town!
+
+
+ID: 151
+Title: Poor Old Blanchy
+Objective: Verna Furlbrow in Westfall wants you to bring her 8 handfuls of oats.
+Description: Poor Old Blanchy!  Such a tired beast after all the work we put her through.  I fed her before we left the farm but we weren't expecting the wagon to break on us.  If you could bring her a few handfuls of oats from the fields, I'd be grateful.  I bet you could find some around the fields, if you can steer clear of those horrific machines that have taken over.
+
+
+ID: 36
+Title: Westfall Stew
+Objective: Verna Furlbrow wants you to deliver her recipe for Westfall Stew to Salma Saldean.
+Description: I never thought the day would come when I'd leave the farm.  But the fields are overrun with thieves and it's far too dangerous for us here now.  As soon as Farmer Furlbrow gets the wagon fixed, we'll be on our way.  $b $bMaybe you could do me a favor?  Let me scribble down my recipe for Westfall stew.  Please take it to Salma Saldean over on the farm yonder.  The Saldean's farm is just beyond the fork in the road.
+
+
+ID: 64
+Title: The Forgotten Heirloom
+Objective: Farmer Furlbrow wants you to retrieve his pocket watch from the wardrobe in his farmhouse at the pumpkin farm to the West.
+Description: It was horrible!  Verna woke me when she heard a ruckus in the fields.  The fields were full of hooligans.  We left in a rush and I forgot to pack my pocket watch.  Verna's pa gave me that watch on our wedding day and I feel just sick knowing those thieves have it.  I left the pocket watch in the wardrobe at the farmhouse.  Look for the field of pumpkins to the West -- you can't miss it.  If you bring it back to me, I'd sure be grateful!
+
+
+ID: 9
+Title: The Killing Fields
+Objective: Farmer Saldean wants you to kill 20 Harvest Watchers.
+Description: Look at what has happened to this place!  These lands were once occupied by good farm folk.  But the damned thieves have driven them all off.  Not me, though!  But it seems some Harvest Watchers have taken over the fields.$b$bIf you're up for the work, I'd like you to go out and kill twenty of them.  Come back when you're done for your pay.  If you finish up with the ones in my field, clear them from the neighboring fields as well.
+
+
+ID: 12
+Title: The People's Militia
+Objective: Gryan Stoutmantle wants you to kill 20 Defias Trappers and return to him on Sentinel Hill.
+Description: The People's Militia has but one goal:  To defend the lands of Westfall and return peace to our surroundings.  Unfortunately, the price of peace is often blood. $b$bOne of my scouts has brought word of a band of Defias Trappers wreaking havoc nearby.  I have reports of Defias Trapper sightings near the Jangolode Mine to the Northwest. If you seek to join our ranks, slay 20 Defias Trappers and return to me.
+
+
+ID: 333
+Title: Harlan Needs a Resupply
+Objective: Go to the Canal Tailor Shop and bring Rema Schneider the Cloth Request from Harlan Bagley.
+Description: We've been doing a lot of business lately.  It seems like everyone is buying armor and sturdy clothes.  Almost like they expect a cold, harsh season ahead...$B$BBut those are future worries.  My worry today is that I'm running out of knitted clothing to sell.  I need another load from our supplier.$B$BIf you can take this request to Rema Schneider at the Canal Tailor and Fit Shop, I'd be most grateful.
+
+
+ID: 332
+Title: Wine Shop Advert
+Objective: Go to the Gallina Winery, and bring Suzetta Gallina the Wine Ticket for a free bottle of wine.
+Description: If you talk to anyone about wine, then you know we Gallinas sell the best wine in Stormwind.  And we're not far, still in the Trade District along the city's lovely canals.$B$BHere, take this pamphlet.  Bring it to my sister Suzetta at our shop for a complimentary bottle of our famous pinot noir.  You won't regret it!
