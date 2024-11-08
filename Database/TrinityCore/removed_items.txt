@@ -1,0 +1,20 @@
+Entry   Name
+17      Martin Fury
+192     Martin's Broken Staff
+1259    JLeCraft Test Item
+6833    White Tuxedo Shirt
+9421    Major Healthstone
+12422   Imperial Plate Chest
+12424   Imperial Plate Belt
+12425   Imperial Plate Bracers
+12426   Imperial Plate Boots
+12427   Imperial Plate Helm
+12428   Imperial Plate Shoulders
+12429   Imperial Plate Leggings
+12471   Desertwalker Cane
+12584   Grand Marshal's Longsword
+12618   Enchanted Thorium Breastplate
+12619   Enchanted Thorium Leggings
+12620   Enchanted Thorium Helm
+13075   Direwing Legguards
+15138   Onyxia Scale Cloak

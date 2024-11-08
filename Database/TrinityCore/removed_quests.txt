@@ -1,0 +1,132 @@
+|entry|Name                                       |
+|-----|-------------------------------------------|
+|1    |Kanrethad's Quest                          |
+|73   |<TXT> No Reward                            |
+|108  |<TXT> Mystery Reward                       |
+|137  |<NYI> <TXT> Stormwind Commendation         |
+|241  |<TEST> HEY MISTER WILSON!                  |
+|242  |<UNUSED>                                   |
+|259  |<UNUSED>                                   |
+|260  |<UNUSED>                                   |
+|316  |<UNUSED 1>                                 |
+|326  |<UNUSED>                                   |
+|327  |<UNUSED>                                   |
+|352  |<UNUSED>                                   |
+|390  |<UNUSED>                                   |
+|402  |Sirra is Busy                              |
+|406  |<UNUSED>                                   |
+|497  |<UNUSED>                                   |
+|534  |<UNUSED>                                   |
+|548  |[DEPRECATED] <NYI> <TXT> Bloodstone Pendant|
+|558  |Jaina's Autograph                          |
+|612  |<UNUSED>                                   |
+|620  |The Monogrammed Sash                       |
+|740  |<UNUSED>                                   |
+|774  |<UNUSED>                                   |
+|785  |A Strategic Alliance                       |
+|800  |<UNUSED>                                   |
+|839  |<UNUSED>                                   |
+|856  |<UNUSED>                                   |
+|859  |<UNUSED>                                   |
+|904  |<UNUSED>                                   |
+|910  |Down at the Docks                          |
+|911  |Gateway to the Frontier                    |
+|912  |Stonesplinter Trogg Disguise               |
+|915  |You Scream, I Scream...                    |
+|925  |Cairne's Hoofprint                         |
+|946  |<UNUSED>                                   |
+|987  |<UNUSED>                                   |
+|988  |<UNUSED>                                   |
+|989  |<UNUSED>                                   |
+|999  |When Dreams Turn to Nightmares             |
+|1000|The New Frontier                           |
+|1004|The New Frontier                           |
+|1005|What Lurks Beyond                          |
+|1006|What Lies Beyond                           |
+|1015|The New Frontier                           |
+|1047|The New Frontier                           |
+|1099|Goblins Win!                               |
+|1123|Rabine Saturna                             |
+|1125|The Spirits of Southwind                   |
+|1128|<NYI> The Gnome Pit Crew is Thirsty        |
+|1129|<NYI> The Goblin Pit Crew is Thirsty       |
+|1155|<NYI> <TXT> bug crystal side quest         |
+|1161|<NYI> <TXT> gossip shade of ambermoon      |
+|1162|<NYI> <TXT> speak to hamuul runetotem      |
+|1163|<NYI> <TXT> speak to tyrande whisperwind   |
+|1165|<NYI> Ore for the Races                    |
+|1174|Gnomes Win!                                |
+|1185|Under the Chitin Was...                    |
+|1263|The Burning Inn <CHANGE TO GOSSIP>         |
+|1272|Finding Reethe <CHANGE INTO GOSSIP>        |
+|1277|<nyi> <TXT> The Centaur Hoofprints         |
+|1278|<nyi> <TXT> The Grim Totem Clan            |
+|1279|<nyi> <TXT>The Centaur Hoofprints          |
+|1280|<nyi> <TXT>The Centaur Hoofprints          |
+|1281|Jim's Song <CHANGE TO GOSSIP>              |
+|1283|Fire at the Shady Rest <CHANGE TO GOSSIP>  |
+|1290|<nyi> Investigating Mosarn                 |
+|1291|<nyi> <TXT> Centaur Hoofprints             |
+|1292|<nyi><TXT> Centaur Hoofprints              |
+|1293|<nyi> <TXT> Centaur Hoofprints             |
+|1294|<nyi> <TXT>Centaur Sympathies              |
+|1295|<nyi> <TXT> Course of Action               |
+|1296|<nyi> <TXT> Course of Action               |
+|1297|<nyi> <TXT> Course of Action               |
+|1298|<nyi> <TXT> Thrall's Dirty Work            |
+|1299|<nyi> <TXT> Thrall's Dirty Work            |
+|1300|<nyi> <TXT> Lorn Grim Totem                |
+|1318|Unfinished Gordok Business                 |
+|1397|<nyi> Saved!                               |
+|1441|<UNUSED>                                   |
+|1443|<nyi> The Shakedown                        |
+|1460|<UNUSED>                                   |
+|1461|<UNUSED>                                   |
+|1468|Children's Week                            |
+|1479|The Bough of the Eternals                  |
+|1500|Waking Naralex                             |
+|1533|<NYI> Call of Air                          |
+|1537|<NYI> Call of Air                          |
+|1538|<NYI> Call of Air                          |
+|1558|The Stonewrought Dam                       |
+|1657|Stinking Up Southshore                     |
+|1658|Crashing the Wickerman Festival            |
+|1659|<UNUSED>                                   |
+|1660|<UNUSED>                                   |
+|1662|<UNUSED>                                   |
+|1663|<UNUSED>                                   |
+|1664|<UNUSED>                                   |
+|1687|Spooky Lighthouse                          |
+|1800|Lordaeron Throne Room                      |
+|2000|Rokar Bladeshadow                          |
+|2018|Rokar's Test                               |
+|2019|Tools of the Trade                         |
+|2020|<UNUSED>                                   |
+|2058|<UNUSED>                                   |
+|2059|<UNUSED>                                   |
+|2868|<TXT> The Shriveled Heart                  |
+|2971|<UNUSED>                                   |
+|3023|<UNUSED>                                   |
+|3064|<NYI> <TXT> Pirate Hats                    |
+|3241|<NYI> <TXT><redux> Dreadmist Peak          |
+|3383|<UNUSED>                                   |
+|3384|<UNUSED>                                   |
+|3401|<UNUSED>                                   |
+|3403|<UNUSED>                                   |
+|3404|<UNUSED>                                   |
+|3405|<UNUSED>                                   |
+|3422|<UNUSED>                                   |
+|3423|<UNUSED>                                   |
+|3424|<UNUSED>                                   |
+|3425|<UNUSED>                                   |
+|3515|<UNUSED>                                   |
+|3516|<UNUSED>                                   |
+|3529|<UNUSED>                                   |
+|3530|<UNUSED>                                   |
+|3531|<UNUSED>                                   |
+|3622|<UNUSED>                                   |
+|3623|<UNUSED>                                   |
+|3624|<UNUSED>                                   |
+|3885|<NYI> <TXT> The Gadgetzan Run              |
+|3910|<NYI> <TXT> The Un'Goro Run                |
+|3911|The Last Element                           |

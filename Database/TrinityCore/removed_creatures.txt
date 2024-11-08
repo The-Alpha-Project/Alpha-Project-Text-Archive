@@ -1,0 +1,41 @@
+Entry   Name
+25     Mithril Mechanical Dragonling
+138    out Captain Lolo Longstriker
+621    Chicken
+1503   Wretched Zombie
+1722   Andr'e
+1786   Skeletal Aberration
+1790   Corpse Eater
+1792   Hissing Ghoul
+1799   Lost Wraith
+1823   Giant Venom Mist Lurker
+1825   Giant Plague Lurker
+1897   Scourge Necromancer
+3340   Mandrik Wife
+4473   Skeletal Adept
+6109   Azuregos
+7410   Thelman Slatefist
+7427   Taim Ragetotem
+7507   Brown Snake
+7508   Black Kingsnake
+7509   Crimson Snake
+7549   Tree Frog
+7557   Prarie Dog
+7951   Zas'Tysh
+8001   Corpus Ragatus
+8999   Innkeeper Sentinel Hill
+9095   Northshire Guard Justin
+10162  Lord Victor Nefarius
+10360  Kergul Bloodaxe
+10364  Yaelika Farclaw
+10367  Shrye Ragefist
+10445  Selina Dourman
+10583  Gryfe
+10981  Frost Wolf
+10982  Whitewhisker Vermin
+10983  Winterax Troll
+10984  Winterax Berserker
+10985  Ice Giant
+10986  Snowblind Harpy
+10987  Irondeep Trogg
+10989  Blizzard Elemental
