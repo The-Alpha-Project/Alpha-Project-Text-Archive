@@ -1,0 +1,1467 @@
+|entry|Name                                 |
+|-----|-------------------------------------|
+|4    |Bonfire Damage                       |
+|73   |Treasure Chest                       |
+|74   |Treasure Chest                       |
+|75   |Wooden Chest                         |
+|129  |Naxx Teleporter trap                 |
+|252  |I Should not be here B               |
+|267  |Stasis Trap                          |
+|275  |Bellowfiz Bubbles                    |
+|323  |Arcanite Lode                        |
+|1603 |Little Flame Emitter                 |
+|1670 |Barrel of Powder                     |
+|1682 |Quest Chest                          |
+|1684 |Blacksmith's Anvil                   |
+|1719 |Orc Lock                             |
+|2053 |TWO-SOLUTION TEST                    |
+|2067 |Serpent Ward                         |
+|2085 |Singing Crystals                     |
+|2531 |                                     |
+|2549 |Cookie Test Chest                    |
+|2557 |Altar of the Tides                   |
+|2559 |Maury's Lock Test Chest              |
+|2654 |Goblin Land Mine                     |
+|2686 |Apothecary Table                     |
+|2692 |Bottle 002                           |
+|2693 |Bottle 003                           |
+|2694 |Bottle 004                           |
+|2696 |Bucket 001                           |
+|2697 |Candlelabra 001                      |
+|2698 |Cup 001                              |
+|2699 |Blue Aura, column                    |
+|2700 |Campfire                             |
+|2705 |Shards of Myzrael                    |
+|2723 |Bale of Hay                          |
+|2735 |TEST Bombwagon                       |
+|2736 |TEST Burning Book                    |
+|2737 |TEST Cannon                          |
+|2738 |TEST Burning Scroll                  |
+|2847 |Tattered Chest                       |
+|2851 |Iron Bound Chest                     |
+|2853 |Iron Bound Chest                     |
+|2854 |Iron Bound Chest                     |
+|2856 |Iron Bound Chest                     |
+|2861 |Lethlor Aura - 0                     |
+|2862 |Lethlor Aura - 1                     |
+|2863 |Lethlor Aura - 2                     |
+|2864 |Lethlor Aura - 3                     |
+|2865 |Lethlor Aura - 4                     |
+|2869 |Ancient Chest                        |
+|2873 |Blue aura, short column              |
+|2874 |test lock object                     |
+|2884 |Clam                                 |
+|2885 |Large Crate                          |
+|2886 |Barrel                               |
+|2887 |Cauldron                             |
+|2888 |Woodpile                             |
+|2889 |Powder Keg                           |
+|2890 |Full Mine Cart                       |
+|2895 |TEST Lever                           |
+|2903 |Blue aura, short column, scale 4     |
+|3191 |Attack Plan: Razor Hill              |
+|3218 |Burning Seed Circle of Power         |
+|3219 |Scott's Cannon                       |
+|3221 |Scott's Placed Cannon                |
+|3271 |                                     |
+|3272 |                                     |
+|3274 |                                     |
+|3275 |                                     |
+|3454 |Instance Portal (Raid 4 Difficulties)|
+|3645 |Ripe Watermelon                      |
+|3657 |Abandoned Mine Car                   |
+|3666 |Test Goober Barrel                   |
+|3667 |Test Goober bombwagon                |
+|3668 |Test Goober Book01                   |
+|3669 |Test Goober BookOpenMedium01         |
+|3670 |Test Goober BookTrapArm              |
+|3671 |Test Goober BittpmBigRed             |
+|3672 |Test Goober Cannon01                 |
+|3673 |Test Goober Crate01                  |
+|3674 |Test Goober Crate02                  |
+|3675 |Test Goober DwarvenMemorial          |
+|3676 |Test Goober FlyingMachine            |
+|3677 |Test Goober JewelRed                 |
+|3678 |Test Goober LeverMetal               |
+|3679 |Test Goober MineCar                  |
+|3680 |Test Goober RuneBlue                 |
+|3681 |Test Goober RuneGroundBlue           |
+|3682 |Test Goober Scroll01                 |
+|3683 |Test Goober Torch01                  |
+|3684 |Test Goober Watermelon               |
+|3687 |Burning Shredder                     |
+|3692 |Food Crate                           |
+|3696 |Food Crate                           |
+|3697 |Food Crate                           |
+|3698 |Food Crate                           |
+|3699 |Food Crate                           |
+|3701 |Food Crate                           |
+|3708 |Food Crate                           |
+|3709 |Food Crate                           |
+|3712 |Food Crate                           |
+|3713 |Food Crate                           |
+|3731 |Test Goober Crate01-a                |
+|3732 |Test Goober Crate02-a                |
+|3734 |Test Goober Fissure                  |
+|3735 |Test Goober AlchemySet01             |
+|3736 |Test Goober Fissure -a               |
+|3825 |Burning Embers                       |
+|3826 |Burning Embers                       |
+|3827 |Burning Embers                       |
+|3828 |Burning Embers                       |
+|3829 |Burning Embers                       |
+|3830 |Burning Embers                       |
+|3831 |Burning Embers                       |
+|3832 |Burning Embers                       |
+|3833 |Burning Embers                       |
+|3834 |Burning Embers                       |
+|3835 |Burning Embers                       |
+|3836 |Burning Embers                       |
+|3837 |Burning Embers                       |
+|3838 |Burning Embers                       |
+|3858 |Fierce Blaze                         |
+|3859 |Fierce Blaze                         |
+|3860 |Fierce Blaze                         |
+|3861 |Fierce Blaze                         |
+|3863 |Fierce Blaze                         |
+|3912 |Blazing Fire                         |
+|3913 |Blazing Fire                         |
+|3914 |Burning Embers                       |
+|3915 |Blazing Fire                         |
+|3916 |Burning Embers                       |
+|3917 |Burning Embers                       |
+|3918 |Burning Embers                       |
+|3919 |Burning Embers                       |
+|3920 |Burning Embers                       |
+|3921 |Burning Embers                       |
+|3922 |Blazing Fire                         |
+|3923 |Blazing Fire                         |
+|3924 |Blazing Fire                         |
+|3925 |Blazing Fire                         |
+|3926 |Blazing Fire                         |
+|3927 |Blazing Fire                         |
+|3928 |Blazing Fire                         |
+|3929 |Blazing Fire                         |
+|3930 |Blazing Fire                         |
+|3931 |Blazing Fire                         |
+|3932 |Blazing Fire                         |
+|3933 |Blazing Fire                         |
+|3934 |Blazing Fire                         |
+|3952 |Fierce Blaze                         |
+|3953 |Mighty Blaze                         |
+|3954 |Fierce Blaze                         |
+|3955 |Fierce Blaze                         |
+|3956 |Fierce Blaze                         |
+|3957 |Fierce Blaze                         |
+|3958 |Fierce Blaze                         |
+|3959 |Mighty Blaze                         |
+|3961 |Burning Embers                       |
+|3965 |Fierce Blaze                         |
+|3966 |Fierce Blaze                         |
+|4148 |Mithril Bound Chest                  |
+|12143|Proximity Bomb                       |
+|12653|Ghost Saber Trap                     |
+|13756|Graveyard Banner                     |
+|13874|Serpentbloom                         |
+|13948|Fancy Bed                            |
+|15001|Mine Banner                          |
+|15002|Lumber Mill Banner                   |
+|15003|Farm Banner                          |
+|15004|Blacksmith Banner                    |
+|15005|Stable Banner                        |
+|15885|Shrine Of Remulos                    |
+|16395|Seal Destroyed Flame                 |
+|16431|Cracked Necrotic Crystal             |
+|17148|TEST MARBLE                          |
+|17149|TEST PARCHMENT                       |
+|17150|TEST STONE                           |
+|17151|TEST SILVER                          |
+|17152|TEST BRONZE                          |
+|17283|Southsea Cannon                      |
+|19000|Altar Of Storms                      |
+|19001|Chapel                               |
+|19002|Barn                                 |
+|19003|Barracks                             |
+|19004|Blacksmith                           |
+|19005|Farm                                 |
+|19006|House                                |
+|19007|Inn                                  |
+|19008|Lumbermill                           |
+|19009|Mage Tower                           |
+|19010|Stable                               |
+|19011|Townhall                             |
+|19012|Townhall without Wall                |
+|19013|Hut                                  |
+|19014|Hut 2                                |
+|19026|Gate 1                               |
+|19029|Wall Piece                           |
+|19031|Wall Piece 2                         |
+|19032|Wall Piece 3                         |
+|19034|Wall Piece with Stairs               |
+|19035|WallPost                             |
+|19036|WallPost                             |
+|19037|Lumbermill                           |
+|19038|Mage Tower                           |
+|19039|Abbey                                |
+|19040|Oil Plataform                        |
+|19041|Prison Headquarters                  |
+|19042|Prison House                         |
+|19043|Prison Cage 1                        |
+|19044|Prison Cage 2 (with tunnel)          |
+|19045|Prison Cage 3 (with tunnel)          |
+|19046|Prison Cage 4 (with tunnel)          |
+|19047|Townhall 3                           |
+|19048|Human PvP Barracks City              |
+|19049|Stormwind City                       |
+|19050|Booty Bay                            |
+|19051|Duskwood World Tree                  |
+|19052|Troll Ziggurat                       |
+|19053|Zul'Gurub Piece                      |
+|19054|Aliancce Shrine                      |
+|19055|Abbey Gate                           |
+|19056|Bridge 2                             |
+|19057|Bridge                               |
+|19058|Bridge 3                             |
+|19059|Stormwind Valley of Heroes Bridge    |
+|19060|Stormwind Valley of Heroes Gate      |
+|19061|Horde Shrine                         |
+|19062|Ironfoot Bridge                      |
+|19063|Bridge 2                             |
+|19064|Bamboo House                         |
+|19065|Stranglethorn Arena                  |
+|19066|Blackrock                            |
+|19067|Blackrock Lower Guild                |
+|19068|Blackrock Lower Instance             |
+|19069|Blackrock Upper Guild                |
+|19070|Blackrock Upper Instance             |
+|19071|Nefarian's Balcony                   |
+|19072|Deadmines Part 1                     |
+|19073|Deadmines Part 2                     |
+|19074|Deadmines Part 3                     |
+|19075|Deadmines Part 4                     |
+|19076|Karazhan Future Tower Instance       |
+|19077|Kharazan Actual Tower (no instance)  |
+|19078|The Stockades                        |
+|19079|Stormwind Vault                      |
+|19080|Deeprun Tram                         |
+|19081|Caverns of Time                      |
+|19082|Caverns of Time Entrance             |
+|19083|Caverns of Time Arm 1                |
+|19084|Caverns of Time Arm 2                |
+|19085|Caverns of Time Arm 3                |
+|19086|Ahn'Quiraj                           |
+|19087|Ahn'Quiraj Entrance                  |
+|19088|Ahn'Quiraj Door                      |
+|19089|Ahn'Quiraj Border of Door            |
+|19090|Ahn'Quiraj Walls                     |
+|19091|Blackfathom                          |
+|19092|Blackfathom Instance                 |
+|19093|Old Blackfathom Facade               |
+|19094|Dire Maul                            |
+|19095|Dire Maul Back Entrance              |
+|19096|Dire Maul Instance                   |
+|19097|Maraudon                             |
+|19098|Maraudon Intance                     |
+|19099|Onyxia's Lair                        |
+|19100|Onyxia's Lair Piece                  |
+|19101|Onyxia's Lair                        |
+|19102|Ragefire Chasm                       |
+|19103|Razorfen Downs                       |
+|19104|Razorfen Downs Intance               |
+|19105|Razorfen Kraul                       |
+|19106|Razorfen Kraul Intance               |
+|19107|Wailing Caverns                      |
+|19108|Wailing Caverns Intance              |
+|19109|Wailing Caverns Teeth                |
+|19110|Gnomeragan                           |
+|19111|Gnomeragan Instance                  |
+|19112|Uldaman Piece                        |
+|19113|Uldaman Piece 2                      |
+|19114|Uldaman Piece 3                      |
+|19115|Uldaman Piece 4                      |
+|19116|Dragon Isles                         |
+|19117|Dragon Isles 2                       |
+|19118|Dragon Isles 3                       |
+|19119|Dragon Isles 4                       |
+|19120|Monestary Cathedral                  |
+|19121|Monestary Cementery                  |
+|19122|Monestary Library                    |
+|19123|Monestary War                        |
+|19124|Shadowfang                           |
+|19125|Shadowfang Instance                  |
+|19126|Stratholme Part                      |
+|19127|Stratholme Part 2                    |
+|19128|Stratholme Part 3                    |
+|19129|Stratholme Part 4                    |
+|19130|Algaz Gate                           |
+|19131|Animal Den                           |
+|19132|Anvilmar Pass                        |
+|19133|Barrow Dens                          |
+|19134|Corrupted Barrow Dens                |
+|19135|Barrow Dens 2                        |
+|19136|Barrow Dens 3                        |
+|19137|Barrow Dens 4                        |
+|19138|Corrupted Barrow Dens 2              |
+|19139|Ice Den                              |
+|19140|Jungle Den                           |
+|19141|Mushroom Den                         |
+|19142|Troll Den                            |
+|19143|Troll Den 2                          |
+|19144|Volcanic den                         |
+|19145|Warm Den                             |
+|19146|Tunnel Cave to Cave                  |
+|19147|Tunnel Cave to Cave (Ice)            |
+|19148|Tunnel Cave to Cave Large            |
+|19149|Tunnel Cave to Cave (Warm)           |
+|19150|Alterac Valley Entrance              |
+|19151|Alterac Valley Entrance (Snow)       |
+|19152|Crypt                                |
+|19153|Crypt 2                              |
+|19154|Crypt 3                              |
+|19155|Crypt 4                              |
+|19156|Crypt 5 (Undead Starting Crypt)      |
+|19157|Crypt School                         |
+|19158|Crypt Simple Entrance                |
+|19159|Large Tunnel                         |
+|19160|Medium Tunnel                        |
+|19161|Medium Tunnel (Snow)                 |
+|19162|Small Tunnel                         |
+|19163|Small Tunnel (Snow)                  |
+|19164|Fishing Hole                         |
+|19165|Goldmine                             |
+|19166|Goldmine Small                       |
+|19167|Goldmine 2                           |
+|19168|Goldmine 3                           |
+|19169|Goldmine 4                           |
+|19170|Goldmine 5                           |
+|19171|Goldmine 6                           |
+|19172|Goldmine 7                           |
+|19173|Hive Arch                            |
+|19174|Hive Piece (exterior)                |
+|19175|Hive Piece 2 (exterior)              |
+|19176|Hive Piece 3 (exterior)              |
+|19177|Hive Piece 4 (exterior)              |
+|19178|Hive Piece 5 (exterior)              |
+|19179|Mini-Hive 1                          |
+|19180|Mini-Hive 2                          |
+|19181|Mini-Hive 3                          |
+|19182|Mini-Hive 3 Albino                   |
+|19183|Mini-Hive 4                          |
+|19184|Mini-Hive 4 Albino                   |
+|19185|Mini-Hive 5                          |
+|19186|Mini-Hive 5 Albino                   |
+|19187|Mini-Hive 6                          |
+|19188|Mini-Hive 6 Albino                   |
+|19189|Horde Mine                           |
+|19190|Horde Mine 2                         |
+|19191|Ice Cave                             |
+|19192|Ice Cave Medium                      |
+|19193|Ice Cave 2                           |
+|19194|Ice Cave 3                           |
+|19195|Ice Cave 4                           |
+|19196|Jungle Cave                          |
+|19197|Jungle Cave Crystal                  |
+|19198|Jungle Cave Medium                   |
+|19199|Jungle Cave 2                        |
+|19200|Mountain Cave Medium                 |
+|19201|Mountain Cave Medium 2               |
+|19202|Mountain Cave Medium 3               |
+|19203|Mountain Cave Medium 4               |
+|19204|Mountain Cave Medium 5               |
+|19205|Mountain Cave Medium 6               |
+|19206|Mountain Cave Medium 7               |
+|19207|Mountain Cave Medium 8               |
+|19208|Mushroom Cave                        |
+|19209|Mushroom Cave 2                      |
+|19210|Mushroom Cave 3                      |
+|19211|Mushroom Cave 4                      |
+|19212|Mushroom Cave 5                      |
+|19213|Mushroom Cave 6                      |
+|19214|Mushroom Cave 7                      |
+|19215|Mushroom Cave 8                      |
+|19216|Mushroom Cave 9                      |
+|19217|Mushroom Cave 10                     |
+|19218|Underwater Cave Medium               |
+|19219|Warm Cave                            |
+|19220|Warm Cave Medium                     |
+|19221|Ogremound                            |
+|19222|Ogremound 2                          |
+|19223|Ogremound 3                          |
+|19224|Ogremound 4                          |
+|19225|Ogremound 5                          |
+|19226|Ogremound Medium                     |
+|19227|Ogremound 6                          |
+|19228|Ogremound 7                          |
+|19229|Ogremound 8                          |
+|19230|Pirate Ship                          |
+|19231|Pirate Ship 2                        |
+|19232|Ruined Fortress                      |
+|19233|Ruined Keep                          |
+|19234|Crypt Intance                        |
+|19235|Spidermane                           |
+|19236|Furbolg Cave                         |
+|19237|Timbermaw Hold                       |
+|19238|Scarley Monastery                    |
+|19239|Sunken Temple                        |
+|19240|Sunken Temple Instance               |
+|19241|Hut                                  |
+|19242|Observatory (snow)                   |
+|19243|Igloo                                |
+|19244|Igloo 2                              |
+|19245|Igloo 3                              |
+|19246|Igloo 4                              |
+|19247|Desert Building                      |
+|19248|Desert Building 2                    |
+|19249|Desert Building 3                    |
+|19250|Desert Building 4                    |
+|19251|Laboratory                           |
+|19252|Naga Pagoda                          |
+|19253|House                                |
+|19254|Abbey                                |
+|19255|Druid Tower                          |
+|19256|Guard Tower                          |
+|19257|Building                             |
+|19258|Inn                                  |
+|19259|Giant Moonwell                       |
+|19260|Moonwell                             |
+|19261|Outpost                              |
+|19262|Small House                          |
+|19263|Gate                                 |
+|19264|Blackrock Barracks                   |
+|19265|Barracks                             |
+|19266|Barracks (Swamp of Sorrows)          |
+|19267|Blackrock Blacksmith                 |
+|19268|Blacksmith                           |
+|19269|Blacksmith (Swamp of Sorrows)        |
+|19270|Blackrock Fortress                   |
+|19271|Fortress                             |
+|19272|Fortress (Swamp of Sorrows)          |
+|19273|Blackrock Great Hall                 |
+|19274|Great Hall                           |
+|19275|Great Hall (Swamp of Sorrows)        |
+|19276|Blackrock Hut                        |
+|19277|Hut                                  |
+|19278|Inn                                  |
+|19279|Blackrock Kennel                     |
+|19280|Kennel                               |
+|19281|Kennel (Swamp of Sorrows)            |
+|19282|Blackrock Mage Tower                 |
+|19285|Blackrock House                      |
+|19286|House                                |
+|19287|House (Swamp of Sorrows)             |
+|19288|Blackrock Tower                      |
+|19289|Tower                                |
+|19290|Tower (Swamp of Sorrows)             |
+|19291|Blackrock Tower Small                |
+|19292|House Tower Small                    |
+|19293|Zeppelin House                       |
+|19294|Druid Tent                           |
+|19295|Hunter Tent                          |
+|19296|Hut Big                              |
+|19297|Hut                                  |
+|19298|Hut 2                                |
+|19299|Tepee                                |
+|19301|Longhouse                            |
+|19302|Shaman Tent                          |
+|19303|Blackrock Troll Burrow               |
+|19304|Troll Burrow (Swamp of Sorrows)      |
+|19305|Troll Burrow                         |
+|19306|Troll Hotel                          |
+|19307|Troll Shop House                     |
+|19308|Troll Shopping Mall                  |
+|19309|Troll Hut Desert                     |
+|19311|Troll Hut                            |
+|19312|Troll Hut Small                      |
+|19313|Bridge                               |
+|19314|Durotar Rooted Rock                  |
+|19315|Gate                                 |
+|19316|Theramore Docks                      |
+|19317|Bridge                               |
+|19318|Bridge                               |
+|19319|Tent                                 |
+|19320|Bridge                               |
+|19321|Landing Pad                          |
+|19322|Monster Machine                      |
+|19323|Wheel Plataform                      |
+|19324|Gate                                 |
+|19325|Everlook Walls                       |
+|19326|Darnassus                            |
+|19327|Orc Pvp Barracks City                |
+|19328|Orgrimmar City                       |
+|19329|PvP Wall                             |
+|19330|PvP Wall                             |
+|19331|Druid Mesa                           |
+|19332|Druid Mesa 2                         |
+|19333|Giant Totem                          |
+|19334|Lower Mesa                           |
+|19335|Lower Mesa 2                         |
+|19336|Lower Mesa 3                         |
+|19337|Lower Mesa 4                         |
+|19338|Lower Mesa 5                         |
+|19339|Lower Mesa 6                         |
+|19340|Mid Mesa                             |
+|19341|Mid Mesa 2                           |
+|19342|Mid Mesa 3                           |
+|19343|Mid Mesa 4                           |
+|19344|Shaman Mesa                          |
+|19345|Undead Cave                          |
+|19346|Upper Mesa                           |
+|19347|Upper Mesa 2                         |
+|19348|Upper Mesa 3                         |
+|19349|Upper Mesa 4                         |
+|19350|Upper Mesa 5                         |
+|19351|Warrior Mesa                         |
+|19352|Warrior Mesa 1                       |
+|19353|Winterspring Cave                    |
+|19354|Anvilmar                             |
+|19355|Barracks (snow)                      |
+|19356|Barracks                             |
+|19357|Blacksmith (snow)                    |
+|19358|Blacksmith                           |
+|19359|Griffon Aviary                       |
+|19360|Guard Tower                          |
+|19361|Inn (snow)                           |
+|19362|Inn                                  |
+|19363|Stable (snow)                        |
+|19364|Tower (snow)                         |
+|19365|Stable                               |
+|19366|Tavern (snow)                        |
+|19367|Tavern                               |
+|19368|Dark Iron Tower                      |
+|19369|Gates of Grim Batol                  |
+|19370|Ironforge                            |
+|19371|Dam                                  |
+|19372|Excavation Plataform                 |
+|19374|Netherguard Walls                    |
+|19375|Cathedral                            |
+|19376|Slaughter House                      |
+|19377|Ziggurat                             |
+|19378|Tower Zeppelin                       |
+|19379|Uther Shrine                         |
+|19380|Durnholde Walls                      |
+|19381|Stromguard Walls                     |
+|19382|Troll City Arena                     |
+|19383|Undercity                            |
+|19384|Lordaeron Walls                      |
+|19385|Dark Portal                          |
+|19386|Warcraft 2 Dark Portal               |
+|19387|Draenei Hut                          |
+|19388|Draenei Tower                        |
+|19389|Draenei Hut 2                        |
+|19390|Tank                                 |
+|19391|Black Citadel                        |
+|19392|PvP Wall                             |
+|19393|PvP Wall 2                           |
+|19394|PvP Wall 3                           |
+|19395|Spike Wall                           |
+|19396|Booty Bay Entrance                   |
+|19397|Goblin Statue                        |
+|19398|Burnt People                         |
+|19399|Burnt People 2                       |
+|19400|Burnt People 3                       |
+|19401|Burnt People 4                       |
+|19402|Burnt People 5                       |
+|19403|Bridge 4                             |
+|19404|Burnt Giant Wheel                    |
+|19405|Lava Altar                           |
+|19406|Lava Bridge                          |
+|19407|Lava Plug                            |
+|19408|Lava Plug 2                          |
+|19409|Lava Shrine                          |
+|19410|Lothar Statue                        |
+|19411|Smoke                                |
+|19412|Goblin Melting Pot                   |
+|19413|Rock Bridge                          |
+|19414|Hanging Body                         |
+|19415|Hanging Body 2                       |
+|19416|Rock Arch                            |
+|19417|Rock Arch 2                          |
+|19418|Rock Arch 3                          |
+|19419|Wagon                                |
+|19420|Ogremound 9                          |
+|19421|Covered Bridge                       |
+|19422|Darkshire Entrance                   |
+|19423|Guard Tower                          |
+|19424|Chasm Bridge                         |
+|19425|Coffin                               |
+|19426|Coffin Lid                           |
+|19427|Darkshire Entrance                   |
+|19428|Barn                                 |
+|19429|Hay Stack                            |
+|19430|Hay Wagon                            |
+|19431|Hearse                               |
+|19432|Scarecrow                            |
+|19433|Wheat                                |
+|19434|Fence Segment                        |
+|19435|Gate                                 |
+|19436|Cementery Gate                       |
+|19437|Grave Frame                          |
+|19438|Cementery Gate 2                     |
+|19439|Gate Segment                         |
+|19440|Mausoleum                            |
+|19441|Dirt Mound                           |
+|19442|Tomb Stone 1                         |
+|19443|Tomb Monument                        |
+|19444|Rock Wall                            |
+|19445|Warning Tree                         |
+|19446|Portal Gate                          |
+|19447|Blacksmith                           |
+|19448|Distillery                           |
+|19449|Guard Tower 2                        |
+|19450|Watch Tower                          |
+|19451|Stormwind Gate Old                   |
+|19452|Human Ballista                       |
+|19453|Orc Catapult                         |
+|19454|Fence                                |
+|19455|Stone Fence                          |
+|19456|Eye Of Azora                         |
+|19457|Lamp Post                            |
+|19458|Rock Monument                        |
+|19459|Ruined Fountain                      |
+|19460|Lion Statue                          |
+|19461|Stone Pyre                           |
+|19462|Water Basin                          |
+|19465|Karazahn Portcullis                  |
+|19466|Karazahn Chandelier                  |
+|19467|Karazahn Pedestal                    |
+|19468|Karazahn Pedestal 2                  |
+|19469|Karazahn Sconce                      |
+|19470|Karazahn Sconce 2                    |
+|19471|Karazahn Sconce 3                    |
+|19472|Karazahn Sconce 4                    |
+|19473|Karazahn Sconce 5                    |
+|19474|Karazahn Sconce 6                    |
+|19475|Karazahn Sconce 7                    |
+|19476|Karazahn Starlab                     |
+|19477|Karazahn Table                       |
+|19478|Karazahn Throne                      |
+|19479|Dock                                 |
+|19480|Dock 2                               |
+|19481|Small Boat                           |
+|19482|Troll Watch Tower                    |
+|19483|Holy Spring Well                     |
+|19484|Small Boat                           |
+|19485|Snake Statue                         |
+|19486|Lighthouse                           |
+|19487|Stable                               |
+|19488|Emerald Dream Catcher                |
+|19489|Emerald Dream Catcher 2              |
+|19490|Emerald Dream Catcher 3              |
+|19491|Emerald Dream Catcher 4              |
+|19492|Emerald Dream Giant                  |
+|19493|Emerald Dream Spinning Flower        |
+|19494|Emerald Dream Fountain Tree          |
+|19495|Emerald Dream Fountain Tree 2        |
+|19496|Emerald Dream Fountain Tree 3        |
+|19497|Emerald Dream Fountain Tree 4        |
+|19498|Emerald Dream Fountain Tree 5        |
+|19499|Caverns of Time Door                 |
+|19500|Caverns of Time Portal Particles     |
+|19501|Caverns of Time Standing Stone       |
+|19502|Caverns of Time Standing Stone 2     |
+|19503|Caverns of Time Portal               |
+|19504|Bed                                  |
+|19505|Waterfall 3                          |
+|19506|Mountain King Statue                 |
+|19507|Fountain                             |
+|19508|Franger Statue                       |
+|19509|Mage Statue                          |
+|19510|Spearman Statue                      |
+|19511|Sunshield Statue                     |
+|19512|Sunshield Statue 2                   |
+|19513|Twinblades Statue                    |
+|19514|Captain Statue                       |
+|19515|Captain Statue 2                     |
+|19516|Crusader Statue                      |
+|19517|Crusader Statue 2                    |
+|19518|Crusader Statue 3                    |
+|19519|Human Statue                         |
+|19520|Paladin Statue                       |
+|19521|Priest Statue                        |
+|19522|Cauldron                             |
+|19523|Cracked Ice                          |
+|19524|Gnomeragan Door                      |
+|19525|Sunken Temple Portcullis             |
+|19526|Uldaman Door                         |
+|19527|Instance Portal                      |
+|19528|Instance Portal Green                |
+|19529|Instance Portal Red                  |
+|19530|Instance Portal White                |
+|19531|Mage Portal                          |
+|19532|Meeting Stone                        |
+|19533|Meeting Stone 2                      |
+|19537|Gem Rock                             |
+|19584|Deadmines Door 2                     |
+|19588|Monestary Secret Door                |
+|19589|Portcullis Active                    |
+|19593|Wrought Iron Door                    |
+|19604|Undead Campfire                      |
+|19605|Undead Fire Large                    |
+|19606|Undead Fire Small                    |
+|19607|Plagued Fountain                     |
+|19608|Snow Fountain                        |
+|19609|Human Fountain                       |
+|19610|Undead Fountain                      |
+|19611|Gryphon Roost                        |
+|19612|Mortar                               |
+|19613|Rifle                                |
+|19614|Bomb                                 |
+|19615|Dynamite                             |
+|19616|Mortar Shell                         |
+|19617|Rifle 2                              |
+|19618|Tripod                               |
+|19619|Gypsy Wagon                          |
+|19620|General Outpost                      |
+|19621|General Outpost 2                    |
+|19622|Sarcophagus                          |
+|19623|Shack                                |
+|19624|Shop Counter                         |
+|19625|Shop Counter 2                       |
+|19626|Human Sign Post                      |
+|19627|Alleria Statue                       |
+|19628|Danath Statue                        |
+|19629|Khadgar Statue                       |
+|19630|Kurdran Statue                       |
+|19631|Lion Statue                          |
+|19632|Turalyon Statue                      |
+|19633|Uther Statue                         |
+|19634|Iron Maiden                          |
+|19635|Rack                                 |
+|19636|Stocks                               |
+|19637|Human Vendor Tent                    |
+|19638|Great Wall Portcullis                |
+|19639|Pick Axe                             |
+|19640|Crimson Wall Shield                  |
+|19641|Human Arrow                          |
+|19642|Human Arrows                         |
+|19643|Axe                                  |
+|19644|Axe 2                                |
+|19645|Bow                                  |
+|19646|Bow 2                                |
+|19647|Hammer                               |
+|19648|Hammer 2                             |
+|19649|Mace                                 |
+|19650|Mace 2                               |
+|19651|Spear                                |
+|19652|Spear 2                              |
+|19653|Staff                                |
+|19654|Staff 2                              |
+|19655|Sword                                |
+|19656|Sword 2                              |
+|19657|Arrow                                |
+|19658|Wall Shield                          |
+|19659|Wall Sword                           |
+|19660|Wooden Stairs                        |
+|19661|Wooden Stairs 2                      |
+|19662|Prison Cell                          |
+|19663|Brass Doors                          |
+|19664|Night Elf Owl Banner                 |
+|19665|Night Elf Tree Banner                |
+|19832|Secret Door                          |
+|19833|Torch                                |
+|19834|High Inquisitor's Chamber            |
+|19835|Great Hall Doors                     |
+|19836|Fine Chair                           |
+|19837|Fine Chair                           |
+|19838|Fine Chair                           |
+|19866|Front Door                           |
+|19867|Front Door                           |
+|20919|Tuber Node                           |
+|20959|[PH] Gnome Camera Terminal           |
+|20999|[PH] Goblin Camera Terminal          |
+|21198|Stockade Supply Barrel               |
+|21270|Anvil                                |
+|21271|Forge                                |
+|21752|Firepit of Death                     |
+|22570|Wooden Chair                         |
+|22571|Wooden Chair                         |
+|22572|Wooden Chair                         |
+|22573|Wooden Chair                         |
+|22574|Wooden Chair                         |
+|22583|Wooden Chair                         |
+|22586|Wooden Chair                         |
+|22607|Wooden Chair                         |
+|22608|Wooden Chair                         |
+|22609|Wooden Chair                         |
+|22610|Wooden Chair                         |
+|22611|Wooden Chair                         |
+|22620|Wooden Chair                         |
+|22624|Chair                                |
+|22625|Wooden Chair                         |
+|22626|Wooden Chair                         |
+|22627|High Back Chair                      |
+|22628|High Back Chair                      |
+|22629|High Back Chair                      |
+|22630|High Back Chair                      |
+|22631|High Back Chair                      |
+|22632|Wooden Chair                         |
+|22633|Wooden Chair                         |
+|22634|Wooden Chair                         |
+|22635|Wooden Chair                         |
+|22636|Wooden Chair                         |
+|22637|Wooden Chair                         |
+|22640|Wooden Chair                         |
+|22641|Wooden Chair                         |
+|22642|Wooden Chair                         |
+|22644|Wooden Chair                         |
+|22646|Wooden Chair                         |
+|22677|Wooden Chair                         |
+|22678|Wooden Chair                         |
+|22681|Wooden Chair                         |
+|22682|Wooden Chair                         |
+|22683|Wooden Chair                         |
+|22686|Wooden Chair                         |
+|22687|Wooden Chair                         |
+|22688|Wooden Chair                         |
+|22689|Wooden Chair                         |
+|22690|Wooden Chair                         |
+|22691|Wooden Chair                         |
+|22692|Wooden Chair                         |
+|22693|Wooden Chair                         |
+|22694|Wooden Chair                         |
+|22695|High Back Chair                      |
+|22696|High Back Chair                      |
+|22697|High Back Chair                      |
+|22698|High Back Chair                      |
+|22699|Wooden Chair                         |
+|22700|Wooden Chair                         |
+|22701|Wooden Chair                         |
+|22702|Wooden Chair                         |
+|22703|Wooden Chair                         |
+|22713|Wooden Chair                         |
+|22714|Wooden Chair                         |
+|22715|Wooden Chair                         |
+|22716|Wooden Chair                         |
+|22717|Wooden Chair                         |
+|22718|Wooden Chair                         |
+|22720|Wooden Chair                         |
+|22721|Wooden Chair                         |
+|22722|Wooden Chair                         |
+|22723|Wooden Chair                         |
+|22724|Wooden Chair                         |
+|22725|Wooden Chair                         |
+|22726|Wooden Chair                         |
+|22728|Wooden Chair                         |
+|22729|Wooden Chair                         |
+|22778|Wooden Chair                         |
+|22779|Wooden Chair                         |
+|22780|Wooden Chair                         |
+|22781|Wooden Chair                         |
+|22782|Wooden Chair                         |
+|22784|Wooden Chair                         |
+|22786|Wooden Chair                         |
+|22787|Wooden Chair                         |
+|22788|Wooden Chair                         |
+|22789|Wooden Chair                         |
+|22790|Wooden Chair                         |
+|22791|Wooden Chair                         |
+|22792|Wooden Chair                         |
+|22793|Wooden Chair                         |
+|22837|Wooden Chair                         |
+|22838|Wooden Chair                         |
+|22839|Wooden Chair                         |
+|22840|Wooden Chair                         |
+|22841|Wooden Chair                         |
+|22842|Wooden Chair                         |
+|22843|Wooden Chair                         |
+|22844|Wooden Chair                         |
+|22845|Wooden Chair                         |
+|22846|Wooden Chair                         |
+|22847|Wooden Chair                         |
+|22848|Wooden Chair                         |
+|22850|Wooden Chair                         |
+|22851|Wooden Chair                         |
+|22857|Wooden Chair                         |
+|22859|Wooden Chair                         |
+|22861|High Back Chair                      |
+|22862|High Back Chair                      |
+|22866|Wooden Chair                         |
+|22867|Wooden Chair                         |
+|22868|Wooden Chair                         |
+|22869|Wooden Chair                         |
+|22870|Wooden Chair                         |
+|22871|Wooden Chair                         |
+|22872|Wooden Chair                         |
+|22873|Wooden Chair                         |
+|22874|Wooden Chair                         |
+|22875|Wooden Chair                         |
+|22876|Wooden Chair                         |
+|22877|Wooden Chair                         |
+|22878|Wooden Chair                         |
+|22888|Wooden Chair                         |
+|22889|Wooden Chair                         |
+|22890|Wooden Chair                         |
+|22891|Wooden Chair                         |
+|22892|Wooden Chair                         |
+|22893|Wooden Chair                         |
+|22894|Wooden Chair                         |
+|22895|Wooden Chair                         |
+|22896|Wooden Chair                         |
+|22897|Wooden Chair                         |
+|22898|Wooden Chair                         |
+|22899|Wooden Chair                         |
+|22900|Wooden Chair                         |
+|22901|Wooden Chair                         |
+|22902|Wooden Chair                         |
+|22903|Wooden Chair                         |
+|22905|Wooden Chair                         |
+|22906|Wooden Chair                         |
+|22907|Wooden Chair                         |
+|22911|High Back Chair                      |
+|22912|Wooden Chair                         |
+|22913|Wooden Chair                         |
+|22914|Wooden Chair                         |
+|22928|High Back Chair                      |
+|22929|High Back Chair                      |
+|24799|PVP Human Tower -Test                |
+|25303|PVP Orc Tower -Test                  |
+|27801|PVP Goldmine                         |
+|28025|PVP Tower Supplies                   |
+|28067|Wooden Chair                         |
+|28068|Wooden Chair                         |
+|29153|Wooden Chair                         |
+|29156|Wooden Chair                         |
+|29157|Wooden Chair                         |
+|29158|Dwarven High Back Chair              |
+|29159|Dwarven High Back Chair              |
+|29160|Wooden Chair                         |
+|29698|Wooden Chair                         |
+|29718|Wooden Chair                         |
+|29719|Wooden Chair                         |
+|29720|Wooden Chair                         |
+|29721|Wooden Chair                         |
+|29722|Wooden Chair                         |
+|29723|Wooden Chair                         |
+|29724|Wooden Chair                         |
+|29725|Wooden Chair                         |
+|29726|Wooden Chair                         |
+|29727|Wooden Chair                         |
+|29728|Wooden Chair                         |
+|29729|Wooden Chair                         |
+|29730|Wooden Chair                         |
+|29731|Wooden Chair                         |
+|29732|Wooden Chair                         |
+|29733|Wooden Chair                         |
+|29734|Wooden Chair                         |
+|29735|Wooden Chair                         |
+|29736|Wooden Chair                         |
+|29737|Wooden Chair                         |
+|29738|Wooden Chair                         |
+|29739|Wooden Chair                         |
+|29778|Wooden Chair                         |
+|29779|Wooden Chair                         |
+|31505|Wooden Chair                         |
+|31506|Wooden Chair                         |
+|32349|Mailbox                              |
+|32562|Wooden Chair                         |
+|32563|Wooden Chair                         |
+|32564|Wooden Chair                         |
+|32565|Wooden Chair                         |
+|32566|Wooden Chair                         |
+|32567|Wooden Chair                         |
+|32568|Wooden Chair                         |
+|32575|Anvil                                |
+|32576|Anvil                                |
+|32577|Anvil                                |
+|32586|Anvil                                |
+|32587|Anvil                                |
+|32588|Anvil                                |
+|32589|Anvil                                |
+|32618|JKAPLAN TEST GNOME MACHINE           |
+|33360|Morag's Brew                         |
+|35170|TEST BOOK OPEN                       |
+|35253|Mining Node Point Check              |
+|35254|Herb Node Point Check                |
+|35592|Chest Spawn Point Check              |
+|35758|Unfinished Mace                      |
+|37100|Green Glowing Circle                 |
+|37200|TEST SHIP                            |
+|38148|Wooden Chair                         |
+|42080|05Low                                |
+|42081|05Hi                                 |
+|42082|05Med                                |
+|42083|04Low                                |
+|42084|04Med                                |
+|42085|04Hi                                 |
+|42086|03Low                                |
+|42087|03Med                                |
+|42088|03Hi                                 |
+|42089|02Low                                |
+|42090|02Med                                |
+|42091|02Hi                                 |
+|42092|01 low                               |
+|42093|01Med                                |
+|42094|01Hi                                 |
+|47296|Mesa Elevator                        |
+|47297|Mesa Elevator                        |
+|48797|Theramore Transport                  |
+|56817|Campfire                             |
+|60967|Anvil                                |
+|60968|Anvil                                |
+|60969|Dwarven Fire                         |
+|60970 |Dwarven Fire                         |
+|60971 |Dwarven Fire                         |
+|60972 |Wooden Chair                         |
+|60973 |Wooden Chair                         |
+|60974 |Wooden Chair                         |
+|60975 |Wooden Chair                         |
+|60976 |Wooden Chair                         |
+|60977 |Wooden Chair                         |
+|60978 |Wooden Chair                         |
+|60979 |Wooden Chair                         |
+|60980 |Wooden Chair                         |
+|60981 |Wooden Chair                         |
+|60982 |Wooden Chair                         |
+|60983 |Wooden Chair                         |
+|60984 |Wooden Chair                         |
+|60985 |Wooden Chair                         |
+|60986 |Wooden Chair                         |
+|60987 |Wooden Chair                         |
+|60988 |Wooden Chair                         |
+|60989 |Wooden Chair                         |
+|60990 |Wooden Chair                         |
+|60991 |Wooden Chair                         |
+|60992 |Wooden Chair                         |
+|60993 |Wooden Chair                         |
+|60994 |Wooden Chair                         |
+|60995 |Wooden Chair                         |
+|60996 |Wooden Chair                         |
+|60997 |Wooden Chair                         |
+|60998 |Wooden Chair                         |
+|60999 |Wooden Chair                         |
+|61000 |Wooden Chair                         |
+|61001 |Wooden Chair                         |
+|61002 |Wooden Chair                         |
+|61003 |Wooden Chair                         |
+|61004 |Wooden Chair                         |
+|61005 |Wooden Chair                         |
+|61006 |Wooden Chair                         |
+|61007 |Wooden Chair                         |
+|61008 |Wooden Chair                         |
+|61009 |Wooden Chair                         |
+|61010 |Wooden Chair                         |
+|61011 |Wooden Chair                         |
+|61012 |Wooden Chair                         |
+|61013 |Wooden Chair                         |
+|61014 |Wooden Chair                         |
+|61015 |Wooden Chair                         |
+|61016 |Wooden Chair                         |
+|61017 |Wooden Chair                         |
+|61018 |Wooden Chair                         |
+|61019 |Wooden Chair                         |
+|61020 |Wooden Chair                         |
+|61021 |Wooden Chair                         |
+|61022 |Wooden Chair                         |
+|61023 |Wooden Chair                         |
+|61024 |Wooden Chair                         |
+|61025 |Wooden Chair                         |
+|61026 |Wooden Chair                         |
+|61027 |Mechanic Stool                       |
+|61028 |Mechanic Stool                       |
+|61029 |Mechanic Stool                       |
+|61030 |Mechanic Stool                       |
+|61031 |Mechanic Stool                       |
+|61032 |Mechanic Stool                       |
+|61033 |Mechanic Stool                       |
+|61034 |Mechanic Stool                       |
+|64855 |Kodo Fossil                          |
+|67239 |Graznab's Barrel                     |
+|69420 |War Horn Shaker - Big                |
+|73361 |Giant Clam Check Point               |
+|73362 |Crate Check Point                    |
+|74731 |Noggle's Satchel                     |
+|91137 |Jordan's Shipment                    |
+|92014 |Tuber Spawner                        |
+|94485 |Altar of the Deeps                   |
+|94627 |Shrine of Gelihast                   |
+|102414|Mirror Lake Waterfall Spell Focus    |
+|103573|Cut Woodpile                         |
+|103575|Containment Coffer TRAP              |
+|103613|Andron's Ledger                      |
+|103629|Xavian Waterfall Spell Focus         |
+|103660|Stone of Outer Binding Spell Focus   |
+|103708|Mana Rift Disturbance                |
+|103709|Tin Vein                             |
+|103710|Iron Deposit                         |
+|103712|Iron Deposit                         |
+|103714|Copper Vein                          |
+|103819|Stone of Shy-Rotam                   |
+|105571|Tattered Chest                       |
+|105577|Horde Strongbox                      |
+|105580|Alliance Strongbox                   |
+|107044|Shaman Holy Lake                     |
+|109516|Auberdine Bear Trap                  |
+|111208|Wooden Chair                         |
+|111209|Wooden Chair                         |
+|111210|Wooden Chair                         |
+|111211|Wooden Chair                         |
+|111213|Wooden Chair                         |
+|111214|Wooden Chair                         |
+|111218|Wooden Chair                         |
+|111219|Wooden Chair                         |
+|111263|Wooden Chair                         |
+|111264|Wooden Chair                         |
+|111267|Wooden Chair                         |
+|111270|Wooden Chair                         |
+|111272|Wooden Chair                         |
+|111273|Wooden Chair                         |
+|111274|Wooden Chair                         |
+|111275|Wooden Chair                         |
+|111276|Wooden Chair                         |
+|111277|Wooden Chair                         |
+|111278|Wooden Chair                         |
+|111279|Wooden Chair                         |
+|111952|Wooden Chair                         |
+|111953|Wooden Chair                         |
+|111954|Wooden Chair                         |
+|111955|Wooden Chair                         |
+|111956|Wooden Chair                         |
+|111960|Wooden Chair                         |
+|111961|Wooden Chair                         |
+|111962|Wooden Chair                         |
+|111963|Wooden Chair                         |
+|111966|Wooden Chair                         |
+|111967|Wooden Chair                         |
+|111970|Wooden Chair                         |
+|111971|Wooden Chair                         |
+|111975|Wooden Chair                         |
+|111980|Wooden Chair                         |
+|111982|Wooden Chair                         |
+|111983|Wooden Chair                         |
+|111984|Wooden Chair                         |
+|112001|Wooden Chair                         |
+|112003|Wooden Chair                         |
+|112004|Wooden Chair                         |
+|112005|Wooden Chair                         |
+|112006|Wooden Chair                         |
+|112008|Wooden Chair                         |
+|112010|Wooden Chair                         |
+|112011|Wooden Chair                         |
+|112013|Wooden Chair                         |
+|112021|Wooden Chair                         |
+|112022|Wooden Chair                         |
+|112025|Wooden Chair                         |
+|112031|Wooden Chair                         |
+|112032|Wooden Chair                         |
+|112034|Wooden Chair                         |
+|112038|Wooden Chair                         |
+|112075|Wooden Chair                         |
+|112076|Wooden Chair                         |
+|112080|Wooden Chair                         |
+|112081|Wooden Chair                         |
+|112092|Wooden Chair                         |
+|112095|Wooden Chair                         |
+|112096|Wooden Chair                         |
+|112097|Wooden Chair                         |
+|112098|Wooden Chair                         |
+|112100|Wooden Chair                         |
+|112101|Wooden Chair                         |
+|112102|Wooden Chair                         |
+|112103|Wooden Chair                         |
+|112105|Wooden Chair                         |
+|112108|Wooden Chair                         |
+|112109|Wooden Chair                         |
+|112110|Wooden Chair                         |
+|112111|Wooden Chair                         |
+|112112|Wooden Chair                         |
+|112115|Wooden Chair                         |
+|112116|Wooden Chair                         |
+|112117|Wooden Chair                         |
+|112119|Wooden Chair                         |
+|112121|Wooden Chair                         |
+|112123|Wooden Chair                         |
+|112125|Wooden Chair                         |
+|112126|Wooden Chair                         |
+|112128|Wooden Chair                         |
+|112129|Wooden Chair                         |
+|112130|Wooden Chair                         |
+|112131|Wooden Chair                         |
+|112134|Wooden Chair                         |
+|112135|Wooden Chair                         |
+|112142|Wooden Chair                         |
+|112144|Wooden Chair                         |
+|112145|Wooden Chair                         |
+|112146|Wooden Chair                         |
+|112147|Wooden Chair                         |
+|112148|Wooden Chair                         |
+|112149|Wooden Chair                         |
+|112150|Wooden Chair                         |
+|112151|Wooden Chair                         |
+|112152|Wooden Chair                         |
+|112155|Wooden Chair                         |
+|112156|Wooden Chair                         |
+|112157|Wooden Chair                         |
+|112158|Wooden Chair                         |
+|112159|Wooden Chair                         |
+|112161|Wooden Chair                         |
+|112162|Wooden Chair                         |
+|112163|Wooden Chair                         |
+|112165|Wooden Chair                         |
+|112166|Wooden Chair                         |
+|112169|Wooden Chair                         |
+|112170|Wooden Chair                         |
+|112171|Wooden Chair                         |
+|112172|Wooden Chair                         |
+|112174|Wooden Chair                         |
+|112175|Wooden Chair                         |
+|112176|Wooden Chair                         |
+|112178|Wooden Chair                         |
+|112180|Wooden Chair                         |
+|112242|Wooden Chair                         |
+|112243|Wooden Chair                         |
+|112244|Wooden Chair                         |
+|112245|Wooden Chair                         |
+|112247|Wooden Chair                         |
+|112248|Wooden Chair                         |
+|112250|Wooden Chair                         |
+|112251|Wooden Chair                         |
+|112253|Wooden Chair                         |
+|112254|Wooden Chair                         |
+|112255|Wooden Chair                         |
+|112256|Wooden Chair                         |
+|112257|Wooden Chair                         |
+|112258|Wooden Chair                         |
+|112259|Wooden Chair                         |
+|112262|Wooden Chair                         |
+|112263|Wooden Chair                         |
+|112265|Wooden Chair                         |
+|112266|Wooden Chair                         |
+|112269|Wooden Chair                         |
+|112271|Wooden Chair                         |
+|112272|Wooden Chair                         |
+|112273|Wooden Chair                         |
+|112274|Wooden Chair                         |
+|112275|Wooden Chair                         |
+|112278|Wooden Chair                         |
+|112280|Wooden Chair                         |
+|112281|Wooden Chair                         |
+|112282|Wooden Chair                         |
+|112292|Wooden Chair                         |
+|112293|Wooden Chair                         |
+|112294|Wooden Chair                         |
+|112295|Wooden Chair                         |
+|112296|Wooden Chair                         |
+|112299|Wooden Chair                         |
+|112300|Wooden Chair                         |
+|112313|Wooden Chair                         |
+|112323|Wooden Chair                         |
+|112324|Wooden Chair                         |
+|112326|Wooden Chair                         |
+|112328|Wooden Chair                         |
+|112330|Wooden Chair                         |
+|112331|Wooden Chair                         |
+|112332|Wooden Chair                         |
+|113530|Test Uldaman Map                     |
+|113532|Test Door                            |
+|121263|SI:7 Lockbox                         |
+|122195|SI:7 Lockbox                         |
+|122196|SI:7 Lockbox                         |
+|122197|SI:7 Lockbox                         |
+|122198|SI:7 Lockbox                         |
+|123228|Containment Coffer TEST              |
+|123308|Ooze Covered Arcanite Lode           |
+|123311|Thieves' Tool Rack                   |
+|132834|Test Guild Bank                      |
+|136924|Bench                                |
+|138494|                                     |
+|138495|                                     |
+|138605|Wooden Chair                         |
+|138606|Wooden Chair                         |
+|138607|Wooden Chair                         |
+|138608|Wooden Chair                         |
+|138609|Wooden Chair                         |
+|138610|Wooden Chair                         |
+|138611|Wooden Chair                         |
+|138612|Wooden Chair                         |
+|138613|Wooden Chair                         |
+|140371|Bench                                |
+|140907|Stormwind Mailbox                    |
+|140908|Ironforge Mailbox                    |
+|141075|Zul'Farrak Cage Opener               |
+|141609|Weegli's Barrel                      |
+|141831|Shackles of Razelikh                 |
+|141854|Shackles of Grol                     |
+|141855|Shackles of Allistarj                |
+|141856|Shackles of Sevine                   |
+|141872|Divino-matic Rod                     |
+|142011|Ziggurat Top                         |
+|142012|Ziggurat Top                         |
+|142032|Ziggurat Base                        |
+|142033|Ziggurat Base                        |
+|142074|Bly's Escape Portal                  |
+|142075|Mailbox                              |
+|142080|Spawn Controller                     |
+|142089|Mailbox                              |
+|142093|Mailbox                              |
+|142094|Mailbox                              |
+|142095|Mailbox                              |
+|142102|Mailbox                              |
+|142103|Mailbox                              |
+|142109|Mailbox                              |
+|142110|Mailbox                              |
+|142111|Mailbox                              |
+|142117|Mailbox                              |
+|142119|Mailbox                              |
+|142146|Firework test trap                   |
+|142147|Firework test                        |
+|142171|Transpolyporter TRBB                 |
+|142180|Jintha'Alor Alter                    |
+|142190|Bilgewhizzle's Powder Keg            |
+|142192|Spawn loc - Pirate                   |
+|142193|Inconspicuous Landmark TRAP          |
+|142203|Guard Post                           |
+|142220|Spawn loc - Buccaneer                |
+|142221|Spawn loc - Swashbuckler             |
+|142700|Witherbark Village Spell Focus 02    |
+|142701|Venom Bottle                         |
+|142716|Shadra'Alor Altar                    |
+|143198|Chair                                |
+|143219|Chair                                |
+|143220|Chair                                |
+|143231|Transpolyporter                      |
+|143381|Stove                                |
+|143981|Mailbox                              |
+|143982|Mailbox                              |
+|143983|Mailbox                              |
+|143984|Mailbox                              |
+|143985|Mailbox                              |
+|143986|Mailbox                              |
+|143987|Mailbox                              |
+|143988|Mailbox                              |
+|143989|Mailbox                              |
+|143990|Mailbox                              |
+|144011|Mailbox                              |
+|144013|Equinex Monolith Spell Focus (DND)   |
+|144051|Sorrowhold Watch Water Hole          |
+|144052|Sandsorrow Watch Water Hole          |
+|144056|Cauldron                             |
+|144112|Mailbox                              |
+|144125|Mailbox                              |
+|144126|Mailbox                              |
+|144127|Mailbox                              |
+|144128|Mailbox                              |
+|144129|Mailbox                              |
+|144130|Mailbox                              |
+|144131|Mailbox                              |
+|144179|Mailbox                              |
+|144569|Edana Hatetalon Spell Focus (DND)    |
+|144570|Mailbox                              |
+|146075|Zul'Farrak Entrance Alarm            |
+|146078|Antu'sul's Swarm                     |
+|146087|Bonfire                              |
+|147075|Doodad_GeneralChairLoEnd02           |
+|147076|Doodad_GeneralChairLoEnd04           |
+|147077|Doodad_GeneralChairLoEnd05           |
+|147278|Anvil                                |
+|147280|Anvil                                |
+|147281|Anvil                                |
+|147524|Echeyakee's Lair                     |
+|147538|The Dead Tree                        |
+|147784|Anvil                                |
+|147785|Anvil                                |
+|147788|Anvil                                |
+|147789|Anvil                                |
+|147790|Anvil                                |
+|147791|Anvil                                |
+|147794|Anvil                                |
+|147795|Anvil                                |
+|147796|Anvil                                |
+|147797|Anvil                                |
+|147798|Anvil                                |
+|147799|Anvil                                |
+|147816|Cozy Fire                            |
+|147817|Cozy Fire                            |
+|147818|Wooden Chair                         |
+|147819|Wooden Chair                         |
+|147820|Wooden Chair                         |
+|147822|Wooden Chair                         |
+|148422|Evil God Spell Focus (DND)           |
+|148500|Suzi Test Object 1                   |
+|148501|Corrupted Moonwell Spell Focus (DND) |
+|148502|Test Object                          |
+|148518|Wooden Chair                         |
+|148520|Wooden Chair                         |
+|148521|Wooden Chair                         |
+|148522|Wooden Chair                         |
+|148524|Wooden Chair                         |
+|148525|Wooden Chair                         |
+|148526|Wooden Chair                         |
+|148527|Wooden Chair                         |
+|148530|Wooden Chair                         |
+|148531|Wooden Chair                         |
+|148533|Wooden Chair                         |
+|148534|Wooden Chair                         |
+|148537|Wooden Chair                         |
+|148539|Wooden Chair                         |
+|148542|Wooden Chair                         |
+|148543|Wooden Chair                         |
+|148546|Wooden Chair                         |
+|148548|Wooden Chair                         |
+|148553|Wooden Chair                         |
+|148558|Wooden Chair                         |
+|148559|Wooden Chair                         |
+|148562|Wooden Chair                         |
+|148564|Wooden Chair                         |
+|148565|Wooden Chair                         |
+|148566|Wooden Chair                         |
+|148568|Wooden Chair                         |
+|148570|Wooden Chair                         |
+|148571|Wooden Chair                         |
+|148584|Wooden Chair                         |
+|148588|Wooden Chair                         |
+|148590|Wooden Chair                         |
+|148592|Wooden Chair                         |
+|148593|Wooden Chair                         |
+|148594|Wooden Chair                         |
+|148595|Wooden Chair                         |
+|148596|Wooden Chair                         |
+|148597|Wooden Chair                         |
+|148598|Wooden Chair                         |
+|148599|Wooden Chair                         |
+|148601|Wooden Chair                         |
+|148602|Wooden Chair                         |
+|148603|Wooden Chair                         |
+|148604|Wooden Chair                         |
+|148607|Wooden Chair                         |
+|148608|Wooden Chair                         |
+|148609|Wooden Chair                         |
+|148610|Wooden Chair                         |
+|148611|Wooden Chair                         |
+|148613|Wooden Chair                         |
+|148614|Wooden Chair                         |
+|148615|Wooden Chair                         |
+|148616|Wooden Chair                         |
+|148617|Wooden Chair                         |
+|148618|Wooden Chair                         |
+|148619|Wooden Chair                         |
+|148620|Wooden Chair                         |
+|148621|Wooden Chair                         |
+|148623|Wooden Chair                         |
+|148624|Wooden Chair                         |
+|148625|Wooden Chair                         |
+|148626|Wooden Chair                         |
+|148627|Wooden Chair                         |
+|148628|Wooden Chair                         |
+|148630|Wooden Chair                         |
+|148631|Wooden Chair                         |
+|148632|Wooden Chair                         |
+|148633|Wooden Chair                         |
+|148634|Wooden Chair                         |
+|148645|Wooden Chair                         |
+|148735|Wooden Chair                         |
+|148746|Wooden Chair                         |
+|148747|Wooden Chair                         |
+|148750|Wooden Chair                         |
+|148753|Wooden Chair                         |
+|148756|Wooden Chair                         |
+|148757|Wooden Chair                         |
+|148759|Wooden Chair                         |
+|148760|Wooden Chair                         |
+|148763|Wooden Chair                         |
+|148829|Goldshire Guard Post                 |
+|149051|Wooden Bench                         |
+|149423|Wooden Chair                         |
+|149425|Tower Flame West                     |
+
+
+
